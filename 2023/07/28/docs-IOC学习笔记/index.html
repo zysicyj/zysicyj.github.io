@@ -4,17 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>程序员朱永胜</title>
+  <title>docs/IOC学习笔记 | 程序员朱永胜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="欢迎关注我的同名公众号">
-<meta property="og:type" content="website">
-<meta property="og:title" content="程序员朱永胜">
-<meta property="og:url" content="https://zysicyj.github.io/index.html">
+  <meta name="description" content="IOC学习笔记（上篇）学习视频地址：https:&#x2F;&#x2F;time.geekbang.org&#x2F;course&#x2F;detail&#x2F;100042601-184049 IOC容器的职责 依赖处理  依赖查找 依赖注入   生命周期管理  容器 托管的资源（Java Beans 或其他资源[1]）   配置  容器 外部化配置 托管的资源（Java Beans或其他资源[1:1]）    Ioc容器的实现 Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docs&#x2F;IOC学习笔记">
+<meta property="og:url" content="https://zysicyj.github.io/2023/07/28/docs-IOC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="程序员朱永胜">
-<meta property="og:description" content="欢迎关注我的同名公众号">
+<meta property="og:description" content="IOC学习笔记（上篇）学习视频地址：https:&#x2F;&#x2F;time.geekbang.org&#x2F;course&#x2F;detail&#x2F;100042601-184049 IOC容器的职责 依赖处理  依赖查找 依赖注入   生命周期管理  容器 托管的资源（Java Beans 或其他资源[1]）   配置  容器 外部化配置 托管的资源（Java Beans或其他资源[1:1]）    Ioc容器的实现 Java">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2023/png/548519/1690289784867-c1b13ab7-3e36-48fe-84b0-5f23dccc0c3b.png#from=url&id=cgbg5&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=">
+<meta property="article:published_time" content="2023-07-28T15:29:20.000Z">
+<meta property="article:modified_time" content="2023-07-28T15:29:31.203Z">
 <meta property="article:author" content="程序员朱永胜">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2023/png/548519/1690289784867-c1b13ab7-3e36-48fe-84b0-5f23dccc0c3b.png#from=url&id=cgbg5&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=">
   
     <link rel="alternate" href="/atom.xml" title="程序员朱永胜" type="application/atom+xml">
   
@@ -73,9 +77,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-docs-IOC学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-docs-IOC学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/07/28/docs-IOC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
   <time class="dt-published" datetime="2023-07-28T15:29:20.000Z" itemprop="datePublished">2023-07-28</time>
@@ -88,8 +90,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/28/docs-IOC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">docs/IOC学习笔记</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      docs/IOC学习笔记
     </h1>
   
 
@@ -207,100 +209,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-工具" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/28/%E5%B7%A5%E5%85%B7/" class="article-date">
-  <time class="dt-published" datetime="2023-07-28T14:46:18.000Z" itemprop="datePublished">2023-07-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/28/%E5%B7%A5%E5%85%B7/">docs/IOC学习笔记（上篇）.md</a>
-    </h1>
+    <a href="/2023/07/28/%E5%B7%A5%E5%85%B7/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">docs/IOC学习笔记（上篇）.md</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zysicyj.github.io/2023/07/28/%E5%B7%A5%E5%85%B7/" data-id="clkmpykg00001x8vi0n5h0oes" data-title="docs/IOC学习笔记（上篇）.md" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/07/28/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-07-28T13:43:25.764Z" itemprop="datePublished">2023-07-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zysicyj.github.io/2023/07/28/hello-world/" data-id="clkmpykfq0000x8vi48a08eeh" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
