@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Jrebel与Xrebel激活</title>
+      <link href="/2023/08/06/Jrebel%E4%B8%8EXrebel%E6%BF%80%E6%B4%BB/"/>
+      <url>/2023/08/06/Jrebel%E4%B8%8EXrebel%E6%BF%80%E6%B4%BB/</url>
+      
+        <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>JRebel和XRebel是两个非常有用的工具，可以显著提升Java开发人员的生产力和应用程序性能。</p><p>JRebel是一个强大的Java开发工具，它允许开发人员在不重新启动应用程序的情况下进行代码修改和调试。传统上，每次修改Java代码都需要重新编译和重新启动应用程序，这会浪费大量的时间。但是，使用JRebel，你可以即时看到你的代码修改的效果，无需重新启动应用程序。这种即时反馈的能力极大地提高了开发效率，缩短了开发周期。</p><p>JRebel通过在运行时重新加载修改的类文件，使得代码修改能够立即生效。它支持各种Java框架和服务器，包括Spring、Hibernate、Tomcat等。此外，JRebel还提供了与常见IDE（如Eclipse、IntelliJ IDEA）的集成，使得使用JRebel变得更加方便。</p><p>XRebel是另一个强大的工具，专注于Java应用程序的性能监控和优化。它可以实时监测和分析应用程序的性能瓶颈，帮助开发人员快速定位和解决性能问题。XRebel提供了一个直观的用户界面，显示了应用程序的请求和响应时间、数据库查询、HTTP会话等关键指标。它还能够检测潜在的性能问题，如慢查询、内存泄漏等，并提供相应的建议和解决方案。</p><p>XRebel支持各种Java应用程序，包括Web应用程序、企业应用程序等。它可以与常见的Java开发工具和服务器集成，如Eclipse、IntelliJ IDEA、Tomcat等。</p><p>综上所述，JRebel和XRebel是两个非常有用的工具，可以极大地提升Java开发人员的生产力和应用程序性能。JRebel允许即时查看代码修改的效果，而XRebel帮助开发人员实时监测和优化应用程序的性能。这两个工具的结合将为你的Java开发带来更高效和优化的体验。</p><h2 id="下载代理软件"><a href="#下载代理软件" class="headerlink" title="下载代理软件"></a>下载代理软件</h2><p>请关注某绿色软件【程序员朱永胜】回复<code>1011</code>获取</p><h2 id="双击打开"><a href="#双击打开" class="headerlink" title="双击打开"></a>双击打开</h2><h2 id=""><a href="#" class="headerlink" title=""></a><img src="C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20230806204843304.png" alt="image-20230806204843304"></h2><h2 id="获取UUID"><a href="#获取UUID" class="headerlink" title="获取UUID"></a>获取UUID</h2><p>打开<a href="https://www.guidgen.com/%EF%BC%8C%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AAUUID">https://www.guidgen.com/，生成一个UUID</a></p><p><img src="https://njpkhuan-blog.oss-cn-shanghai.aliyuncs.com/202308062049509.png" alt="image-20230806204943298"></p><h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><p>拷贝UUID到这里即可激活</p><p><img src="https://njpkhuan-blog.oss-cn-shanghai.aliyuncs.com/202308062051024.png" alt="image-20230806205133975"></p><p><img src="https://njpkhuan-blog.oss-cn-shanghai.aliyuncs.com/202308062052295.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>IntelliJ IDEA 2023.2 最新变化</title>
       <link href="/2023/08/05/%E6%9C%80%E6%96%B0%E5%8F%98%E5%8C%96/"/>
       <url>/2023/08/05/%E6%9C%80%E6%96%B0%E5%8F%98%E5%8C%96/</url>
