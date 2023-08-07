@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>博客优化差不多了</title>
+      <link href="/2023/08/07/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E5%B7%AE%E4%B8%8D%E5%A4%9A%E4%BA%86/"/>
+      <url>/2023/08/07/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E5%B7%AE%E4%B8%8D%E5%A4%9A%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[<p>博客地址：<a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><p>这篇文章不是教学博客，后续考虑看是否出教学</p><p>具体优化视频可以观看视频</p><p>这个博客是Hexo+Github Pages搭建的，如何搭建可以看我之前的文章，主题是Butterfly，图床是腾讯云COS，老文章使用的是阿里云OOS，换成COS主要是出于成本，腾讯的便宜太多了，而且有很多免费额度<img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072341119.png" alt="image-20230807234107815"></p><p>阿里云已经开始扣费了，价格是0.5元&#x2F;G流量，不包括存储费用，上个月扣了几块钱了。。看了下，最低的流量包是100G。。腾讯是10G好像，价格上也贵不少</p><p>总感觉流量扣的不对，没办法，开始上防盗链了。。。COS和OSS都上了。。后续有时间再把OSS文档迁移到COS吧，╮(╯▽╰)╭</p><h2 id="新增搜索功能"><a href="#新增搜索功能" class="headerlink" title="新增搜索功能"></a>新增搜索功能</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072348757.png" alt="image-20230807234835404"></p><h2 id="新增评论系统"><a href="#新增评论系统" class="headerlink" title="新增评论系统"></a>新增评论系统</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072337879.png" alt="image-20230807233701749"></p><h2 id="新增在线聊天系统"><a href="#新增在线聊天系统" class="headerlink" title="新增在线聊天系统"></a>新增在线聊天系统</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072337780.png" alt="image-20230807233728451"></p><h2 id="语言改为中文"><a href="#语言改为中文" class="headerlink" title="语言改为中文"></a>语言改为中文</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072338122.png" alt="image-20230807233812817"></p><h2 id="去掉了默认那个大图，直接展示文章"><a href="#去掉了默认那个大图，直接展示文章" class="headerlink" title="去掉了默认那个大图，直接展示文章"></a>去掉了默认那个大图，直接展示文章</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072347459.png" alt="image-20230807234701110"></p><h2 id="新增友链"><a href="#新增友链" class="headerlink" title="新增友链"></a>新增友链</h2><p>这个友链也需要完善，时间上不够啊，有时间再弄吧</p><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308072349572.png" alt="image-20230807234921266"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Butterfly </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly安装文档(三)主题配置-1</title>
       <link href="/2023/08/07/Butterfly%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3-%E4%B8%89-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE-1/"/>
       <url>/2023/08/07/Butterfly%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3-%E4%B8%89-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE-1/</url>
