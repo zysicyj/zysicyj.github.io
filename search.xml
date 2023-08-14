@@ -186,15 +186,15 @@
       
         <tags>
             
-            <tag> SpringBoot </tag>
-            
-            <tag> Java </tag>
-            
             <tag> EasyCode </tag>
             
             <tag> Idea </tag>
             
             <tag> 插件 </tag>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -236,9 +236,9 @@
       
         <tags>
             
-            <tag> mysql </tag>
-            
             <tag> SpringBoot </tag>
+            
+            <tag> mysql </tag>
             
             <tag> jdbc </tag>
             
@@ -414,9 +414,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> GithubPages </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
