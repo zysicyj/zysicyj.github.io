@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>一键免费部署自己的GPT网站（无需服务器）</title>
+      <link href="/2023/08/16/%E4%B8%80%E9%94%AE%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84GPT%E7%BD%91%E7%AB%99%EF%BC%88%E6%97%A0%E9%9C%80%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89/"/>
+      <url>/2023/08/16/%E4%B8%80%E9%94%AE%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84GPT%E7%BD%91%E7%AB%99%EF%BC%88%E6%97%A0%E9%9C%80%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><h1 id="先看看效果"><a href="#先看看效果" class="headerlink" title="先看看效果"></a>先看看效果</h1><p><a href="https://chat-gpt-next-web2-xi-three.vercel.app/">https://chat-gpt-next-web2-xi-three.vercel.app</a></p><p>为啥推荐这个呢，其实市面上已经有很多了，这个主要是UI蛮漂亮的，嘿嘿！<br>你要是简单想弄的话，CSDN就能免费搭建一个，这个就自行百度吧，还是很简单的。</p><h2 id="自定义角色"><a href="#自定义角色" class="headerlink" title="自定义角色"></a>自定义角色</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/20230815144403.png"></p><h2 id="详细的配置"><a href="#详细的配置" class="headerlink" title="详细的配置"></a>详细的配置</h2><p><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/20230815144647.png"><br><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/20230815144706.png"><br><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/20230815144724.png"></p><h1 id="Fork项目"><a href="#Fork项目" class="headerlink" title="Fork项目"></a>Fork项目</h1><p><a href="https://github.com/zysicyj/ChatGPT-Next-Web2">https://github.com/zysicyj/ChatGPT-Next-Web2</a></p><h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p>打开链接：<br><a href="https://vercel.com/new/clone?repository-url=https://github.com/Yidadaa/ChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web">https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&amp;env=OPENAI_API_KEY&amp;env=CODE&amp;project-name=chatgpt-next-web&amp;repository-name=ChatGPT-Next-Web</a></p><p>注册后，填写这个<br><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/20230815145222.png"></p><p>点击部署即可</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决国内IDEA AI无法连接问题</title>
+      <link href="/2023/08/15/%E8%A7%A3%E5%86%B3%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5IdeaAI%E9%97%AE%E9%A2%98/"/>
+      <url>/2023/08/15/%E8%A7%A3%E5%86%B3%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5IdeaAI%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是Clash的TUN模式"><a href="#什么是Clash的TUN模式" class="headerlink" title="什么是Clash的TUN模式"></a>什么是Clash的TUN模式</h1><p>Clash的TUN模式是一种网络代理模式，它允许将网络流量通过虚拟网络接口进行转发和处理。TUN（全称为”network TUNnel”）是一种在操作系统内核中创建虚拟网络接口的技术。</p><p>使用Clash的TUN模式，你可以配置Clash作为一个VPN客户端，将所有的网络流量通过TUN接口进行转发。这样，你可以实现在应用层面上对网络流量进行代理和过滤，从而实现网络访问的自由和安全。</p><p>TUN模式的工作原理如下：</p><ol><li>Clash会在操作系统内核中创建一个虚拟网络接口，比如tun0。</li><li>你可以将tun0接口配置为系统的默认网关，使所有的网络流量都通过该接口发送。</li><li>Clash会监听tun0接口上的网络流量，并根据你的配置对流量进行处理，比如执行代理、过滤或其他操作。</li><li>处理后的流量会被发送到目标服务器或者代理服务器上，然后返回响应给应用程序。</li></ol><p>总结起来，Clash的TUN模式提供了一种在应用层面对网络流量进行控制和处理的方式，使你能够自由地配置、代理和过滤网络访问。这对于实现个人隐私保护和访问受限内容非常有用。</p><p>这里呢，我们打开Clash的TUN模式即可</p><p>官方文档：<a href="https://docs.cfw.lbyczf.com/contents/tun.html">https://docs.cfw.lbyczf.com/contents/tun.html</a></p><h1 id="下面简单说说怎么操作，总共呢就两步"><a href="#下面简单说说怎么操作，总共呢就两步" class="headerlink" title="下面简单说说怎么操作，总共呢就两步"></a>下面简单说说怎么操作，总共呢就两步</h1><h2 id="第一步-点击该图标等待变绿"><a href="#第一步-点击该图标等待变绿" class="headerlink" title="第一步,点击该图标等待变绿"></a>第一步,点击该图标等待变绿</h2><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-16/5716146543700.png"><br><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-16/5797233508100.png"></p><h2 id="勾选TUN模式即可"><a href="#勾选TUN模式即可" class="headerlink" title="勾选TUN模式即可"></a>勾选TUN模式即可</h2><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-16/5827036314100.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>脚本一键生成通用接口，一分钟实现增删改查</title>
       <link href="/2023/08/14/%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E9%80%9A%E7%94%A8%E6%8E%A5%E5%8F%A3%EF%BC%8C%E4%B8%80%E5%88%86%E9%92%9F%E5%AE%9E%E7%8E%B0%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/"/>
       <url>/2023/08/14/%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E9%80%9A%E7%94%A8%E6%8E%A5%E5%8F%A3%EF%BC%8C%E4%B8%80%E5%88%86%E9%92%9F%E5%AE%9E%E7%8E%B0%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/</url>
