@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>安装Pip</title>
+      <link href="/2023/08/21/%E5%AE%89%E8%A3%85Pip/"/>
+      <url>/2023/08/21/%E5%AE%89%E8%A3%85Pip/</url>
+      
+        <content type="html"><![CDATA[<h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy “localhost:7890”</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> pip </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>源码安装mysql5.7</title>
       <link href="/2023/08/19/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85mysql5-7/"/>
       <url>/2023/08/19/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85mysql5-7/</url>
