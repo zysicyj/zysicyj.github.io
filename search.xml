@@ -239,11 +239,11 @@
       
         <tags>
             
+            <tag> mysql </tag>
+            
             <tag> yum </tag>
             
             <tag> 离线安装 </tag>
-            
-            <tag> mysql </tag>
             
         </tags>
       
@@ -770,9 +770,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> GithubPages </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
