@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>idea插件grep_console最佳实践</title>
+      <link href="/2023/08/22/idea%E6%8F%92%E4%BB%B6grep-console%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"/>
+      <url>/2023/08/22/idea%E6%8F%92%E4%BB%B6grep-console%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><p>参考博客：<a href="https://blog.csdn.net/ayunnuo/article/details/123997304">https://blog.csdn.net/ayunnuo/article/details/123997304</a></p><h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-22/79516097317200.png"></p><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-22/79425341807600.png"></p><h1 id="具体颜色"><a href="#具体颜色" class="headerlink" title="具体颜色"></a>具体颜色</h1><table><thead><tr><th>日志级别</th><th>前景色</th><th>背景色</th></tr></thead><tbody><tr><td>Error</td><td>#FF0000</td><td>#370000</td></tr><tr><td>Warn</td><td>#FFC033</td><td>#1A0037</td></tr><tr><td>Info</td><td>#00FFF3</td><td>无</td></tr><tr><td>Debug</td><td>#808080</td><td>无</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 插件 </tag>
+            
+            <tag> idea </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>win11fn上锁/关锁</title>
       <link href="/2023/08/22/win11fn%E4%B8%8A%E9%94%81-%E5%85%B3%E9%94%81/"/>
       <url>/2023/08/22/win11fn%E4%B8%8A%E9%94%81-%E5%85%B3%E9%94%81/</url>
