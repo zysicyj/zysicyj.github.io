@@ -40,16 +40,16 @@
       
       <categories>
           
-          <category> 成长 </category>
+          <category> 日记 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 更新 </tag>
-            
             <tag> 博客 </tag>
+            
+            <tag> 更新 </tag>
             
         </tags>
       
@@ -67,7 +67,9 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 前端技术 </category>
           
       </categories>
       
@@ -94,14 +96,14 @@
       
       <categories>
           
-          <category> 家人 </category>
+          <category> 日记 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Love </tag>
+            <tag> love </tag>
             
             <tag> 七夕 </tag>
             
@@ -123,6 +125,8 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 工具 </category>
           
       </categories>
@@ -130,9 +134,9 @@
       
         <tags>
             
-            <tag> 插件 </tag>
-            
             <tag> idea </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -150,7 +154,9 @@
       
       <categories>
           
-          <category> 其他 </category>
+          <category> 技术文章 </category>
+          
+          <category> 操作系统 </category>
           
       </categories>
       
@@ -175,7 +181,13 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> Redis </category>
           
       </categories>
       
@@ -202,7 +214,7 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> BUG </category>
           
       </categories>
       
@@ -229,7 +241,9 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 前端技术 </category>
           
       </categories>
       
@@ -256,7 +270,9 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 数据库 </category>
           
       </categories>
       
@@ -285,7 +301,9 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 数据库 </category>
           
       </categories>
       
@@ -316,7 +334,9 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 数据库 </category>
           
       </categories>
       
@@ -345,7 +365,9 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 工具 </category>
           
       </categories>
       
@@ -374,14 +396,20 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> Redis </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Redis </tag>
+            <tag> redis </tag>
             
             <tag> 主从同步 </tag>
             
@@ -401,6 +429,8 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 工具 </category>
           
       </categories>
@@ -408,7 +438,7 @@
       
         <tags>
             
-            <tag> AI </tag>
+            <tag> ai </tag>
             
         </tags>
       
@@ -426,16 +456,16 @@
       
       <categories>
           
-          <category> 工具 </category>
+          <category> BUG </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> IDEA </tag>
+            <tag> idea </tag>
             
-            <tag> AI </tag>
+            <tag> ai </tag>
             
         </tags>
       
@@ -453,16 +483,18 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 工具 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> SpringBoot </tag>
+            <tag> springboot </tag>
             
-            <tag> Java </tag>
+            <tag> java </tag>
             
         </tags>
       
@@ -480,16 +512,18 @@
       
       <categories>
           
-          <category> 后端技术 </category>
+          <category> 技术文章 </category>
+          
+          <category> 工具 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> SpringBoot </tag>
+            <tag> springboot </tag>
             
-            <tag> Java </tag>
+            <tag> java </tag>
             
             <tag> 代理 </tag>
             
@@ -509,14 +543,20 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> 开发规范 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Mysql </tag>
+            <tag> mysql </tag>
             
             <tag> 开发规范 </tag>
             
@@ -561,18 +601,24 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> Redis </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Redis </tag>
+            <tag> redis </tag>
             
-            <tag> RDB </tag>
+            <tag> rdb </tag>
             
-            <tag> AOF </tag>
+            <tag> aof </tag>
             
         </tags>
       
@@ -590,14 +636,20 @@
       
       <categories>
           
+          <category> 技术文章 </category>
+          
           <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> Redis </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Redis </tag>
+            <tag> redis </tag>
             
             <tag> 跳表 </tag>
             
@@ -607,13 +659,13 @@
             
             <tag> 有序集合 </tag>
             
-            <tag> Set </tag>
+            <tag> set </tag>
             
-            <tag> List </tag>
+            <tag> list </tag>
             
-            <tag> Hash </tag>
+            <tag> hash </tag>
             
-            <tag> String </tag>
+            <tag> string </tag>
             
         </tags>
       
@@ -640,13 +692,13 @@
       
         <tags>
             
-            <tag> SpringBoot </tag>
+            <tag> idea </tag>
             
-            <tag> Java </tag>
+            <tag> springboot </tag>
             
-            <tag> EasyCode </tag>
+            <tag> java </tag>
             
-            <tag> Idea </tag>
+            <tag> easycode </tag>
             
             <tag> 插件 </tag>
             
@@ -675,11 +727,11 @@
       
         <tags>
             
-            <tag> Java </tag>
+            <tag> mysql </tag>
             
-            <tag> Sql </tag>
+            <tag> sql </tag>
             
-            <tag> Mysql </tag>
+            <tag> java </tag>
             
         </tags>
       
@@ -708,7 +760,7 @@
             
             <tag> mysql </tag>
             
-            <tag> SpringBoot </tag>
+            <tag> springboot </tag>
             
             <tag> jdbc </tag>
             
@@ -739,7 +791,7 @@
             
             <tag> 博客 </tag>
             
-            <tag> Butterfly </tag>
+            <tag> butterfly </tag>
             
         </tags>
       
@@ -766,7 +818,7 @@
       
         <tags>
             
-            <tag> Butterfly </tag>
+            <tag> butterfly </tag>
             
             <tag> 安装文档 </tag>
             
@@ -795,7 +847,7 @@
       
         <tags>
             
-            <tag> Butterfly </tag>
+            <tag> butterfly </tag>
             
             <tag> 安装文档 </tag>
             
@@ -824,15 +876,15 @@
       
         <tags>
             
-            <tag> PicGo </tag>
+            <tag> picgo </tag>
             
             <tag> 图床 </tag>
             
-            <tag> Github </tag>
+            <tag> github </tag>
             
-            <tag> COS </tag>
+            <tag> cos </tag>
             
-            <tag> OSS </tag>
+            <tag> oss </tag>
             
         </tags>
       
@@ -859,9 +911,9 @@
       
         <tags>
             
-            <tag> JRebel </tag>
+            <tag> jrebel </tag>
             
-            <tag> XRebel </tag>
+            <tag> xrebel </tag>
             
         </tags>
       
@@ -888,7 +940,7 @@
       
         <tags>
             
-            <tag> IDEA </tag>
+            <tag> idea </tag>
             
             <tag> 更新日志 </tag>
             
@@ -917,7 +969,7 @@
       
         <tags>
             
-            <tag> GithubPages </tag>
+            <tag> githubpages </tag>
             
             <tag> 域名 </tag>
             
@@ -946,9 +998,9 @@
       
         <tags>
             
-            <tag> GithubPages </tag>
+            <tag> hexo </tag>
             
-            <tag> Hexo </tag>
+            <tag> githubpages </tag>
             
         </tags>
       
@@ -975,7 +1027,7 @@
       
         <tags>
             
-            <tag> IOC </tag>
+            <tag> ioc </tag>
             
             <tag> 笔记 </tag>
             
