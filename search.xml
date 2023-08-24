@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>IntelliJ IDEA 2023.2.1 修复版本日志</title>
+      <link href="/2023/08/24/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/idea2023.2.1%E6%9B%B4%E6%96%B0/"/>
+      <url>/2023/08/24/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/idea2023.2.1%E6%9B%B4%E6%96%B0/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://secure.gravatar.com/avatar/5deb5fdbb1c42239bffe4344b40a55ce?s=200&r=g"></p><p>我们刚刚发布了 v2023.2 的第一个错误修复更新。</p><p>您可以从 IDE 内部、使用<a href="https://www.jetbrains.com/toolbox-app/">工具箱应用程序</a>或通过快照（如果您使用的是 Ubuntu）更新到此版本。您也可以<a href="https://www.jetbrains.com/idea/download/">直接从我们的网站下载</a>。</p><p>以下是最新版本中包含的最值得注意的改进和修复的列表：</p><ul><li>我们已经解决了主工具栏仅出现在第一个打开的项目上的问题，无论是在 WSL 上还是在 Linux 上使用平铺窗口管理器时，都通过恢复到本机标头。[<a href="https://youtrack.jetbrains.com/issue/IDEA-323700">IDEA-323700</a>]</li><li>现在可以在启用_“与操作系统同步_”选项的情况下从 Windows 同步设置后，在 Linux 上选择一个主题。[<a href="https://youtrack.jetbrains.com/issue/IDEA-283945/">IDEA-283945</a>]</li><li>“_服务”_工具窗口中的控制台不再意外地从其他工具窗口拉取焦点。[<a href="https://youtrack.jetbrains.com/issue/IDEA-219699/Database-console-takes-focus-in-Services-panel">IDEA-219699</a>]</li><li>当 Linux 本机标头关闭时，IDE 不再意外地在辅助监视器上进入全屏模式。 [<a href="https://youtrack.jetbrains.com/issue/IDEA-326021">IDEA-326021</a>]</li><li>现在，将所选文本拖放到装订线将文本按预期移动到所选行，而不是复制它。[<a href="https://youtrack.jetbrains.com/issue/IDEA-324204">IDEA-324204</a>]</li><li>当本机 Linux 标头关闭时，可以再次在辅助显示器上退出全屏模式。 [<a href="https://youtrack.jetbrains.com/issue/IDEA-323706">IDEA-323706</a>]</li><li>修复了在关闭本机标头的 Linux 上使用辅助显示器时导致窗口大小调整和拖放功能出现故障的问题。[IDEA-327169， <a href="https://youtrack.jetbrains.com/issue/IDEA-327169/">IDEA-327723</a><a href="https://youtrack.jetbrains.com/issue/IDEA-327723"></a>]</li><li>_“项目_”工具窗口中的目录列表将再次正确加载。[<a href="https://youtrack.jetbrains.com/issue/IDEA-326394">想法-326394</a>]</li><li>在 Groovy 中指定泛型类型参数时，IDE 不再冻结。[<a href="https://youtrack.jetbrains.com/issue/IDEA-316712">IDEA-316712</a>]</li><li>编辑 XHTML 文件时，IDE 不再冻结。[<a href="https://youtrack.jetbrains.com/issue/IDEA-238917">IDEA-238917</a>]</li><li>打印再次按预期工作。[<a href="https://youtrack.jetbrains.com/issue/IDEA-323747">IDEA-323747</a>]</li><li>更新捆绑的插件不再从 IDE 的安装文件夹中删除插件文件。[<a href="https://youtrack.jetbrains.com/issue/IDEA-326800">IDEA-326800</a>]</li><li>OpenAPI 规范插件在使用 OpenAPI 3.1.0 时不再错误地要求模式类型字段为数组。[<a href="https://youtrack.jetbrains.com/issue/IDEA-317690">IDEA-317690</a>]</li><li>IDE 现在支持 OpenAPI 3.1。[<a href="https://youtrack.jetbrains.com/issue/IDEA-322411">IDEA-322411</a>]</li><li>容器重新启动后，IDE 将再次正确显示所有 Docker 容器日志。[<a href="https://youtrack.jetbrains.com/issue/IDEA-318041">IDEA-318041</a>]</li><li>我们修复了在通过_“新建目录_”对话框创建源文件夹时导致源条目重复的问题。[<a href="https://youtrack.jetbrains.com/issue/IDEA-310739">想法-310739</a>]</li><li>修复了导致 IDE 在编辑批注类型方法名称后错误忽略或错误地报告代码错误的问题。[<a href="https://youtrack.jetbrains.com/issue/IDEA-323331">IDEA-323331</a>]</li><li>再次可以在“_搜索所有位置”_对话框的“文件”选项卡中同时选择和打开多个_文件_。[<a href="https://youtrack.jetbrains.com/issue/IDEA-326262">IDEA-326262</a>]</li><li>在关闭本机标头的 Linux 上使用_高对比度_主题时导致窗口控件被遮挡的问题已得到修复。[<a href="https://youtrack.jetbrains.com/issue/IDEA-326930">IDEA-326930</a>]</li><li>每次打开 JetBrains 客户端时，IDE 将不再显示许可证对话框。[<a href="https://youtrack.jetbrains.com/issue/GTW-5838">GTW-5838</a>]</li></ul><p>从 v2023.2.1 开始，IntelliJ IDEA 捆绑的 Android 插件提供了 Android Studio Giraffe Stable 的功能和错误修复，包括对 Android Gradle 插件 （AGP） 版本 8.0.0 的支持。请注意，该支持不包括需要登录 Firebase 帐户的功能。</p><p>有关此错误修复更新中解决的问题的完整列表，请查看<a href="https://youtrack.jetbrains.com/articles/IDEA-A-2100661651/IntelliJ-IDEA-2023.2.1-232.9559.62-build-Release-Notes">发行说明</a>。请随时与我们分享您的反馈，或使用我们的<a href="https://youtrack.jetbrains.com/issues/IDEA">问题跟踪器</a>报告您遇到的任何错误。</p><p>祝您发展愉快！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术文章 </category>
+          
+          <category> 更新日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> idea </tag>
+            
+            <tag> 更新日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【面试题系列】（一）</title>
       <link href="/2023/08/24/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B3%BB%E5%88%97/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B3%BB%E5%88%97%E3%80%91%EF%BC%88%E4%B8%80%EF%BC%89/"/>
       <url>/2023/08/24/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B3%BB%E5%88%97/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B3%BB%E5%88%97%E3%80%91%EF%BC%88%E4%B8%80%EF%BC%89/</url>
