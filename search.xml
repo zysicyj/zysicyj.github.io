@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>某人事系统架构搭建设计记录</title>
+      <link href="/2023/08/24/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/%E6%9F%90%E4%BA%BA%E4%BA%8B%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%90%AD%E5%BB%BA%E8%AE%BE%E8%AE%A1%E8%AE%B0%E5%BD%95/"/>
+      <url>/2023/08/24/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/%E6%9F%90%E4%BA%BA%E4%BA%8B%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%90%AD%E5%BB%BA%E8%AE%BE%E8%AE%A1%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><h1 id="先大致列一下基础情况"><a href="#先大致列一下基础情况" class="headerlink" title="先大致列一下基础情况"></a>先大致列一下基础情况</h1><ul><li>架构必须是微服务</li><li>场景上涉及大量查询操作，分析操作</li><li>并发并不高</li><li>对高可用要求较高，不能挂掉</li><li>对安全要求高</li><li>要能过等保测试等三方测试</li><li>使用人数并不多，十万内</li><li>涉及很多在线编辑，预览等操作</li><li>对大屏展示有需求</li><li>数据库还不确定，如果要求高的话mysql必须换成达梦</li><li>中间件也不确定，要求高的话必须换成东方通</li><li>加密必须是国密</li></ul><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>好的代码，肯定最基本的有一套开发规范去约束的，不然堆砌的代码肯定成”屎山“。扩展性，性能啥的先不谈，单单维护代码成本就会很高，也很容易出BUG。</p><p>所以呀，我们必须先有一套开发规范，我这里拟了一套规范供内部使用：</p><ol><li><p><a href="">MySQL开发规范</a></p></li><li><p><a href="">后台开发规范</a></p></li><li><p><a href="">前端开发规范</a></p></li><li><p><a href="">代码提交规范</a></p></li></ol><h1 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h1><p>这里微服务框架我推荐直接使用Spring Cloud Alibaba体系组件，原因如下：</p><ol><li>spring cloud alibaba 已经是国内实际上微服务标准</li><li>服务于阿里集团大大小小各种业务，生产使用稳定</li><li>社区庞大，遇到问题容易解决</li><li>文档齐全，中文文档详细，方便查阅</li><li>与Spring Cloud集成，可以充分使用Spring Cloud特性</li><li>组件丰富<br><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-24/129442071552100.png" alt="系统架构图"></li></ol><h1 id="聊聊组件选型"><a href="#聊聊组件选型" class="headerlink" title="聊聊组件选型"></a>聊聊组件选型</h1><p>那么，具体我们需要哪些组件呢？这里的组件并不是必须的，需要后续综合考虑</p><ol><li><strong>ES</strong>：数据检索</li><li><strong>redis</strong>：缓存</li><li><strong>jetcache</strong>：多级缓存</li><li><strong>MySQL</strong>，如果有国产化需求，考虑<strong>达梦</strong>数据库</li><li><strong>Druid</strong>：数据源管理框架</li><li><strong>ShardingSquare</strong>：对数据库进行增强，比如<strong>分库分表，加密</strong>的支持</li><li><strong>minio</strong>：文件存储</li><li><strong>Seata</strong>：分布式事务</li><li><strong>Spring Cloud Gateway</strong>:由于并发量并不大，所有我们可以不需要<strong>Nginx</strong>网关</li><li><strong>Sentinel</strong>: 熔断限流</li><li><strong>Spring Cloud Alibaba Sidecar</strong>：项目中很有可能涉及其他非Spring Cloud应用，此时就需要将其接入Spring Cloud</li><li>引入<strong>GraalVM</strong><br>，可以看到，对比JVM启动速度提升<img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-24/128986692919000.png"></li><li><strong>jimureport+easyexcel</strong>：报表设计</li><li><strong>KkFileView</strong>：在线预览各种文件</li><li><strong>Activity</strong>：工作流支持</li><li><strong>Hutool</strong>：最全工具类库</li><li><strong>Nacos</strong>：服务注册和配置中心</li><li><strong>RocketMQ</strong>：消息队列，削峰填谷</li><li><strong>Docker</strong>：使用Docker进行容器化部署</li><li><strong>Gitlab</strong>：源码管理</li><li><strong>nexus</strong>：构建仓库</li><li><strong>Jenkins</strong>：部署平台</li><li><strong>SkyWalking</strong>：链路追踪</li><li><strong>SaToken或SpringCloudSecurity+Oauth</strong>：授权</li><li><strong>Leaf</strong>：分布式ID生成器</li><li><strong>MybatisFlex</strong>：orm框架</li><li><strong>dubbo或Feign</strong>：服务间通信</li></ol><h1 id="一些细节"><a href="#一些细节" class="headerlink" title="一些细节"></a>一些细节</h1><p>再次声明一点，业务上是读多写少，分析报表多，所以很多设计上要优化</p><ul><li>MySQL：读写分离，分库分表</li><li>Redis：主从从架构，哨兵集群</li><li>项目使用多级缓存</li><li>数据国密加密</li><li>账号最小权限分配，严格限制超级管理员账号</li><li>统一线程池使用</li></ul><h1 id="打任务量导入导出"><a href="#打任务量导入导出" class="headerlink" title="打任务量导入导出"></a>打任务量导入导出</h1><ul><li>通过优化线程池提高效率</li><li>通过逻辑过滤重复任务</li><li>使用消息队列削峰</li><li>使用缓存优化查询速度</li></ul><h1 id="查询流程"><a href="#查询流程" class="headerlink" title="查询流程"></a>查询流程</h1><ol><li>客户端发送请求</li><li>前端请求加密</li><li>请求发送到网关</li><li>网关校验请求合法性</li><li>网关根据路由规则转发到具体的服务器上处理</li><li>服务器解密请求数据</li><li>查询本地缓存</li><li>若无则查询Redis</li><li>若无则进行业务流转，最终查询MySQL,</li><li>根据路由规则，查询只读MySQL节点并返回数据</li><li>数据本地缓存，然后Redis缓存</li><li>返回响应数据</li><li>对响应加密，转发到网关</li><li>网关转发给客户端</li><li>客户端解密，展示数据</li></ol><h1 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h1><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><ol><li>开发提交代码</li><li>基于Gitlab CI&#x2F;CD 自动拉取代码生成Docker镜像并提供服务</li></ol><h2 id="测试环境"><a href="#测试环境" class="headerlink" title="测试环境"></a>测试环境</h2><ol><li>合并代码到测试分支</li><li>基于Gitlab CI&#x2F;CD 自动拉取代码生成Docker镜像并提供服务</li></ol><h2 id="生产环境"><a href="#生产环境" class="headerlink" title="生产环境"></a>生产环境</h2><ol><li>合并代码到生产分支</li><li>基于Gitlab，手动用Jenkins部署项目</li></ol><h1 id="详细部署策略"><a href="#详细部署策略" class="headerlink" title="详细部署策略"></a>详细部署策略</h1><p>如果中台能提供，那肯定是最好的。。。不用考虑那么多了</p><p>具体还要根据业务和实际情况来，这里以5台服务器为例：</p><p>很多组件都很吃内存。。</p><table><thead><tr><th>服务</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr><td>Redis</td><td>主</td><td>从</td><td>从</td><td></td><td></td></tr><tr><td>Mysql</td><td></td><td>从</td><td>主</td><td></td><td></td></tr><tr><td>Nacos</td><td></td><td></td><td></td><td>主</td><td></td></tr><tr><td>Seata</td><td></td><td></td><td></td><td>主</td><td></td></tr><tr><td>Leaf</td><td></td><td></td><td></td><td>主</td><td></td></tr><tr><td>业务</td><td></td><td></td><td></td><td>业务</td><td>业务</td></tr><tr><td>ES</td><td>从</td><td>主</td><td>从</td><td></td><td></td></tr><tr><td>Zookeeper</td><td>从</td><td>从</td><td>从</td><td></td><td></td></tr><tr><td>Minio</td><td></td><td></td><td></td><td></td><td>主</td></tr><tr><td>KkFile</td><td></td><td></td><td></td><td></td><td>主</td></tr><tr><td>Gateway</td><td></td><td></td><td></td><td>从</td><td>从</td></tr><tr><td>RocketMq</td><td>从</td><td>主</td><td>从</td><td></td><td></td></tr><tr><td>SkyWalking</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Jenkins</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Gitlab</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Nexus</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Docker</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术文章 </category>
+          
+          <category> 架构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 架构 </tag>
+            
+            <tag> 设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于TechGrow实现Hexo引流微信公众号</title>
       <link href="/2023/08/24/%E5%9F%BA%E4%BA%8ETechGrow%E5%AE%9E%E7%8E%B0Hexo%E5%BC%95%E6%B5%81%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
       <url>/2023/08/24/%E5%9F%BA%E4%BA%8ETechGrow%E5%AE%9E%E7%8E%B0Hexo%E5%BC%95%E6%B5%81%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/</url>
