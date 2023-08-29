@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>【日记】文章更新计划</title>
+      <link href="/9c603622.html"/>
+      <url>/9c603622.html</url>
+      
+        <content type="html"><![CDATA[<div id="readmore-container"><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><hr><h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><p>这两天也没加班也没干什么活，不知道咋回事，到家就想睡觉。。所以这两天睡的很早，11点之前基本就睡了，文章也就鸽了两天</p><h1 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h1><p>今早起来感觉还是要自律，我写文章的初衷是为了学习，基于这个目的，我梳理了一下技术圈，然后列出了以下的更新计划。</p><p>这个更新计划其实也就是我自己的学习计划，如果某天没更，那就没更吧。。。</p><h1 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h1><h2 id="周更"><a href="#周更" class="headerlink" title="周更"></a>周更</h2><ol><li>【周一】Kafka系列：搭建、使用、原理</li><li>【周二】RocketMq系列：搭建、使用、原理</li><li>【周三】<strong>深入解读Redis系列</strong>：全是干货</li><li>【周四】ES系列：搭建、使用、原理</li><li>【周五】<strong>深入理解MySQL系列</strong>：全是干货</li><li>【周六】微服务系列：搭建、使用、原理 </li><li>【周日】Linux系列：主要讲讲Linux命令以及常见场景的处理 </li><li>【周日】配置文件系列：主要讲讲各种应用的配置文件配置项</li></ol><h2 id="日更"><a href="#日更" class="headerlink" title="日更"></a>日更</h2><p>【面试题精讲】每天一道面试题</p><h2 id="不定时更"><a href="#不定时更" class="headerlink" title="不定时更"></a>不定时更</h2><p>【日记】</p><h2 id="待完结"><a href="#待完结" class="headerlink" title="待完结"></a>待完结</h2><p>【开发规范系列】</p></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【FLAG】老婆和我要减肥啦</title>
       <link href="/ddbf1a60.html"/>
       <url>/ddbf1a60.html</url>
@@ -487,7 +506,7 @@
           
           <category> 系列文章 </category>
           
-          <category> 面试题系列 </category>
+          <category> 面试题精讲 </category>
           
       </categories>
       
