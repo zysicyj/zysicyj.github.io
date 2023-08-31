@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>【Linux系列】使用虚拟机安装Linux系统</title>
+      <link href="/4e7b516e.html"/>
+      <url>/4e7b516e.html</url>
+      
+        <content type="html"><![CDATA[<div id="readmore-container"><h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Linux/">系列文章地址</a></p><hr><h1 id="下载虚拟机"><a href="#下载虚拟机" class="headerlink" title="下载虚拟机"></a>下载虚拟机</h1><p>官网地址下载：<br><a href="https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/17_0">https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/17_0</a></p><p>不限速下载： 关注【程序员朱永胜】回复1018获取</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82463672484200.png"></p><h1 id="安装虚拟机"><a href="#安装虚拟机" class="headerlink" title="安装虚拟机"></a>安装虚拟机</h1><p>全部默认下一步即可</p><h1 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h1><p>不限速下载： 关注【程序员朱永胜】回复1019获取</p><h1 id="安装镜像"><a href="#安装镜像" class="headerlink" title="安装镜像"></a>安装镜像</h1><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82606553882100.png" alt="进来的页面"></p><p>点击创建虚拟机</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82638523988100.png" alt="选择镜像"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82658284659600.png" alt="名字无所谓，随便取"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82681313455400.png" alt="这里默认即可"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82694384392000.png" alt="默认即可"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82724928934500.png" alt="选择第一个"></p><p>此时要稍等一会</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82938594783400.png" alt="选择中文"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/82983688771900.png" alt="点击网络和主机名"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/83006553796800.png" alt="打开以太网，并完成"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/83055746173600.png" alt="点击安装位置，进去后什么都不做，直接点击完成"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/83112233352100.png" alt="点击开始安装，然后点击设置Root密码"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/83145462843800.png" alt="随便输入就行，我输入的是 123456"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/83168523299400.png" alt="点击完成，然后等待即可"></p><p>Loading。。。。。</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/83984891048000.png" alt="安装完点击重启即可"></p><p>选择第一个选项进入，第一次加载会稍微慢一点</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/84077505535300.png" alt="输入用户名密码 我的是 root 123456"></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/84127315893600.png" alt="ping百度是能ping通的，网络是没问题的"></p><p>这里就算初步安装完成啦！！</p></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术文章 </category>
+          
+          <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【ES系列】（一）简介与安装</title>
+      <link href="/b977578a.html"/>
+      <url>/b977578a.html</url>
+      
+        <content type="html"><![CDATA[<div id="readmore-container"><h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/ES/">系列文章地址</a></p><hr><h1 id="为什么要学习ES"><a href="#为什么要学习ES" class="headerlink" title="为什么要学习ES?"></a>为什么要学习ES?</h1><ol><li><p><strong>强大的全文搜索和检索功能</strong>：Elasticsearch是一个开源的分布式搜索和分析引擎，它使用倒排索引和分布式计算等技术，提供了强大的全文搜索和检索功能。通过学习ES，你可以掌握如何构建复杂的查询、使用各种过滤器和聚合操作来优化搜索结果。</p></li><li><p><strong>实时数据分析和处理</strong>：ES支持实时数据的索引和查询，可以用于处理大规模的实时数据。通过学习ES，你可以了解如何使用ES进行实时数据的分析和处理，包括日志分析、事件处理、实时监控等。</p></li><li><p><strong>分布式存储和扩展性</strong>：ES是一个分布式系统，可以将数据分布在多个节点上，以提高存储容量和查询性能。学习ES可以帮助你了解如何搭建和管理一个分布式的ES集群，以及如何优化集群的性能和可靠性。</p></li><li><p><strong>文档导入和处理</strong>：ES支持各种数据源的导入和处理，包括数据库、文件、API等。学习ES可以让你掌握如何将不同数据源的数据导入到ES中，并进行相应的处理和转换。</p></li><li><p><strong>日志分析和搜索引擎优化</strong>：ES在日志分析和搜索引擎优化方面有很大的应用价值。通过学习ES，你可以学会如何利用ES进行日志的实时分析和搜索，以及如何优化搜索引擎的性能和相关性。</p></li><li><p><strong>全文搜索引擎的开发和应用</strong>：ES是一个非常流行的全文搜索引擎，很多企业和项目都在使用ES来构建全文搜索功能。学习ES可以为你提供开发全文搜索引擎的技能和经验，为你的职业发展增添竞争力。</p></li></ol><p>总结起来大概就是：</p><ul><li>分布式搜索引擎</li><li>大数据实时分析引擎</li></ul><h1 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h1><p><a href="https://www.elastic.co/cn/">https://www.elastic.co/cn/</a></p><h1 id="ES发展历史"><a href="#ES发展历史" class="headerlink" title="ES发展历史"></a>ES发展历史</h1><p>Elasticsearch (ES)的发展历史可以追溯到2004年，当时Shay Banon创建了一个名为Compass的开源项目，作为一个基于Lucene的全文搜索引擎库。</p><p>随着时间的推移，Compass逐渐发展成为一个独立的搜索引擎，但在2009年，Shay Banon决定重新设计和重构该项目，以解决一些困扰他的设计和架构问题。于是，他创建了一个新的项目，命名为”elasticsearch”，并于2010年开源发布。</p><p>以下是ES的主要发展里程碑：</p><ul><li><p><strong>2010年</strong>：Elasticsearch首次开源发布。它基于Apache Lucene构建，提供了一个分布式搜索和分析引擎，用于实时数据的索引和查询。</p></li><li><p><strong>2013年</strong>：Elasticsearch正式成为Elastic公司的核心产品，并开始受到广泛关注和采用。此时，Elasticsearch已经成为开源搜索引擎的领导者之一。</p></li><li><p><strong>2014年</strong>：Elasticsearch发布了1.0版本，这是一个重要的里程碑，标志着ES的稳定性和成熟度。1.0版本引入了一些重要的特性和改进，如聚合操作和索引别名等。</p></li><li><p><strong>2015年</strong>：Elasticsearch发布了2.0版本，引入了许多重要的功能和改进，包括复合索引、文档级别的更新和删除、分布式索引排序等。</p></li><li><p><strong>2016年</strong>：Elasticsearch发布了5.0版本，这是一个重要的版本发布，引入了许多重大的改进和变化。5.0版本引入了新的分布式文档存储方式，并且废弃了一些旧的功能和API。</p></li><li><p><strong>2019年</strong>：Elasticsearch发布了7.0版本，这是一个重要的版本发布，引入了许多重要的功能和改进。7.0版本引入了Elasticsearch的新分布式协调引擎，称为”Zen 2”，以提高集群的稳定性和性能。</p></li><li><p><strong>2022年</strong>：Elasticsearch发布了8.0版本，这是一个重要的版本发布，引入了许多重要的功能和改进。原生支持NLP，速度、扩展和检索相关性提升，通过原生矢量搜索提高搜索相关性，默认开启安全功能</p></li></ul><p>随着时间的推移，Elasticsearch不断发展壮大，成为一个功能强大、可靠性高的分布式搜索和分析引擎。它被广泛应用于各种场景，包括日志分析、实时数据处理、全文搜索和商业智能等。并且，Elastic公司也推出了其他产品，如Kibana、Logstash和Beats等，构建了一个完整的数据分析和可视化平台，被称为”Elastic Stack”或”ELK Stack”。</p><p>去官网上瞄了一眼，还支持GPT了。。牛逼，大概看了文章说的是，通过插件可以访问ES内容，厉害了，有兴趣可以点击下面链接看看：</p><p><a href="https://www.elastic.co/cn/blog/chatgpt-elasticsearch-plugin-elastic-data">https://www.elastic.co/cn/blog/chatgpt-elasticsearch-plugin-elastic-data</a></p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/80328249534200.png"></p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>如果你是本地练习，可以参考这篇文章安装Linux系统环境： <a href="https://blog.zysicyj.top/4e7b516e">https://blog.zysicyj.top/4e7b516e</a></p></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术文章 </category>
+          
+          <category> 后端技术 </category>
+          
+          <category> 系列文章 </category>
+          
+          <category> ES </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【面试题精讲】Spring Framework有哪些模块？</title>
       <link href="/d2bacce5.html"/>
       <url>/d2bacce5.html</url>
