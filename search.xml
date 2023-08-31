@@ -35,11 +35,11 @@
     
     
     <entry>
-      <title>【Linux系列】离线rpm包安装openjdk17</title>
+      <title>【Linux系列】离线安装openjdk17的rpm包</title>
       <link href="/6a27ead0.html"/>
       <url>/6a27ead0.html</url>
       
-        <content type="html"><![CDATA[<div id="readmore-container"><h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Linux/">系列文章地址</a></p><hr><h2 id="准备RPM包"><a href="#准备RPM包" class="headerlink" title="准备RPM包"></a>准备RPM包</h2><p>请从官网下载：<br><a href="https://www.oracle.com/java/technologies/downloads/#java17">https://www.oracle.com/java/technologies/downloads/#java17</a></p><p>如需不限速下载，请关注【程序员朱永胜】并回复 1020 获取。</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/96087357359900.png"></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum localinstall jdk-17_linux-x64_bin.rpm</span><br></pre></td></tr></table></figure><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/99225422297200.png"></p><h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/99250449167000.png"></p></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+        <content type="html"><![CDATA[<div id="readmore-container"><h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Linux/">系列文章地址</a></p><h2 id="准备RPM包"><a href="#准备RPM包" class="headerlink" title="准备RPM包"></a>准备RPM包</h2><p>请从官网下载：<a href="https://www.oracle.com/java/technologies/downloads/#java17">https://www.oracle.com/java/technologies/downloads/#java17</a></p><p>如需不限速下载，请关注【程序员朱永胜】并回复1020获取。</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/96087357359900.png"></p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum localinstall jdk-17_linux-x64_bin.rpm</span><br></pre></td></tr></table></figure><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/99225422297200.png"></p><h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-08-31/99250449167000.png"></p></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
       
       
       <categories>
@@ -54,6 +54,16 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> linux </tag>
+            
+            <tag> rpm </tag>
+            
+        </tags>
       
     </entry>
     
