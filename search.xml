@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>优化流程记录</title>
+      <link href="/a384b09f.html"/>
+      <url>/a384b09f.html</url>
+      
+        <content type="html"><![CDATA[<div id="readmore-container"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><hr><h1 id="解析数据"><a href="#解析数据" class="headerlink" title="解析数据"></a>解析数据</h1><h2 id="更新索引"><a href="#更新索引" class="headerlink" title="更新索引"></a>更新索引</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">drop index idx_orgCode_projectId on t_json_data;</span><br><span class="line"></span><br><span class="line">create index idx_orgCode_projectId</span><br><span class="line">    on t_json_data (project_id, orgcode)</span><br><span class="line">    comment &#x27;单位项目联合索引&#x27;;</span><br></pre></td></tr></table></figure><p>可以看到，更新顺序后在全量查询的时候走了索引，未更新前并没有走索引。</p><p><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-04/75392492588400.png"></p></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>工作五年多，idea插件推荐</title>
+      <link href="/4650d5de.html"/>
+      <url>/4650d5de.html</url>
+      
+        <content type="html"><![CDATA[<div id="readmore-container"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><hr><h1 id="Easy-Javadoc"><a href="#Easy-Javadoc" class="headerlink" title="Easy Javadoc"></a>Easy Javadoc</h1><h1 id="Transaction"><a href="#Transaction" class="headerlink" title="Transaction"></a>Transaction</h1><h1 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h1><h1 id="Atom-Material-Icons"><a href="#Atom-Material-Icons" class="headerlink" title="Atom Material Icons"></a>Atom Material Icons</h1><h1 id="Atom-oneDark-theme"><a href="#Atom-oneDark-theme" class="headerlink" title="Atom oneDark theme"></a>Atom oneDark theme</h1><h1 id="Batch-Scripts-support"><a href="#Batch-Scripts-support" class="headerlink" title="Batch Scripts support"></a>Batch Scripts support</h1><h1 id="Camel-Case"><a href="#Camel-Case" class="headerlink" title="Camel Case"></a>Camel Case</h1><h1 id="Chinese-Language-Pack"><a href="#Chinese-Language-Pack" class="headerlink" title="Chinese Language Pack"></a>Chinese Language Pack</h1><h1 id="code-glance-pro"><a href="#code-glance-pro" class="headerlink" title="code glance pro"></a>code glance pro</h1><h1 id="Dto-Generator"><a href="#Dto-Generator" class="headerlink" title="Dto Generator"></a>Dto Generator</h1><h1 id="EasyCode-MybatisCodeHelper"><a href="#EasyCode-MybatisCodeHelper" class="headerlink" title="EasyCode MybatisCodeHelper"></a>EasyCode MybatisCodeHelper</h1></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【面试题精讲】什么是websocket？如何与前端通信？</title>
       <link href="/84ceba89.html"/>
       <url>/84ceba89.html</url>
@@ -44,8 +70,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> 详解配置文件系列 </category>
@@ -74,8 +98,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -110,8 +132,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> 面试题精讲 </category>
@@ -142,8 +162,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -251,8 +269,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -397,8 +413,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> ES </category>
@@ -448,8 +462,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> 面试题精讲 </category>
@@ -478,8 +490,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -510,8 +520,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> 开发规范 </category>
@@ -540,8 +548,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -702,8 +708,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> Hibernate Validator </category>
@@ -748,8 +752,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -866,8 +868,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> Hibernate Validator </category>
@@ -904,39 +904,6 @@
     
     
     <entry>
-      <title>【hibernate validator】（四）内插约束错误消息</title>
-      <link href="/a3ee2715.html"/>
-      <url>/a3ee2715.html</url>
-      
-        <content type="html"><![CDATA[<div id="readmore-container"><h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><h1 id="一、默认消息插值"><a href="#一、默认消息插值" class="headerlink" title="一、默认消息插值"></a>一、默认消息插值</h1><ul><li>替换默认提示消息</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> org.hibernate.validator.referenceguide.chapter04;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Car</span> &#123;</span><br><span class="line">    <span class="meta">@NotNull(message = &quot;The manufacturer name must not be null&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String manufacturer;</span><br><span class="line">    <span class="comment">//constructor, getters and setters ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="1-需要转义的字符"><a href="#1-需要转义的字符" class="headerlink" title="1. 需要转义的字符"></a>1. 需要转义的字符</h2><ul><li>{ 被认为是文字 {</li><li>} 被认为是文字 }</li><li>$ 被认为是文字 $</li><li>\ 被认为是文字 \</li></ul><h2 id="2-消息表达式插值替换"><a href="#2-消息表达式插值替换" class="headerlink" title="2. 消息表达式插值替换"></a>2. 消息表达式插值替换</h2><ul><li>指定消息描述符</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> org.hibernate.validator.referenceguide.chapter04.complete;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Car</span> &#123;</span><br><span class="line">    <span class="meta">@NotNull</span></span><br><span class="line">    <span class="keyword">private</span> String manufacturer;</span><br><span class="line">    <span class="meta">@Size(</span></span><br><span class="line"><span class="meta">            min = 2,</span></span><br><span class="line"><span class="meta">            max = 14,</span></span><br><span class="line"><span class="meta">            message = &quot;The license plate &#x27;$&#123;validatedValue&#125;&#x27; must be between &#123;min&#125; and &#123;max&#125; characters long&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    <span class="keyword">private</span> String licensePlate;</span><br><span class="line">    <span class="meta">@Min(</span></span><br><span class="line"><span class="meta">            value = 2,</span></span><br><span class="line"><span class="meta">            message = &quot;There must be at least &#123;value&#125; seat$&#123;value &gt; 1 ? &#x27;s&#x27; : &#x27;&#x27;&#125;&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> seatCount;</span><br><span class="line">    <span class="meta">@DecimalMax(</span></span><br><span class="line"><span class="meta">            value = &quot;350&quot;,</span></span><br><span class="line"><span class="meta">            message = &quot;The top speed $&#123;formatter.format(&#x27;%1$.2f&#x27;, validatedValue)&#125; is higher &quot; +</span></span><br><span class="line"><span class="meta">                    &quot;than &#123;value&#125;&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">double</span> topSpeed;</span><br><span class="line">    <span class="meta">@DecimalMax(value = &quot;100000&quot;, message = &quot;Price must not be higher than $&#123;value&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> BigDecimal price;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Car</span><span class="params">(</span></span><br><span class="line"><span class="params">            String manufacturer,</span></span><br><span class="line"><span class="params">            String licensePlate,</span></span><br><span class="line"><span class="params">            <span class="type">int</span> seatCount,</span></span><br><span class="line"><span class="params">            <span class="type">double</span> topSpeed,</span></span><br><span class="line"><span class="params">            BigDecimal price)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.manufacturer = manufacturer;</span><br><span class="line">        <span class="built_in">this</span>.licensePlate = licensePlate;</span><br><span class="line">        <span class="built_in">this</span>.seatCount = seatCount;</span><br><span class="line">        <span class="built_in">this</span>.topSpeed = topSpeed;</span><br><span class="line">        <span class="built_in">this</span>.price = price;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//getters and setters ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>预期的错误消息</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Car</span> <span class="variable">car</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Car</span>( <span class="literal">null</span>, <span class="string">&quot;A&quot;</span>, <span class="number">1</span>, <span class="number">400.123456</span>, BigDecimal.valueOf( <span class="number">200000</span> ) );</span><br><span class="line"><span class="type">String</span> <span class="variable">message</span> <span class="operator">=</span> validator.validateProperty( car, <span class="string">&quot;manufacturer&quot;</span> )</span><br><span class="line">        .iterator()</span><br><span class="line">        .next()</span><br><span class="line">        .getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;must not be null&quot;</span>, message );</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;licensePlate&quot;</span> )</span><br><span class="line">        .iterator()</span><br><span class="line">        .next()</span><br><span class="line">        .getMessage();</span><br><span class="line">assertEquals(</span><br><span class="line">        <span class="string">&quot;The license plate &#x27;A&#x27; must be between 2 and 14 characters long&quot;</span>,</span><br><span class="line">        message</span><br><span class="line">);</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;seatCount&quot;</span> ).iterator().next().getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;There must be at least 2 seats&quot;</span>, message );</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;topSpeed&quot;</span> ).iterator().next().getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;The top speed 400.12 is higher than 350&quot;</span>, message );</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;price&quot;</span> ).iterator().next().getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;Price must not be higher than $100000&quot;</span>, message );</span><br></pre></td></tr></table></figure><h1 id="二、自定义消息插值"><a href="#二、自定义消息插值" class="headerlink" title="二、自定义消息插值"></a>二、自定义消息插值</h1><ul><li>必须实现javax.validation.MessageInterpolator接口并且实现必须是线程安全的</li><li></li><li>使用特定的资源包</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Validator</span> <span class="variable">validator</span> <span class="operator">=</span> Validation.byDefaultProvider()</span><br><span class="line">        .configure()</span><br><span class="line">        .messageInterpolator(</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">ResourceBundleMessageInterpolator</span>(</span><br><span class="line">                        <span class="keyword">new</span> <span class="title class_">PlatformResourceBundleLocator</span>( <span class="string">&quot;MyMessages&quot;</span> )</span><br><span class="line">                )</span><br><span class="line">        )</span><br><span class="line">        .buildValidatorFactory()</span><br><span class="line">        .getValidator();</span><br></pre></td></tr></table></figure><ul><li>使用 AggregateResourceBundleLocator</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Validator</span> <span class="variable">validator</span> <span class="operator">=</span> Validation.byDefaultProvider()</span><br><span class="line">        .configure()</span><br><span class="line">        .messageInterpolator(</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">ResourceBundleMessageInterpolator</span>(</span><br><span class="line">                        <span class="keyword">new</span> <span class="title class_">AggregateResourceBundleLocator</span>(</span><br><span class="line">                                Arrays.asList(</span><br><span class="line">                                        <span class="string">&quot;MyMessages&quot;</span>,</span><br><span class="line">                                        <span class="string">&quot;MyOtherMessages&quot;</span></span><br><span class="line">                                )</span><br><span class="line">                        )</span><br><span class="line">                )</span><br><span class="line">        )</span><br><span class="line">        .buildValidatorFactory()</span><br><span class="line">        .getValidator();</span><br><span class="line">```     .getValidator();</span><br></pre></td></tr></table></figure></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术文章 </category>
-          
-          <category> 系列文章 </category>
-          
-          <category> Hibernate Validator </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 校验 </tag>
-            
-            <tag> Hibernate Validator </tag>
-            
-            <tag> 消息插值 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>【hibernate validator】（六）创建自定义约束</title>
       <link href="/ce362f84.html"/>
       <url>/ce362f84.html</url>
@@ -945,8 +912,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -970,6 +935,37 @@
     
     
     <entry>
+      <title>【hibernate validator】（四）内插约束错误消息</title>
+      <link href="/a3ee2715.html"/>
+      <url>/a3ee2715.html</url>
+      
+        <content type="html"><![CDATA[<div id="readmore-container"><h1 id="首发博客地址"><a href="#首发博客地址" class="headerlink" title="首发博客地址"></a>首发博客地址</h1><p><a href="https://blog.zysicyj.top/">https://blog.zysicyj.top/</a></p><h1 id="一、默认消息插值"><a href="#一、默认消息插值" class="headerlink" title="一、默认消息插值"></a>一、默认消息插值</h1><ul><li>替换默认提示消息</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> org.hibernate.validator.referenceguide.chapter04;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Car</span> &#123;</span><br><span class="line">    <span class="meta">@NotNull(message = &quot;The manufacturer name must not be null&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String manufacturer;</span><br><span class="line">    <span class="comment">//constructor, getters and setters ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="1-需要转义的字符"><a href="#1-需要转义的字符" class="headerlink" title="1. 需要转义的字符"></a>1. 需要转义的字符</h2><ul><li>{ 被认为是文字 {</li><li>} 被认为是文字 }</li><li>$ 被认为是文字 $</li><li>\ 被认为是文字 \</li></ul><h2 id="2-消息表达式插值替换"><a href="#2-消息表达式插值替换" class="headerlink" title="2. 消息表达式插值替换"></a>2. 消息表达式插值替换</h2><ul><li>指定消息描述符</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> org.hibernate.validator.referenceguide.chapter04.complete;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Car</span> &#123;</span><br><span class="line">    <span class="meta">@NotNull</span></span><br><span class="line">    <span class="keyword">private</span> String manufacturer;</span><br><span class="line">    <span class="meta">@Size(</span></span><br><span class="line"><span class="meta">            min = 2,</span></span><br><span class="line"><span class="meta">            max = 14,</span></span><br><span class="line"><span class="meta">            message = &quot;The license plate &#x27;$&#123;validatedValue&#125;&#x27; must be between &#123;min&#125; and &#123;max&#125; characters long&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    <span class="keyword">private</span> String licensePlate;</span><br><span class="line">    <span class="meta">@Min(</span></span><br><span class="line"><span class="meta">            value = 2,</span></span><br><span class="line"><span class="meta">            message = &quot;There must be at least &#123;value&#125; seat$&#123;value &gt; 1 ? &#x27;s&#x27; : &#x27;&#x27;&#125;&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> seatCount;</span><br><span class="line">    <span class="meta">@DecimalMax(</span></span><br><span class="line"><span class="meta">            value = &quot;350&quot;,</span></span><br><span class="line"><span class="meta">            message = &quot;The top speed $&#123;formatter.format(&#x27;%1$.2f&#x27;, validatedValue)&#125; is higher &quot; +</span></span><br><span class="line"><span class="meta">                    &quot;than &#123;value&#125;&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">double</span> topSpeed;</span><br><span class="line">    <span class="meta">@DecimalMax(value = &quot;100000&quot;, message = &quot;Price must not be higher than $&#123;value&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> BigDecimal price;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Car</span><span class="params">(</span></span><br><span class="line"><span class="params">            String manufacturer,</span></span><br><span class="line"><span class="params">            String licensePlate,</span></span><br><span class="line"><span class="params">            <span class="type">int</span> seatCount,</span></span><br><span class="line"><span class="params">            <span class="type">double</span> topSpeed,</span></span><br><span class="line"><span class="params">            BigDecimal price)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.manufacturer = manufacturer;</span><br><span class="line">        <span class="built_in">this</span>.licensePlate = licensePlate;</span><br><span class="line">        <span class="built_in">this</span>.seatCount = seatCount;</span><br><span class="line">        <span class="built_in">this</span>.topSpeed = topSpeed;</span><br><span class="line">        <span class="built_in">this</span>.price = price;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//getters and setters ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>预期的错误消息</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Car</span> <span class="variable">car</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Car</span>( <span class="literal">null</span>, <span class="string">&quot;A&quot;</span>, <span class="number">1</span>, <span class="number">400.123456</span>, BigDecimal.valueOf( <span class="number">200000</span> ) );</span><br><span class="line"><span class="type">String</span> <span class="variable">message</span> <span class="operator">=</span> validator.validateProperty( car, <span class="string">&quot;manufacturer&quot;</span> )</span><br><span class="line">        .iterator()</span><br><span class="line">        .next()</span><br><span class="line">        .getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;must not be null&quot;</span>, message );</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;licensePlate&quot;</span> )</span><br><span class="line">        .iterator()</span><br><span class="line">        .next()</span><br><span class="line">        .getMessage();</span><br><span class="line">assertEquals(</span><br><span class="line">        <span class="string">&quot;The license plate &#x27;A&#x27; must be between 2 and 14 characters long&quot;</span>,</span><br><span class="line">        message</span><br><span class="line">);</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;seatCount&quot;</span> ).iterator().next().getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;There must be at least 2 seats&quot;</span>, message );</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;topSpeed&quot;</span> ).iterator().next().getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;The top speed 400.12 is higher than 350&quot;</span>, message );</span><br><span class="line">message = validator.validateProperty( car, <span class="string">&quot;price&quot;</span> ).iterator().next().getMessage();</span><br><span class="line">assertEquals( <span class="string">&quot;Price must not be higher than $100000&quot;</span>, message );</span><br></pre></td></tr></table></figure><h1 id="二、自定义消息插值"><a href="#二、自定义消息插值" class="headerlink" title="二、自定义消息插值"></a>二、自定义消息插值</h1><ul><li>必须实现javax.validation.MessageInterpolator接口并且实现必须是线程安全的</li><li></li><li>使用特定的资源包</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Validator</span> <span class="variable">validator</span> <span class="operator">=</span> Validation.byDefaultProvider()</span><br><span class="line">        .configure()</span><br><span class="line">        .messageInterpolator(</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">ResourceBundleMessageInterpolator</span>(</span><br><span class="line">                        <span class="keyword">new</span> <span class="title class_">PlatformResourceBundleLocator</span>( <span class="string">&quot;MyMessages&quot;</span> )</span><br><span class="line">                )</span><br><span class="line">        )</span><br><span class="line">        .buildValidatorFactory()</span><br><span class="line">        .getValidator();</span><br></pre></td></tr></table></figure><ul><li>使用 AggregateResourceBundleLocator</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Validator</span> <span class="variable">validator</span> <span class="operator">=</span> Validation.byDefaultProvider()</span><br><span class="line">        .configure()</span><br><span class="line">        .messageInterpolator(</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">ResourceBundleMessageInterpolator</span>(</span><br><span class="line">                        <span class="keyword">new</span> <span class="title class_">AggregateResourceBundleLocator</span>(</span><br><span class="line">                                Arrays.asList(</span><br><span class="line">                                        <span class="string">&quot;MyMessages&quot;</span>,</span><br><span class="line">                                        <span class="string">&quot;MyOtherMessages&quot;</span></span><br><span class="line">                                )</span><br><span class="line">                        )</span><br><span class="line">                )</span><br><span class="line">        )</span><br><span class="line">        .buildValidatorFactory()</span><br><span class="line">        .getValidator();</span><br><span class="line">```     .getValidator();</span><br></pre></td></tr></table></figure></div><link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css"><script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script><script>var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);var isEncrypt = document.getElementById('hexo-blog-encrypt');var allowMobile = false;if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {try {var plugin = new ReadmorePlugin();plugin.init({"type": "hexo","id": "readmore-container","name": "程序员朱永胜","blogId": "39259-6450029321246-893","qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg","keyword": "1","random": "1","height": "auto","expires": "365","lockToc": "yes","interval": "60","baseUrl": ""});} catch(e) {console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);}}</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> Hibernate Validator </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 校验 </tag>
+            
+            <tag> Hibernate Validator </tag>
+            
+            <tag> 消息插值 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【插件】Java开发规范配套Idea阿里巴巴代码扫描规范插件</title>
       <link href="/41f7cf00.html"/>
       <url>/41f7cf00.html</url>
@@ -978,8 +974,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -1025,8 +1019,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -1179,8 +1171,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
@@ -1498,8 +1488,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> Redis </category>
@@ -1743,8 +1731,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> Redis </category>
@@ -1970,8 +1956,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> 开发规范 </category>
@@ -2066,8 +2050,6 @@
       
       <categories>
           
-          <category> 技术文章 </category>
-          
           <category> 系列文章 </category>
           
           <category> Redis </category>
@@ -2112,8 +2094,6 @@
       
       
       <categories>
-          
-          <category> 技术文章 </category>
           
           <category> 系列文章 </category>
           
