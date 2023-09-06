@@ -31,7 +31,7 @@
     homepage: true,
     post: true
   },
-  runtime: '',
+  runtime: '天',
   dateSuffix: {
     just: '刚刚',
     min: '分钟前',
@@ -50,7 +50,7 @@
   },
   isPhotoFigcaption: false,
   islazyload: true,
-  isAnchor: false,
+  isAnchor: true,
   percent: {
     toc: true,
     rightside: true,
@@ -62,7 +62,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-09-06 14:31:23'
+  postUpdate: '2023-09-06 14:50:04'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -170,15 +170,6 @@
           } else if (t === 'light') activateLightMode()
           else activateDarkMode()
         
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
     const detectApple = () => {
       if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
         document.documentElement.classList.add('apple')
