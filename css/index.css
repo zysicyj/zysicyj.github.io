@@ -211,6 +211,7 @@ template {
 }
 .fontawesomeIcon,
 .custom-hr:before,
+#article-container a.headerlink:after,
 #article-container h1:before,
 #article-container h2:before,
 #article-container h3:before,
@@ -2227,6 +2228,16 @@ figure.highlight pre .javascript .function {
     width: 100% !important;
   }
 }
+@media screen and (min-width: 900px) {
+  .layout > div:first-child {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -o-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
 .layout.hide-aside {
   max-width: 1000px;
 }
@@ -2548,7 +2559,7 @@ h1.page-title + .tag-cloud-list {
 }
 @media screen and (min-width: 900px) {
   #aside-content {
-    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -4292,6 +4303,20 @@ h1.page-title + .tag-cloud-list {
   font-size: 0.9em;
   font-family: Monaco, 'Ubuntu Mono', monospace;
   line-height: 1em;
+}
+#article-container a.headerlink:after {
+  float: right;
+  color: var(--headline-presudo);
+  content: '\f0c1';
+  font-size: 0.95em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#article-container a.headerlink:hover:after {
+  color: var(--pseudo-hover);
 }
 #article-container ol ol,
 #article-container ul ol,
@@ -6262,21 +6287,6 @@ blockquote.pullquote.right {
 .read-mode #article-container .note:before,
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
-}
-.card-announcement .social-button {
-  margin: 0.6rem 0 0 0;
-  text-align: center;
-}
-.card-announcement .social-button a {
-  display: block;
-  background-color: var(--btn-bg);
-  color: var(--btn-color);
-  text-align: center;
-  line-height: 2.4;
-  margin: 4px 0;
-}
-.card-announcement .social-button a:hover {
-  background-color: var(--btn-hover-color);
 }
 .search-dialog {
   position: fixed;
