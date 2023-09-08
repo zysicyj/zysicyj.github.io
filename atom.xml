@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-08T02:02:36.739Z</updated>
+  <updated>2023-09-08T16:10:17.697Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Mysql系列】（二）日志系统：一条更新语句是如何执行的</title>
+    <link href="https://zysicyj.github.io/3c24b455.html"/>
+    <id>https://zysicyj.github.io/3c24b455.html</id>
+    <published>2023-09-08T15:37:58.000Z</published>
+    <updated>2023-09-08T16:10:17.697Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="Mysql" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Mysql/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何实现每天定时给女友/老婆发消息</title>
+    <link href="https://zysicyj.github.io/d429d716.html"/>
+    <id>https://zysicyj.github.io/d429d716.html</id>
+    <published>2023-09-08T15:30:55.000Z</published>
+    <updated>2023-09-08T16:10:17.671Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="其它" scheme="https://zysicyj.github.io/categories/%E5%85%B6%E5%AE%83/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>【面试题精讲】使用JavaStream将List转为Map</title>
@@ -263,7 +311,7 @@
     <link href="https://zysicyj.github.io/469413af.html"/>
     <id>https://zysicyj.github.io/469413af.html</id>
     <published>2023-09-05T00:33:41.000Z</published>
-    <updated>2023-09-08T02:48:42.302Z</updated>
+    <updated>2023-09-08T16:10:15.070Z</updated>
     
     
       
@@ -449,66 +497,6 @@
     
     <category term="工具" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%B7%A5%E5%85%B7/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】什么是websocket？如何与前端通信？</title>
-    <link href="https://zysicyj.github.io/84ceba89.html"/>
-    <id>https://zysicyj.github.io/84ceba89.html</id>
-    <published>2023-09-04T03:06:58.000Z</published>
-    <updated>2023-09-06T08:15:45.220Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="后端技术" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="WebSocket" scheme="https://zysicyj.github.io/tags/WebSocket/"/>
-    
-    <category term="实时通信" scheme="https://zysicyj.github.io/tags/%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1/"/>
-    
-    <category term="后端技术" scheme="https://zysicyj.github.io/tags/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【详解配置文件系列】es7配置文件详解</title>
-    <link href="https://zysicyj.github.io/fc410ad.html"/>
-    <id>https://zysicyj.github.io/fc410ad.html</id>
-    <published>2023-09-03T14:09:41.000Z</published>
-    <updated>2023-09-06T08:15:24.479Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="详解配置文件系列" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E8%AF%A6%E8%A7%A3%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%B3%BB%E5%88%97/"/>
-    
-    
-    <category term="配置文件" scheme="https://zysicyj.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
-    
-    <category term="es7" scheme="https://zysicyj.github.io/tags/es7/"/>
     
   </entry>
   
