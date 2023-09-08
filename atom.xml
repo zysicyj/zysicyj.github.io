@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-08T00:53:23.677Z</updated>
+  <updated>2023-09-08T01:36:12.169Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【面试题精讲】使用JavaStream将List转为Map</title>
+    <link href="https://zysicyj.github.io/819fb86a.html"/>
+    <id>https://zysicyj.github.io/819fb86a.html</id>
+    <published>2023-09-08T01:35:22.000Z</published>
+    <updated>2023-09-08T01:36:12.169Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>【面试题精讲】如何使用Stream的聚合功能</title>
@@ -33,6 +58,10 @@
       
     
     
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
     
     
   </entry>
@@ -234,7 +263,7 @@
     <link href="https://zysicyj.github.io/469413af.html"/>
     <id>https://zysicyj.github.io/469413af.html</id>
     <published>2023-09-05T00:33:41.000Z</published>
-    <updated>2023-09-08T00:41:40.314Z</updated>
+    <updated>2023-09-08T01:34:18.166Z</updated>
     
     
       
@@ -480,39 +509,6 @@
     <category term="配置文件" scheme="https://zysicyj.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
     <category term="es7" scheme="https://zysicyj.github.io/tags/es7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】Java Stream排序的实现方式</title>
-    <link href="https://zysicyj.github.io/56aad10f.html"/>
-    <id>https://zysicyj.github.io/56aad10f.html</id>
-    <published>2023-09-03T14:00:26.000Z</published>
-    <updated>2023-09-06T08:13:19.043Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
-    
-    
-    <category term="Java Stream" scheme="https://zysicyj.github.io/tags/Java-Stream/"/>
-    
-    <category term="排序" scheme="https://zysicyj.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
-    
-    <category term="归并排序" scheme="https://zysicyj.github.io/tags/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/"/>
-    
-    <category term="timsort" scheme="https://zysicyj.github.io/tags/timsort/"/>
     
   </entry>
   
