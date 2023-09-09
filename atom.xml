@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-08T16:16:59.506Z</updated>
+  <updated>2023-09-09T19:11:56.681Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【日记】9月9日</title>
+    <link href="https://zysicyj.github.io/af0c0de2.html"/>
+    <id>https://zysicyj.github.io/af0c0de2.html</id>
+    <published>2023-09-09T19:09:48.000Z</published>
+    <updated>2023-09-09T19:11:56.681Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>【Mysql系列】（二）日志系统：一条更新语句是如何执行的</title>
@@ -59,7 +82,9 @@
     
     
     
-    <category term="其它" scheme="https://zysicyj.github.io/categories/%E5%85%B6%E5%AE%83/"/>
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="前端技术" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
@@ -311,7 +336,7 @@
     <link href="https://zysicyj.github.io/469413af.html"/>
     <id>https://zysicyj.github.io/469413af.html</id>
     <published>2023-09-05T00:33:41.000Z</published>
-    <updated>2023-09-08T16:21:46.901Z</updated>
+    <updated>2023-09-09T20:21:35.630Z</updated>
     
     
       
@@ -324,7 +349,7 @@
     
     
     
-    <category term="其它" scheme="https://zysicyj.github.io/categories/%E5%85%B6%E5%AE%83/"/>
+    <category term="日常" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
@@ -334,7 +359,7 @@
     <link href="https://zysicyj.github.io/222a0adb.html"/>
     <id>https://zysicyj.github.io/222a0adb.html</id>
     <published>2023-09-05T00:23:30.000Z</published>
-    <updated>2023-09-08T02:02:36.751Z</updated>
+    <updated>2023-09-09T19:14:26.863Z</updated>
     
     
       
@@ -347,7 +372,30 @@
     
     
     
-    <category term="其它" scheme="https://zysicyj.github.io/categories/%E5%85%B6%E5%AE%83/"/>
+    <category term="日常" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>足迹</title>
+    <link href="https://zysicyj.github.io/222a0adb.html"/>
+    <id>https://zysicyj.github.io/222a0adb.html</id>
+    <published>2023-09-05T00:23:30.000Z</published>
+    <updated>2023-09-09T19:19:02.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="日常" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
@@ -393,7 +441,7 @@
     
     
     
-    <category term="其它" scheme="https://zysicyj.github.io/categories/%E5%85%B6%E5%AE%83/"/>
+    <category term="日常" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
@@ -447,56 +495,6 @@
     
     
     <category term="Kafka" scheme="https://zysicyj.github.io/tags/Kafka/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>优化流程记录</title>
-    <link href="https://zysicyj.github.io/a384b09f.html"/>
-    <id>https://zysicyj.github.io/a384b09f.html</id>
-    <published>2023-09-04T07:30:35.000Z</published>
-    <updated>2023-09-06T08:19:42.123Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>工作五年多，idea插件推荐（未完）</title>
-    <link href="https://zysicyj.github.io/4650d5de.html"/>
-    <id>https://zysicyj.github.io/4650d5de.html</id>
-    <published>2023-09-04T06:15:19.000Z</published>
-    <updated>2023-09-04T16:06:10.681Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="工具" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%B7%A5%E5%85%B7/"/>
-    
     
   </entry>
   
