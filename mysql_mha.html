@@ -1,0 +1,531 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>MySQL高可用搭建方案之（MHA） | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准https:&#x2F;&#x2F;blog.zysicyj.top  首发博客地址 原文地址MHA架构介绍MHA是Master HighAvailability的缩写，它是目前MySQL高可用方面的一个相对成熟的解决方案，其核心是使用perl语言编写的一组脚本，是一套优秀的作为MySQL高可用性环境下故障切换和主从提升的高可用软件。在MyS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL高可用搭建方案之（MHA）">
+<meta property="og:url" content="https://zysicyj.github.io/mysql_mha.html">
+<meta property="og:site_name">
+<meta property="og:description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准https:&#x2F;&#x2F;blog.zysicyj.top  首发博客地址 原文地址MHA架构介绍MHA是Master HighAvailability的缩写，它是目前MySQL高可用方面的一个相对成熟的解决方案，其核心是使用perl语言编写的一组脚本，是一套优秀的作为MySQL高可用性环境下故障切换和主从提升的高可用软件。在MyS">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://api.boxmoe.com/random.php">
+<meta property="article:published_time" content="2023-09-10T22:03:21.000Z">
+<meta property="article:modified_time" content="2023-09-10T22:11:49.209Z">
+<meta property="article:author" content="程序员朱永胜">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://api.boxmoe.com/random.php"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/mysql_mha.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 程序员朱永胜","link":"链接: ","source":"来源: ","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'MySQL高可用搭建方案之（MHA）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-09-11 06:11:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">92</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">455</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/today"><i class="fa-fw fas fa-solid fa-calendar-week"></i><span> Today</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/lyb/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 日常</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/zj.html"><i class="fa-fw fas fa-solid fa-shoe-prints"></i><span> 足迹</span></a></li><li><a class="site-page child" href="/update_plan/"><i class="fa-fw fas fa-solid fa-sun-plant-wilt"></i><span> 更新安排</span></a></li><li><a class="site-page child" href="/jf.html"><i class="fa-fw fas fa-solid fa-weight-scale"></i><span> 体重</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-calendar"></i><span> 活跃</span></a></li><li><a class="site-page child" href="/hx.html"><i class="fa-fw fas fa-solid fa-money-bills"></i><span> 花费</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/categories/%E6%97%A5%E8%AE%B0/"><i class="fa-fw fas fa-brands fa-dailymotion"></i><span> 日记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://api.boxmoe.com/random.php')"><nav id="nav"><span id="blog-info"><a href="/" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/today"><i class="fa-fw fas fa-solid fa-calendar-week"></i><span> Today</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="/lyb/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 日常</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/zj.html"><i class="fa-fw fas fa-solid fa-shoe-prints"></i><span> 足迹</span></a></li><li><a class="site-page child" href="/update_plan/"><i class="fa-fw fas fa-solid fa-sun-plant-wilt"></i><span> 更新安排</span></a></li><li><a class="site-page child" href="/jf.html"><i class="fa-fw fas fa-solid fa-weight-scale"></i><span> 体重</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-calendar"></i><span> 活跃</span></a></li><li><a class="site-page child" href="/hx.html"><i class="fa-fw fas fa-solid fa-money-bills"></i><span> 花费</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/categories/%E6%97%A5%E8%AE%B0/"><i class="fa-fw fas fa-brands fa-dailymotion"></i><span> 日记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">MySQL高可用搭建方案之（MHA）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-10T22:03:21.000Z" title="发表于 2023-09-11 06:03:21">2023-09-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-10T22:11:49.209Z" title="更新于 2023-09-11 06:11:49">2023-09-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">技术文章</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/">架构</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>16分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="MySQL高可用搭建方案之（MHA）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div id="readmore-container"><blockquote>
+<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p>
+</blockquote>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/">首发博客地址</a></p>
+<h2 id="原文地址"><a href="#原文地址" class="headerlink" title="原文地址"></a><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.51cto.com/zero01/2468767">原文地址</a></h2><h2 id="MHA架构介绍"><a href="#MHA架构介绍" class="headerlink" title="MHA架构介绍"></a>MHA架构介绍</h2><p>MHA是Master High<br>Availability的缩写，它是目前MySQL高可用方面的一个相对成熟的解决方案，其核心是使用perl语言编写的一组脚本，是一套优秀的作为MySQL高可用性环境下故障切换和主从提升的高可用软件。在MySQL故障切换过程中，MHA能做到在0~<br>30秒之内自动完成数据库的故障切换操作，并且能在最大程度上保证数据的一致性，以达到真正意义上的高可用。</p>
+<p>基于MHA的架构不像MMM那样需要搭建主主复制，只需要搭建基本的主从复制架构即可。因为MHA在主库挂掉时，是在多个从库中选取出一个从库作为新的主库。MHA集群中的各节点彼此之间均需要基于<code>ssh</code><br>互信通信，以实现远程控制及数据管理功能。</p>
+<p><strong>MHA提供了什么功能：</strong></p>
+<ul>
+<li>可以监控Master节点是否可用</li>
+<li>当Master不可用时，能在多个Slave中选举出新的Master</li>
+<li>提供了主从切换和故障转移功能，MHA会尝试在宕机的Master上保存binlog，在最大程度上保证事务不丢失。但如果是Master所在的服务器已经无法访问，或硬件层面出现了问题，则无法成功保存binlog</li>
+<li>MHA可以与半同步复制结合，避免从库之间出现数据不一致的情况</li>
+<li>支持MySQL基于GTID和基于日志点的两种复制方式</li>
+</ul>
+<p><strong>MHA故障转移过程：</strong></p>
+<ol>
+<li>尝试使用<code>ssh</code>登录到宕机崩溃的Master节点上保存二进制日志事件（binlog events）;</li>
+<li>从多个Slave中识别含有最新更新的Slave，将其作为备选的Master；</li>
+<li>然后基于该Slave同步差异的中继日志（relaylog）到其他的Slave上；</li>
+<li>接着同步从原Master上保存的二进制日志事件（binlog events）；</li>
+<li>将备选的Master提升为新的Master；</li>
+<li>使其他的Slave连接新的Master进行复制；</li>
+<li>在新的Master启动vip地址，保证前端请求可以发送到新的Master。</li>
+</ol>
+<p><strong>MHA的架构图如下：</strong><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109837022204700.png"></p>
+<hr>
+<h2 id="动手搭建MHA架构"><a href="#动手搭建MHA架构" class="headerlink" title="动手搭建MHA架构"></a>动手搭建MHA架构</h2><p><strong>本文中所使用的机器说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>IP</th>
+<th>角色</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>master</td>
+<td>192.168.190.151</td>
+<td>主库</td>
+</tr>
+<tr>
+<td>slave-01</td>
+<td>192.168.190.152</td>
+<td>从库</td>
+</tr>
+<tr>
+<td>slave-02</td>
+<td>192.168.190.154</td>
+<td>从库</td>
+</tr>
+<tr>
+<td>manager</td>
+<td>192.168.190.153</td>
+<td>集群管理节点（MHA）</td>
+</tr>
+</tbody></table>
+<p><strong>环境版本说明：</strong></p>
+<ul>
+<li>操作系统版本：CentOS 7</li>
+<li>MySQL版本：8.0.19</li>
+<li>MHA版本：0.58</li>
+</ul>
+<p><strong>另外的说明：</strong></p>
+<ul>
+<li>会来了解MMM架构的小伙伴们想必都已经掌握了MySQL的安装方式，而且介绍<a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.51cto.com/zero01/2445762"> MySQL的安装</a><br>也有很多文章，所以本文为了减少不必要的篇幅就不演示MySQL的安装了，文中所用到的机器都已经提前安装好了MySQL。</li>
+</ul>
+<hr>
+<h3 id="配置主从节点的配置文件"><a href="#配置主从节点的配置文件" class="headerlink" title="配置主从节点的配置文件"></a>配置主从节点的配置文件</h3><p>1、在所有主从节点上使用如下语句创建用于主从复制的MySQL用户，因为每个从库都有可能会被选举为主库，所以都需要拥有用于复制的用户：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create user &#x27;repl&#x27;@&#x27;%&#x27; identified with mysql_native_password by &#x27;Abc_123456&#x27;;</span><br><span class="line">grant replication slave on *.* to &#x27;repl&#x27;@&#x27;%&#x27;;</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p>2、然后修改<code>master</code>节点上的MySQL配置文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vim /etc/my.cnf</span><br><span class="line">[mysqld]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置当前节点的<span class="built_in">id</span></span></span><br><span class="line">server_id=101</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">开启binlog，并指定binlog文件的名称</span></span><br><span class="line">log_bin=mysql_bin</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">开启relay_log，并指定relay_log文件的名称</span></span><br><span class="line">relay_log=relay_bin</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将relaylog的同步内容记录到binlog中</span></span><br><span class="line">log_slave_updates=on</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">开启GTID复制模式</span></span><br><span class="line">gtid_mode=ON</span><br><span class="line">enforce_gtid_consistency=1</span><br></pre></td></tr></table></figure>
+
+<p>3、在<code>slave-01</code>的配置文件中也是添加一样配置，只不过<code>server_id</code>不一样：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@slave-01 ~]# vim /etc/my.cnf</span><br><span class="line">[mysqld]</span><br><span class="line">server_id=102</span><br><span class="line">log_bin=mysql_bin</span><br><span class="line">relay_log=relay_bin</span><br><span class="line">log_slave_updates=on</span><br><span class="line">gtid_mode=ON</span><br><span class="line">enforce_gtid_consistency=1</span><br></pre></td></tr></table></figure>
+
+<p>4、接着是配置<code>slave-02</code>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@slave-02 ~]# vim /etc/my.cnf</span><br><span class="line">[mysqld]</span><br><span class="line">server_id=103</span><br><span class="line">log_bin=mysql_bin</span><br><span class="line">relay_log=relay_bin</span><br><span class="line">log_slave_updates=on</span><br><span class="line">gtid_mode=ON</span><br><span class="line">enforce_gtid_consistency=1</span><br></pre></td></tr></table></figure>
+
+<p>完成以上配置文件的修改后，分别重启这三个节点上的MySQL服务：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# systemctl restart mysqld</span><br><span class="line">[root@slave-01 ~]# systemctl restart mysqld</span><br><span class="line">[root@slave-02 ~]# systemctl restart mysqld</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="配置slave-01对master的主从关系"><a href="#配置slave-01对master的主从关系" class="headerlink" title="配置slave-01对master的主从关系"></a>配置<code>slave-01</code>对<code>master</code>的主从关系</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">stop slave;  -- 停止主从同步</span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">change master to master_host=<span class="string">&#x27;192.168.190.151&#x27;</span>, master_port=3306, master_user=<span class="string">&#x27;repl&#x27;</span>, master_password=<span class="string">&#x27;Abc_123456&#x27;</span>, master_auto_position=1;  -- 配置master节点的连接信息</span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">start slave;  -- 启动主从同</span></span><br><span class="line">-----------------------------------</span><br><span class="line">©著作权归作者所有：来自51CTO博客作者ZeroOne01的原创作品，请联系作者获取转载授权，否则将追究法律责任</span><br><span class="line">基于MHA搭建MySQL Replication集群高可用架构</span><br><span class="line">https://blog.51cto.com/zero01/2468767</span><br></pre></td></tr></table></figure>
+
+<p>进入<code>slave-01</code>节点的MySQL命令行终端，分别执行如下语句来配置主从复制链路：</p>
+<p>配置完主从复制链路后，使用<code>show slave status\G;</code>语句查看主从同步状态，<code>Slave_IO_Running</code>和<code>Slave_SQL_Running</code>的值均为<code>Yes</code><br>才能表示主从同步状态是正常的：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109851589695700.png"></p>
+<hr>
+<h3 id="配置slave-02对master的主从关系"><a href="#配置slave-02对master的主从关系" class="headerlink" title="配置slave-02对master的主从关系"></a>配置<code>slave-02</code>对<code>master</code>的主从关系</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">stop slave;  -- 停止主从同步</span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">change master to master_host=<span class="string">&#x27;192.168.190.151&#x27;</span>, master_port=3306, master_user=<span class="string">&#x27;repl&#x27;</span>, master_password=<span class="string">&#x27;Abc_123456&#x27;</span>, master_auto_position=1;  -- 配置master节点的连接信息</span></span><br><span class="line"><span class="meta prompt_">mysql&gt; </span><span class="language-bash">start slave;  -- 启动主从同步</span></span><br><span class="line">-----------------------------------</span><br><span class="line">©著作权归作者所有：来自51CTO博客作者ZeroOne01的原创作品，请联系作者获取转载授权，否则将追究法律责任</span><br><span class="line">基于MHA搭建MySQL Replication集群高可用架构</span><br><span class="line">https://blog.51cto.com/zero01/2468767</span><br></pre></td></tr></table></figure>
+
+<p>同样的步骤，进入<code>slave-02</code>节点的MySQL命令行终端，分别执行如下语句来配置主从复制链路：</p>
+<p>配置完主从复制链路后，使用<code>show slave status\G;</code>语句查看主从同步状态，<code>Slave_IO_Running</code>和<code>Slave_SQL_Running</code>的值均为<code>Yes</code><br>才能表示主从同步状态是正常的：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109856639832900.png"></p>
+<hr>
+<h3 id="配置ssh免密登录"><a href="#配置ssh免密登录" class="headerlink" title="配置ssh免密登录"></a>配置ssh免密登录</h3><p>配置集群内所有主机之间能够通过<code>ssh</code>免密登录，因为MHA是基于<code>ssh</code>去实现远程控制及数据管理的。例如，故障转移过程中保存原Master节点的二进制日志以及配置虚拟IP等。</p>
+<p>1、生成<code>ssh</code>登录密钥：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ssh-keygen</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/root/.ssh/id_rsa): </span><br><span class="line">Enter passphrase (empty for no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved in /root/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /root/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:LzRXziRQPrqaKEteH6KrZpCiV6uGP6GTi6RonE7Hhms root@master</span><br><span class="line">The key&#x27;s randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|        ...      |</span><br><span class="line">|         o       |</span><br><span class="line">|          + o    |</span><br><span class="line">|         . B     |</span><br><span class="line">| .      S . o    |</span><br><span class="line">|+ + .  . =       |</span><br><span class="line">|=Bo*o.. o .      |</span><br><span class="line">|%EOo.+ + .       |</span><br><span class="line">|%XB*. +          |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line">-----------------------------------</span><br><span class="line">©著作权归作者所有：来自51CTO博客作者ZeroOne01的原创作品，请联系作者获取转载授权，否则将追究法律责任</span><br><span class="line">基于MHA搭建MySQL Replication集群高可用架构</span><br><span class="line">https://blog.51cto.com/zero01/2468767</span><br></pre></td></tr></table></figure>
+
+<p>2、将密钥拷贝到其他服务器上：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ssh-copy-id -i /root/.ssh/id_rsa root@192.168.190.151</span><br><span class="line">[root@master ~]# ssh-copy-id -i /root/.ssh/id_rsa root@192.168.190.152</span><br><span class="line">[root@master ~]# ssh-copy-id -i /root/.ssh/id_rsa root@192.168.190.154</span><br><span class="line">[root@master ~]# ssh-copy-id -i /root/.ssh/id_rsa root@192.168.190.153</span><br><span class="line">-----------------------------------</span><br><span class="line">©著作权归作者所有：来自51CTO博客作者ZeroOne01的原创作品，请联系作者获取转载授权，否则将追究法律责任</span><br><span class="line">基于MHA搭建MySQL Replication集群高可用架构</span><br><span class="line">https://blog.51cto.com/zero01/2468767</span><br></pre></td></tr></table></figure>
+
+<p>然后到集群中其他节点上进行同样的操作，由于是重复的操作这里就不演示了。最后简单测试下能否正常免密登录即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ssh root@192.168.190.152</span><br><span class="line">Last failed login: Sat Feb  1 15:29:38 CST 2020 from 192.168.190.151 on ssh:notty</span><br><span class="line">There was 1 failed login attempt since the last successful login.  # 没有要求输入密码，测试成功</span><br><span class="line">Last login: Sat Feb  1 14:14:03 2020 from 192.168.190.1</span><br><span class="line">[root@slave-01 ~]# </span><br><span class="line">-----------------------------------</span><br><span class="line">©著作权归作者所有：来自51CTO博客作者ZeroOne01的原创作品，请联系作者获取转载授权，否则将追究法律责任</span><br><span class="line">基于MHA搭建MySQL Replication集群高可用架构</span><br><span class="line">https://blog.51cto.com/zero01/2468767</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="安装MHA软件包"><a href="#安装MHA软件包" class="headerlink" title="安装MHA软件包"></a>安装MHA软件包</h3><p>1、首先在所有的节点上安装<code>mha4mysql-node</code>软件包，安装包可到如下地址进行下载：</p>
+<ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yoshinorim/mha4mysql-node/releases/tag/v0.58"> https://github.com/yoshinorim/mha4mysql-node/releases/tag/v0.58</a></li>
+</ul>
+<p>下载好的<code>rpm</code>文件如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ls *.rpm</span><br><span class="line">mha4mysql-node-0.58-0.el7.centos.noarch.rpm</span><br><span class="line">[root@master ~]# </span><br></pre></td></tr></table></figure>
+
+<p>在安装该<code>rpm</code>包之前需要先安装perl相关依赖：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# yum -y install epel-release</span><br><span class="line">[root@master ~]# yum -y install perl-DBD-MySQL perl-DBI ncftp</span><br></pre></td></tr></table></figure>
+
+<p>现在就可以安装<code>mha4mysql-node</code>了，命令如下：</p>
+<ul>
+<li>**Tips：**另外的两个Slave节点和监控节点按如上步骤安装即可，这里就不重复演示了</li>
+</ul>
+<p>2、接着是在监控节点<code>manager</code>上安装<code>mha4mysql-manager</code>软件包，安装包到如下地址进行下载：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# rpm -ivh mha4mysql-node-0.58-0.el7.centos.noarch.rpm</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yoshinorim/mha4mysql-manager/releases"> https://github.com/yoshinorim/mha4mysql-manager/releases</a></li>
+</ul>
+<p>下载好的<code>rpm</code>文件如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# ls *.rpm</span><br><span class="line">mha4mysql-manager-0.58-0.el7.centos.noarch.rpm</span><br><span class="line">[root@manager ~]# </span><br></pre></td></tr></table></figure>
+
+<p>同样，在安装该<code>rpm</code>包之前需要先安装perl相关依赖：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# yum -y install epel-release</span><br><span class="line">[root@manager ~]# yum -y install perl-Config-Tiny perl-Time-HiRes perl-Parallel-ForkManager perl-Log-Dispatch perl-DBD-MySQL ncftp</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>然后安装<code>mha4mysql-manager</code>包，命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# rpm -ivh mha4mysql-manager-0.58-0.el7.centos.noarch.rpm</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="配置MHA管理节点"><a href="#配置MHA管理节点" class="headerlink" title="配置MHA管理节点"></a>配置MHA管理节点</h3><p>1、创建MHA的配置文件存放目录和工作目录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# mkdir /etc/mha</span><br><span class="line">[root@manager ~]# mkdir /home/mysql_mha</span><br></pre></td></tr></table></figure>
+
+<p>2、创建MHA的配置文件，并添加如下内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# vim /etc/mha/mysql_mha.cnf</span><br><span class="line">[server default]</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">mha用于访问数据库的账户和密码</span></span><br><span class="line">user=mha</span><br><span class="line">password=Abc_123456</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定mha的工作目录</span></span><br><span class="line">manager_workdir=/home/mysql_mha</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">mha日志文件的存放路径</span></span><br><span class="line">manager_log=/home/mysql_mha/manager.log</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定mha在远程节点上的工作目录</span></span><br><span class="line">remote_workdir=/home/mysql_mha</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">可以使用ssh登录的用户</span></span><br><span class="line">ssh_user=root</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">用于主从复制的MySQL用户和密码</span></span><br><span class="line">repl_user=repl</span><br><span class="line">repl_password=Abc_123456</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定间隔多少秒检测一次</span></span><br><span class="line">ping_interval=1</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定master节点存放binlog日志文件的目录</span></span><br><span class="line">master_binlog_dir=/var/lib/mysql</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定一个脚本，该脚本实现了在主从切换之后，将虚拟IP漂移到新的Master上</span></span><br><span class="line">master_ip_failover_script=/usr/bin/master_ip_failover</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定用于二次检查节点状态的脚本</span></span><br><span class="line">secondary_check_script=/usr/bin/masterha_secondary_check -s 192.168.190.151 -s 192.168.190.152 -s 192.168.190.154</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">配置集群中的节点信息</span></span><br><span class="line">[server1]</span><br><span class="line">hostname=192.168.190.151</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定该节点可以参与Master选举</span></span><br><span class="line">candidate_master=1</span><br><span class="line"></span><br><span class="line">[server2]</span><br><span class="line">hostname=192.168.190.152</span><br><span class="line">candidate_master=1</span><br><span class="line"></span><br><span class="line">[server3]</span><br><span class="line">hostname=192.168.190.154</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">指定该节点不能参与Master选举</span></span><br><span class="line">no_master=1</span><br></pre></td></tr></table></figure>
+
+<p>3、编写配置文件中所配置的<code>master_ip_failover</code>脚本，该脚本是根据MHA的官方示例修改的，MHA默认并没有提供。需要注意脚本中的几处地方需要根据实际情况进行修改，已用注释标明：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# vim /usr/bin/master_ip_failover</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/usr/bin/env perl</span></span><br><span class="line"></span><br><span class="line">use strict;</span><br><span class="line">use warnings FATAL =&gt; &#x27;all&#x27;;</span><br><span class="line"></span><br><span class="line">use Getopt::Long;</span><br><span class="line"></span><br><span class="line">my (</span><br><span class="line">    $command, $orig_master_host, $orig_master_ip,$ssh_user,</span><br><span class="line">    $orig_master_port, $new_master_host, $new_master_ip,$new_master_port,</span><br><span class="line">    $orig_master_ssh_port,$new_master_ssh_port,$new_master_user,$new_master_password</span><br><span class="line">);</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">这里定义的虚拟IP可以根据实际情况进行修改</span></span><br><span class="line">my $vip = &#x27;192.168.190.80/24&#x27;;</span><br><span class="line">my $key = &#x27;1&#x27;;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">这里的网卡名称 “ens32” 需要根据你机器的网卡名称进行修改</span></span><br><span class="line">my $ssh_start_vip = &quot;sudo /sbin/ifconfig ens32:$key $vip&quot;;</span><br><span class="line">my $ssh_stop_vip = &quot;sudo /sbin/ifconfig ens32:$key down&quot;;</span><br><span class="line">my $ssh_Bcast_arp= &quot;sudo /sbin/arping -I bond0 -c 3 -A $vip&quot;;</span><br><span class="line"></span><br><span class="line">GetOptions(</span><br><span class="line">    &#x27;command=s&#x27;          =&gt; \$command,</span><br><span class="line">    &#x27;ssh_user=s&#x27;         =&gt; \$ssh_user,</span><br><span class="line">    &#x27;orig_master_host=s&#x27; =&gt; \$orig_master_host,</span><br><span class="line">    &#x27;orig_master_ip=s&#x27;   =&gt; \$orig_master_ip,</span><br><span class="line">    &#x27;orig_master_port=i&#x27; =&gt; \$orig_master_port,</span><br><span class="line">    &#x27;orig_master_ssh_port=i&#x27; =&gt; \$orig_master_ssh_port,</span><br><span class="line">    &#x27;new_master_host=s&#x27;  =&gt; \$new_master_host,</span><br><span class="line">    &#x27;new_master_ip=s&#x27;    =&gt; \$new_master_ip,</span><br><span class="line">    &#x27;new_master_port=i&#x27;  =&gt; \$new_master_port,</span><br><span class="line">    &#x27;new_master_ssh_port&#x27; =&gt; \$new_master_ssh_port,</span><br><span class="line">    &#x27;new_master_user&#x27; =&gt; \$new_master_user,</span><br><span class="line">    &#x27;new_master_password&#x27; =&gt; \$new_master_password</span><br><span class="line"></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">exit &amp;main();</span><br><span class="line"></span><br><span class="line">sub main &#123;</span><br><span class="line">    $ssh_user = defined $ssh_user ? $ssh_user : &#x27;root&#x27;;</span><br><span class="line">    print &quot;\n\nIN SCRIPT TEST====$ssh_user|$ssh_stop_vip==$ssh_user|$ssh_start_vip===\n\n&quot;;</span><br><span class="line"></span><br><span class="line">    if ( $command eq &quot;stop&quot; || $command eq &quot;stopssh&quot; ) &#123;</span><br><span class="line"></span><br><span class="line">        my $exit_code = 1;</span><br><span class="line">        eval &#123;</span><br><span class="line">            print &quot;Disabling the VIP on old master: $orig_master_host \n&quot;;</span><br><span class="line">            &amp;stop_vip();</span><br><span class="line">            $exit_code = 0;</span><br><span class="line">        &#125;;</span><br><span class="line">        if ($@) &#123;</span><br><span class="line">            warn &quot;Got Error: $@\n&quot;;</span><br><span class="line">            exit $exit_code;</span><br><span class="line">        &#125;</span><br><span class="line">        exit $exit_code;</span><br><span class="line">    &#125;</span><br><span class="line">    elsif ( $command eq &quot;start&quot; ) &#123;</span><br><span class="line"></span><br><span class="line">        my $exit_code = 10;</span><br><span class="line">        eval &#123;</span><br><span class="line">            print &quot;Enabling the VIP - $vip on the new master - $new_master_host \n&quot;;</span><br><span class="line">            &amp;start_vip();</span><br><span class="line">	    &amp;start_arp();</span><br><span class="line">            $exit_code = 0;</span><br><span class="line">        &#125;;</span><br><span class="line">        if ($@) &#123;</span><br><span class="line">            warn $@;</span><br><span class="line">            exit $exit_code;</span><br><span class="line">        &#125;</span><br><span class="line">        exit $exit_code;</span><br><span class="line">    &#125;</span><br><span class="line">    elsif ( $command eq &quot;status&quot; ) &#123;</span><br><span class="line">        print &quot;Checking the Status of the script.. OK \n&quot;;</span><br><span class="line">        exit 0;</span><br><span class="line">    &#125;</span><br><span class="line">    else &#123;</span><br><span class="line">        &amp;usage();</span><br><span class="line">        exit 1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sub start_vip() &#123;</span><br><span class="line">    `ssh $ssh_user\@$new_master_host \&quot; $ssh_start_vip \&quot;`;</span><br><span class="line">&#125;</span><br><span class="line">sub stop_vip() &#123;</span><br><span class="line">    `ssh $ssh_user\@$orig_master_host \&quot; $ssh_stop_vip \&quot;`;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sub start_arp() &#123;</span><br><span class="line">    `ssh $ssh_user\@$new_master_host \&quot; $ssh_Bcast_arp \&quot;`;</span><br><span class="line">&#125;</span><br><span class="line">sub usage &#123;</span><br><span class="line">    print</span><br><span class="line">    &quot;Usage: master_ip_failover --command=start|stop|stopssh|status --ssh_user=user --orig_master_host=host --orig_master_ip=ip --orig_master_port=port --new_master_host=host --new_master_ip=ip --new_master_port=port\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>还需要给该脚本添加可执行权限，否则MHA是无法调用的：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# chmod a+x /usr/bin/master_ip_failover</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>4、根据配置文件中<code>remote_workdir</code>的配置，需在其他节点上创建MHA的远程工作目录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# mkdir /home/mysql_mha</span><br><span class="line">[root@slave-01 ~]# mkdir /home/mysql_mha</span><br><span class="line">[root@slave-02 ~]# mkdir /home/mysql_mha</span><br></pre></td></tr></table></figure>
+
+<p>5、在配置文件中指定了让<code>manager</code>使用<code>mha</code>这个用户来访问数据库节点，所以需要在<code>master</code>节点上创建<code>mha</code>用户：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create user &#x27;mha&#x27;@&#x27;%&#x27; identified with mysql_native_password by &#x27;Abc_123456&#x27;;</span><br><span class="line">grant all privileges on *.* to &#x27;mha&#x27;@&#x27;%&#x27;;</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<p>6、完成以上所有步骤后，在<code>manager</code>节点上使用<code>masterha_check_ssh</code>和<code>masterha_check_repl</code><br>对配置进行检查，其中<code>masterha_check_ssh</code>用于检查<code>ssh</code>登录是否正常，而<code>masterha_check_repl</code>则用于检查主从节点的复制链路是否正常：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# masterha_check_ssh --conf=/etc/mha/mysql_mha.cnf</span><br><span class="line">[root@manager ~]# masterha_check_repl --conf=/etc/mha/mysql_mha.cnf</span><br></pre></td></tr></table></figure>
+
+<p>执行结果如下：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109867943902700.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109872759556000.png"></p>
+<p>7、以上检测都通过后，就可以启动MHA服务了。启动命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# nohup masterha_manager --conf=/etc/mha/mysql_mha.cnf &amp;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>启动完成后，可以使用<code>ps</code>命令查看<code>masterha_manager</code>进程是否存在，如下存在则代表启动成功：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@manager ~]# ps aux |grep masterha_manager</span><br><span class="line">root       2842  0.3  1.1 299648 22032 pts/0    S    18:30   0:00 perl /usr/bin/masterha_manager --conf=/etc/mha/mysql_mha.cnf</span><br><span class="line">root       2901  0.0  0.0 112728   976 pts/0    R+   18:31   0:00 grep --color=auto masterha_manager</span><br><span class="line">[root@manager ~]# </span><br></pre></td></tr></table></figure>
+
+<p>8、最后我们需要到<code>master</code>节点上，手动去配置虚拟IP。因为MHA只会在主从切换时漂移虚拟IP到新的Master节点，而不会在第一次启动时主动去设置Master的虚拟IP，所以我们需要手动设置。设置虚拟IP的命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ifconfig ens32:1 192.168.190.80/24</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>设置成功后，使用<code>ip addr</code>命令可以看到网卡上绑定的虚拟IP：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109887575344700.png"></p>
+<hr>
+<h3 id="测试MHA服务"><a href="#测试MHA服务" class="headerlink" title="测试MHA服务"></a>测试MHA服务</h3><p>到此为止，我们就已经完成了MHA高可用架构的搭建，接下来我们对其进行一些简单的测试。例如，测试下是否能正常<code>ping</code><br>通虚拟IP，毕竟应用端访问数据库时连接的是虚拟IP，所以首先得确保虚拟IP是能够被访问的。如下：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109895648618900.png"></p>
+<p>能<code>ping</code>通之后，使用Navicat等远程连接工具测试下能否正常通过虚拟IP连接上数据库：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109900498139800.png"></p>
+<p>确定了虚拟IP能正常访问后，接着测试MHA是否能够正常进行主从切换，首先将<code>master</code>节点上的MySQL服务给停掉，模拟Master宕机：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# systemctl stop mysqld</span><br></pre></td></tr></table></figure>
+
+<p>正常情况下，此时<code>master</code>节点上的网卡就不会再绑定该虚拟IP：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109906476677200.png"></p>
+<p>而是会被MHA漂移到<code>slave-01</code>节点的网卡上，因为此时该Slave就是新的Master：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109911359737600.png"></p>
+<p>接着进入<code>slave-02</code>节点上的MySQL命令行终端，确认下该Slave是否已经正常与新的Master进行同步。之前我们配置<code>slave-02</code><br>的主库是<code>master</code>，现在将<code>master</code>停掉后，可以看到<code>slave-02</code>的<code>Master_Host</code>已经被MHA切换成了<code>slave-01</code>的IP：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109915709053300.png"></p>
+<p>经过以上测试后，可以看到我们搭建的MHA架构是能够正常运行的，已经使得Replication集群拥有了基本的高可用能力，即便Master下线后也能正常从Slave中选举新的Master并进行切换，也正确建立了其他Slave与新Master的复制链路。</p>
+<hr>
+<h2 id="MHA架构优缺点"><a href="#MHA架构优缺点" class="headerlink" title="MHA架构优缺点"></a>MHA架构优缺点</h2><h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3><ul>
+<li>使用Perl脚本语言开发并且完全开源，开发者可以根据自己的需求进行二次开发</li>
+<li>能够支持基于GTID和基于日志点的复制模式</li>
+<li>MHA在进行故障转移时更不易产生数据丢失</li>
+<li>在一个监控节点上可以监控多个Replication集群</li>
+</ul>
+<h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><ul>
+<li>MHA默认不提供虚拟IP功能，需要自行编写脚本或利用第三方工具来实现虚拟IP的配置</li>
+<li>MHA启动后只会对Master进行监控，不会对Slave进行监控，也无法监控复制链路的情况</li>
+<li>集群环境需要能够通过<code>ssh</code>免密登录，存在一定的安全隐患</li>
+<li>MHA没有提供对Slave的读负载均衡功能，需要通过第三方工具来实现</li>
+</ul>
+</div>
+				<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
+				<script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script>
+				<script>
+				var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+				var isEncrypt = document.getElementById('hexo-blog-encrypt');
+				var allowMobile = false;
+				if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {
+					try {
+						var plugin = new ReadmorePlugin();
+						plugin.init({
+							"type": "hexo",
+							"id": "readmore-container",
+							"name": "程序员朱永胜",
+							"blogId": "39259-6450029321246-893",
+							"qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg",
+							"keyword": "1",
+							"random": "1",
+							"height": "auto",
+							"expires": "365",
+							"lockToc": "yes",
+							"interval": "60",
+							"baseUrl": ""
+						});
+					} catch(e) {
+						console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);
+					}
+				}
+				</script>
+			</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/mysql_mha.html">https://zysicyj.github.io/mysql_mha.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://api.boxmoe.com/random.php" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><div class="ads-wrap"><img width="100%" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src='http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-02/80781936212500.jpg'></img></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/mysql_mmm.html" title="MySQL高可用搭建方案之（MMM）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://imgapi.cn/api.php?fl=dongman&amp;gs=images" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">MySQL高可用搭建方案之（MMM）</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">欢迎订阅我的公众号【程序员朱永胜】</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">92</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">455</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">21</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zysicyj@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加入 微信 群（由于微信限制，请添加个人微信 sheng_chenyuanjie 拉你进群）<div class="social-button"><a class="button--animated" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=vi6Yk9r5ddxIv3JgVDIyWKWCY0RXnJZJ&authKey=x0b%2F7X%2FKNpj5nyVuwhvfumLmP994KzUpHe%2BtcJJZ5zNU3CKpVuiWKiDKiDJ0WXpy&noverify=0&group_code=917694823" rel="external nofollow noreferrer" target="_blank">QQ 1 群 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E6%96%87%E5%9C%B0%E5%9D%80"><span class="toc-text">原文地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MHA%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D"><span class="toc-text">MHA架构介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%89%8B%E6%90%AD%E5%BB%BAMHA%E6%9E%B6%E6%9E%84"><span class="toc-text">动手搭建MHA架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E8%8A%82%E7%82%B9%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">配置主从节点的配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEslave-01%E5%AF%B9master%E7%9A%84%E4%B8%BB%E4%BB%8E%E5%85%B3%E7%B3%BB"><span class="toc-text">配置slave-01对master的主从关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEslave-02%E5%AF%B9master%E7%9A%84%E4%B8%BB%E4%BB%8E%E5%85%B3%E7%B3%BB"><span class="toc-text">配置slave-02对master的主从关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEssh%E5%85%8D%E5%AF%86%E7%99%BB%E5%BD%95"><span class="toc-text">配置ssh免密登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85MHA%E8%BD%AF%E4%BB%B6%E5%8C%85"><span class="toc-text">安装MHA软件包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEMHA%E7%AE%A1%E7%90%86%E8%8A%82%E7%82%B9"><span class="toc-text">配置MHA管理节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95MHA%E6%9C%8D%E5%8A%A1"><span class="toc-text">测试MHA服务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MHA%E6%9E%B6%E6%9E%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-text">MHA架构优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="toc-text">缺点：</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/cd621e01.html" title="MySQL高可用九种方案"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=meinv&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL高可用九种方案"/></a><div class="content"><a class="title" href="/cd621e01.html" title="MySQL高可用九种方案">MySQL高可用九种方案</a><time datetime="2023-09-10T22:47:54.139Z" title="更新于 2023-09-11 06:47:54">2023-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/mysql_mha.html" title="MySQL高可用搭建方案之（MHA）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.boxmoe.com/random.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL高可用搭建方案之（MHA）"/></a><div class="content"><a class="title" href="/mysql_mha.html" title="MySQL高可用搭建方案之（MHA）">MySQL高可用搭建方案之（MHA）</a><time datetime="2023-09-10T22:11:49.209Z" title="更新于 2023-09-11 06:11:49">2023-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/mysql_mmm.html" title="MySQL高可用搭建方案之（MMM）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://imgapi.cn/api.php?fl=dongman&amp;gs=images" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL高可用搭建方案之（MMM）"/></a><div class="content"><a class="title" href="/mysql_mmm.html" title="MySQL高可用搭建方案之（MMM）">MySQL高可用搭建方案之（MMM）</a><time datetime="2023-09-10T22:04:29.086Z" title="更新于 2023-09-11 06:04:29">2023-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/today.html" title="今日计划"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://imgapi.cn/cos.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="今日计划"/></a><div class="content"><a class="title" href="/today.html" title="今日计划">今日计划</a><time datetime="2023-09-10T21:22:45.892Z" title="更新于 2023-09-11 05:22:45">2023-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/jf.html" title="体重记录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="体重记录"/></a><div class="content"><a class="title" href="/jf.html" title="体重记录">体重记录</a><time datetime="2023-09-10T08:05:38.364Z" title="更新于 2023-09-10 16:05:38">2023-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hx.html" title="花销记录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="花销记录"/></a><div class="content"><a class="title" href="/hx.html" title="花销记录">花销记录</a><time datetime="2023-09-10T08:05:11.107Z" title="更新于 2023-09-10 16:05:11">2023-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/zj.html" title="足迹"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.boxmoe.com/random.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="足迹"/></a><div class="content"><a class="title" href="/zj.html" title="足迹">足迹</a><time datetime="2023-09-10T08:04:14.697Z" title="更新于 2023-09-10 16:04:14">2023-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/3c24b455.html" title="【Mysql系列】（二）日志系统：一条更新语句是如何执行的"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=dongman&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Mysql系列】（二）日志系统：一条更新语句是如何执行的"/></a><div class="content"><a class="title" href="/3c24b455.html" title="【Mysql系列】（二）日志系统：一条更新语句是如何执行的">【Mysql系列】（二）日志系统：一条更新语句是如何执行的</a><time datetime="2023-09-09T20:26:28.844Z" title="更新于 2023-09-10 04:26:28">2023-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/af0c0de2.html" title="【日记】9月9日"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuapi.eees.cc/api.php?category=meinv&amp;type=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【日记】9月9日"/></a><div class="content"><a class="title" href="/af0c0de2.html" title="【日记】9月9日">【日记】9月9日</a><time datetime="2023-09-09T20:26:28.831Z" title="更新于 2023-09-10 04:26:28">2023-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/d429d716.html" title="如何实现每天定时给女友/老婆发消息"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://api.boxmoe.com/random.php" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何实现每天定时给女友/老婆发消息"/></a><div class="content"><a class="title" href="/d429d716.html" title="如何实现每天定时给女友/老婆发消息">如何实现每天定时给女友/老婆发消息</a><time datetime="2023-09-08T16:15:25.029Z" title="更新于 2023-09-09 00:15:25">2023-09-09</time></div></div></div></div><div class="card-widget ads-wrap"><img width="100%" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src='http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-02/80781936212500.jpg'></img></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.textContent = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script>(() => {
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = "6180e08a-324f-4622-9954-c278ba178759";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+  $crisp.push(["safe", true])
+
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const open = () => {
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+    }
+
+    const close = () => {
+      $crisp.push(["do", "chat:hide"])
+    }
+
+    close()
+    $crisp.push(["on", "chat:closed", function() {
+      close()
+    }])
+
+    window.chatBtnFn = () => {
+      $crisp.is("chat:visible") ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        $crisp.push(["do", "chat:hide"])
+      },
+      show: () => {
+        $crisp.push(["do", "chat:show"])
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
