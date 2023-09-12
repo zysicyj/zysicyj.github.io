@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zysicyj.github.io/today.html</loc>
+    <loc>https://zysicyj.github.io/3daa39a3.html</loc>
     
     <lastmod>2023-09-12</lastmod>
     
@@ -12,6 +12,24 @@
   
   <url>
     <loc>https://zysicyj.github.io/79d61d59.html</loc>
+    
+    <lastmod>2023-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/1b1004aa.html</loc>
+    
+    <lastmod>2023-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/today.html</loc>
     
     <lastmod>2023-09-12</lastmod>
     
@@ -4198,6 +4216,13 @@
   
   <url>
     <loc>https://zysicyj.github.io/tags/%E4%BC%A0%E6%92%AD%E6%9C%BA%E5%88%B6/</loc>
+    <lastmod>2023-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/tags/%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
