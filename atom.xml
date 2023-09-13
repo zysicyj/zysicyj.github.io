@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-13T00:46:56.792Z</updated>
+  <updated>2023-09-13T02:09:52.508Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo中引入另一个文件内容</title>
+    <link href="https://zysicyj.github.io/8c341bf3.html"/>
+    <id>https://zysicyj.github.io/8c341bf3.html</id>
+    <published>2023-09-13T02:04:58.000Z</published>
+    <updated>2023-09-13T02:09:52.508Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>【深入解读Redis系列】（五）Redis中String的认知误区，详解String数据类型</title>
     <link href="https://zysicyj.github.io/136d302c.html"/>
     <id>https://zysicyj.github.io/136d302c.html</id>
     <published>2023-09-13T00:45:18.000Z</published>
-    <updated>2023-09-13T00:46:56.792Z</updated>
+    <updated>2023-09-13T02:04:21.742Z</updated>
     
     
       
@@ -46,7 +67,7 @@
     <link href="https://zysicyj.github.io/c7625109.html"/>
     <id>https://zysicyj.github.io/c7625109.html</id>
     <published>2023-09-13T00:28:35.000Z</published>
-    <updated>2023-09-13T00:46:56.796Z</updated>
+    <updated>2023-09-13T02:04:21.505Z</updated>
     
     
       
@@ -110,7 +131,7 @@
     <link href="https://zysicyj.github.io/3daa39a3.html"/>
     <id>https://zysicyj.github.io/3daa39a3.html</id>
     <published>2023-09-12T02:50:17.000Z</published>
-    <updated>2023-09-12T14:40:11.215Z</updated>
+    <updated>2023-09-13T02:04:22.147Z</updated>
     
     
       
@@ -135,7 +156,7 @@
     <link href="https://zysicyj.github.io/1b1004aa.html"/>
     <id>https://zysicyj.github.io/1b1004aa.html</id>
     <published>2023-09-12T02:48:36.000Z</published>
-    <updated>2023-09-12T14:40:02.106Z</updated>
+    <updated>2023-09-13T02:04:21.481Z</updated>
     
     
       
@@ -149,298 +170,6 @@
     
     
     <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【日记】2023年9月11日</title>
-    <link href="https://zysicyj.github.io/79d61d59.html"/>
-    <id>https://zysicyj.github.io/79d61d59.html</id>
-    <published>2023-09-11T00:46:50.000Z</published>
-    <updated>2023-09-12T12:41:03.648Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL高可用搭建方案之（MHA）</title>
-    <link href="https://zysicyj.github.io/mysql_mha.html"/>
-    <id>https://zysicyj.github.io/mysql_mha.html</id>
-    <published>2023-09-10T22:03:21.000Z</published>
-    <updated>2023-09-12T14:40:11.007Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL高可用搭建方案之（MMM）</title>
-    <link href="https://zysicyj.github.io/mysql_mmm.html"/>
-    <id>https://zysicyj.github.io/mysql_mmm.html</id>
-    <published>2023-09-10T08:48:40.000Z</published>
-    <updated>2023-09-12T14:40:11.104Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL高可用九种方案</title>
-    <link href="https://zysicyj.github.io/cd621e01.html"/>
-    <id>https://zysicyj.github.io/cd621e01.html</id>
-    <published>2023-09-10T08:38:50.000Z</published>
-    <updated>2023-09-12T12:41:05.404Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【日记】9月9日</title>
-    <link href="https://zysicyj.github.io/af0c0de2.html"/>
-    <id>https://zysicyj.github.io/af0c0de2.html</id>
-    <published>2023-09-09T19:09:48.000Z</published>
-    <updated>2023-09-12T14:40:02.161Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【Mysql系列】（二）日志系统：一条更新语句是如何执行的</title>
-    <link href="https://zysicyj.github.io/3c24b455.html"/>
-    <id>https://zysicyj.github.io/3c24b455.html</id>
-    <published>2023-09-08T15:37:58.000Z</published>
-    <updated>2023-09-12T12:41:04.133Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="Mysql" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Mysql/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何实现每天定时给女友/老婆发消息</title>
-    <link href="https://zysicyj.github.io/d429d716.html"/>
-    <id>https://zysicyj.github.io/d429d716.html</id>
-    <published>2023-09-08T15:30:55.000Z</published>
-    <updated>2023-09-12T14:40:11.208Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="前端技术" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】使用JavaStream将List转为Map</title>
-    <link href="https://zysicyj.github.io/819fb86a.html"/>
-    <id>https://zysicyj.github.io/819fb86a.html</id>
-    <published>2023-09-08T01:35:22.000Z</published>
-    <updated>2023-09-12T12:41:04.330Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】如何使用Stream的聚合功能</title>
-    <link href="https://zysicyj.github.io/e8e4863e.html"/>
-    <id>https://zysicyj.github.io/e8e4863e.html</id>
-    <published>2023-09-08T00:48:47.000Z</published>
-    <updated>2023-09-12T14:40:11.035Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【日记】2023年9月8日</title>
-    <link href="https://zysicyj.github.io/ef2f882.html"/>
-    <id>https://zysicyj.github.io/ef2f882.html</id>
-    <published>2023-09-08T00:26:55.000Z</published>
-    <updated>2023-09-12T14:40:02.115Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【日记】2023年9月7日</title>
-    <link href="https://zysicyj.github.io/5691e8d4.html"/>
-    <id>https://zysicyj.github.io/5691e8d4.html</id>
-    <published>2023-09-08T00:23:04.000Z</published>
-    <updated>2023-09-12T14:40:02.170Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【Nginx系列】（一）Nginx基础概念Part1</title>
-    <link href="https://zysicyj.github.io/cb073584.html"/>
-    <id>https://zysicyj.github.io/cb073584.html</id>
-    <published>2023-09-06T14:08:38.000Z</published>
-    <updated>2023-09-12T12:41:05.144Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="Nginx" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Nginx/"/>
     
     
   </entry>
@@ -449,8 +178,8 @@
     <title>【面试题精讲】MySQL为什么不推荐使用in</title>
     <link href="https://zysicyj.github.io/e013a8fd.html"/>
     <id>https://zysicyj.github.io/e013a8fd.html</id>
-    <published>2023-09-06T13:56:24.953Z</published>
-    <updated>2023-09-13T00:47:30.813Z</updated>
+    <published>2023-09-12T00:28:35.000Z</published>
+    <updated>2023-09-13T02:02:12.299Z</updated>
     
     
       
@@ -477,11 +206,215 @@
   </entry>
   
   <entry>
-    <title>【面试题精讲】Java中有哪些方式能实现锁某个变量</title>
-    <link href="https://zysicyj.github.io/9ee38b1b.html"/>
-    <id>https://zysicyj.github.io/9ee38b1b.html</id>
-    <published>2023-09-06T13:55:58.000Z</published>
-    <updated>2023-09-12T14:40:11.183Z</updated>
+    <title>【日记】2023年9月11日</title>
+    <link href="https://zysicyj.github.io/79d61d59.html"/>
+    <id>https://zysicyj.github.io/79d61d59.html</id>
+    <published>2023-09-11T00:46:50.000Z</published>
+    <updated>2023-09-13T02:04:22.125Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL高可用搭建方案之（MHA）</title>
+    <link href="https://zysicyj.github.io/mysql_mha.html"/>
+    <id>https://zysicyj.github.io/mysql_mha.html</id>
+    <published>2023-09-10T22:03:21.000Z</published>
+    <updated>2023-09-13T02:04:21.038Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL高可用搭建方案之（MMM）</title>
+    <link href="https://zysicyj.github.io/mysql_mmm.html"/>
+    <id>https://zysicyj.github.io/mysql_mmm.html</id>
+    <published>2023-09-10T08:48:40.000Z</published>
+    <updated>2023-09-13T02:04:21.652Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL高可用九种方案</title>
+    <link href="https://zysicyj.github.io/cd621e01.html"/>
+    <id>https://zysicyj.github.io/cd621e01.html</id>
+    <published>2023-09-10T08:38:50.000Z</published>
+    <updated>2023-09-13T02:04:20.949Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【日记】9月9日</title>
+    <link href="https://zysicyj.github.io/af0c0de2.html"/>
+    <id>https://zysicyj.github.io/af0c0de2.html</id>
+    <published>2023-09-09T19:09:48.000Z</published>
+    <updated>2023-09-13T02:04:21.513Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【Mysql系列】（二）日志系统：一条更新语句是如何执行的</title>
+    <link href="https://zysicyj.github.io/3c24b455.html"/>
+    <id>https://zysicyj.github.io/3c24b455.html</id>
+    <published>2023-09-08T15:37:58.000Z</published>
+    <updated>2023-09-13T02:04:20.890Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="Mysql" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Mysql/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何实现每天定时给女友/老婆发消息</title>
+    <link href="https://zysicyj.github.io/d429d716.html"/>
+    <id>https://zysicyj.github.io/d429d716.html</id>
+    <published>2023-09-08T15:30:55.000Z</published>
+    <updated>2023-09-13T02:04:21.603Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="前端技术" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】使用Java Stream将List转为Map</title>
+    <link href="https://zysicyj.github.io/819fb86a.html"/>
+    <id>https://zysicyj.github.io/819fb86a.html</id>
+    <published>2023-09-08T01:35:22.000Z</published>
+    <updated>2023-09-13T02:19:28.049Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
+    
+    
+    <category term="List" scheme="https://zysicyj.github.io/tags/List/"/>
+    
+    <category term="Map" scheme="https://zysicyj.github.io/tags/Map/"/>
+    
+    <category term="Java Stream" scheme="https://zysicyj.github.io/tags/Java-Stream/"/>
+    
+    <category term="Collectors.toMap()" scheme="https://zysicyj.github.io/tags/Collectors-toMap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】如何使用Stream的聚合功能</title>
+    <link href="https://zysicyj.github.io/e8e4863e.html"/>
+    <id>https://zysicyj.github.io/e8e4863e.html</id>
+    <published>2023-09-08T00:48:47.000Z</published>
+    <updated>2023-09-13T02:04:20.779Z</updated>
     
     
       
@@ -502,11 +435,11 @@
   </entry>
   
   <entry>
-    <title>【BUG】Operation not allowed for a result set of type ResultSet.TYPE_FORWARD_ONLY</title>
-    <link href="https://zysicyj.github.io/c98e6f2d.html"/>
-    <id>https://zysicyj.github.io/c98e6f2d.html</id>
-    <published>2023-09-06T09:35:22.000Z</published>
-    <updated>2023-09-12T14:40:02.100Z</updated>
+    <title>【日记】2023年9月8日</title>
+    <link href="https://zysicyj.github.io/ef2f882.html"/>
+    <id>https://zysicyj.github.io/ef2f882.html</id>
+    <published>2023-09-08T00:26:55.000Z</published>
+    <updated>2023-09-13T02:04:21.530Z</updated>
     
     
       
@@ -519,7 +452,80 @@
     
     
     
-    <category term="BUG" scheme="https://zysicyj.github.io/categories/BUG/"/>
+    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【日记】2023年9月7日</title>
+    <link href="https://zysicyj.github.io/5691e8d4.html"/>
+    <id>https://zysicyj.github.io/5691e8d4.html</id>
+    <published>2023-09-08T00:23:04.000Z</published>
+    <updated>2023-09-13T02:04:21.338Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【Nginx系列】（一）Nginx基础概念Part1</title>
+    <link href="https://zysicyj.github.io/cb073584.html"/>
+    <id>https://zysicyj.github.io/cb073584.html</id>
+    <published>2023-09-06T14:08:38.000Z</published>
+    <updated>2023-09-13T02:04:22.209Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="Nginx" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Nginx/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】Java中有哪些方式能实现锁某个变量</title>
+    <link href="https://zysicyj.github.io/9ee38b1b.html"/>
+    <id>https://zysicyj.github.io/9ee38b1b.html</id>
+    <published>2023-09-06T13:55:58.000Z</published>
+    <updated>2023-09-13T02:04:21.112Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
     
     
   </entry>
