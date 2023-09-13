@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-13T02:09:52.508Z</updated>
+  <updated>2023-09-13T07:28:33.014Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>非华为笔记本安装华为电脑管家</title>
+    <link href="https://zysicyj.github.io/9621200a.html"/>
+    <id>https://zysicyj.github.io/9621200a.html</id>
+    <published>2023-09-13T07:16:55.000Z</published>
+    <updated>2023-09-13T07:28:33.014Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="华为电脑管家" scheme="https://zysicyj.github.io/tags/%E5%8D%8E%E4%B8%BA%E7%94%B5%E8%84%91%E7%AE%A1%E5%AE%B6/"/>
+    
+    <category term="安装教程" scheme="https://zysicyj.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>锐评</title>
+    <link href="https://zysicyj.github.io/rp.html"/>
+    <id>https://zysicyj.github.io/rp.html</id>
+    <published>2023-09-13T03:26:05.000Z</published>
+    <updated>2023-09-13T03:29:47.696Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo中引入另一个文件内容</title>
@@ -179,7 +225,7 @@
     <link href="https://zysicyj.github.io/e013a8fd.html"/>
     <id>https://zysicyj.github.io/e013a8fd.html</id>
     <published>2023-09-12T00:28:35.000Z</published>
-    <updated>2023-09-13T02:02:12.299Z</updated>
+    <updated>2023-09-13T02:47:19.697Z</updated>
     
     
       
@@ -381,7 +427,7 @@
     <link href="https://zysicyj.github.io/819fb86a.html"/>
     <id>https://zysicyj.github.io/819fb86a.html</id>
     <published>2023-09-08T01:35:22.000Z</published>
-    <updated>2023-09-13T02:19:28.049Z</updated>
+    <updated>2023-09-13T02:47:19.689Z</updated>
     
     
       
@@ -476,56 +522,6 @@
     
     
     <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【Nginx系列】（一）Nginx基础概念Part1</title>
-    <link href="https://zysicyj.github.io/cb073584.html"/>
-    <id>https://zysicyj.github.io/cb073584.html</id>
-    <published>2023-09-06T14:08:38.000Z</published>
-    <updated>2023-09-13T02:04:22.209Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="Nginx" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Nginx/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】Java中有哪些方式能实现锁某个变量</title>
-    <link href="https://zysicyj.github.io/9ee38b1b.html"/>
-    <id>https://zysicyj.github.io/9ee38b1b.html</id>
-    <published>2023-09-06T13:55:58.000Z</published>
-    <updated>2023-09-13T02:04:21.112Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题精讲" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/"/>
     
     
   </entry>
