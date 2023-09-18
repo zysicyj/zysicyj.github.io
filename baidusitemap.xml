@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zysicyj.github.io/today.html</loc>
-    <lastmod>2023-09-18T01:17:37.285Z</lastmod>
-  </url>  <url>
-    <loc>https://zysicyj.github.io/zj.html</loc>
-    <lastmod>2023-09-17T14:38:21.663Z</lastmod>
+    <loc>https://zysicyj.github.io/kafka1.html</loc>
+    <lastmod>2023-09-18T13:32:42.643Z</lastmod>
   </url>  <url>
     <loc>https://zysicyj.github.io/hx.html</loc>
-    <lastmod>2023-09-17T14:31:33.620Z</lastmod>
+    <lastmod>2023-09-18T13:24:38.066Z</lastmod>
+  </url>  <url>
+    <loc>https://zysicyj.github.io/update_plan/index.html</loc>
+    <lastmod>2023-09-18T13:23:57.986Z</lastmod>
+  </url>  <url>
+    <loc>https://zysicyj.github.io/today.html</loc>
+    <lastmod>2023-09-18T12:50:01.331Z</lastmod>
+  </url>  <url>
+    <loc>https://zysicyj.github.io/zj.html</loc>
+    <lastmod>2023-09-18T12:50:01.269Z</lastmod>
   </url>  <url>
     <loc>https://zysicyj.github.io/account.html</loc>
     <lastmod>2023-09-17T14:27:35.585Z</lastmod>
@@ -105,9 +111,6 @@
   </url>  <url>
     <loc>https://zysicyj.github.io/3ff56bc4.html</loc>
     <lastmod>2023-09-13T02:04:22.023Z</lastmod>
-  </url>  <url>
-    <loc>https://zysicyj.github.io/25237a1c.html</loc>
-    <lastmod>2023-09-13T02:04:21.997Z</lastmod>
   </url>  <url>
     <loc>https://zysicyj.github.io/82b271f.html</loc>
     <lastmod>2023-09-13T02:04:21.983Z</lastmod>
@@ -276,9 +279,6 @@
   </url>  <url>
     <loc>https://zysicyj.github.io/c37612c9.html</loc>
     <lastmod>2023-09-13T02:04:21.075Z</lastmod>
-  </url>  <url>
-    <loc>https://zysicyj.github.io/update_plan/index.html</loc>
-    <lastmod>2023-09-13T02:04:21.065Z</lastmod>
   </url>  <url>
     <loc>https://zysicyj.github.io/mysql_mha.html</loc>
     <lastmod>2023-09-13T02:04:21.038Z</lastmod>
