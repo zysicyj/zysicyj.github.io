@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-17T14:12:08.817Z</updated>
+  <updated>2023-09-18T14:35:30.489Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -17,11 +17,154 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【Kafka系列】（二）Kafka的基本使用</title>
+    <link href="https://zysicyj.github.io/kafka2.html"/>
+    <id>https://zysicyj.github.io/kafka2.html</id>
+    <published>2023-09-18T13:33:10.000Z</published>
+    <updated>2023-09-18T14:35:30.489Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="Kafka" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/Kafka/"/>
+    
+    
+    <category term="Linux" scheme="https://zysicyj.github.io/tags/Linux/"/>
+    
+    <category term="部署" scheme="https://zysicyj.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="Kafka" scheme="https://zysicyj.github.io/tags/Kafka/"/>
+    
+    <category term="集群" scheme="https://zysicyj.github.io/tags/%E9%9B%86%E7%BE%A4/"/>
+    
+    <category term="Windows" scheme="https://zysicyj.github.io/tags/Windows/"/>
+    
+    <category term="Mac" scheme="https://zysicyj.github.io/tags/Mac/"/>
+    
+    <category term="性能" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD/"/>
+    
+    <category term="操作系统" scheme="https://zysicyj.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="文件系统" scheme="https://zysicyj.github.io/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"/>
+    
+    <category term="网络栈" scheme="https://zysicyj.github.io/tags/%E7%BD%91%E7%BB%9C%E6%A0%88/"/>
+    
+    <category term="硬件资源管理" scheme="https://zysicyj.github.io/tags/%E7%A1%AC%E4%BB%B6%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"/>
+    
+    <category term="零拷贝" scheme="https://zysicyj.github.io/tags/%E9%9B%B6%E6%8B%B7%E8%B4%9D/"/>
+    
+    <category term="阻塞 I/O" scheme="https://zysicyj.github.io/tags/%E9%98%BB%E5%A1%9E-I-O/"/>
+    
+    <category term="非阻塞 I/O" scheme="https://zysicyj.github.io/tags/%E9%9D%9E%E9%98%BB%E5%A1%9E-I-O/"/>
+    
+    <category term="I/O 多路复用" scheme="https://zysicyj.github.io/tags/I-O-%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/"/>
+    
+    <category term="信号驱动 I/O" scheme="https://zysicyj.github.io/tags/%E4%BF%A1%E5%8F%B7%E9%A9%B1%E5%8A%A8-I-O/"/>
+    
+    <category term="异步 I/O" scheme="https://zysicyj.github.io/tags/%E5%BC%82%E6%AD%A5-I-O/"/>
+    
+    <category term="磁盘" scheme="https://zysicyj.github.io/tags/%E7%A3%81%E7%9B%98/"/>
+    
+    <category term="RAID" scheme="https://zysicyj.github.io/tags/RAID/"/>
+    
+    <category term="机械磁盘" scheme="https://zysicyj.github.io/tags/%E6%9C%BA%E6%A2%B0%E7%A3%81%E7%9B%98/"/>
+    
+    <category term="磁盘容量" scheme="https://zysicyj.github.io/tags/%E7%A3%81%E7%9B%98%E5%AE%B9%E9%87%8F/"/>
+    
+    <category term="带宽" scheme="https://zysicyj.github.io/tags/%E5%B8%A6%E5%AE%BD/"/>
+    
+    <category term="带宽资源" scheme="https://zysicyj.github.io/tags/%E5%B8%A6%E5%AE%BD%E8%B5%84%E6%BA%90/"/>
+    
+    <category term="带宽利用率" scheme="https://zysicyj.github.io/tags/%E5%B8%A6%E5%AE%BD%E5%88%A9%E7%94%A8%E7%8E%87/"/>
+    
+    <category term="预留资源" scheme="https://zysicyj.github.io/tags/%E9%A2%84%E7%95%99%E8%B5%84%E6%BA%90/"/>
+    
+    <category term="数据处理目标" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9B%AE%E6%A0%87/"/>
+    
+    <category term="I/O 模型" scheme="https://zysicyj.github.io/tags/I-O-%E6%A8%A1%E5%9E%8B/"/>
+    
+    <category term="操作系统优化" scheme="https://zysicyj.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/"/>
+    
+    <category term="文件系统选择" scheme="https://zysicyj.github.io/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E9%80%89%E6%8B%A9/"/>
+    
+    <category term="网络栈性能" scheme="https://zysicyj.github.io/tags/%E7%BD%91%E7%BB%9C%E6%A0%88%E6%80%A7%E8%83%BD/"/>
+    
+    <category term="社区支持度" scheme="https://zysicyj.github.io/tags/%E7%A4%BE%E5%8C%BA%E6%94%AF%E6%8C%81%E5%BA%A6/"/>
+    
+    <category term="集群参数配置" scheme="https://zysicyj.github.io/tags/%E9%9B%86%E7%BE%A4%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="静态参数" scheme="https://zysicyj.github.io/tags/%E9%9D%99%E6%80%81%E5%8F%82%E6%95%B0/"/>
+    
+    <category term="动态参数" scheme="https://zysicyj.github.io/tags/%E5%8A%A8%E6%80%81%E5%8F%82%E6%95%B0/"/>
+    
+    <category term="Broker" scheme="https://zysicyj.github.io/tags/Broker/"/>
+    
+    <category term="磁盘相关" scheme="https://zysicyj.github.io/tags/%E7%A3%81%E7%9B%98%E7%9B%B8%E5%85%B3/"/>
+    
+    <category term="log.dirs" scheme="https://zysicyj.github.io/tags/log-dirs/"/>
+    
+    <category term="log.dir" scheme="https://zysicyj.github.io/tags/log-dir/"/>
+    
+    <category term="Zookeeper相关" scheme="https://zysicyj.github.io/tags/Zookeeper%E7%9B%B8%E5%85%B3/"/>
+    
+    <category term="zookeeper.connect" scheme="https://zysicyj.github.io/tags/zookeeper-connect/"/>
+    
+    <category term="chroot" scheme="https://zysicyj.github.io/tags/chroot/"/>
+    
+    <category term="Broker相关" scheme="https://zysicyj.github.io/tags/Broker%E7%9B%B8%E5%85%B3/"/>
+    
+    <category term="listeners" scheme="https://zysicyj.github.io/tags/listeners/"/>
+    
+    <category term="主机名" scheme="https://zysicyj.github.io/tags/%E4%B8%BB%E6%9C%BA%E5%90%8D/"/>
+    
+    <category term="端口号" scheme="https://zysicyj.github.io/tags/%E7%AB%AF%E5%8F%A3%E5%8F%B7/"/>
+    
+    <category term="Topic相关" scheme="https://zysicyj.github.io/tags/Topic%E7%9B%B8%E5%85%B3/"/>
+    
+    <category term="auto.create.topics.enable" scheme="https://zysicyj.github.io/tags/auto-create-topics-enable/"/>
+    
+    <category term="unclean.leader.election.enable" scheme="https://zysicyj.github.io/tags/unclean-leader-election-enable/"/>
+    
+    <category term="auto.leader.rebalance.enable" scheme="https://zysicyj.github.io/tags/auto-leader-rebalance-enable/"/>
+    
+    <category term="数据留存方面" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E7%95%99%E5%AD%98%E6%96%B9%E9%9D%A2/"/>
+    
+    <category term="log.retention" scheme="https://zysicyj.github.io/tags/log-retention/"/>
+    
+    <category term="log.retention.bytes" scheme="https://zysicyj.github.io/tags/log-retention-bytes/"/>
+    
+    <category term="message.max.bytes" scheme="https://zysicyj.github.io/tags/message-max-bytes/"/>
+    
+    <category term="Topic级别参数" scheme="https://zysicyj.github.io/tags/Topic%E7%BA%A7%E5%88%AB%E5%8F%82%E6%95%B0/"/>
+    
+    <category term="JVM参数" scheme="https://zysicyj.github.io/tags/JVM%E5%8F%82%E6%95%B0/"/>
+    
+    <category term="堆大小" scheme="https://zysicyj.github.io/tags/%E5%A0%86%E5%A4%A7%E5%B0%8F/"/>
+    
+    <category term="垃圾回收器" scheme="https://zysicyj.github.io/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8/"/>
+    
+    <category term="KAFKA_HEAP_OPTS" scheme="https://zysicyj.github.io/tags/KAFKA-HEAP-OPTS/"/>
+    
+    <category term="KAFKA_JVM_PERFORMANCE_OPTS" scheme="https://zysicyj.github.io/tags/KAFKA-JVM-PERFORMANCE-OPTS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【日记】9月17日</title>
     <link href="https://zysicyj.github.io/2ccef498.html"/>
     <id>https://zysicyj.github.io/2ccef498.html</id>
     <published>2023-09-17T14:07:25.000Z</published>
-    <updated>2023-09-17T14:12:08.817Z</updated>
+    <updated>2023-09-18T14:34:02.181Z</updated>
     
     
       
@@ -48,7 +191,7 @@
     <link href="https://zysicyj.github.io/95e7fe51.html"/>
     <id>https://zysicyj.github.io/95e7fe51.html</id>
     <published>2023-09-15T08:56:11.000Z</published>
-    <updated>2023-09-17T14:06:44.708Z</updated>
+    <updated>2023-09-18T14:34:02.173Z</updated>
     
     
       
@@ -77,7 +220,7 @@
     <link href="https://zysicyj.github.io/86c73c13.html"/>
     <id>https://zysicyj.github.io/86c73c13.html</id>
     <published>2023-09-15T08:49:54.000Z</published>
-    <updated>2023-09-17T14:06:44.719Z</updated>
+    <updated>2023-09-18T14:34:02.792Z</updated>
     
     
       
@@ -104,7 +247,7 @@
     <link href="https://zysicyj.github.io/86c73c13.html"/>
     <id>https://zysicyj.github.io/86c73c13.html</id>
     <published>2023-09-15T00:59:10.000Z</published>
-    <updated>2023-09-15T09:08:24.767Z</updated>
+    <updated>2023-09-18T14:34:02.534Z</updated>
     
     
       
@@ -133,7 +276,7 @@
     <link href="https://zysicyj.github.io/9e2f8e16.html"/>
     <id>https://zysicyj.github.io/9e2f8e16.html</id>
     <published>2023-09-15T00:47:34.000Z</published>
-    <updated>2023-09-15T01:07:49.688Z</updated>
+    <updated>2023-09-18T14:34:02.756Z</updated>
     
     
       
@@ -164,7 +307,7 @@
     <link href="https://zysicyj.github.io/b182e074.html"/>
     <id>https://zysicyj.github.io/b182e074.html</id>
     <published>2023-09-14T02:35:09.000Z</published>
-    <updated>2023-09-14T02:38:43.455Z</updated>
+    <updated>2023-09-18T14:34:02.197Z</updated>
     
     
       
@@ -187,7 +330,7 @@
     <link href="https://zysicyj.github.io/a3ac63cf.html"/>
     <id>https://zysicyj.github.io/a3ac63cf.html</id>
     <published>2023-09-14T01:01:12.000Z</published>
-    <updated>2023-09-14T01:28:41.813Z</updated>
+    <updated>2023-09-18T14:34:02.663Z</updated>
     
     
       
@@ -214,7 +357,7 @@
     <link href="https://zysicyj.github.io/9621200a.html"/>
     <id>https://zysicyj.github.io/9621200a.html</id>
     <published>2023-09-13T07:16:55.000Z</published>
-    <updated>2023-09-13T16:14:42.779Z</updated>
+    <updated>2023-09-18T14:34:02.044Z</updated>
     
     
       
@@ -243,7 +386,7 @@
     <link href="https://zysicyj.github.io/rp.html"/>
     <id>https://zysicyj.github.io/rp.html</id>
     <published>2023-09-13T03:26:05.000Z</published>
-    <updated>2023-09-13T16:56:06.107Z</updated>
+    <updated>2023-09-18T14:34:02.428Z</updated>
     
     
       
@@ -266,7 +409,7 @@
     <link href="https://zysicyj.github.io/8c341bf3.html"/>
     <id>https://zysicyj.github.io/8c341bf3.html</id>
     <published>2023-09-13T02:04:58.000Z</published>
-    <updated>2023-09-13T02:09:52.508Z</updated>
+    <updated>2023-09-18T14:34:02.618Z</updated>
     
     
       
@@ -291,7 +434,7 @@
     <link href="https://zysicyj.github.io/136d302c.html"/>
     <id>https://zysicyj.github.io/136d302c.html</id>
     <published>2023-09-13T00:45:18.000Z</published>
-    <updated>2023-09-13T16:25:45.351Z</updated>
+    <updated>2023-09-18T14:34:02.117Z</updated>
     
     
       
@@ -324,7 +467,7 @@
     <link href="https://zysicyj.github.io/c7625109.html"/>
     <id>https://zysicyj.github.io/c7625109.html</id>
     <published>2023-09-13T00:28:35.000Z</published>
-    <updated>2023-09-13T02:04:21.505Z</updated>
+    <updated>2023-09-18T14:34:02.230Z</updated>
     
     
       
@@ -353,7 +496,7 @@
     <link href="https://zysicyj.github.io/14595062.html"/>
     <id>https://zysicyj.github.io/14595062.html</id>
     <published>2023-09-12T14:41:38.000Z</published>
-    <updated>2023-09-13T00:22:46.045Z</updated>
+    <updated>2023-09-18T14:34:02.386Z</updated>
     
     
       
@@ -388,7 +531,7 @@
     <link href="https://zysicyj.github.io/3daa39a3.html"/>
     <id>https://zysicyj.github.io/3daa39a3.html</id>
     <published>2023-09-12T02:50:17.000Z</published>
-    <updated>2023-09-13T02:04:22.147Z</updated>
+    <updated>2023-09-18T14:34:02.708Z</updated>
     
     
       
@@ -413,7 +556,7 @@
     <link href="https://zysicyj.github.io/1b1004aa.html"/>
     <id>https://zysicyj.github.io/1b1004aa.html</id>
     <published>2023-09-12T02:48:36.000Z</published>
-    <updated>2023-09-13T02:04:21.481Z</updated>
+    <updated>2023-09-18T14:34:02.205Z</updated>
     
     
       
@@ -440,7 +583,7 @@
     <link href="https://zysicyj.github.io/e013a8fd.html"/>
     <id>https://zysicyj.github.io/e013a8fd.html</id>
     <published>2023-09-12T00:28:35.000Z</published>
-    <updated>2023-09-13T02:47:19.697Z</updated>
+    <updated>2023-09-18T14:34:02.776Z</updated>
     
     
       
@@ -471,7 +614,7 @@
     <link href="https://zysicyj.github.io/79d61d59.html"/>
     <id>https://zysicyj.github.io/79d61d59.html</id>
     <published>2023-09-11T00:46:50.000Z</published>
-    <updated>2023-09-13T02:04:22.125Z</updated>
+    <updated>2023-09-18T14:34:02.931Z</updated>
     
     
       
@@ -498,7 +641,7 @@
     <link href="https://zysicyj.github.io/mysql_mha.html"/>
     <id>https://zysicyj.github.io/mysql_mha.html</id>
     <published>2023-09-10T22:03:21.000Z</published>
-    <updated>2023-09-13T02:04:21.038Z</updated>
+    <updated>2023-09-18T14:34:02.295Z</updated>
     
     
       
@@ -523,32 +666,7 @@
     <link href="https://zysicyj.github.io/mysql_mmm.html"/>
     <id>https://zysicyj.github.io/mysql_mmm.html</id>
     <published>2023-09-10T08:48:40.000Z</published>
-    <updated>2023-09-13T02:04:21.652Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="架构" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E6%9E%B6%E6%9E%84/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MySQL高可用九种方案</title>
-    <link href="https://zysicyj.github.io/cd621e01.html"/>
-    <id>https://zysicyj.github.io/cd621e01.html</id>
-    <published>2023-09-10T08:38:50.000Z</published>
-    <updated>2023-09-13T02:04:20.949Z</updated>
+    <updated>2023-09-18T14:34:02.484Z</updated>
     
     
       
