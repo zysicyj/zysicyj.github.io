@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-18T15:10:28.740Z</updated>
+  <updated>2023-09-19T13:36:55.942Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【面试题精讲】Mysql如何实现乐观锁</title>
+    <link href="https://zysicyj.github.io/d561c136.html"/>
+    <id>https://zysicyj.github.io/d561c136.html</id>
+    <published>2023-09-19T13:33:22.000Z</published>
+    <updated>2023-09-19T13:36:55.942Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="MySQL" scheme="https://zysicyj.github.io/tags/MySQL/"/>
+    
+    <category term="数据库" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="并发控制" scheme="https://zysicyj.github.io/tags/%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6/"/>
+    
+    <category term="性能" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD/"/>
+    
+    <category term="乐观锁" scheme="https://zysicyj.github.io/tags/%E4%B9%90%E8%A7%82%E9%94%81/"/>
+    
+    <category term="版本号机制" scheme="https://zysicyj.github.io/tags/%E7%89%88%E6%9C%AC%E5%8F%B7%E6%9C%BA%E5%88%B6/"/>
+    
+    <category term="时间戳机制" scheme="https://zysicyj.github.io/tags/%E6%97%B6%E9%97%B4%E6%88%B3%E6%9C%BA%E5%88%B6/"/>
+    
+    <category term="数据冲突" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E5%86%B2%E7%AA%81/"/>
+    
+    <category term="并发更新" scheme="https://zysicyj.github.io/tags/%E5%B9%B6%E5%8F%91%E6%9B%B4%E6%96%B0/"/>
+    
+    <category term="数据表" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E8%A1%A8/"/>
+    
+    <category term="版本号字段" scheme="https://zysicyj.github.io/tags/%E7%89%88%E6%9C%AC%E5%8F%B7%E5%AD%97%E6%AE%B5/"/>
+    
+    <category term="时间戳字段" scheme="https://zysicyj.github.io/tags/%E6%97%B6%E9%97%B4%E6%88%B3%E5%AD%97%E6%AE%B5/"/>
+    
+    <category term="比较" scheme="https://zysicyj.github.io/tags/%E6%AF%94%E8%BE%83/"/>
+    
+    <category term="更新操作" scheme="https://zysicyj.github.io/tags/%E6%9B%B4%E6%96%B0%E6%93%8D%E4%BD%9C/"/>
+    
+    <category term="重试机制" scheme="https://zysicyj.github.io/tags/%E9%87%8D%E8%AF%95%E6%9C%BA%E5%88%B6/"/>
+    
+    <category term="回滚操作" scheme="https://zysicyj.github.io/tags/%E5%9B%9E%E6%BB%9A%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>【日记】9月18日</title>
@@ -684,33 +739,6 @@
     <category term="数据库" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     <category term="查询操作符" scheme="https://zysicyj.github.io/tags/%E6%9F%A5%E8%AF%A2%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【日记】2023年9月11日</title>
-    <link href="https://zysicyj.github.io/79d61d59.html"/>
-    <id>https://zysicyj.github.io/79d61d59.html</id>
-    <published>2023-09-11T00:46:50.000Z</published>
-    <updated>2023-09-18T14:34:02.931Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    <category term="2023年" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/2023%E5%B9%B4/"/>
-    
-    <category term="九月" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/2023%E5%B9%B4/%E4%B9%9D%E6%9C%88/"/>
-    
     
   </entry>
   
