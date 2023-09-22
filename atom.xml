@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-19T13:36:55.942Z</updated>
+  <updated>2023-09-21T01:20:10.458Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,130 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【面试题精讲】JavaOptional用法</title>
+    <link href="https://zysicyj.github.io/a3047fae.html"/>
+    <id>https://zysicyj.github.io/a3047fae.html</id>
+    <published>2023-09-21T01:05:41.000Z</published>
+    <updated>2023-09-21T01:20:10.458Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://zysicyj.github.io/tags/Java/"/>
+    
+    <category term="Optional" scheme="https://zysicyj.github.io/tags/Optional/"/>
+    
+    <category term="空指针异常" scheme="https://zysicyj.github.io/tags/%E7%A9%BA%E6%8C%87%E9%92%88%E5%BC%82%E5%B8%B8/"/>
+    
+    <category term="NullPointerException" scheme="https://zysicyj.github.io/tags/NullPointerException/"/>
+    
+    <category term="容器类" scheme="https://zysicyj.github.io/tags/%E5%AE%B9%E5%99%A8%E7%B1%BB/"/>
+    
+    <category term="值不存在" scheme="https://zysicyj.github.io/tags/%E5%80%BC%E4%B8%8D%E5%AD%98%E5%9C%A8/"/>
+    
+    <category term="isPresent" scheme="https://zysicyj.github.io/tags/isPresent/"/>
+    
+    <category term="get" scheme="https://zysicyj.github.io/tags/get/"/>
+    
+    <category term="ifPresent" scheme="https://zysicyj.github.io/tags/ifPresent/"/>
+    
+    <category term="orElse" scheme="https://zysicyj.github.io/tags/orElse/"/>
+    
+    <category term="orElseGet" scheme="https://zysicyj.github.io/tags/orElseGet/"/>
+    
+    <category term="orElseThrow" scheme="https://zysicyj.github.io/tags/orElseThrow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【深入解读Redis系列】（七）集合类型常见的四种统计模式</title>
+    <link href="https://zysicyj.github.io/eb7bb6cf.html"/>
+    <id>https://zysicyj.github.io/eb7bb6cf.html</id>
+    <published>2023-09-20T09:33:00.000Z</published>
+    <updated>2023-09-21T01:20:10.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】说一说springboot加载配置文件优先级</title>
+    <link href="https://zysicyj.github.io/fed94248.html"/>
+    <id>https://zysicyj.github.io/fed94248.html</id>
+    <published>2023-09-20T09:25:36.000Z</published>
+    <updated>2023-09-21T01:20:10.460Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="springboot" scheme="https://zysicyj.github.io/tags/springboot/"/>
+    
+    <category term="加载配置文件" scheme="https://zysicyj.github.io/tags/%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="优先级" scheme="https://zysicyj.github.io/tags/%E4%BC%98%E5%85%88%E7%BA%A7/"/>
+    
+    <category term="命令行参数" scheme="https://zysicyj.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0/"/>
+    
+    <category term="操作系统环境变量" scheme="https://zysicyj.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
+    
+    <category term="命令行属性" scheme="https://zysicyj.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B1%9E%E6%80%A7/"/>
+    
+    <category term="jar包外部的配置文件" scheme="https://zysicyj.github.io/tags/jar%E5%8C%85%E5%A4%96%E9%83%A8%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="jar包内部的配置文件" scheme="https://zysicyj.github.io/tags/jar%E5%8C%85%E5%86%85%E9%83%A8%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="jar包外部的profile配置文件" scheme="https://zysicyj.github.io/tags/jar%E5%8C%85%E5%A4%96%E9%83%A8%E7%9A%84profile%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="jar包内部的profile配置文件" scheme="https://zysicyj.github.io/tags/jar%E5%8C%85%E5%86%85%E9%83%A8%E7%9A%84profile%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>南瑞环境准备</title>
+    <link href="https://zysicyj.github.io/dfb0c7b0.html"/>
+    <id>https://zysicyj.github.io/dfb0c7b0.html</id>
+    <published>2023-09-20T02:53:49.000Z</published>
+    <updated>2023-09-20T05:59:12.173Z</updated>
+    
+    
+    <summary type="html">有东西被加密了, 请输入密码查看.</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>【面试题精讲】Mysql如何实现乐观锁</title>
@@ -119,15 +243,15 @@
     <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="性能" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD/"/>
+    <category term="G1收集器" scheme="https://zysicyj.github.io/tags/G1%E6%94%B6%E9%9B%86%E5%99%A8/"/>
     
     <category term="垃圾回收器" scheme="https://zysicyj.github.io/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8/"/>
-    
-    <category term="G1收集器" scheme="https://zysicyj.github.io/tags/G1%E6%94%B6%E9%9B%86%E5%99%A8/"/>
     
     <category term="JDK 7u4" scheme="https://zysicyj.github.io/tags/JDK-7u4/"/>
     
     <category term="CMS收集器" scheme="https://zysicyj.github.io/tags/CMS%E6%94%B6%E9%9B%86%E5%99%A8/"/>
+    
+    <category term="性能" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD/"/>
     
     <category term="调优" scheme="https://zysicyj.github.io/tags/%E8%B0%83%E4%BC%98/"/>
     
@@ -190,19 +314,21 @@
     <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
     
+    <category term="Kafka" scheme="https://zysicyj.github.io/tags/Kafka/"/>
+    
     <category term="Linux" scheme="https://zysicyj.github.io/tags/Linux/"/>
     
     <category term="部署" scheme="https://zysicyj.github.io/tags/%E9%83%A8%E7%BD%B2/"/>
     
-    <category term="Kafka" scheme="https://zysicyj.github.io/tags/Kafka/"/>
+    <category term="垃圾回收器" scheme="https://zysicyj.github.io/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8/"/>
+    
+    <category term="性能" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD/"/>
     
     <category term="集群" scheme="https://zysicyj.github.io/tags/%E9%9B%86%E7%BE%A4/"/>
     
     <category term="Windows" scheme="https://zysicyj.github.io/tags/Windows/"/>
     
     <category term="Mac" scheme="https://zysicyj.github.io/tags/Mac/"/>
-    
-    <category term="性能" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD/"/>
     
     <category term="操作系统" scheme="https://zysicyj.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
@@ -301,8 +427,6 @@
     <category term="JVM参数" scheme="https://zysicyj.github.io/tags/JVM%E5%8F%82%E6%95%B0/"/>
     
     <category term="堆大小" scheme="https://zysicyj.github.io/tags/%E5%A0%86%E5%A4%A7%E5%B0%8F/"/>
-    
-    <category term="垃圾回收器" scheme="https://zysicyj.github.io/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8/"/>
     
     <category term="KAFKA_HEAP_OPTS" scheme="https://zysicyj.github.io/tags/KAFKA-HEAP-OPTS/"/>
     
@@ -573,18 +697,18 @@
   </entry>
   
   <entry>
-    <title>【深入解读Redis系列】（五）Redis中String的认知误区，详解String数据类型</title>
+    <title>【深入解读Redis系列】（六）Redis中String的认知误区，详解String数据类型</title>
     <link href="https://zysicyj.github.io/136d302c.html"/>
     <id>https://zysicyj.github.io/136d302c.html</id>
     <published>2023-09-13T00:45:18.000Z</published>
-    <updated>2023-09-18T15:11:04.875Z</updated>
+    <updated>2023-09-20T09:31:28.853Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
         
       
     
@@ -627,118 +751,6 @@
     <category term="JVM" scheme="https://zysicyj.github.io/tags/JVM/"/>
     
     <category term="垃圾收集器" scheme="https://zysicyj.github.io/tags/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】你知道MySQL中有哪些隔离级别吗</title>
-    <link href="https://zysicyj.github.io/14595062.html"/>
-    <id>https://zysicyj.github.io/14595062.html</id>
-    <published>2023-09-12T14:41:38.000Z</published>
-    <updated>2023-09-18T15:11:05.012Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="MySQL" scheme="https://zysicyj.github.io/tags/MySQL/"/>
-    
-    <category term="隔离级别" scheme="https://zysicyj.github.io/tags/%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/"/>
-    
-    <category term="脏读" scheme="https://zysicyj.github.io/tags/%E8%84%8F%E8%AF%BB/"/>
-    
-    <category term="幻读" scheme="https://zysicyj.github.io/tags/%E5%B9%BB%E8%AF%BB/"/>
-    
-    <category term="不可重复读" scheme="https://zysicyj.github.io/tags/%E4%B8%8D%E5%8F%AF%E9%87%8D%E5%A4%8D%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给Hexo博客文章加密</title>
-    <link href="https://zysicyj.github.io/3daa39a3.html"/>
-    <id>https://zysicyj.github.io/3daa39a3.html</id>
-    <published>2023-09-12T02:50:17.000Z</published>
-    <updated>2023-09-18T14:34:02.708Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【日记】9月12日</title>
-    <link href="https://zysicyj.github.io/1b1004aa.html"/>
-    <id>https://zysicyj.github.io/1b1004aa.html</id>
-    <published>2023-09-12T02:48:36.000Z</published>
-    <updated>2023-09-18T14:34:02.205Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="日记" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    <category term="2023年" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/2023%E5%B9%B4/"/>
-    
-    <category term="九月" scheme="https://zysicyj.github.io/categories/%E6%97%A5%E8%AE%B0/2023%E5%B9%B4/%E4%B9%9D%E6%9C%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】MySQL为什么不推荐使用in</title>
-    <link href="https://zysicyj.github.io/e013a8fd.html"/>
-    <id>https://zysicyj.github.io/e013a8fd.html</id>
-    <published>2023-09-12T00:28:35.000Z</published>
-    <updated>2023-09-18T15:11:05.127Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="MySQL" scheme="https://zysicyj.github.io/tags/MySQL/"/>
-    
-    <category term="数据库" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="查询操作符" scheme="https://zysicyj.github.io/tags/%E6%9F%A5%E8%AF%A2%E6%93%8D%E4%BD%9C%E7%AC%A6/"/>
     
   </entry>
   
