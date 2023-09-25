@@ -4,6 +4,170 @@
   
     
     <entry>
+      <title>添加阿里云maven镜像</title>
+      <link href="/bf8ff131.html"/>
+      <url>/bf8ff131.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><hr><p>打开 maven 的配置文件（ windows 机器一般在 maven 安装目录的 conf&#x2F;settings.xml ），在<mirrors></mirrors>标签中添加 mirror 子节点:</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库snapshots<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache-snapshots<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure><p>在你的 pom.xml 文件<denpendencies></denpendencies>节点中加入你要引用的文件信息：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>[GROUP_ID]<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>[ARTIFACT_ID]<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>[VERSION]<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 阿里云 </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> maven镜像 </tag>
+            
+            <tag> mirror </tag>
+            
+            <tag> 阿里云公共仓库 </tag>
+            
+            <tag> pom.xml </tag>
+            
+            <tag> denpendencies </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【BUG】Springboot报错不支持major65</title>
+      <link href="/4aebfff7.html"/>
+      <url>/4aebfff7.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/RocketMq/">系列文章地址</a></p><hr><h1 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse <span class="keyword">class</span> <span class="title class_">file</span> - probably due to a <span class="keyword">new</span> <span class="title class_">Java</span> <span class="keyword">class</span> <span class="title class_">file</span> version that isn<span class="string">&#x27;t supported yet: URL [jar:file:/D:/code/cppCode20221025/leader-admin/target/leader-admin.jar!/BOOT-INF/classes!/com/nari/LeaderApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 65</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)</span></span><br><span class="line"><span class="string">        at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)</span></span><br><span class="line"><span class="string">        at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)</span></span><br><span class="line"><span class="string">        at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)</span></span><br><span class="line"><span class="string">        at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)</span></span><br><span class="line"><span class="string">        at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)</span></span><br><span class="line"><span class="string">        at com.nari.LeaderApplication.main(LeaderApplication.java:18)</span></span><br><span class="line"><span class="string">        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)</span></span><br><span class="line"><span class="string">        at java.base/java.lang.reflect.Method.invoke(Method.java:580)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.loader.Launcher.launch(Launcher.java:95)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)</span></span><br><span class="line"><span class="string">        at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65)</span></span><br><span class="line"><span class="string">        Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn&#x27;</span>t supported yet: URL [jar:file:/D:/code/cppCode20221025/leader-admin/target/leader-admin.jar!/BOOT-INF/classes!/com/nari/LeaderApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported <span class="keyword">class</span> <span class="title class_">file</span> major version <span class="number">65</span></span><br><span class="line">        at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:<span class="number">60</span>)</span><br><span class="line">        at org.springframework.core.type.classreading.SimpleMetadataReader.&lt;init&gt;(SimpleMetadataReader.java:<span class="number">49</span>)</span><br><span class="line">        at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:<span class="number">103</span>)</span><br><span class="line">        at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:<span class="number">123</span>)</span><br><span class="line">        at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:<span class="number">429</span>)</span><br><span class="line">        ... <span class="number">26</span> common frames omitted</span><br><span class="line">        Caused by: java.lang.IllegalArgumentException: Unsupported <span class="keyword">class</span> <span class="title class_">file</span> major version <span class="number">65</span></span><br><span class="line">        at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:<span class="number">196</span>)</span><br><span class="line">        at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:<span class="number">177</span>)</span><br><span class="line">        at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:<span class="number">163</span>)</span><br><span class="line">        at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:<span class="number">284</span>)</span><br><span class="line">        at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:<span class="number">57</span>)</span><br><span class="line">        ... <span class="number">30</span> common frames omitted</span><br></pre></td></tr></table></figure><h1 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h1><p>与spring版本兼容</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>升级springboot版本，目前官网只有3.2.0-SNAPSHOT</p><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-25/143861315936000.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-25/143861315936000.png"></a></p><p>官网地址：<a href="https://docs.spring.io/spring-boot/docs/3.2.0-SNAPSHOT/reference/html/getting-started.html#getting-started">https://docs.spring.io/spring-boot/docs/3.2.0-SNAPSHOT/reference/html/getting-started.html#getting-started</a></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-dependencies<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">type</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>import<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【BUG】failed_to_execute_goal_org_springframework_boot_spring_boot_maven_plugin_2_1_1_RELEASE_repackage_default_on_project_leader_admin_execution_default_of_goal_org_springframework_boot_spring_boot_maven_plugin_2_1_1_RELEASE_repackage_failed_unsupported_class_file_major_version_65</title>
+      <link href="/3e4a3c49.html"/>
+      <url>/3e4a3c49.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/RocketMq/">系列文章地址</a></p><hr><h1 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h1><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-25/141629510849800.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-25/141629510849800.png"></a></p><h1 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h1><p>这个错误是由于您的项目中使用了一个类文件版本为65.0的类，而当前的Java运行时环境不支持该版本。</p><p>根据错误信息，您正在使用的是Spring Boot Maven插件，版本为2.1.1.RELEASE。该插件的默认目标是将项目打包为可执行的JAR文件。</p><p>要解决这个问题，您可以尝试以下几个步骤：</p><ol><li><p>确认您使用的Java版本是否与该插件兼容。您可以查看Spring Boot官方文档或插件的文档，了解其兼容的Java版本范围。</p></li><li><p>确保您的项目中使用的所有依赖项（包括Spring Boot和其他库）的版本与您的Java版本兼容。您可以查看它们的文档或发布说明，了解其兼容的Java版本要求。</p></li><li><p>如果您的Java版本较低，并且您无法升级到支持类文件版本65.0的Java版本，您可以尝试降低您的项目中的类文件版本。您可以在项目的pom.xml文件中配置maven-compiler-plugin插件，指定目标类文件版本。例如，您可以将目标版本设置为61.0，以与Java<br>17兼容。</p></li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">target</span>&gt;</span>17<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">source</span>&gt;</span>17<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure><p>请根据您的实际情况进行调整。</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>替换为 3.1.3</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">goal</span>&gt;</span>repackage<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 报错 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> Spring Boot </tag>
+            
+            <tag> Maven </tag>
+            
+            <tag> 类文件版本 </tag>
+            
+            <tag> 兼容 </tag>
+            
+            <tag> 解决方案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随机ID生成工具</title>
+      <link href="/7ac5ccbc.html"/>
+      <url>/7ac5ccbc.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><hr><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.nari.common.utils;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.atomic.AtomicInteger;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">IdUtilV2</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">AtomicInteger</span> <span class="variable">ids</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">AtomicInteger</span>(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="title function_">IdUtilV2</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">getIdStr</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> getId().toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Long <span class="title function_">getId</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> System.nanoTime() + Thread.currentThread().getId() + (ids.getAndIncrement());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 工具类 </tag>
+            
+            <tag> 随机ID生成工具 </tag>
+            
+            <tag> 唯一标识符 </tag>
+            
+            <tag> 并发安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>实测Hutool的雪花算法8G内存跑到7600万条OOM</title>
+      <link href="/2a57ec04.html"/>
+      <url>/2a57ec04.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><hr><p>本地跑的，cpu是i9-13代，内存32G</p><p>方法是这个:</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1000000</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">i2</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line">        <span class="type">StopWatch</span> <span class="variable">watch</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StopWatch</span>();</span><br><span class="line">        watch.start();</span><br><span class="line">        Set&lt;Long&gt; ids = <span class="keyword">new</span> <span class="title class_">HashSet</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i21</span> <span class="operator">=</span> i2; i21 &gt; <span class="number">0</span>; i21--) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> <span class="number">0</span>; i1 &lt; i; i1++) &#123;</span><br><span class="line">                ids.add(IdUtil.getSnowflake().nextId());</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(ids.size());</span><br><span class="line">        &#125;</span><br><span class="line">        watch.stop();</span><br><span class="line">        System.out.println(watch.getLastTaskTimeMillis());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>实际跑了7600万，然后OOM了，内存是8G</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> OOM </tag>
+            
+            <tag> Hutool </tag>
+            
+            <tag> 雪花算法 </tag>
+            
+            <tag> 内存 </tag>
+            
+            <tag> i9-13代 </tag>
+            
+            <tag> 32G </tag>
+            
+            <tag> 8G </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【BUG】循环中重复使用对象一定要注意</title>
+      <link href="/b0042947.html"/>
+      <url>/b0042947.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有时候博客内容会有变动，首发博客是最新的，其他博客地址可能未同步，请认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/RocketMq/">系列文章地址</a></p><hr><h1 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h1><p>报错信息显示ID重复。</p><h1 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h1><p>在最终添加的方法中，出现了重复ID的报错。对于为什么ID会重复，我思考了很久也没有想通。我沿着代码往上找到了<code>saveList</code>。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">batchSize</span> <span class="operator">=</span> <span class="number">5000</span>;</span><br><span class="line"><span class="keyword">if</span> (CollUtil.isNotEmpty(saveList)) &#123;</span><br><span class="line">    List&lt;List&lt;Map&lt;String, Object&gt;&gt;&gt; batchList = ListUtil.partition(saveList, batchSize);</span><br><span class="line">    <span class="keyword">for</span> (List&lt;Map&lt;String, Object&gt;&gt; batch : batchList) &#123;</span><br><span class="line">        <span class="keyword">if</span> (CollUtil.isNotEmpty(batch)) &#123;</span><br><span class="line">            firstRecordMapper.insertJghzLdryList(batch.stream().filter(v -&gt; v != <span class="literal">null</span> &amp;&amp; ObjectUtil.isNotEmpty(v.get(<span class="string">&quot;ID&quot;</span>))).collect(Collectors.toList()));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>代码大致如上所示。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (Map&lt;String, Object&gt; item : list) &#123;</span><br><span class="line">    ...</span><br><span class="line">    Map&lt;String, Object&gt; oneCellMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, Object&gt;();</span><br><span class="line">    <span class="comment">// 遍历这一类型的10个二级指标，每个指标存成一行数据</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; secIndexNameList.size(); i++) &#123;</span><br><span class="line">        ...</span><br><span class="line">        oneCellMap.clear();</span><br><span class="line">        oneCellMap.put(<span class="string">&quot;ID&quot;</span>, IdUtilV2.getInstance().getId());</span><br><span class="line">        ...</span><br><span class="line">        saveList.add(oneCellMap);</span><br><span class="line">        px++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 保存这一行数据的 综合得分</span></span><br><span class="line">    oneCellMap.clear();</span><br><span class="line">    oneCellMap.put(<span class="string">&quot;ID&quot;</span>, IdUtilV2.getInstance().getId());</span><br><span class="line">    ...</span><br><span class="line">    saveList.add(oneCellMap);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我也不是很确定，但我怀疑问题出在这里，于是我做了以下修改：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (Map&lt;String, Object&gt; item : list) &#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">// 遍历这一类型的10个二级指标，每个指标存成一行数据</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; secIndexNameList.size(); i++) &#123;</span><br><span class="line">        ...</span><br><span class="line">        Map&lt;String, Object&gt; oneCellMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, Object&gt;();</span><br><span class="line">        oneCellMap.put(<span class="string">&quot;ID&quot;</span>, IdUtilV2.getInstance().getId());</span><br><span class="line">        ...</span><br><span class="line">        saveList.add(oneCellMap);</span><br><span class="line">        px++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 保存这一行数据的 综合得分</span></span><br><span class="line">    Map&lt;String, Object&gt; oneCellMap = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;String, Object&gt;();</span><br><span class="line">    oneCellMap.put(<span class="string">&quot;ID&quot;</span>, IdUtilV2.getInstance().getId());</span><br><span class="line">    ...</span><br><span class="line">    saveList.add(oneCellMap);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>然后问题就解决了。我感到很奇怪，后来才反应过来…原来是使用了同一个对象。</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>问题的根本原因是在循环中重复使用了同一个<code>oneCellMap</code>对象，导致了ID重复的问题。在第一个版本的代码中，每次循环都会清空<code>oneCellMap</code>对象并重新添加ID，但是由于<code>saveList</code>中保存的是引用，所以最终<code>saveList</code>中的所有<code>oneCellMap</code>对象的ID都是相同的。</p><p>在修改后的代码中，每次循环都创建了一个新的<code>oneCellMap</code>对象，确保了每个<code>oneCellMap</code>对象的ID都是唯一的，解决了ID重复的问题。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> BUG </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BUG </tag>
+            
+            <tag> 循环 </tag>
+            
+            <tag> 对象 </tag>
+            
+            <tag> ID重复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【面试题精讲】Mysql的row_number函数</title>
       <link href="/7a63a993.html"/>
       <url>/7a63a993.html</url>
@@ -1640,7 +1804,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Redis </category>
           
       </categories>
       
@@ -2541,7 +2707,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Mysql </category>
           
       </categories>
       
@@ -2851,7 +3019,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 开发规范 </category>
           
       </categories>
       
@@ -2878,7 +3048,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 开发规范 </category>
           
       </categories>
       
@@ -2905,7 +3077,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Redis </category>
           
       </categories>
       
@@ -3382,7 +3556,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 开发规范 </category>
           
       </categories>
       
@@ -3445,7 +3621,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 开发规范 </category>
           
       </categories>
       
@@ -3840,7 +4018,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Redis </category>
           
       </categories>
       
@@ -4071,7 +4251,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Redis </category>
           
       </categories>
       
@@ -4288,7 +4470,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 开发规范 </category>
           
       </categories>
       
@@ -4380,7 +4564,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Redis </category>
           
       </categories>
       
@@ -4423,7 +4609,9 @@
       
       <categories>
           
-          <category> 技术文章 </category>
+          <category> 系列文章 </category>
+          
+          <category> 深入理解Redis </category>
           
       </categories>
       

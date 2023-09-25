@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-24T08:45:43.754Z</updated>
+  <updated>2023-09-25T07:54:27.106Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,194 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>添加阿里云maven镜像</title>
+    <link href="https://zysicyj.github.io/bf8ff131.html"/>
+    <id>https://zysicyj.github.io/bf8ff131.html</id>
+    <published>2023-09-25T07:53:27.000Z</published>
+    <updated>2023-09-25T07:54:27.106Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="阿里云" scheme="https://zysicyj.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+    <category term="配置文件" scheme="https://zysicyj.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="maven镜像" scheme="https://zysicyj.github.io/tags/maven%E9%95%9C%E5%83%8F/"/>
+    
+    <category term="mirror" scheme="https://zysicyj.github.io/tags/mirror/"/>
+    
+    <category term="阿里云公共仓库" scheme="https://zysicyj.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91%E5%85%AC%E5%85%B1%E4%BB%93%E5%BA%93/"/>
+    
+    <category term="pom.xml" scheme="https://zysicyj.github.io/tags/pom-xml/"/>
+    
+    <category term="denpendencies" scheme="https://zysicyj.github.io/tags/denpendencies/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【BUG】Springboot报错不支持major65</title>
+    <link href="https://zysicyj.github.io/4aebfff7.html"/>
+    <id>https://zysicyj.github.io/4aebfff7.html</id>
+    <published>2023-09-25T07:32:15.000Z</published>
+    <updated>2023-09-25T07:56:00.855Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【BUG】failed_to_execute_goal_org_springframework_boot_spring_boot_maven_plugin_2_1_1_RELEASE_repackage_default_on_project_leader_admin_execution_default_of_goal_org_springframework_boot_spring_boot_maven_plugin_2_1_1_RELEASE_repackage_failed_unsupported_class_file_major_version_65</title>
+    <link href="https://zysicyj.github.io/3e4a3c49.html"/>
+    <id>https://zysicyj.github.io/3e4a3c49.html</id>
+    <published>2023-09-25T07:15:59.000Z</published>
+    <updated>2023-09-25T07:24:39.327Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="报错" scheme="https://zysicyj.github.io/tags/%E6%8A%A5%E9%94%99/"/>
+    
+    <category term="插件" scheme="https://zysicyj.github.io/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="Spring Boot" scheme="https://zysicyj.github.io/tags/Spring-Boot/"/>
+    
+    <category term="Maven" scheme="https://zysicyj.github.io/tags/Maven/"/>
+    
+    <category term="类文件版本" scheme="https://zysicyj.github.io/tags/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%89%88%E6%9C%AC/"/>
+    
+    <category term="兼容" scheme="https://zysicyj.github.io/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+    <category term="解决方案" scheme="https://zysicyj.github.io/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随机ID生成工具</title>
+    <link href="https://zysicyj.github.io/7ac5ccbc.html"/>
+    <id>https://zysicyj.github.io/7ac5ccbc.html</id>
+    <published>2023-09-25T03:19:42.000Z</published>
+    <updated>2023-09-25T07:24:39.361Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://zysicyj.github.io/tags/Java/"/>
+    
+    <category term="工具类" scheme="https://zysicyj.github.io/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+    <category term="随机ID生成工具" scheme="https://zysicyj.github.io/tags/%E9%9A%8F%E6%9C%BAID%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="唯一标识符" scheme="https://zysicyj.github.io/tags/%E5%94%AF%E4%B8%80%E6%A0%87%E8%AF%86%E7%AC%A6/"/>
+    
+    <category term="并发安全" scheme="https://zysicyj.github.io/tags/%E5%B9%B6%E5%8F%91%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实测Hutool的雪花算法8G内存跑到7600万条OOM</title>
+    <link href="https://zysicyj.github.io/2a57ec04.html"/>
+    <id>https://zysicyj.github.io/2a57ec04.html</id>
+    <published>2023-09-25T03:01:28.000Z</published>
+    <updated>2023-09-25T07:24:39.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="OOM" scheme="https://zysicyj.github.io/tags/OOM/"/>
+    
+    <category term="Hutool" scheme="https://zysicyj.github.io/tags/Hutool/"/>
+    
+    <category term="雪花算法" scheme="https://zysicyj.github.io/tags/%E9%9B%AA%E8%8A%B1%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="内存" scheme="https://zysicyj.github.io/tags/%E5%86%85%E5%AD%98/"/>
+    
+    <category term="i9-13代" scheme="https://zysicyj.github.io/tags/i9-13%E4%BB%A3/"/>
+    
+    <category term="32G" scheme="https://zysicyj.github.io/tags/32G/"/>
+    
+    <category term="8G" scheme="https://zysicyj.github.io/tags/8G/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【BUG】循环中重复使用对象一定要注意</title>
+    <link href="https://zysicyj.github.io/b0042947.html"/>
+    <id>https://zysicyj.github.io/b0042947.html</id>
+    <published>2023-09-25T02:27:33.000Z</published>
+    <updated>2023-09-25T07:24:39.323Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="BUG" scheme="https://zysicyj.github.io/categories/BUG/"/>
+    
+    
+    <category term="BUG" scheme="https://zysicyj.github.io/tags/BUG/"/>
+    
+    <category term="循环" scheme="https://zysicyj.github.io/tags/%E5%BE%AA%E7%8E%AF/"/>
+    
+    <category term="对象" scheme="https://zysicyj.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
+    
+    <category term="ID重复" scheme="https://zysicyj.github.io/tags/ID%E9%87%8D%E5%A4%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>【面试题精讲】Mysql的row_number函数</title>
@@ -581,286 +769,6 @@
     <category term="示例" scheme="https://zysicyj.github.io/tags/%E7%A4%BA%E4%BE%8B/"/>
     
     <category term="注意事项" scheme="https://zysicyj.github.io/tags/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDK21更新内容：ZGC</title>
-    <link href="https://zysicyj.github.io/22a0c719.html"/>
-    <id>https://zysicyj.github.io/22a0c719.html</id>
-    <published>2023-09-24T01:59:28.000Z</published>
-    <updated>2023-09-24T02:59:27.006Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="垃圾回收器" scheme="https://zysicyj.github.io/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8/"/>
-    
-    <category term="低延迟" scheme="https://zysicyj.github.io/tags/%E4%BD%8E%E5%BB%B6%E8%BF%9F/"/>
-    
-    <category term="使用示例" scheme="https://zysicyj.github.io/tags/%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B/"/>
-    
-    <category term="使用注意事项" scheme="https://zysicyj.github.io/tags/%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    
-    <category term="Generational ZGC" scheme="https://zysicyj.github.io/tags/Generational-ZGC/"/>
-    
-    <category term="Java虚拟机" scheme="https://zysicyj.github.io/tags/Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-    <category term="高吞吐量" scheme="https://zysicyj.github.io/tags/%E9%AB%98%E5%90%9E%E5%90%90%E9%87%8F/"/>
-    
-    <category term="堆内存" scheme="https://zysicyj.github.io/tags/%E5%A0%86%E5%86%85%E5%AD%98/"/>
-    
-    <category term="年轻代" scheme="https://zysicyj.github.io/tags/%E5%B9%B4%E8%BD%BB%E4%BB%A3/"/>
-    
-    <category term="老年代" scheme="https://zysicyj.github.io/tags/%E8%80%81%E5%B9%B4%E4%BB%A3/"/>
-    
-    <category term="并发处理" scheme="https://zysicyj.github.io/tags/%E5%B9%B6%E5%8F%91%E5%A4%84%E7%90%86/"/>
-    
-    <category term="性能开销" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD%E5%BC%80%E9%94%80/"/>
-    
-    <category term="配置复杂" scheme="https://zysicyj.github.io/tags/%E9%85%8D%E7%BD%AE%E5%A4%8D%E6%9D%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDK21更新内容：SequenceCollection</title>
-    <link href="https://zysicyj.github.io/369b115a.html"/>
-    <id>https://zysicyj.github.io/369b115a.html</id>
-    <published>2023-09-24T01:58:32.000Z</published>
-    <updated>2023-09-24T02:59:27.011Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="Java" scheme="https://zysicyj.github.io/tags/Java/"/>
-    
-    <category term="有序集合" scheme="https://zysicyj.github.io/tags/%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88/"/>
-    
-    <category term="Sequenced Collections" scheme="https://zysicyj.github.io/tags/Sequenced-Collections/"/>
-    
-    <category term="JEP 431" scheme="https://zysicyj.github.io/tags/JEP-431/"/>
-    
-    <category term="线程安全" scheme="https://zysicyj.github.io/tags/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8/"/>
-    
-    <category term="并发编程" scheme="https://zysicyj.github.io/tags/%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/"/>
-    
-    <category term="集合类型" scheme="https://zysicyj.github.io/tags/%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B/"/>
-    
-    <category term="Sequenced Locks" scheme="https://zysicyj.github.io/tags/Sequenced-Locks/"/>
-    
-    <category term="并发性能" scheme="https://zysicyj.github.io/tags/%E5%B9%B6%E5%8F%91%E6%80%A7%E8%83%BD/"/>
-    
-    <category term="可扩展性" scheme="https://zysicyj.github.io/tags/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7/"/>
-    
-    <category term="额外开销" scheme="https://zysicyj.github.io/tags/%E9%A2%9D%E5%A4%96%E5%BC%80%E9%94%80/"/>
-    
-    <category term="写操作延迟" scheme="https://zysicyj.github.io/tags/%E5%86%99%E6%93%8D%E4%BD%9C%E5%BB%B6%E8%BF%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JDK21更新内容：字符串模板</title>
-    <link href="https://zysicyj.github.io/f40d87a0.html"/>
-    <id>https://zysicyj.github.io/f40d87a0.html</id>
-    <published>2023-09-24T01:56:35.000Z</published>
-    <updated>2023-09-24T02:59:27.022Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="性能优化" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/"/>
-    
-    <category term="可读性" scheme="https://zysicyj.github.io/tags/%E5%8F%AF%E8%AF%BB%E6%80%A7/"/>
-    
-    <category term="兼容性" scheme="https://zysicyj.github.io/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
-    
-    <category term="可扩展性" scheme="https://zysicyj.github.io/tags/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7/"/>
-    
-    <category term="类型安全" scheme="https://zysicyj.github.io/tags/%E7%B1%BB%E5%9E%8B%E5%AE%89%E5%85%A8/"/>
-    
-    <category term="字符串模板" scheme="https://zysicyj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A8%A1%E6%9D%BF/"/>
-    
-    <category term="Java 15" scheme="https://zysicyj.github.io/tags/Java-15/"/>
-    
-    <category term="动态字符串" scheme="https://zysicyj.github.io/tags/%E5%8A%A8%E6%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
-    <category term="字符串拼接" scheme="https://zysicyj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5/"/>
-    
-    <category term="字符串格式化" scheme="https://zysicyj.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
-    
-    <category term="占位符" scheme="https://zysicyj.github.io/tags/%E5%8D%A0%E4%BD%8D%E7%AC%A6/"/>
-    
-    <category term="编译时" scheme="https://zysicyj.github.io/tags/%E7%BC%96%E8%AF%91%E6%97%B6/"/>
-    
-    <category term="语法限制" scheme="https://zysicyj.github.io/tags/%E8%AF%AD%E6%B3%95%E9%99%90%E5%88%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】SpringTemplate使用</title>
-    <link href="https://zysicyj.github.io/21b95ef5.html"/>
-    <id>https://zysicyj.github.io/21b95ef5.html</id>
-    <published>2023-09-24T01:47:24.000Z</published>
-    <updated>2023-09-24T02:59:27.109Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="开发效率" scheme="https://zysicyj.github.io/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/"/>
-    
-    <category term="事务管理" scheme="https://zysicyj.github.io/tags/%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/"/>
-    
-    <category term="总结" scheme="https://zysicyj.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="注意事项" scheme="https://zysicyj.github.io/tags/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    
-    <category term="学习成本" scheme="https://zysicyj.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9C%AC/"/>
-    
-    <category term="SpringTemplate" scheme="https://zysicyj.github.io/tags/SpringTemplate/"/>
-    
-    <category term="数据库操作" scheme="https://zysicyj.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/"/>
-    
-    <category term="JDBC" scheme="https://zysicyj.github.io/tags/JDBC/"/>
-    
-    <category term="JdbcTemplate" scheme="https://zysicyj.github.io/tags/JdbcTemplate/"/>
-    
-    <category term="灵活性" scheme="https://zysicyj.github.io/tags/%E7%81%B5%E6%B4%BB%E6%80%A7/"/>
-    
-    <category term="配置数据源" scheme="https://zysicyj.github.io/tags/%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E6%BA%90/"/>
-    
-    <category term="查询数据" scheme="https://zysicyj.github.io/tags/%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>工作五年多，idea插件推荐（未完）</title>
-    <link href="https://zysicyj.github.io/4650d5de.html"/>
-    <id>https://zysicyj.github.io/4650d5de.html</id>
-    <published>2023-09-24T00:15:19.000Z</published>
-    <updated>2023-09-24T08:48:49.411Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="idea插件" scheme="https://zysicyj.github.io/tags/idea%E6%8F%92%E4%BB%B6/"/>
-    
-    <category term="Easy Javadoc" scheme="https://zysicyj.github.io/tags/Easy-Javadoc/"/>
-    
-    <category term="Transaction" scheme="https://zysicyj.github.io/tags/Transaction/"/>
-    
-    <category term=".ignore" scheme="https://zysicyj.github.io/tags/ignore/"/>
-    
-    <category term="Atom Material Icons" scheme="https://zysicyj.github.io/tags/Atom-Material-Icons/"/>
-    
-    <category term="Batch Scripts support" scheme="https://zysicyj.github.io/tags/Batch-Scripts-support/"/>
-    
-    <category term="Camel Case" scheme="https://zysicyj.github.io/tags/Camel-Case/"/>
-    
-    <category term="Chinese Language Pack" scheme="https://zysicyj.github.io/tags/Chinese-Language-Pack/"/>
-    
-    <category term="code glance pro" scheme="https://zysicyj.github.io/tags/code-glance-pro/"/>
-    
-    <category term="Dto Generator" scheme="https://zysicyj.github.io/tags/Dto-Generator/"/>
-    
-    <category term="EasyCode MybatisCodeHelper" scheme="https://zysicyj.github.io/tags/EasyCode-MybatisCodeHelper/"/>
-    
-    <category term="GenerateAllSetter" scheme="https://zysicyj.github.io/tags/GenerateAllSetter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】Springboot应用异常处理</title>
-    <link href="https://zysicyj.github.io/e4b87107.html"/>
-    <id>https://zysicyj.github.io/e4b87107.html</id>
-    <published>2023-09-23T10:03:03.000Z</published>
-    <updated>2023-09-24T02:59:27.026Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="使用示例" scheme="https://zysicyj.github.io/tags/%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B/"/>
-    
-    <category term="使用注意事项" scheme="https://zysicyj.github.io/tags/%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    
-    <category term="总结" scheme="https://zysicyj.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="可扩展性" scheme="https://zysicyj.github.io/tags/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%80%A7/"/>
-    
-    <category term="Spring Boot应用异常处理" scheme="https://zysicyj.github.io/tags/Spring-Boot%E5%BA%94%E7%94%A8%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    
-    <category term="异常处理机制" scheme="https://zysicyj.github.io/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
-    
-    <category term="异常处理原理" scheme="https://zysicyj.github.io/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%8E%9F%E7%90%86/"/>
-    
-    <category term="统一异常处理" scheme="https://zysicyj.github.io/tags/%E7%BB%9F%E4%B8%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    
-    <category term="异常日志记录" scheme="https://zysicyj.github.io/tags/%E5%BC%82%E5%B8%B8%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
