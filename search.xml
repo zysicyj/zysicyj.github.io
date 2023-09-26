@@ -4,6 +4,530 @@
   
     
     <entry>
+      <title>【面试题精讲】Java 和 C++ 的区别?</title>
+      <link href="/6e4b1dfc.html"/>
+      <url>/6e4b1dfc.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-Java-和-C-是什么？"><a href="#1-Java-和-C-是什么？" class="headerlink" title="1. Java 和 C++ 是什么？"></a>1. Java 和 C++ 是什么？</h2><p>Java和C++都是流行的编程语言，用于开发各种类型的应用程序。它们具有不同的特点和用途。</p><ul><li><strong>Java</strong>：Java是一种面向对象的高级编程语言，最初由Sun Microsystems开发，并且现在由Oracle维护。Java被设计为可移植、跨平台的语言，可以在不同的操作系统上运行。它广泛用于Web应用程序、企业级应用程序、移动应用程序等领域。</li><li>**C++**：C++是一种通用的编程语言，扩展自C语言。它支持面向对象编程和底层系统编程，并提供了更多的控制和性能优化选项。C++被广泛用于游戏开发、嵌入式系统、高性能计算等领域。</li></ul><h2 id="2-Java-和-C-的主要区别"><a href="#2-Java-和-C-的主要区别" class="headerlink" title="2. Java 和 C++ 的主要区别"></a>2. Java 和 C++ 的主要区别</h2><p>Java和C++之间存在以下几个主要区别：</p><ul><li><strong>内存管理</strong>：Java使用自动内存管理机制（垃圾回收器），开发者无需手动分配和释放内存。而C++需要手动管理内存，包括显式地分配和释放内存，这可能导致内存泄漏和悬挂指针等问题。</li><li><strong>安全性</strong>：Java具有强大的安全性机制，包括字节码验证、安全沙箱和访问控制等。这使得Java在网络环境中更加安全，可以防止恶意代码的执行。C++没有内置的安全性机制，开发者需要自己处理安全问题。</li><li><strong>跨平台性</strong>：Java是一种完全可移植的语言，编写的Java程序可以在不同的操作系统上运行。而C++的可移植性较差，因为它依赖于底层操作系统和硬件特性。</li><li><strong>面向对象编程</strong>：Java是一种纯粹的面向对象编程语言，所有的代码都必须位于类中。C++也支持面向对象编程，但同时也允许使用传统的过程式编程风格。</li><li><strong>性能</strong>：由于Java的垃圾回收机制和其他运行时特性，相对于C++来说，Java的性能可能会稍低一些。然而，随着JVM（Java虚拟机）的改进和优化，Java的性能正在逐渐提升。</li></ul><h2 id="3-Java-和-C-的适用场景"><a href="#3-Java-和-C-的适用场景" class="headerlink" title="3. Java 和 C++ 的适用场景"></a>3. Java 和 C++ 的适用场景</h2><p>Java和C++在不同的应用领域有各自的优势：</p><ul><li><strong>Java</strong>：由于其跨平台性、安全性和易学性，Java广泛应用于Web开发、企业级应用程序、移动应用程序等领域。它也是Android应用开发的主要语言。</li><li>**C++**：由于其性能和底层系统编程能力，C++常用于游戏开发、嵌入式系统、高性能计算等需要对硬件进行直接控制的领域。</li></ul><h2 id="4-Java-和-C-的共同点"><a href="#4-Java-和-C-的共同点" class="headerlink" title="4. Java 和 C++ 的共同点"></a>4. Java 和 C++ 的共同点</h2><p>尽管Java和C++有很多不同之处，但它们也有一些共同点：</p><ul><li><strong>面向对象编程</strong>：Java和C++都支持面向对象编程范式，并提供类、继承、多态等特性。</li><li><strong>丰富的标准库</strong>：Java和C++都有丰富的标准库，提供了各种功能和工具，方便开发者使用。</li><li><strong>广泛的社区支持</strong>：Java和C++都有庞大的开发者社区，可以获得丰富的资源、文档和支持。</li></ul><p>无论选择Java还是C++，都取决于项目需求、开发团队的技术背景以及个人偏好。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> JVM </tag>
+            
+            <tag> 性能 </tag>
+            
+            <tag> 内存管理 </tag>
+            
+            <tag> 安全性 </tag>
+            
+            <tag> 跨平台 </tag>
+            
+            <tag> 面向对象 </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 编程语言 </tag>
+            
+            <tag> 高级编程语言 </tag>
+            
+            <tag> 可移植 </tag>
+            
+            <tag> 应用程序 </tag>
+            
+            <tag> 网络环境 </tag>
+            
+            <tag> 跨平台性 </tag>
+            
+            <tag> 面向对象编程 </tag>
+            
+            <tag> 垃圾回收机制 </tag>
+            
+            <tag> 适用场景 </tag>
+            
+            <tag> Web开发 </tag>
+            
+            <tag> 企业级应用程序 </tag>
+            
+            <tag> 移动应用程序 </tag>
+            
+            <tag> Android应用开发 </tag>
+            
+            <tag> 游戏开发 </tag>
+            
+            <tag> 嵌入式系统 </tag>
+            
+            <tag> 高性能计算 </tag>
+            
+            <tag> 共同点 </tag>
+            
+            <tag> 标准库 </tag>
+            
+            <tag> 开发者社区 </tag>
+            
+            <tag> 项目需求 </tag>
+            
+            <tag> 技术背景 </tag>
+            
+            <tag> 个人偏好 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】OracleJDK和OpenJDK区别</title>
+      <link href="/a9e18c15.html"/>
+      <url>/a9e18c15.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-Oracle-JDK-和-OpenJDK-是什么？"><a href="#1-Oracle-JDK-和-OpenJDK-是什么？" class="headerlink" title="1. Oracle JDK 和 OpenJDK 是什么？"></a>1. Oracle JDK 和 OpenJDK 是什么？</h2><p>Oracle JDK（Java Development Kit）和 OpenJDK（Open Java Development Kit）都是用于开发和运行Java应用程序的软件开发工具包。它们提供了编译器、运行时环境和其他必要的工具，使得开发者能够创建和执行Java代码。</p><ul><li><strong>Oracle JDK</strong>：由Oracle公司提供和维护的Java开发工具包。在过去，Oracle JDK被认为是Java的标准实现，并且需要付费许可证才能使用商业环境中。</li><li><strong>OpenJDK</strong>：由一群自愿参与的开源社区贡献者共同开发和维护的Java开发工具包。OpenJDK是基于Sun Microsystems发布的Java SE规范而构建的，是Java的开源实现。</li></ul><h2 id="2-Oracle-JDK-和-OpenJDK-的关系"><a href="#2-Oracle-JDK-和-OpenJDK-的关系" class="headerlink" title="2. Oracle JDK 和 OpenJDK 的关系"></a>2. Oracle JDK 和 OpenJDK 的关系</h2><p>Oracle JDK和OpenJDK之间有着密切的关系：</p><ul><li><strong>源代码</strong>: Oracle JDK的大部分代码都是从OpenJDK项目派生而来的。Oracle会对OpenJDK进行修改和增强，并将这些变更作为Oracle JDK的一部分发布。</li><li><strong>功能差异</strong>: 在某些情况下，Oracle JDK可能会包含一些额外的功能或工具，这些功能或工具不在OpenJDK中提供。例如，Oracle JDK可能包括一些商业特性，如Java Flight Recorder和Java Mission Control。</li><li><strong>许可证</strong>: Oracle JDK在过去需要付费许可证才能在商业环境中使用，而OpenJDK是免费的。然而，自Java 11版本开始，Oracle宣布将Oracle JDK和OpenJDK的许可方式统一为GPLv2 + Classpath Exception，并且不再区分商业和非商业用途。</li></ul><h2 id="3-Oracle-JDK-和-OpenJDK-的版本同步"><a href="#3-Oracle-JDK-和-OpenJDK-的版本同步" class="headerlink" title="3. Oracle JDK 和 OpenJDK 的版本同步"></a>3. Oracle JDK 和 OpenJDK 的版本同步</h2><p>Oracle JDK和OpenJDK之间的版本通常是同步的，即相同版本号的Oracle JDK和OpenJDK提供了相同的功能和修复了相同的漏洞。这意味着开发者可以选择使用Oracle JDK或OpenJDK来满足他们的需求，而无需担心功能上的差异。</p><p>然而，在某些情况下，Oracle可能会在其商业产品中添加一些额外的功能或工具，这些功能或工具可能不会立即出现在对应的OpenJDK版本中。但随着时间的推移，这些变更通常会被合并到OpenJDK中。</p><h2 id="4-使用-Oracle-JDK-还是-OpenJDK？"><a href="#4-使用-Oracle-JDK-还是-OpenJDK？" class="headerlink" title="4. 使用 Oracle JDK 还是 OpenJDK？"></a>4. 使用 Oracle JDK 还是 OpenJDK？</h2><p>对于大多数开发者来说，选择使用Oracle JDK还是OpenJDK取决于以下几个因素：</p><ul><li><strong>许可证要求</strong>：如果你的项目或组织有特殊的许可证要求，需要商业支持或使用商业特性（如Java Flight Recorder），则可能需要考虑使用Oracle JDK。</li><li><strong>版本需求</strong>：如果你需要使用最新的Java功能和修复了特定漏洞的版本，则可以选择Oracle JDK，因为它通常会在OpenJDK之前发布。</li><li><strong>开源偏好</strong>：如果你更倾向于使用开源软件，并且不需要商业支持或特殊功能，则可以选择OpenJDK。</li></ul><p>无论选择Oracle JDK还是OpenJDK，都能够满足大多数Java应用程序的开发和运行需求。并且随着时间的推移，Oracle JDK和OpenJDK之间的差异将进一步减少，让开发者有更多的自由选择。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编译器 </tag>
+            
+            <tag> Oracle JDK </tag>
+            
+            <tag> OpenJDK </tag>
+            
+            <tag> Java Development Kit </tag>
+            
+            <tag> 开发工具包 </tag>
+            
+            <tag> Java应用程序 </tag>
+            
+            <tag> 运行时环境 </tag>
+            
+            <tag> 商业环境 </tag>
+            
+            <tag> 开源实现 </tag>
+            
+            <tag> 源代码 </tag>
+            
+            <tag> 功能差异 </tag>
+            
+            <tag> 商业特性 </tag>
+            
+            <tag> 许可证 </tag>
+            
+            <tag> 版本同步 </tag>
+            
+            <tag> 商业支持 </tag>
+            
+            <tag> 开源软件 </tag>
+            
+            <tag> 特殊功能 </tag>
+            
+            <tag> Java功能 </tag>
+            
+            <tag> 漏洞修复 </tag>
+            
+            <tag> 自由选择 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】AOT与JIT区别</title>
+      <link href="/c7f1080e.html"/>
+      <url>/c7f1080e.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-AOT（Ahead-of-Time-Compilation）和JIT（Just-in-Time-Compilation）"><a href="#1-AOT（Ahead-of-Time-Compilation）和JIT（Just-in-Time-Compilation）" class="headerlink" title="1. AOT（Ahead-of-Time Compilation）和JIT（Just-in-Time Compilation）"></a>1. AOT（Ahead-of-Time Compilation）和JIT（Just-in-Time Compilation）</h2><p>AOT（Ahead-of-Time Compilation）和JIT（Just-in-Time Compilation）是两种不同的编译方式，用于将高级语言代码转换为机器码以便执行。</p><ul><li><strong>AOT</strong>: AOT编译是在程序运行之前将整个源代码或字节码文件一次性地编译成本地机器码。这意味着在程序运行时不需要再进行额外的编译工作，直接执行已经编译好的机器码。</li><li><strong>JIT</strong>: JIT编译是在程序运行过程中动态地将热点代码（频繁执行的代码）从字节码即时编译成本地机器码。JIT编译器会根据实际的执行情况来选择需要编译的代码，并且可以根据优化策略对代码进行优化。</li></ul><h2 id="2-AOT与JIT的区别"><a href="#2-AOT与JIT的区别" class="headerlink" title="2. AOT与JIT的区别"></a>2. AOT与JIT的区别</h2><p>AOT和JIT有以下几个主要区别：</p><ul><li><strong>编译时间</strong>: AOT编译发生在程序运行之前，需要预先将整个代码编译成机器码，因此编译时间较长。而JIT编译发生在程序运行时，只对热点代码进行编译，所以编译时间相对较短。</li><li><strong>执行速度</strong>: AOT编译生成的机器码直接执行，无需再进行额外的编译工作，因此执行速度较快。而JIT编译在运行时将字节码即时编译成机器码，可能会引入一定的延迟，但由于对热点代码进行优化，所以在后续的执行中可以获得更高的性能。</li><li><strong>内存占用</strong>: AOT编译生成的机器码需要占用额外的存储空间，因为整个程序都被编译成了机器码。而JIT编译只对热点代码进行编译，所以占用的内存相对较少。</li><li><strong>灵活性</strong>: AOT编译是静态的，一次性地将整个代码编译成机器码，无法根据实际情况进行动态调整。而JIT编译是动态的，在运行时根据实际的执行情况选择需要编译的代码，并且可以根据优化策略对代码进行优化。</li></ul><h2 id="3-AOT与JIT的使用场景"><a href="#3-AOT与JIT的使用场景" class="headerlink" title="3. AOT与JIT的使用场景"></a>3. AOT与JIT的使用场景</h2><p>AOT和JIT适用于不同的使用场景：</p><ul><li><strong>AOT</strong>: AOT编译适用于对启动时间要求较高、稳定性要求较高的应用场景。例如，移动应用程序或桌面应用程序通常会使用AOT编译来提前将整个应用程序编译成机器码，以便用户能够快速启动并获得稳定的性能。</li><li><strong>JIT</strong>: JIT编译适用于对执行性能要求较高、灵活性要求较高的应用场景。例如，Java虚拟机使用JIT编译器将热点代码即时编译成机器码，以提高程序的执行效率。JIT编译还可以根据实际的执行情况进行优化，使得程序在后续的执行中获得更好的性能。</li></ul><h2 id="4-AOT与JIT的结合使用"><a href="#4-AOT与JIT的结合使用" class="headerlink" title="4. AOT与JIT的结合使用"></a>4. AOT与JIT的结合使用</h2><p>AOT和JIT也可以结合使用，以发挥各自的优势：</p><ul><li><strong>静态AOT + 动态JIT</strong>: 在某些语言或框架中，可以使用静态AOT编译来提前将整个应用程序或库编译成机器码，以加快启动时间和稳定性。同时，使用动态JIT编译来对热点代码进行优化，以提高执行性能。</li><li><strong>动态AOT + 静态JIT</strong>: 在某些环境下，可以使用动态AOT编译来根据实际的执行情况选择需要编译的代码，并且可以根据优化策略对代码进行优化。同时，使用静态JIT编译来将剩余的字节码编译成机器码，以进一步提高执行性能。</li></ul><p>通过结合使用AOT和JIT，可以根据具体的应用场景和需求来选择最合适的编译方式，以获得更好的性能和灵活性。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 灵活性 </tag>
+            
+            <tag> AOT编译 </tag>
+            
+            <tag> JIT编译 </tag>
+            
+            <tag> 编译方式 </tag>
+            
+            <tag> 机器码 </tag>
+            
+            <tag> 高级语言 </tag>
+            
+            <tag> 热点代码 </tag>
+            
+            <tag> 预编译 </tag>
+            
+            <tag> 动态编译 </tag>
+            
+            <tag> 执行速度 </tag>
+            
+            <tag> 内存占用 </tag>
+            
+            <tag> 使用场景 </tag>
+            
+            <tag> 启动时间 </tag>
+            
+            <tag> 执行性能 </tag>
+            
+            <tag> 结合使用 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】语言编译与解释并存？</title>
+      <link href="/cf1028ee.html"/>
+      <url>/cf1028ee.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-Java语言的编译与解释"><a href="#1-Java语言的编译与解释" class="headerlink" title="1. Java语言的编译与解释"></a>1. Java语言的编译与解释</h2><p>Java语言被称为“编译与解释并存”的原因是它在执行过程中同时使用了编译和解释两种方式。</p><ul><li><strong>编译</strong>: 在Java开发过程中，源代码会经过编译器（javac）将其转换成字节码文件（.class），这个过程就是编译。编译后的字节码文件可以在任何支持Java虚拟机（JVM）的平台上运行。</li><li><strong>解释</strong>: 当Java程序运行时，Java虚拟机会对字节码进行解释或即时编译为机器码再执行。解释执行是逐条解释执行字节码指令，而即时编译则是将热点代码（经常执行的代码）编译成本地机器码，以提高执行效率。</li></ul><h2 id="2-编译与解释的优势"><a href="#2-编译与解释的优势" class="headerlink" title="2. 编译与解释的优势"></a>2. 编译与解释的优势</h2><p>Java语言采用编译与解释相结合的方式带来了以下几个优势：</p><ul><li><strong>跨平台性</strong>: Java字节码作为中间形式具有跨平台特性，可以在不同操作系统和硬件架构上运行。通过编译生成的字节码文件可以在任何支持Java虚拟机的平台上执行，实现了”一次编写，到处运行”的目标。</li><li><strong>安全性</strong>: 字节码隐藏了源代码的细节，提高了程序的安全性，防止源代码被反编译。Java虚拟机还提供了安全管理器（Security Manager）来控制程序的访问权限，增加了应用程序的安全性。</li><li><strong>动态性</strong>: Java语言支持动态特性，如反射、动态代理等。字节码可以在运行时进行加载、链接和执行，实现了Java的动态特性。</li></ul><h2 id="3-编译与解释的工作流程"><a href="#3-编译与解释的工作流程" class="headerlink" title="3. 编译与解释的工作流程"></a>3. 编译与解释的工作流程</h2><p>Java语言的编译与解释工作流程如下：</p><ol><li>使用Java编译器（javac）将源代码编译成字节码文件（.class）。</li><li>在运行时，Java虚拟机加载字节码文件，并对其进行解释或即时编译为机器码。</li><li>解释执行：逐条解释执行字节码指令。</li><li>即时编译：将热点代码（经常执行的代码）编译成本地机器码，以提高执行效率。</li><li>执行编译后的机器码。</li></ol><p>根据具体情况，Java虚拟机会根据代码的执行频率和优化策略选择合适的方式进行执行。</p><h2 id="4-编译与解释的使用示例"><a href="#4-编译与解释的使用示例" class="headerlink" title="4. 编译与解释的使用示例"></a>4. 编译与解释的使用示例</h2><p>以下是一个简单的Java程序的编译与解释示例：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>可以使用<code>javac</code>命令将上述Java源文件编译为字节码文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br></pre></td></tr></table></figure><p>编译完成后会生成名为<code>HelloWorld.class</code>的字节码文件。</p><p>然后可以使用<code>java</code>命令运行字节码文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java HelloWorld</span><br></pre></td></tr></table></figure><p>在运行过程中，Java虚拟机会对字节码进行解释或即时编译为机器码并执行。</p><h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>Java语言被称为“编译与解释并存”，是因为它在执行过程中同时使用了编译和解释两种方式。编译将源代码转换成字节码文件，而解释执行字节码指令或即时编译为机器码再执行。这种方式带来了跨平台性、安全性和动态性等优势。在开发过程中，我们只需关注源代码的编写，而无需直接操作字节码。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JVM </tag>
+            
+            <tag> 总结 </tag>
+            
+            <tag> 安全性 </tag>
+            
+            <tag> 编译器 </tag>
+            
+            <tag> 机器码 </tag>
+            
+            <tag> 源代码 </tag>
+            
+            <tag> 字节码 </tag>
+            
+            <tag> 即时编译 </tag>
+            
+            <tag> Java语言 </tag>
+            
+            <tag> 编译 </tag>
+            
+            <tag> 跨平台性 </tag>
+            
+            <tag> 解释 </tag>
+            
+            <tag> 动态性 </tag>
+            
+            <tag> 字节码文件 </tag>
+            
+            <tag> 执行效率 </tag>
+            
+            <tag> 动态特性 </tag>
+            
+            <tag> 反射 </tag>
+            
+            <tag> 动态代理 </tag>
+            
+            <tag> 加载 </tag>
+            
+            <tag> 链接 </tag>
+            
+            <tag> 机器码文件 </tag>
+            
+            <tag> 编译流程 </tag>
+            
+            <tag> 解释流程 </tag>
+            
+            <tag> 编译示例 </tag>
+            
+            <tag> 解释示例 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】什么是字节码?</title>
+      <link href="/1e7dfa04.html"/>
+      <url>/1e7dfa04.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-什么是字节码"><a href="#1-什么是字节码" class="headerlink" title="1. 什么是字节码?"></a>1. 什么是字节码?</h2><p><strong>字节码（Bytecode）</strong> 是一种中间形式的二进制代码，它由Java编译器将Java源代码编译而成。字节码不同于机器码，它并不直接在计算机上执行，而是由Java虚拟机（JVM）解释或即时编译为机器码后再执行。</p><p>字节码是一种与平台无关的格式，它可以在任何支持Java虚拟机的操作系统和硬件上运行。这使得Java具有跨平台的能力，只需编写一次代码，就可以在多个平台上运行。</p><h2 id="2-为什么需要字节码"><a href="#2-为什么需要字节码" class="headerlink" title="2. 为什么需要字节码?"></a>2. 为什么需要字节码?</h2><p>使用字节码作为中间形式有以下几个优点：</p><ul><li><strong>跨平台性</strong>: 字节码可以在不同操作系统和硬件架构上运行，实现了Java的”一次编写，到处运行”的特性。</li><li><strong>安全性</strong>: 字节码文件经过编译，隐藏了源代码的细节，提高了程序的安全性，防止源代码被反编译。</li><li><strong>可移植性</strong>: 字节码可以在不同版本的Java虚拟机上运行，保证了应用程序的兼容性和可移植性。</li><li><strong>动态性</strong>: 字节码可以在运行时进行加载、链接和执行，实现了Java的动态特性，如反射、动态代理等。</li></ul><h2 id="3-字节码的实现原理"><a href="#3-字节码的实现原理" class="headerlink" title="3. 字节码的实现原理"></a>3. 字节码的实现原理</h2><p>字节码是由Java编译器将Java源代码编译而成的。在编译过程中，Java源代码首先被转换为抽象语法树（AST），然后通过语义分析和优化生成字节码。</p><p>字节码采用了一种基于栈的指令集架构，它使用操作数栈来进行计算，并且提供了一系列的指令来执行各种操作，如加载、存储、运算、控制流等。</p><p>JVM负责解释或即时编译字节码为机器码并执行。解释执行是逐条解释执行字节码指令，而即时编译则是将热点代码（经常执行的代码）编译成本地机器码，以提高执行效率。</p><h2 id="4-字节码的使用示例"><a href="#4-字节码的使用示例" class="headerlink" title="4. 字节码的使用示例"></a>4. 字节码的使用示例</h2><p>以下是一个简单的Java程序的字节码示例：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>可以使用<code>javac</code>命令将上述Java源文件编译为字节码文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac HelloWorld.java</span><br></pre></td></tr></table></figure><p>编译完成后会生成名为<code>HelloWorld.class</code>的字节码文件。</p><h2 id="5-字节码的优点"><a href="#5-字节码的优点" class="headerlink" title="5. 字节码的优点"></a>5. 字节码的优点</h2><ul><li><strong>跨平台性</strong>: 字节码可以在不同操作系统和硬件架构上运行，实现了Java的跨平台特性。</li><li><strong>安全性</strong>: 字节码隐藏了源代码的细节，提高了程序的安全性，防止源代码被反编译。</li><li><strong>可移植性</strong>: 字节码可以在不同版本的Java虚拟机上运行，保证了应用程序的兼容性和可移植性。</li><li><strong>动态性</strong>: 字节码可以在运行时进行加载、链接和执行，实现了Java的动态特性。</li></ul><h2 id="6-字节码的缺点"><a href="#6-字节码的缺点" class="headerlink" title="6. 字节码的缺点"></a>6. 字节码的缺点</h2><ul><li><strong>执行效率相对较低</strong>: 相比于直接执行机器码，解释执行字节码或即时编译为机器码后再执行会有一定的性能损失。</li><li><strong>依赖于Java虚拟机</strong>: 字节码需要依赖Java虚拟机才能执行，限制了其在其他环境中的使用。</li></ul><h2 id="7-字节码的使用注意事项"><a href="#7-字节码的使用注意事项" class="headerlink" title="7. 字节码的使用注意事项"></a>7. 字节码的使用注意事项</h2><ul><li>在开发过程中，通常只需关注Java源代码，而无需直接操作字节码。</li><li>如果需要对字节码进行分析或修改，可以使用相关工具，如ASM、Javassist等。</li></ul><h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h2><p>字节码是由Java编译器将Java源代码编译而成的中间形式的二进制代码。它具有跨平台、安全、可移植和动态的特性。字节码通过Java虚拟机解释或即时编译为机器码后执行。尽管字节码相对于直接执行机器码会有一定的性能损失，但它提供了跨平台和动态特性的优势。在开发过程中，通常只需关注Java源代码，而无需直接操作字节码。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JVM </tag>
+            
+            <tag> 安全性 </tag>
+            
+            <tag> 注意事项 </tag>
+            
+            <tag> 机器码 </tag>
+            
+            <tag> 热点代码 </tag>
+            
+            <tag> 字节码 </tag>
+            
+            <tag> 即时编译 </tag>
+            
+            <tag> 编译 </tag>
+            
+            <tag> 跨平台性 </tag>
+            
+            <tag> 动态性 </tag>
+            
+            <tag> 字节码文件 </tag>
+            
+            <tag> 执行效率 </tag>
+            
+            <tag> 加载 </tag>
+            
+            <tag> 中间形式 </tag>
+            
+            <tag> 二进制代码 </tag>
+            
+            <tag> Java编译器 </tag>
+            
+            <tag> Java源代码 </tag>
+            
+            <tag> 可移植性 </tag>
+            
+            <tag> 解释执行 </tag>
+            
+            <tag> 操作数栈 </tag>
+            
+            <tag> 指令集架构 </tag>
+            
+            <tag> 存储 </tag>
+            
+            <tag> 运算 </tag>
+            
+            <tag> 控制流 </tag>
+            
+            <tag> javac命令 </tag>
+            
+            <tag> 跨平台特性 </tag>
+            
+            <tag> 性能损失 </tag>
+            
+            <tag> 依赖 </tag>
+            
+            <tag> 分析 </tag>
+            
+            <tag> 修改 </tag>
+            
+            <tag> ASM </tag>
+            
+            <tag> Javassist </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】JVM和JDK/JRE之间的关系是什么？</title>
+      <link href="/79297fe6.html"/>
+      <url>/79297fe6.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-什么是JVM、JDK和JRE"><a href="#1-什么是JVM、JDK和JRE" class="headerlink" title="1. 什么是JVM、JDK和JRE?"></a>1. 什么是JVM、JDK和JRE?</h2><ul><li><p><strong>JVM</strong>（Java Virtual Machine）是Java虚拟机的缩写，它是Java程序运行的环境。JVM负责将Java字节码翻译成特定平台上的机器指令，并执行这些指令。</p></li><li><p><strong>JDK</strong>（Java Development Kit）是Java开发工具包的缩写，它是用于开发Java应用程序的软件包。JDK包含了编译器、调试器、类库等工具，以及JRE（Java Runtime Environment）。</p></li><li><p><strong>JRE</strong>（Java Runtime Environment）是Java运行时环境的缩写，它是在计算机上运行Java程序所需的最小环境。JRE包含了JVM和一些基本的类库，可以让用户运行已经编译好的Java程序。</p></li></ul><h2 id="2-为什么需要JVM、JDK和JRE"><a href="#2-为什么需要JVM、JDK和JRE" class="headerlink" title="2. 为什么需要JVM、JDK和JRE?"></a>2. 为什么需要JVM、JDK和JRE?</h2><ul><li><p>JVM的存在使得Java程序具有跨平台的能力，即同一个Java程序可以在不同操作系统上运行，而无需修改代码。这是因为JVM会根据不同的操作系统来解释和执行Java字节码。</p></li><li><p>JDK提供了丰富的开发工具和类库，方便开发人员进行Java应用程序的开发、测试和调试。开发人员可以使用JDK中的编译器将Java源代码编译成字节码，然后再由JVM执行。</p></li><li><p>JRE则是为了让用户能够运行已经编译好的Java程序，而无需安装完整的开发工具包。JRE只包含了运行Java程序所需的最小环境，可以节省计算机资源和存储空间。</p></li></ul><h2 id="3-JVM、JDK和JRE的实现原理"><a href="#3-JVM、JDK和JRE的实现原理" class="headerlink" title="3. JVM、JDK和JRE的实现原理?"></a>3. JVM、JDK和JRE的实现原理?</h2><ul><li><p>JVM通过将Java字节码翻译成特定平台上的机器指令来执行Java程序。它使用即时编译（Just-In-Time Compilation）技术，在运行时动态地将热点代码编译成本地机器码，以提高程序的执行效率。</p></li><li><p>JDK是由Oracle公司提供的Java开发工具包，其中包含了编译器、调试器、类库等工具。JDK中的编译器将Java源代码编译成字节码，然后再由JVM执行。</p></li><li><p>JRE包含了JVM和一些基本的类库，用于支持Java程序的运行。当用户运行一个Java程序时，JRE会启动JVM，并加载程序所需的类库，然后执行程序。</p></li></ul><h2 id="4-JVM、JDK和JRE的使用示例"><a href="#4-JVM、JDK和JRE的使用示例" class="headerlink" title="4. JVM、JDK和JRE的使用示例"></a>4. JVM、JDK和JRE的使用示例</h2><p>以下是一个简单的Java程序示例：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li><p>如果你只想运行这个Java程序，那么你只需要安装JRE即可。在命令行中输入<code>java HelloWorld</code>即可运行。</p></li><li><p>如果你想开发Java程序，那么你需要安装JDK。在命令行中输入<code>javac HelloWorld.java</code>编译源代码，然后再输入<code>java HelloWorld</code>运行程序。</p></li></ul><h2 id="5-JVM、JDK和JRE的优点"><a href="#5-JVM、JDK和JRE的优点" class="headerlink" title="5. JVM、JDK和JRE的优点"></a>5. JVM、JDK和JRE的优点</h2><ul><li><p>JVM使得Java具有跨平台的能力，可以在不同操作系统上运行相同的Java程序。</p></li><li><p>JDK提供了丰富的开发工具和类库，方便开发人员进行Java应用程序的开发、测试和调试。</p></li><li><p>JRE只包含了运行Java程序所需的最小环境，节省计算机资源和存储空间。</p></li></ul><h2 id="6-JVM、JDK和JRE的缺点"><a href="#6-JVM、JDK和JRE的缺点" class="headerlink" title="6. JVM、JDK和JRE的缺点"></a>6. JVM、JDK和JRE的缺点</h2><ul><li><p>JVM的性能可能会受到一些限制，因为它需要将Java字节码翻译成特定平台上的机器指令。</p></li><li><p>JDK的安装包比较大，占用较多的存储空间。</p></li><li><p>JRE只包含了基本的类库，对于一些高级功能可能需要额外安装其他组件。</p></li></ul><h2 id="7-JVM、JDK和JRE的使用注意事项"><a href="#7-JVM、JDK和JRE的使用注意事项" class="headerlink" title="7. JVM、JDK和JRE的使用注意事项"></a>7. JVM、JDK和JRE的使用注意事项</h2><ul><li><p>在选择JVM时，要根据目标平台选择合适的版本，并确保其与Java程序兼容。</p></li><li><p>在使用JDK进行开发时，要遵循Java语法规范，以及良好的编程习惯。</p></li><li><p>在使用JRE运行Java程序时，要确保已经安装了正确的JRE版本，并且程序所需的类库在classpath中可用。</p></li></ul><h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h2><ul><li><p>JVM是Java虚拟机，负责将Java字节码翻译成特定平台上的机器指令，并执行这些指令。</p></li><li><p>JDK是Java开发工具包，提供了丰富的开发工具和类库，方便开发人员进行Java应用程序的开发、测试和调试。</p></li><li><p>JRE是Java运行时环境，包含了JVM和一些基本的类库，可以让用户运行已经编译好的Java程序。</p></li><li><p>JVM使得Java具有跨平台的能力，JDK提供了开发工具和类库，JRE提供了最小的运行环境。</p></li><li><p>在使用JVM、JDK和JRE时，需要根据实际需求选择合适的版本，并遵循相应的使用注意事项。</p></li></ul><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JVM </tag>
+            
+            <tag> 优点 </tag>
+            
+            <tag> 缺点 </tag>
+            
+            <tag> 注意事项 </tag>
+            
+            <tag> 编译器 </tag>
+            
+            <tag> JDK </tag>
+            
+            <tag> JRE </tag>
+            
+            <tag> 跨平台 </tag>
+            
+            <tag> 开发工具 </tag>
+            
+            <tag> 类库 </tag>
+            
+            <tag> 字节码 </tag>
+            
+            <tag> 机器指令 </tag>
+            
+            <tag> 调试器 </tag>
+            
+            <tag> 即时编译 </tag>
+            
+            <tag> 命令行 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】JavaSe和JavaEE的区别</title>
+      <link href="/89742280.html"/>
+      <url>/89742280.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-什么是JavaSE和JavaEE"><a href="#1-什么是JavaSE和JavaEE" class="headerlink" title="1. 什么是JavaSE和JavaEE?"></a>1. 什么是JavaSE和JavaEE?</h2><ul><li><p><strong>JavaSE</strong>（Java Platform, Standard Edition）是Java平台的标准版，提供了Java语言的核心API和运行环境。它包含了Java编程语言、JVM（Java虚拟机）、基础类库等组件，用于开发桌面应用程序、命令行工具等。</p></li><li><p><strong>JavaEE</strong>（Java Platform, Enterprise Edition）是Java平台的企业版，建立在JavaSE之上，为开发大型、分布式、可扩展的企业级应用提供支持。它包含了JavaSE的所有功能，并且还提供了一系列的API和服务，如Servlet、JSP、EJB、JMS等，用于开发Web应用、企业级应用服务器等。</p></li></ul><h2 id="2-为什么需要JavaSE和JavaEE"><a href="#2-为什么需要JavaSE和JavaEE" class="headerlink" title="2. 为什么需要JavaSE和JavaEE?"></a>2. 为什么需要JavaSE和JavaEE?</h2><p>JavaSE提供了Java语言的核心功能和基础类库，可以满足普通应用程序的开发需求。而对于大型、复杂的企业级应用来说，需要更多的功能和服务来支持分布式计算、事务管理、安全性等方面的需求，这就是JavaEE的作用所在。</p><p>JavaEE通过提供一系列的API和服务，简化了企业级应用的开发过程，提高了开发效率和代码质量。同时，JavaEE还提供了各种容器和中间件，如Web容器、应用服务器等，可以方便地部署和管理企业级应用。</p><h2 id="3-JavaSE和JavaEE的实现原理"><a href="#3-JavaSE和JavaEE的实现原理" class="headerlink" title="3. JavaSE和JavaEE的实现原理?"></a>3. JavaSE和JavaEE的实现原理?</h2><p>JavaSE和JavaEE都是基于Java语言开发的，使用了相同的编程模型和工具链。它们之间的区别主要体现在提供的功能和服务上。</p><p>JavaSE的实现原理包括以下几个方面：</p><ul><li><strong>JVM</strong>：Java虚拟机负责将Java字节码转换为机器码，并执行程序。</li><li><strong>Java编译器</strong>：将Java源代码编译成字节码文件（.class）。</li><li><strong>类加载器</strong>：负责将字节码文件加载到内存中，并解析成可执行的类对象。</li><li><strong>垃圾回收器</strong>：自动回收不再使用的内存空间，释放资源。</li></ul><p>JavaEE的实现原理则更加复杂，涉及到以下几个关键组件：</p><ul><li><strong>Servlet容器</strong>：负责接收HTTP请求并调用对应的Servlet进行处理。</li><li><strong>Web容器</strong>：扩展了Servlet容器，提供了更多的Web相关功能，如JSP、过滤器等。</li><li><strong>EJB容器</strong>：负责管理和调度Enterprise JavaBeans（EJB）组件的生命周期和事务。</li><li><strong>消息队列</strong>：用于异步通信和解耦系统各个组件之间的依赖关系。</li><li><strong>持久化框架</strong>：用于将数据持久化到数据库中，如JPA、Hibernate等。</li></ul><h2 id="4-JavaSE和JavaEE的使用示例"><a href="#4-JavaSE和JavaEE的使用示例" class="headerlink" title="4. JavaSE和JavaEE的使用示例"></a>4. JavaSE和JavaEE的使用示例</h2><p>以下是一个简单的JavaSE示例，用于计算两个整数的和：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Calculator</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> a + b;</span><br><span class="line">        System.out.println(<span class="string">&quot;Sum: &quot;</span> + sum);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>以下是一个简单的JavaEE示例，用于处理HTTP请求并返回响应：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebServlet(&quot;/hello&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorldServlet</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span> &#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span></span><br><span class="line">            <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line">        response.setContentType(<span class="string">&quot;text/html&quot;</span>);</span><br><span class="line">        <span class="type">PrintWriter</span> <span class="variable">out</span> <span class="operator">=</span> response.getWriter();</span><br><span class="line">        out.println(<span class="string">&quot;&lt;html&gt;&lt;body&gt;&quot;</span>);</span><br><span class="line">        out.println(<span class="string">&quot;&lt;h1&gt;Hello, World!&lt;/h1&gt;&quot;</span>);</span><br><span class="line">        out.println(<span class="string">&quot;&lt;/body&gt;&lt;/html&gt;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="5-JavaSE和JavaEE的优点"><a href="#5-JavaSE和JavaEE的优点" class="headerlink" title="5. JavaSE和JavaEE的优点"></a>5. JavaSE和JavaEE的优点</h2><ul><li><p><strong>JavaSE的优点</strong>：</p><ul><li>提供了丰富的基础类库，方便开发各种类型的应用程序。</li><li>跨平台性好，可以在不同操作系统上运行。</li><li>高度可靠性和稳定性，通过垃圾回收机制自动管理内存。</li></ul></li><li><p><strong>JavaEE的优点</strong>：</p><ul><li>提供了一系列的API和服务，简化了企业级应用的开发过程。</li><li>支持分布式计算和事务管理，保证了应用的高可用性和数据一致性。</li><li>可扩展性好，可以根据需求灵活地添加或移除组件。</li></ul></li></ul><h2 id="6-JavaSE和JavaEE的缺点"><a href="#6-JavaSE和JavaEE的缺点" class="headerlink" title="6. JavaSE和JavaEE的缺点"></a>6. JavaSE和JavaEE的缺点</h2><ul><li><p><strong>JavaSE的缺点</strong>：</p><ul><li>缺乏对企业级应用开发所需的一些高级功能和服务的支持。</li><li>开发过程相对繁琐，需要手动处理很多底层细节。</li></ul></li><li><p><strong>JavaEE的缺点</strong>：</p><ul><li>学习曲线较陡峭，需要掌握大量的API和规范。</li><li>部署和管理复杂度较高，需要依赖各种容器和中间件。</li></ul></li></ul><h2 id="7-JavaSE和JavaEE的使用注意事项"><a href="#7-JavaSE和JavaEE的使用注意事项" class="headerlink" title="7. JavaSE和JavaEE的使用注意事项"></a>7. JavaSE和JavaEE的使用注意事项</h2><ul><li>在选择Java平台时，根据实际需求选择合适的版本。如果只是开发简单的桌面应用程序，可以选择JavaSE；如果需要开发大型、分布式的企业级应用，就需要选择JavaEE。</li><li>对于JavaEE开发，建议使用成熟的开发框架和工具，如Spring、Hibernate等，以提高开发效率和代码质量。</li><li>注意JavaSE和JavaEE的版本兼容性，确保所使用的库和组件与Java平台的版本匹配。</li></ul><h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h2><p>JavaSE是Java平台的标准版，提供了Java语言的核心功能和基础类库，适用于开发普通应用程序。JavaEE是Java平台的企业版，建立在JavaSE之上，提供了一系列的API和服务，用于开发大型、分布式的企业级应用。</p><p>JavaSE和JavaEE都有各自的优点和缺点，根据实际需求选择合适的版本。在使用过程中，需要注意版本兼容性，并结合成熟的开发框架和工具来提高开发效率和代码质量。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 实现原理 </tag>
+            
+            <tag> 优点 </tag>
+            
+            <tag> 缺点 </tag>
+            
+            <tag> 使用示例 </tag>
+            
+            <tag> 总结 </tag>
+            
+            <tag> 注意事项 </tag>
+            
+            <tag> JavaSE </tag>
+            
+            <tag> JavaEE </tag>
+            
+            <tag> 区别 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【面试题精讲】Java语言概念</title>
+      <link href="/c8b9ad7e.html"/>
+      <url>/c8b9ad7e.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><p><a href="https://blog.zysicyj.top/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%B2%BE%E8%AE%B2/">系列文章地址</a></p><hr><h2 id="1-什么是Java语言"><a href="#1-什么是Java语言" class="headerlink" title="1. 什么是Java语言?"></a>1. 什么是Java语言?</h2><p>Java是一种面向对象的编程语言，由Sun Microsystems（现在是Oracle）于1995年推出。它被设计成具有简单、可移植和安全性强的特点，并且可以应用于各种平台上的软件开发。</p><p>Java语言具有以下特点：</p><ul><li><strong>面向对象</strong>：Java支持面向对象的编程范式，通过类和对象来组织代码。</li><li><strong>跨平台</strong>：Java程序可以在不同的操作系统上运行，只需将源代码编译为字节码文件（.class），然后在Java虚拟机（JVM）上执行。</li><li><strong>自动内存管理</strong>：Java提供了垃圾回收机制，自动管理内存分配和释放，减少了程序员对内存管理的负担。</li><li><strong>异常处理</strong>：Java引入了异常处理机制，使得程序能够更好地处理错误和异常情况。</li><li><strong>多线程支持</strong>：Java提供了多线程编程的支持，允许程序同时执行多个任务。</li><li><strong>丰富的库</strong>：Java拥有庞大而丰富的标准类库，包含了各种常用的功能模块，如输入输出、网络通信、数据库连接等。</li></ul><h2 id="2-为什么需要Java语言"><a href="#2-为什么需要Java语言" class="headerlink" title="2. 为什么需要Java语言?"></a>2. 为什么需要Java语言?</h2><p>Java语言之所以广泛使用，主要有以下几个原因：</p><ul><li><p><strong>跨平台性</strong>：Java程序可以在不同的操作系统上运行，这使得开发人员能够编写一次代码，然后在多个平台上部署和执行。这种可移植性大大简化了软件开发和维护的工作。</p></li><li><p><strong>安全性</strong>：Java具有内置的安全机制，如字节码验证、安全沙箱等，可以防止恶意代码对计算机系统造成损害。这使得Java成为开发网络应用和浏览器插件等安全敏感领域的首选语言。</p></li><li><p><strong>丰富的库支持</strong>：Java拥有庞大而丰富的标准类库，其中包含了各种常用的功能模块，如输入输出、网络通信、数据库连接等。这些库提供了高效、可靠的解决方案，加速了开发过程。</p></li><li><p><strong>广泛的应用领域</strong>：由于其灵活性和可扩展性，Java被广泛应用于各个领域，包括企业级应用、移动应用、嵌入式系统、游戏开发等。无论是大型企业还是初创公司，都可以利用Java构建强大的软件解决方案。</p></li></ul><h2 id="3-Java语言的实现原理"><a href="#3-Java语言的实现原理" class="headerlink" title="3. Java语言的实现原理?"></a>3. Java语言的实现原理?</h2><p>Java语言的实现原理主要涉及以下几个方面：</p><ul><li><p><strong>编译</strong>：Java源代码通过Java编译器（javac）编译成字节码文件（.class），其中包含了与特定平台无关的中间代码。</p></li><li><p><strong>虚拟机</strong>：Java虚拟机（JVM）是Java语言的核心组件，负责解释和执行字节码文件。它提供了内存管理、垃圾回收、线程调度等功能，并将字节码转换为底层操作系统能够理解的机器指令。</p></li><li><p><strong>类加载</strong>：在运行时，JVM会动态加载字节码文件并生成对应的类对象。类加载器负责从文件系统或网络中加载类文件，并将其转换为可执行的类对象。</p></li><li><p><strong>即时编译</strong>：JVM还具备即时编译（Just-In-Time Compilation）的能力，可以将频繁执行的字节码转换为本地机器代码，以提高程序的执行效率。</p></li><li><p><strong>垃圾回收</strong>：Java的垃圾回收机制自动管理内存分配和释放，减少了程序员对内存管理的负担。垃圾回收器会周期性地检查不再使用的对象，并释放其占用的内存空间。</p></li></ul><h2 id="4-Java语言的使用示例"><a href="#4-Java语言的使用示例" class="headerlink" title="4. Java语言的使用示例"></a>4. Java语言的使用示例</h2><p>下面是一个简单的Java程序示例，实现了计算两个数之和并输出结果的功能：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">num2</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> num1 + num2;</span><br><span class="line">        System.out.println(<span class="string">&quot;Sum: &quot;</span> + sum);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="5-Java语言的优点"><a href="#5-Java语言的优点" class="headerlink" title="5. Java语言的优点"></a>5. Java语言的优点</h2><p>Java语言具有以下几个优点：</p><ul><li><p><strong>跨平台性</strong>：Java程序可以在不同的操作系统上运行，实现了一次编写、到处运行的目标。</p></li><li><p><strong>面向对象</strong>：Java是一种纯粹的面向对象编程语言，支持封装、继承和多态等特性，使得代码更加模块化、可重用和易于维护。</p></li><li><p><strong>丰富的类库</strong>：Java拥有庞大而丰富的标准类库，提供了各种常用的功能模块，如输入输出、网络通信、数据库连接等。这些库能够极大地提高开发效率。</p></li><li><p><strong>安全性</strong>：Java具有内置的安全机制，如字节码验证、安全沙箱等，可以防止恶意代码对计算机系统造成损害。</p></li><li><p><strong>多线程支持</strong>：Java提供了多线程编程的支持，允许程序同时执行多个任务，提高了程序的并发性能。</p></li></ul><h2 id="6-Java语言的缺点"><a href="#6-Java语言的缺点" class="headerlink" title="6. Java语言的缺点"></a>6. Java语言的缺点</h2><p>Java语言也存在一些缺点：</p><ul><li><p><strong>相对较慢</strong>：由于Java程序需要通过JVM解释执行，相比于直接编译成机器码的语言，如C++，Java程序的性能较低。</p></li><li><p><strong>内存消耗大</strong>：由于Java的自动内存管理机制，需要额外的内存空间来维护对象和垃圾回收信息，导致Java应用程序占用的内存较多。</p></li><li><p><strong>学习曲线陡峭</strong>：相对于其他编程语言，Java的语法和概念较为复杂，初学者可能需要花费更多的时间和精力来掌握。</p></li></ul><h2 id="7-Java语言的使用注意事项"><a href="#7-Java语言的使用注意事项" class="headerlink" title="7. Java语言的使用注意事项"></a>7. Java语言的使用注意事项</h2><p>在使用Java语言时，需要注意以下几点：</p><ul><li><p><strong>版本兼容性</strong>：不同版本的Java语言可能存在一些差异，特别是在使用新特性或库时。因此，在开发过程中要确保所使用的Java版本与目标平台的兼容性。</p></li><li><p><strong>异常处理</strong>：Java引入了异常处理机制，建议在代码中合理地捕获和处理异常，以避免程序崩溃或产生未知错误。</p></li><li><p><strong>资源释放</strong>：Java虚拟机会自动进行垃圾回收，但并不代表所有资源都会被及时释放。对于一些需要手动关闭的资源，如文件、数据库连接等，应该及时释放，以避免资源泄露。</p></li><li><p><strong>安全性</strong>：尽量避免使用不安全的代码和库，以防止恶意攻击或数据泄露。在网络通信、文件操作等敏感场景下，要注意加强安全措施。</p></li></ul><h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h2><p>Java语言是一种面向对象的编程语言，具有跨平台性、安全性、丰富的类库支持等优点。它通过JVM实现了字节码解释执行，并提供了自动内存管理、多线程支持等功能。然而，Java也存在相对较慢、内存消耗大等缺点。在使用Java时，需要注意版本兼容性、异常处理、资源释放和安全性等方面的问题。</p><h1 id="如果您喜欢我的内容，就点击关注吧"><a href="#如果您喜欢我的内容，就点击关注吧" class="headerlink" title="如果您喜欢我的内容，就点击关注吧"></a>如果您喜欢我的内容，就点击关注吧</h1><blockquote><p>扫码长按关注交流群获取最新消息，免费的面试题手册即将在交流群内推出</p></blockquote><blockquote><p>个人微信</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" title="请加个人微信备注【交流群】" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" alt="请加个人微信备注【交流群】"></a></p><blockquote><p>公众号</p></blockquote><p><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" class="gallery-item"><img src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430"></a></p></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系列文章 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> 优点 </tag>
+            
+            <tag> 缺点 </tag>
+            
+            <tag> 使用注意事项 </tag>
+            
+            <tag> 安全性 </tag>
+            
+            <tag> 跨平台 </tag>
+            
+            <tag> 即时编译 </tag>
+            
+            <tag> Java语言 </tag>
+            
+            <tag> 面向对象 </tag>
+            
+            <tag> 自动内存管理 </tag>
+            
+            <tag> 异常处理 </tag>
+            
+            <tag> 多线程支持 </tag>
+            
+            <tag> 丰富的库 </tag>
+            
+            <tag> 编译 </tag>
+            
+            <tag> 类加载 </tag>
+            
+            <tag> 垃圾回收 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>添加阿里云maven镜像</title>
       <link href="/bf8ff131.html"/>
       <url>/bf8ff131.html</url>
@@ -2325,7 +2849,7 @@
       <link href="/today.html"/>
       <url>/today.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><h1 id="9月25日"><a href="#9月25日" class="headerlink" title="9月25日"></a>9月25日</h1><h2 id="因私出国前端问题修复"><a href="#因私出国前端问题修复" class="headerlink" title="因私出国前端问题修复"></a>因私出国前端问题修复</h2><h1 id="9月24日"><a href="#9月24日" class="headerlink" title="9月24日"></a>9月24日</h1><h2 id="测评票首页开发"><a href="#测评票首页开发" class="headerlink" title="测评票首页开发"></a><del>测评票首页开发</del></h2><h2 id="协助开发湖北因私出国模块"><a href="#协助开发湖北因私出国模块" class="headerlink" title="协助开发湖北因私出国模块"></a><del>协助开发湖北因私出国模块</del></h2><h1 id="9月22日"><a href="#9月22日" class="headerlink" title="9月22日"></a>9月22日</h1><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><hr><blockquote><p>优先级说明：</p><ul><li><mark class="hl-label red">重要紧急</mark> </li><li><mark class="hl-label pink">重要不紧急</mark> </li><li><mark class="hl-label green">不重要紧急</mark> </li><li><mark class="hl-label default">不重要不紧急</mark> </li></ul></blockquote><div class="tabs" id="test1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test1-1">工作</button></li><li class="tab"><button type="button" data-href="#test1-2">博客</button></li><li class="tab"><button type="button" data-href="#test1-3">足迹</button></li><li class="tab"><button type="button" data-href="#test1-4">花销</button></li><li class="tab"><button type="button" data-href="#test1-5">体重</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><h2 id="【南瑞】【测评票】"><a href="#【南瑞】【测评票】" class="headerlink" title="【南瑞】【测评票】"></a><mark class="hl-label red">【南瑞】【测评票】</mark></h2><p>首页功能开发</p><h2 id="【南瑞】【测评票】-1"><a href="#【南瑞】【测评票】-1" class="headerlink" title="【南瑞】【测评票】"></a><mark class="hl-label pink">【南瑞】【测评票】</mark></h2><p>导出性能优化</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-2"><h2 id="【个人】【博客】【面试题系列】"><a href="#【个人】【博客】【面试题系列】" class="headerlink" title="【个人】【博客】【面试题系列】"></a><mark class="hl-label green">【个人】【博客】【面试题系列】</mark></h2><p>为什么不推荐使用@Autowired注解</p><h2 id="【个人】【博客】【系列】"><a href="#【个人】【博客】【系列】" class="headerlink" title="【个人】【博客】【系列】"></a><mark class="hl-label green">【个人】【博客】【系列】</mark></h2><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-3"><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>00:00~7:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>7:00~11:30</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>11:30~14:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>14:00~18:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>18:00~24:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-4"><table><thead><tr><th>店名</th><th>地址</th><th>价格</th><th>评价</th><th>备注</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-5"><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><ul><li><a href="https://blog.zysicyj.top/today_2023_09">2023年9月</a></li></ul></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><h1 id="2023年9月26日"><a href="#2023年9月26日" class="headerlink" title="2023年9月26日"></a>2023年9月26日</h1><h2 id="新提拔领导人员民主评议表中原任职务和任现职时间格式都改为“-”；"><a href="#新提拔领导人员民主评议表中原任职务和任现职时间格式都改为“-”；" class="headerlink" title="新提拔领导人员民主评议表中原任职务和任现职时间格式都改为“.”；"></a>新提拔领导人员民主评议表中原任职务和任现职时间格式都改为“.”；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204308506376100.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204308506376100.png"></a></p><h2 id="董事明细查询列表需添加序号列，且得分列出现“missing”标识，见图；"><a href="#董事明细查询列表需添加序号列，且得分列出现“missing”标识，见图；" class="headerlink" title="董事明细查询列表需添加序号列，且得分列出现“missing”标识，见图；"></a>董事明细查询列表需添加序号列，且得分列出现“missing”标识，见图；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204320241798200.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204320241798200.png"></a></p><h2 id="整体汇总表-导出班子对比汇总数据，缺少当前考核年度对比数据列，见图；"><a href="#整体汇总表-导出班子对比汇总数据，缺少当前考核年度对比数据列，见图；" class="headerlink" title="整体汇总表-导出班子对比汇总数据，缺少当前考核年度对比数据列，见图；"></a>整体汇总表-导出班子对比汇总数据，缺少当前考核年度对比数据列，见图；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204333508278200.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204333508278200.png"></a></p><h2 id="班子综合评分-导出-项目指标项分数与导出文件不一致，正确为：政治素质（15分）-整体功能（15分）-工作业绩（15分）-作风形象（15分）-60；业绩考核结果（40分）；导出文件前四项25和变成100，业绩考核结果变成了0分，需要更正，见图；"><a href="#班子综合评分-导出-项目指标项分数与导出文件不一致，正确为：政治素质（15分）-整体功能（15分）-工作业绩（15分）-作风形象（15分）-60；业绩考核结果（40分）；导出文件前四项25和变成100，业绩考核结果变成了0分，需要更正，见图；" class="headerlink" title="班子综合评分-导出-项目指标项分数与导出文件不一致，正确为：政治素质（15分）+整体功能（15分）+工作业绩（15分）+作风形象（15分）&#x3D;60；业绩考核结果（40分）；导出文件前四项25和变成100，业绩考核结果变成了0分，需要更正，见图；"></a>班子综合评分-导出-项目指标项分数与导出文件不一致，正确为：政治素质（15分）+整体功能（15分）+工作业绩（15分）+作风形象（15分）&#x3D;60；业绩考核结果（40分）；导出文件前四项25和变成100，业绩考核结果变成了0分，需要更正，见图；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204346029761300.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204346029761300.png"></a></p><h2 id="领导人员-领导人员副职明细查询列表添加序号功能；"><a href="#领导人员-领导人员副职明细查询列表添加序号功能；" class="headerlink" title="领导人员-领导人员副职明细查询列表添加序号功能；"></a>领导人员-领导人员副职明细查询列表添加序号功能；</h2><h2 id="选人用人-选人用人明细查询-列表排序错乱，见图；"><a href="#选人用人-选人用人明细查询-列表排序错乱，见图；" class="headerlink" title="选人用人-选人用人明细查询-列表排序错乱，见图；"></a>选人用人-选人用人明细查询-列表排序错乱，见图；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204391970448000.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204391970448000.png"></a></p><h2 id="一报告两评议统计查询-选人用人工作民主评议统计，面板高度需增加至左侧面板对齐高度，页面宽度也有，但是显示过短，所有列表面板高度要与左侧菜单树面板高度一致；"><a href="#一报告两评议统计查询-选人用人工作民主评议统计，面板高度需增加至左侧面板对齐高度，页面宽度也有，但是显示过短，所有列表面板高度要与左侧菜单树面板高度一致；" class="headerlink" title="一报告两评议统计查询-选人用人工作民主评议统计，面板高度需增加至左侧面板对齐高度，页面宽度也有，但是显示过短，所有列表面板高度要与左侧菜单树面板高度一致；"></a>一报告两评议统计查询-选人用人工作民主评议统计，面板高度需增加至左侧面板对齐高度，页面宽度也有，但是显示过短，所有列表面板高度要与左侧菜单树面板高度一致；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204401806200200.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204401806200200.png"></a></p><h2 id="新提拔中层统表统计结果-新提拔人员认同率情况统计列表需添加分页，页面高度需与左侧菜单树高度对齐；"><a href="#新提拔中层统表统计结果-新提拔人员认同率情况统计列表需添加分页，页面高度需与左侧菜单树高度对齐；" class="headerlink" title="新提拔中层统表统计结果-新提拔人员认同率情况统计列表需添加分页，页面高度需与左侧菜单树高度对齐；"></a>新提拔中层统表统计结果-新提拔人员认同率情况统计列表需添加分页，页面高度需与左侧菜单树高度对齐；</h2><p><a href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204412503515500.png" class="gallery-item"><img src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-26/204412503515500.png"></a></p><h1 id="9月25日"><a href="#9月25日" class="headerlink" title="9月25日"></a>9月25日</h1><h2 id="因私出国前端问题修复"><a href="#因私出国前端问题修复" class="headerlink" title="因私出国前端问题修复"></a>因私出国前端问题修复</h2><h1 id="9月24日"><a href="#9月24日" class="headerlink" title="9月24日"></a>9月24日</h1><h2 id="测评票首页开发"><a href="#测评票首页开发" class="headerlink" title="测评票首页开发"></a><del>测评票首页开发</del></h2><h2 id="协助开发湖北因私出国模块"><a href="#协助开发湖北因私出国模块" class="headerlink" title="协助开发湖北因私出国模块"></a><del>协助开发湖北因私出国模块</del></h2><h1 id="9月22日"><a href="#9月22日" class="headerlink" title="9月22日"></a>9月22日</h1><blockquote><p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p></blockquote><p><a href="https://blog.zysicyj.top/">首发博客地址</a></p><p><a href="https://blog.zysicyj.top/update_plan/">文章更新计划</a></p><hr><blockquote><p>优先级说明：</p><ul><li><mark class="hl-label red">重要紧急</mark> </li><li><mark class="hl-label pink">重要不紧急</mark> </li><li><mark class="hl-label green">不重要紧急</mark> </li><li><mark class="hl-label default">不重要不紧急</mark> </li></ul></blockquote><div class="tabs" id="test1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test1-1">工作</button></li><li class="tab"><button type="button" data-href="#test1-2">博客</button></li><li class="tab"><button type="button" data-href="#test1-3">足迹</button></li><li class="tab"><button type="button" data-href="#test1-4">花销</button></li><li class="tab"><button type="button" data-href="#test1-5">体重</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><h2 id="【南瑞】【测评票】"><a href="#【南瑞】【测评票】" class="headerlink" title="【南瑞】【测评票】"></a><mark class="hl-label red">【南瑞】【测评票】</mark></h2><p>首页功能开发</p><h2 id="【南瑞】【测评票】-1"><a href="#【南瑞】【测评票】-1" class="headerlink" title="【南瑞】【测评票】"></a><mark class="hl-label pink">【南瑞】【测评票】</mark></h2><p>导出性能优化</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-2"><h2 id="【个人】【博客】【面试题系列】"><a href="#【个人】【博客】【面试题系列】" class="headerlink" title="【个人】【博客】【面试题系列】"></a><mark class="hl-label green">【个人】【博客】【面试题系列】</mark></h2><p>为什么不推荐使用@Autowired注解</p><h2 id="【个人】【博客】【系列】"><a href="#【个人】【博客】【系列】" class="headerlink" title="【个人】【博客】【系列】"></a><mark class="hl-label green">【个人】【博客】【系列】</mark></h2><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-3"><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>00:00~7:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>7:00~11:30</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>11:30~14:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>14:00~18:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>18:00~24:00</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'></div></div><div class='timeline-item-content'></div></div></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-4"><table><thead><tr><th>店名</th><th>地址</th><th>价格</th><th>评价</th><th>备注</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-5"><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><ul><li><a href="https://blog.zysicyj.top/today_2023_09">2023年9月</a></li></ul></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {        var options = {            selector: '.gallery-item'        };        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);        }</script>]]></content>
       
       
       <categories>
