@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-09-26T14:18:52.090Z</updated>
+  <updated>2023-09-27T01:25:50.280Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>打造全网最细最全Java面试题库</title>
+    <link href="https://zysicyj.github.io/35792a27.html"/>
+    <id>https://zysicyj.github.io/35792a27.html</id>
+    <published>2023-09-26T14:41:25.000Z</published>
+    <updated>2023-09-27T01:25:50.280Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>【面试题精讲】Java 和 C++ 的区别?</title>
@@ -896,69 +917,6 @@
     
     <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>JDK21更新内容：舍弃对x86架构32位系统支持</title>
-    <link href="https://zysicyj.github.io/c37a0005.html"/>
-    <id>https://zysicyj.github.io/c37a0005.html</id>
-    <published>2023-09-24T02:10:31.000Z</published>
-    <updated>2023-09-26T14:18:51.660Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术文章" scheme="https://zysicyj.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
-    
-    
-    <category term="虚拟机" scheme="https://zysicyj.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-    <category term="性能提升" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD%E6%8F%90%E5%8D%87/"/>
-    
-    <category term="使用示例" scheme="https://zysicyj.github.io/tags/%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B/"/>
-    
-    <category term="使用注意事项" scheme="https://zysicyj.github.io/tags/%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
-    
-    <category term="总结" scheme="https://zysicyj.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
-    <category term="JDK21更新内容" scheme="https://zysicyj.github.io/tags/JDK21%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/"/>
-    
-    <category term="舍弃对x86架构32位系统支持" scheme="https://zysicyj.github.io/tags/%E8%88%8D%E5%BC%83%E5%AF%B9x86%E6%9E%B6%E6%9E%8432%E4%BD%8D%E7%B3%BB%E7%BB%9F%E6%94%AF%E6%8C%81/"/>
-    
-    <category term="JEP 449" scheme="https://zysicyj.github.io/tags/JEP-449/"/>
-    
-    <category term="Java Enhancement Proposal 449" scheme="https://zysicyj.github.io/tags/Java-Enhancement-Proposal-449/"/>
-    
-    <category term="Windows 32位x86平台" scheme="https://zysicyj.github.io/tags/Windows-32%E4%BD%8Dx86%E5%B9%B3%E5%8F%B0/"/>
-    
-    <category term="过时的硬件和操作系统" scheme="https://zysicyj.github.io/tags/%E8%BF%87%E6%97%B6%E7%9A%84%E7%A1%AC%E4%BB%B6%E5%92%8C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    <category term="性能限制" scheme="https://zysicyj.github.io/tags/%E6%80%A7%E8%83%BD%E9%99%90%E5%88%B6/"/>
-    
-    <category term="安全问题" scheme="https://zysicyj.github.io/tags/%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98/"/>
-    
-    <category term="编译器" scheme="https://zysicyj.github.io/tags/%E7%BC%96%E8%AF%91%E5%99%A8/"/>
-    
-    <category term="库" scheme="https://zysicyj.github.io/tags/%E5%BA%93/"/>
-    
-    <category term="安全增强" scheme="https://zysicyj.github.io/tags/%E5%AE%89%E5%85%A8%E5%A2%9E%E5%BC%BA/"/>
-    
-    <category term="现代计算机趋势" scheme="https://zysicyj.github.io/tags/%E7%8E%B0%E4%BB%A3%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B6%8B%E5%8A%BF/"/>
-    
-    <category term="向后兼容性问题" scheme="https://zysicyj.github.io/tags/%E5%90%91%E5%90%8E%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/"/>
-    
-    <category term="开发者" scheme="https://zysicyj.github.io/tags/%E5%BC%80%E5%8F%91%E8%80%85/"/>
-    
-    <category term="用户" scheme="https://zysicyj.github.io/tags/%E7%94%A8%E6%88%B7/"/>
     
   </entry>
   
