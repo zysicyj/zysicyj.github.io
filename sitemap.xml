@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zysicyj.github.io/gallery/baby/index.html</loc>
+    
+    <lastmod>2023-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/gallery/baby/baby7.html</loc>
+    
+    <lastmod>2023-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/gallery/index.html</loc>
+    
+    <lastmod>2023-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/today.html</loc>
+    
+    <lastmod>2023-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zysicyj.github.io/13925983.html</loc>
     
     <lastmod>2023-10-07</lastmod>
@@ -21,15 +57,6 @@
   
   <url>
     <loc>https://zysicyj.github.io/dfb0c7b0.html</loc>
-    
-    <lastmod>2023-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zysicyj.github.io/today.html</loc>
     
     <lastmod>2023-10-07</lastmod>
     
@@ -1613,15 +1640,6 @@
   </url>
   
   <url>
-    <loc>https://zysicyj.github.io/gallery/baby/index.html</loc>
-    
-    <lastmod>2023-09-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zysicyj.github.io/gallery/baby/baby4.html</loc>
     
     <lastmod>2023-09-14</lastmod>
@@ -1650,15 +1668,6 @@
   
   <url>
     <loc>https://zysicyj.github.io/gallery/baby/baby5.html</loc>
-    
-    <lastmod>2023-09-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zysicyj.github.io/gallery/baby/baby7.html</loc>
     
     <lastmod>2023-09-14</lastmod>
     
@@ -1704,15 +1713,6 @@
   
   <url>
     <loc>https://zysicyj.github.io/gallery/baby/baby9.html</loc>
-    
-    <lastmod>2023-09-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zysicyj.github.io/gallery/index.html</loc>
     
     <lastmod>2023-09-14</lastmod>
     
@@ -9456,6 +9456,13 @@
   
   <url>
     <loc>https://zysicyj.github.io/categories/%E7%94%9F%E6%B4%BB/%E5%AD%A6%E4%B9%A0/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2023-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zysicyj.github.io/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2023-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
