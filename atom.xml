@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-10-15T07:33:48.765Z</updated>
+  <updated>2023-10-16T12:36:07.570Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,321 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【面试题精讲】javaNIO的核心组件</title>
+    <link href="https://zysicyj.github.io/9ff05f9.html"/>
+    <id>https://zysicyj.github.io/9ff05f9.html</id>
+    <published>2023-10-16T12:36:07.000Z</published>
+    <updated>2023-10-16T12:36:07.570Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaNIO的零拷贝</title>
+    <link href="https://zysicyj.github.io/b4513c64.html"/>
+    <id>https://zysicyj.github.io/b4513c64.html</id>
+    <published>2023-10-16T12:35:59.000Z</published>
+    <updated>2023-10-16T12:35:59.567Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO模型之AIO</title>
+    <link href="https://zysicyj.github.io/fd50852d.html"/>
+    <id>https://zysicyj.github.io/fd50852d.html</id>
+    <published>2023-10-16T12:35:44.000Z</published>
+    <updated>2023-10-16T12:49:42.686Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO模型之NIO</title>
+    <link href="https://zysicyj.github.io/f60cc210.html"/>
+    <id>https://zysicyj.github.io/f60cc210.html</id>
+    <published>2023-10-16T12:35:38.000Z</published>
+    <updated>2023-10-16T13:30:54.295Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO模型之BIO</title>
+    <link href="https://zysicyj.github.io/ff163b74.html"/>
+    <id>https://zysicyj.github.io/ff163b74.html</id>
+    <published>2023-10-16T12:35:32.000Z</published>
+    <updated>2023-10-16T12:53:57.166Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO模型</title>
+    <link href="https://zysicyj.github.io/6a65a135.html"/>
+    <id>https://zysicyj.github.io/6a65a135.html</id>
+    <published>2023-10-16T12:35:22.000Z</published>
+    <updated>2023-10-16T12:42:17.261Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO设计模式之工厂模式</title>
+    <link href="https://zysicyj.github.io/5840e8f8.html"/>
+    <id>https://zysicyj.github.io/5840e8f8.html</id>
+    <published>2023-10-16T12:35:06.000Z</published>
+    <updated>2023-10-16T13:34:21.949Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO设计模式之适配器模式</title>
+    <link href="https://zysicyj.github.io/1a1b8479.html"/>
+    <id>https://zysicyj.github.io/1a1b8479.html</id>
+    <published>2023-10-16T12:34:59.000Z</published>
+    <updated>2023-10-16T12:34:59.098Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】javaIO设计模式之装饰器模式</title>
+    <link href="https://zysicyj.github.io/74078295.html"/>
+    <id>https://zysicyj.github.io/74078295.html</id>
+    <published>2023-10-16T12:34:51.000Z</published>
+    <updated>2023-10-16T16:42:59.761Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】java随机访问流</title>
+    <link href="https://zysicyj.github.io/18dbe02a.html"/>
+    <id>https://zysicyj.github.io/18dbe02a.html</id>
+    <published>2023-10-16T12:33:45.000Z</published>
+    <updated>2023-10-16T12:33:45.247Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】java打印l流</title>
+    <link href="https://zysicyj.github.io/ff2b6363.html"/>
+    <id>https://zysicyj.github.io/ff2b6363.html</id>
+    <published>2023-10-16T12:33:36.000Z</published>
+    <updated>2023-10-16T12:33:36.961Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】java字符缓冲流</title>
+    <link href="https://zysicyj.github.io/2adb8819.html"/>
+    <id>https://zysicyj.github.io/2adb8819.html</id>
+    <published>2023-10-16T12:33:26.000Z</published>
+    <updated>2023-10-16T12:33:26.543Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】java字节缓冲流</title>
+    <link href="https://zysicyj.github.io/70d0f156.html"/>
+    <id>https://zysicyj.github.io/70d0f156.html</id>
+    <published>2023-10-16T12:33:20.000Z</published>
+    <updated>2023-10-16T12:33:20.409Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】java字符流</title>
+    <link href="https://zysicyj.github.io/306dc8c.html"/>
+    <id>https://zysicyj.github.io/306dc8c.html</id>
+    <published>2023-10-16T12:32:58.000Z</published>
+    <updated>2023-10-16T12:32:58.769Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【面试题精讲】java字节流</title>
+    <link href="https://zysicyj.github.io/93818c94.html"/>
+    <id>https://zysicyj.github.io/93818c94.html</id>
+    <published>2023-10-16T12:32:50.000Z</published>
+    <updated>2023-10-16T12:32:50.035Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>面试10月13日</title>
@@ -118,381 +433,6 @@
     <id>https://zysicyj.github.io/8ea93f16.html</id>
     <published>2023-10-10T14:48:17.000Z</published>
     <updated>2023-10-11T11:04:46.523Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayDeque 与 LinkedList 的区别</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:48:15.000Z</published>
-    <updated>2023-10-11T11:01:36.768Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】Queue 与 Deque 的区别</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:47:18.000Z</published>
-    <updated>2023-10-11T10:57:56.828Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:47:15.000Z</published>
-    <updated>2023-10-11T10:54:54.280Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】无序性和不可重复性的含义是什么</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:47:13.000Z</published>
-    <updated>2023-10-11T06:50:34.967Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayList 的扩容机制</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:47:11.000Z</published>
-    <updated>2023-10-11T06:50:35.317Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】Comparable 和 Comparator 的区别</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:47:09.000Z</published>
-    <updated>2023-10-11T10:51:37.034Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayList 与 LinkedList 区别</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:33.000Z</published>
-    <updated>2023-10-11T06:50:48.916Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】LinkedList 为什么不能实现 RandomAccess 接口</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:31.000Z</published>
-    <updated>2023-10-11T06:38:25.288Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】LinkedList 插入和删除元素的时间复杂度</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:28.000Z</published>
-    <updated>2023-10-11T06:38:27.934Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayList 插入和删除元素的时间复杂度</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:25.000Z</published>
-    <updated>2023-10-11T06:45:07.998Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayList 可以添加 null 值吗</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:23.000Z</published>
-    <updated>2023-10-11T06:38:26.455Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】Vector 和 Stack 的区别?</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:20.000Z</published>
-    <updated>2023-10-11T06:38:25.610Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayList 和 Vector 的区别?</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:18.000Z</published>
-    <updated>2023-10-11T06:38:27.790Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】ArrayList 和 Array（数组）的区别？</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:45:16.000Z</published>
-    <updated>2023-10-11T06:45:38.689Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】说说 List, Set, Queue, Map 四者的区别？</title>
-    <link href="https://zysicyj.github.io/8ea93f16.html"/>
-    <id>https://zysicyj.github.io/8ea93f16.html</id>
-    <published>2023-10-10T14:22:25.000Z</published>
-    <updated>2023-10-11T06:50:50.839Z</updated>
     
     
       
