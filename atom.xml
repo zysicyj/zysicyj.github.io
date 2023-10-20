@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-10-18T13:51:32.535Z</updated>
+  <updated>2023-10-19T10:56:18.224Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端跨域问题</title>
+    <link href="https://zysicyj.github.io/c0170cf0.html"/>
+    <id>https://zysicyj.github.io/c0170cf0.html</id>
+    <published>2023-10-19T10:36:34.000Z</published>
+    <updated>2023-10-19T10:56:18.224Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="BUG" scheme="https://zysicyj.github.io/categories/BUG/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>【面试题精讲】jclasslib</title>
@@ -33,6 +56,10 @@
       
     
     
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
@@ -55,6 +82,10 @@
     
     
     
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
     
   </entry>
   
@@ -75,6 +106,10 @@
       
     
     
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
@@ -97,6 +132,10 @@
     
     
     
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
     
   </entry>
   
@@ -117,6 +156,10 @@
       
     
     
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
@@ -139,6 +182,10 @@
     
     
     
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
     
   </entry>
   
@@ -159,6 +206,10 @@
       
     
     
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
@@ -181,6 +232,10 @@
     
     
     
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
     
   </entry>
   
@@ -201,6 +256,10 @@
       
     
     
+    
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
@@ -223,6 +282,10 @@
     
     
     
+    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
     
   </entry>
   
@@ -231,12 +294,14 @@
     <link href="https://zysicyj.github.io/daily-fzjcxt.html"/>
     <id>https://zysicyj.github.io/daily-fzjcxt.html</id>
     <published>2023-10-17T08:38:48.000Z</published>
-    <updated>2023-10-18T13:56:19.990Z</updated>
+    <updated>2023-10-20T01:23:54.802Z</updated>
     
     
     <summary type="html">有东西被加密了, 请输入密码查看.</summary>
     
     
+    
+    <category term="公司" scheme="https://zysicyj.github.io/categories/%E5%85%AC%E5%8F%B8/"/>
     
     
     <category term="nari" scheme="https://zysicyj.github.io/tags/nari/"/>
@@ -420,31 +485,6 @@
     <id>https://zysicyj.github.io/5840e8f8.html</id>
     <published>2023-10-16T12:35:06.000Z</published>
     <updated>2023-10-18T00:34:08.743Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css&quot; /&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="系列文章" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【面试题精讲】javaIO设计模式之适配器模式</title>
-    <link href="https://zysicyj.github.io/1a1b8479.html"/>
-    <id>https://zysicyj.github.io/1a1b8479.html</id>
-    <published>2023-10-16T12:34:59.000Z</published>
-    <updated>2023-10-18T00:34:08.410Z</updated>
     
     
       
