@@ -1,0 +1,344 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【面试题精讲】MySQL-执行器 | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top  首发博客地址 全网最细面试题手册，支持艾宾浩斯记忆法  1. 什么是MySQL-执行器？MySQL-执行器 是MySQL数据库中负责完成SQL语句执行的部分。当语句在服务器"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/8ca4184f.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 程序员朱永胜","link":"链接: ","source":"来源: ","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【面试题精讲】MySQL-执行器',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-20 17:04:08'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="../archives/"><div class="headline">文章</div><div class="length-num">306</div></a><a href="../tags/"><div class="headline">标签</div><div class="length-num">974</div></a><a href="../categories/"><div class="headline">分类</div><div class="length-num">45</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="../index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="../today"><i class="fa-fw fas fa-solid fa-calendar-week"></i><span> Today</span></a></div><div class="menus_item"><a class="site-page" href="../shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="../gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="../lyb/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="../rp.html"><i class="fa-fw fas fa-comment-dots"></i><span> 锐评</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="../tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="../categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="../books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="../songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="../link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="../love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img.xjh.me/random_img.php?return=302')"><nav id="nav"><span id="blog-info"><a href="../index.html" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="../index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="../today"><i class="fa-fw fas fa-solid fa-calendar-week"></i><span> Today</span></a></div><div class="menus_item"><a class="site-page" href="../shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="../gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="../lyb/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="../rp.html"><i class="fa-fw fas fa-comment-dots"></i><span> 锐评</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="../tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="../categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="../books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="../songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="../link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="../love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【面试题精讲】MySQL-执行器</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-20T07:04:51.000Z" title="发表于 2023-10-20 15:04:51">2023-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-20T09:04:08.584Z" title="更新于 2023-10-20 17:04:08">2023-10-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【面试题精讲】MySQL-执行器"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
+<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p>
+</blockquote>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/">首发博客地址</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001">全网最细面试题手册，支持艾宾浩斯记忆法</a></p>
+<hr>
+<h2 id="1-什么是MySQL-执行器？"><a href="#1-什么是MySQL-执行器？" class="headerlink" title="1. 什么是MySQL-执行器？"></a>1. 什么是MySQL-执行器？</h2><p><strong>MySQL-执行器</strong> 是MySQL数据库中负责完成SQL语句执行的部分。当语句在服务器接收并解析后，MySQL-执行器开始运行，利用存储在数据字典中的表结构等元数据信息，检查该SQL语句是否符合安全准则，然后对SQL进行操作，接着将结果返回给客户端。</p>
+<p>在MySQL中，执行器主要包括操作表实现查找、扫描、聚合等功能的各个算子，这些算子组成一个算子树，决定了SQL的执行顺序。改变算子树的结构，也就改变了查询语句执行的顺序，从而可以优化查询性能。</p>
+<h2 id="2-为什么需要MySQL-执行器？"><a href="#2-为什么需要MySQL-执行器？" class="headerlink" title="2. 为什么需要MySQL-执行器？"></a>2. 为什么需要MySQL-执行器？</h2><p>我们需要<strong>MySQL-执行器</strong>来最终执行SQL语句，获取想要的结果。SQL语句的执行涉及到大量的操作，如数据读取，数据写入，事务管理，锁管理等。执行器通过处理这些复杂的操作，使得用户可以通过简单的SQL语句获取到想要的结果。</p>
+<p>更重要的是，执行器也会进行一系列的优化操作来提升SQL语句的执行效率，如根据表的索引信息，选择最佳的表连接方式或者查询策略，以减少数据的读取量，提高查询效率。</p>
+<h2 id="3-MySQL-执行器的实现原理？"><a href="#3-MySQL-执行器的实现原理？" class="headerlink" title="3. MySQL-执行器的实现原理？"></a>3. MySQL-执行器的实现原理？</h2><p><strong>MySQL-执行器</strong>的实现原理主要可以分为以下几个步骤：</p>
+<ol>
+<li><p><strong>操作权限检查</strong>：首先，执行器会检查当前用户是否有权限执行这条SQL语句。如果没有权限，执行器会直接返回一个错误。</p>
+</li>
+<li><p><strong>根据SQL语句类型，调用各自的执行接口</strong>：执行器会根据不同的SQL语句类型，如SELECT，INSERT，DELETE等，调用对应的函数来执行该语句。</p>
+</li>
+<li><p><strong>获取结果</strong>：执行器通过与存储引擎交互，获得结果。对于查询语句，执行器会从存储引擎中获取数据，并根据SELECT列的定义进行必要的处理，然后将结果返回给客户端。</p>
+</li>
+<li><p><strong>事务处理</strong>：对于会改变数据库内容的语句，如INSERT，DELETE，UPDATE等，执行器在执行时还会进行事务处理，确保数据的安全性和一致性。</p>
+</li>
+</ol>
+<p>以上就是MySQL-执行器的基本实现原理，但在实际中，为了提高性能，执行器在执行SQL语句时还会进行一系列的优化操作。</p>
+<h2 id="4-MySQL-执行器的使用示例"><a href="#4-MySQL-执行器的使用示例" class="headerlink" title="4. MySQL-执行器的使用示例"></a>4. MySQL-执行器的使用示例</h2><p>这里我会以一个简单的SELECT语句作为例子，来说明MySQL-执行器的工作过程。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> employees <span class="keyword">WHERE</span> emp_no <span class="operator">=</span> <span class="number">10001</span>;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>上面的示例是一个查询语句，执行器在真正执行前，首先会检查用户是否有权访问employees表以及查询emp_no字段。如果用户有这些权限，则执行器会继续下一步。</p>
+</blockquote>
+<blockquote>
+<p>接下来，执行器会根据SQL语句类型，调用相应的函数来执行语句。在这个例子中，执行器将调用SELECT语句的执行函数，然后对employees表执行查找操作。</p>
+</blockquote>
+<blockquote>
+<p>执行器与存储引擎交互，根据查询条件（emp_no &#x3D; 10001），查找符合条件的记录。查询的结果会被返回给执行器。</p>
+</blockquote>
+<blockquote>
+<p>执行器根据SELECT列的定义进行处理，并将结果返回给客户端。</p>
+</blockquote>
+<h2 id="5-MySQL-执行器的优点"><a href="#5-MySQL-执行器的优点" class="headerlink" title="5. MySQL-执行器的优点"></a>5. MySQL-执行器的优点</h2><ol>
+<li><p><strong>优化性能</strong> ：通过对操作的优化，执行器能够显著地提高SQL查询语句的执行性能。</p>
+</li>
+<li><p><strong>简化操作</strong> ：开发者只需写出对应的SQL语句，不需要关心实际执行的细节，由执行器负责完成。</p>
+</li>
+<li><p><strong>权限控制</strong> ：执行器进行操作权限检查，避免了非法用户对数据的访问。</p>
+</li>
+<li><p><strong>事务管理</strong> ：对于会改变数据库数据的操作，执行器进行事务管理，确保数据的安全性和一致性。</p>
+</li>
+</ol>
+<h2 id="6-MySQL-执行器的缺点"><a href="#6-MySQL-执行器的缺点" class="headerlink" title="6. MySQL-执行器的缺点"></a>6. MySQL-执行器的缺点</h2><p>执行器的缺点主要是它的复杂性，设计和实现一个高效的执行器是非常具有挑战性的。另一方面，执行器也需要对查询进行诸如索引选择，连接排序等一系列复杂的优化，这将消耗一定的处理时间。</p>
+<h2 id="7-MySQL-执行器的使用注意事项"><a href="#7-MySQL-执行器的使用注意事项" class="headerlink" title="7. MySQL-执行器的使用注意事项"></a>7. MySQL-执行器的使用注意事项</h2><p>使用MySQL-执行器时，开发者需要注意：</p>
+<ol>
+<li>尽量使用索引进行查询操作，这样可提升查询性能。</li>
+<li>避免逻辑复杂，数据量大的SQL语句，因为这样的语句执行起来速度会比较慢。</li>
+<li>需要掌握正确的SQL语句使用姿势，比如掌握各种SQL语句的优缺点，才能选择最优的查询方式。</li>
+</ol>
+<h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h2><p>总的来说，<strong>MySQL-执行器</strong>是MySQL数据库中执行SQL语句的重要部分。它通过处理复杂的操作，使用户可以通过简单的SQL语句获取所需结果，同时也进行了一系列的优化操作来提升查询语句的执行效率。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/8ca4184f.html">https://zysicyj.github.io/8ca4184f.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="e8fda4f5.html" title="【面试题精讲】MySQL-wal技术"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【面试题精讲】MySQL-wal技术</div></div></a></div><div class="next-post pull-right"><a href="8b3ff7fb.html" title="【面试题精讲】MySQL-优化器"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【面试题精讲】MySQL-优化器</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='../img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">点击积累，终有所获！</div></div><div class="card-info-data site-data is-center"><a href="../archives/"><div class="headline">文章</div><div class="length-num">306</div></a><a href="../tags/"><div class="headline">标签</div><div class="length-num">974</div></a><a href="../categories/"><div class="headline">分类</div><div class="length-num">45</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="../mailto:zysicyj@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加我个人微信 sheng_chenyuanjie 拉你进群。<div class="social-button"><a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" rel="external nofollow noreferrer" target="_blank">个人微信 👍</a> <a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" rel="external nofollow noreferrer" target="_blank">公众号 👍</a> <a class="button--animated" href="https://store.amazingmemo.com/chapterDetail/1685324709017001" rel="external nofollow noreferrer" target="_blank">全网最全最细面试题 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFMySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%EF%BC%9F"><span class="toc-text">1. 什么是MySQL-执行器？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81MySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%EF%BC%9F"><span class="toc-text">2. 为什么需要MySQL-执行器？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-MySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-text">3. MySQL-执行器的实现原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-text">4. MySQL-执行器的使用示例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-MySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-text">5. MySQL-执行器的优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-MySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-text">6. MySQL-执行器的缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-MySQL-%E6%89%A7%E8%A1%8C%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">7. MySQL-执行器的使用注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%80%BB%E7%BB%93"><span class="toc-text">8. 总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="../8fac626a.html" title="【面试题精讲】mysql-sync_binlog"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-sync_binlog"/></a><div class="content"><a class="title" href="../8fac626a.html" title="【面试题精讲】mysql-sync_binlog">【面试题精讲】mysql-sync_binlog</a><time datetime="2023-10-20T09:32:13.603Z" title="更新于 2023-10-20 17:32:13">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../1f8de195.html" title="【面试题精讲】mysql-innodb_flush_log_at_trx_commit"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-innodb_flush_log_at_trx_commit"/></a><div class="content"><a class="title" href="../1f8de195.html" title="【面试题精讲】mysql-innodb_flush_log_at_trx_commit">【面试题精讲】mysql-innodb_flush_log_at_trx_commit</a><time datetime="2023-10-20T09:28:00.987Z" title="更新于 2023-10-20 17:28:00">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../f9064287.html" title="【面试题精讲】mysql中的两阶段提交"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql中的两阶段提交"/></a><div class="content"><a class="title" href="../f9064287.html" title="【面试题精讲】mysql中的两阶段提交">【面试题精讲】mysql中的两阶段提交</a><time datetime="2023-10-20T09:22:38.063Z" title="更新于 2023-10-20 17:22:38">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../7a4b4a1c.html" title="【面试题精讲】mysql-update语句执行流程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-update语句执行流程"/></a><div class="content"><a class="title" href="../7a4b4a1c.html" title="【面试题精讲】mysql-update语句执行流程">【面试题精讲】mysql-update语句执行流程</a><time datetime="2023-10-20T09:19:53.556Z" title="更新于 2023-10-20 17:19:53">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../e387cab.html" title="【面试题精讲】mysql-redolog和binlog区别"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-redolog和binlog区别"/></a><div class="content"><a class="title" href="../e387cab.html" title="【面试题精讲】mysql-redolog和binlog区别">【面试题精讲】mysql-redolog和binlog区别</a><time datetime="2023-10-20T09:16:14.795Z" title="更新于 2023-10-20 17:16:14">2023-10-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(init)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>(() => {
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = "6180e08a-324f-4622-9954-c278ba178759";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+  $crisp.push(["safe", true])
+
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const open = () => {
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+    }
+
+    const close = () => {
+      $crisp.push(["do", "chat:hide"])
+    }
+
+    close()
+    $crisp.push(["on", "chat:closed", function() {
+      close()
+    }])
+
+    window.chatBtnFn = () => {
+      $crisp.is("chat:visible") ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        $crisp.push(["do", "chat:hide"])
+      },
+      show: () => {
+        $crisp.push(["do", "chat:show"])
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="../js/search/local-search.js"></script></div></div></body></html>

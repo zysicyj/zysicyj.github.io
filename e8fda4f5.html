@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【面试题精讲】MySQL-wal技术 | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top  首发博客地址 全网最细面试题手册，支持艾宾浩斯记忆法  1. 什么是MySQL WAL技术?MySQL WAL（Write-Ahead Logging）技术：是MySQL数"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/e8fda4f5.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 程序员朱永胜","link":"链接: ","source":"来源: ","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【面试题精讲】MySQL-wal技术',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-20 16:56:05'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="../archives/"><div class="headline">文章</div><div class="length-num">306</div></a><a href="../tags/"><div class="headline">标签</div><div class="length-num">974</div></a><a href="../categories/"><div class="headline">分类</div><div class="length-num">45</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="../index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="../today"><i class="fa-fw fas fa-solid fa-calendar-week"></i><span> Today</span></a></div><div class="menus_item"><a class="site-page" href="../shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="../gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="../lyb/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="../rp.html"><i class="fa-fw fas fa-comment-dots"></i><span> 锐评</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="../tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="../categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="../books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="../songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="../link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="../love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img.xjh.me/random_img.php?return=302')"><nav id="nav"><span id="blog-info"><a href="../index.html" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="../index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="../today"><i class="fa-fw fas fa-solid fa-calendar-week"></i><span> Today</span></a></div><div class="menus_item"><a class="site-page" href="../shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="../gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page" href="../lyb/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="../rp.html"><i class="fa-fw fas fa-comment-dots"></i><span> 锐评</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="../tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="../categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="../movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="../books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="../songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="../link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="../love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【面试题精讲】MySQL-wal技术</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-20T07:11:32.000Z" title="发表于 2023-10-20 15:11:32">2023-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-20T08:56:05.630Z" title="更新于 2023-10-20 16:56:05">2023-10-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【面试题精讲】MySQL-wal技术"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
+<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p>
+</blockquote>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/">首发博客地址</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001">全网最细面试题手册，支持艾宾浩斯记忆法</a></p>
+<hr>
+<h2 id="1-什么是MySQL-WAL技术"><a href="#1-什么是MySQL-WAL技术" class="headerlink" title="1. 什么是MySQL WAL技术?"></a>1. 什么是MySQL WAL技术?</h2><p><strong>MySQL WAL（Write-Ahead Logging）技术</strong>：是MySQL数据库的一种重要机制，主要关于数据库系统中的事务处理和日志管理。</p>
+<p>在大多数数据库系统中，事务处理是关键部分，它可以确保一系列的数据库操作（即事务）具有原子性、一致性、隔离性和持久性（ACID属性）。然而，由于各种原因（如崩溃、停电等），在事务提交后，系统可能无法将所有数据写入磁盘。这就会破坏数据库的一致性，因为某些已提交的事务可能未被持久化。</p>
+<p>为了解决这个问题，数据库系统通常采用WAL技术。这项技术确保即使在潜在失败的情况下，也能保证事务的一致性和持久性。它的基本思想是：在变更数据之前，先将相关的变更信息（也就是日志）写入到一个特殊的地方（即预写日志）。这样一来，即使在数据实际写入磁盘前发生系统故障，通过这些日志也能恢复出初始状态，保证数据的一致性。</p>
+<h2 id="2-为什么需要MySQL-WAL技术？"><a href="#2-为什么需要MySQL-WAL技术？" class="headerlink" title="2. 为什么需要MySQL WAL技术？"></a>2. 为什么需要MySQL WAL技术？</h2><p><strong>需要MySQL WAL技术</strong>：主要是因为它可以保护数据库系统免受潜在的系统故障影响，并确保事务的一致性和持久性。</p>
+<p>具体来说，WAL技术的使用提供了以下几个明显的优点：</p>
+<ol>
+<li><strong>数据恢复</strong>：即使在系统崩溃后，也能够使用日志来恢复数据，保证数据的一致性和完整性。</li>
+<li><strong>性能优化</strong>：由于事务提交时不需要立即将数据写入磁盘，而是写入日志，所以可以提高数据库的整体性能。同时，由于日志是顺序写入的，比随机写入硬盘效率更高。</li>
+<li><strong>显著的性能提升</strong>：WAL技术可以避免频繁地硬盘IO操作，因此可以显著提高数据库系统的性能。</li>
+</ol>
+<h2 id="3-MySQL-WAL的实现原理？"><a href="#3-MySQL-WAL的实现原理？" class="headerlink" title="3. MySQL WAL的实现原理？"></a>3. MySQL WAL的实现原理？</h2><p><strong>MySQL WAL的实现原理</strong> 主要涉及到几个要点：</p>
+<ol>
+<li><strong>顺序写入</strong>：WAL日志是顺序写入的，能够显著优化磁盘IO性能。</li>
+<li><strong>日志格式</strong>：WAL日志包含了修改数据的详细信息，如修改类型（插入、删除、更新）、目标页的位置信息等。</li>
+<li><strong>数据恢复</strong>：在恢复数据时，系统会先读取并分析所有的WAL日志，根据其中的信息重做或者取消已经完成但未持久化的所有事务。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 示例代码</span></span><br><span class="line"><span class="comment">// 在事务开始时，创建一个新的WAL日志</span></span><br><span class="line"><span class="type">WALLog</span> <span class="variable">walLog</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">WALLog</span>(transactionId);</span><br><span class="line">...</span><br><span class="line"><span class="comment">// 在事务过程中，将所有修改操作写入WAL日志</span></span><br><span class="line">walLog.write(<span class="string">&quot;UPDATE&quot;</span>, pageId, oldData, newData);</span><br><span class="line">...</span><br><span class="line"><span class="comment">// 在事务提交之后，异步将WAL日志写入硬盘</span></span><br><span class="line">walLog.flushToDisk();</span><br><span class="line">...</span><br><span class="line"><span class="comment">// 在系统崩溃恢复时，读取并分析所有的WAL日志，重建事务状态</span></span><br><span class="line"><span class="type">WALLogReplay</span> <span class="variable">replay</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">WALLogReplay</span>();</span><br><span class="line">replay.process(walLogs);</span><br></pre></td></tr></table></figure>
+<p>上面的代码是一个简化的示例，它展示了WAL技术在事务处理中的关键步骤：事务开始时创建日志，事务过程中写日志，事务提交后将日志写入硬盘，系统恢复时重建事务状态。</p>
+<h2 id="4-MySQL-WAL的使用示例"><a href="#4-MySQL-WAL的使用示例" class="headerlink" title="4. MySQL WAL的使用示例"></a>4. MySQL WAL的使用示例</h2><p>在MySQL中，WAL技术是默认启用的，不需要特殊的配置。它主要体现在InnoDB存储引擎的设计中。</p>
+<p>当执行一个事务时，InnoDB会先生成相应的Undo日志和Redo日志，其中Redo日志即为WAL日志。&#96;&#96;&#96;一个简单的事务示例如下所示：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> test <span class="keyword">SET</span> name<span class="operator">=</span><span class="string">&#x27;John&#x27;</span> <span class="keyword">WHERE</span> id<span class="operator">=</span><span class="number">1</span>;</span><br><span class="line"><span class="keyword">COMMIT</span>;</span><br></pre></td></tr></table></figure>
+<p>在这个事务中，当执行UPDATE语句时，InnoDB会先将修改信息写入Redo日志，然后再将数据写入磁盘。在提交事务后，Redo日志会异步地写入磁盘。</p>
+<p>如果在提交事务后，但Redo日志还未写入磁盘时，系统发生崩溃。那么在系统恢复时，InnoDB会使用Redo日志来重做这个事务，确保数据的一致性。</p>
+<p>这就是MySQL WAL技术的简单应用。但在实际使用中，你会发现它在处理复杂事务和提升性能方面的重要性。</p>
+<h2 id="5-MySQL-WAL的优点"><a href="#5-MySQL-WAL的优点" class="headerlink" title="5. MySQL WAL的优点"></a>5. MySQL WAL的优点</h2><p><strong>MySQL WAL的优点</strong> 包括：</p>
+<ol>
+<li><strong>数据恢复</strong>：如果系统崩溃，MySQL能够使用WAL技术来恢复数据，保证数据的一致性和完整性。</li>
+<li><strong>性能优化</strong>：WAL技术使用顺序写入，避免了频繁的磁盘IO操作，从而提高了系统的性能。</li>
+<li><strong>简化了恢复流程</strong>：相对于其他恢复技术，如回滚段或是双写机制，WAL技术简化了恢复的流程，只需要按照顺序重新执行日志中的操作即可。</li>
+</ol>
+<h2 id="6-MySQL-WAL的缺点"><a href="#6-MySQL-WAL的缺点" class="headerlink" title="6. MySQL WAL的缺点"></a>6. MySQL WAL的缺点</h2><p><strong>MySQL WAL的缺点</strong> 包括：</p>
+<ol>
+<li><strong>额外的磁盘空间</strong>：由于需要保存所有的WAL日志，这将消耗额外的磁盘空间。</li>
+<li><strong>日志管理</strong>：如果有大量的长时间运行的事务，那么可能需要管理大量的WAL日志，这可能会使日志管理变得复杂。</li>
+</ol>
+<h2 id="7-MySQL-WAL的使用注意事项"><a href="#7-MySQL-WAL的使用注意事项" class="headerlink" title="7. MySQL WAL的使用注意事项"></a>7. MySQL WAL的使用注意事项</h2><p>在使用MySQL WAL技术时，需要注意以下几点：</p>
+<ol>
+<li><strong>日志管理</strong>：需要定期清理老的WAL日志，以释放磁盘空间。可以使用MySQL的purge机制来自动清理。</li>
+<li><strong>性能调优</strong>：在高并发的环境下，可以通过调整WAL的大小和写入策略，以提高系统的性能。</li>
+</ol>
+<h2 id="8-总结"><a href="#8-总结" class="headerlink" title="8. 总结"></a>8. 总结</h2><p>MySQL WAL技术是一种重要的数据恢复和性能优化技术。通过在修改数据前先写入日志，WAL技术能够保障数据的一致性，同时减少磁盘IO操作，提高系统的性能。虽然WAL技术会消耗一些额外的磁盘空间，并要求进行日志管理，但其带来的好处是显而易见的。</p>
+<p>因此，深入理解并恰当使用WAL技术，对于任何需要处理数据的系统，都是至关重要的。</p>
+<p>以上就是关于“MySQL WAL技术”的详细介绍。如果你有任何关于这个话题的问题，或者想要了解更多的信息，请随时留言，我会尽快回复你。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/e8fda4f5.html">https://zysicyj.github.io/e8fda4f5.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="167accd9.html" title="【面试题精讲】MySQL-redo-log"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【面试题精讲】MySQL-redo-log</div></div></a></div><div class="next-post pull-right"><a href="8ca4184f.html" title="【面试题精讲】MySQL-执行器"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【面试题精讲】MySQL-执行器</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='../img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">点击积累，终有所获！</div></div><div class="card-info-data site-data is-center"><a href="../archives/"><div class="headline">文章</div><div class="length-num">306</div></a><a href="../tags/"><div class="headline">标签</div><div class="length-num">974</div></a><a href="../categories/"><div class="headline">分类</div><div class="length-num">45</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="../mailto:zysicyj@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加我个人微信 sheng_chenyuanjie 拉你进群。<div class="social-button"><a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" rel="external nofollow noreferrer" target="_blank">个人微信 👍</a> <a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" rel="external nofollow noreferrer" target="_blank">公众号 👍</a> <a class="button--animated" href="https://store.amazingmemo.com/chapterDetail/1685324709017001" rel="external nofollow noreferrer" target="_blank">全网最全最细面试题 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFMySQL-WAL%E6%8A%80%E6%9C%AF"><span class="toc-text">1. 什么是MySQL WAL技术?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81MySQL-WAL%E6%8A%80%E6%9C%AF%EF%BC%9F"><span class="toc-text">2. 为什么需要MySQL WAL技术？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-MySQL-WAL%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-text">3. MySQL WAL的实现原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-MySQL-WAL%E7%9A%84%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-text">4. MySQL WAL的使用示例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-MySQL-WAL%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-text">5. MySQL WAL的优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-MySQL-WAL%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-text">6. MySQL WAL的缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-MySQL-WAL%E7%9A%84%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">7. MySQL WAL的使用注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%80%BB%E7%BB%93"><span class="toc-text">8. 总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="../8fac626a.html" title="【面试题精讲】mysql-sync_binlog"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-sync_binlog"/></a><div class="content"><a class="title" href="../8fac626a.html" title="【面试题精讲】mysql-sync_binlog">【面试题精讲】mysql-sync_binlog</a><time datetime="2023-10-20T09:32:13.603Z" title="更新于 2023-10-20 17:32:13">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../1f8de195.html" title="【面试题精讲】mysql-innodb_flush_log_at_trx_commit"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-innodb_flush_log_at_trx_commit"/></a><div class="content"><a class="title" href="../1f8de195.html" title="【面试题精讲】mysql-innodb_flush_log_at_trx_commit">【面试题精讲】mysql-innodb_flush_log_at_trx_commit</a><time datetime="2023-10-20T09:28:00.987Z" title="更新于 2023-10-20 17:28:00">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../f9064287.html" title="【面试题精讲】mysql中的两阶段提交"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql中的两阶段提交"/></a><div class="content"><a class="title" href="../f9064287.html" title="【面试题精讲】mysql中的两阶段提交">【面试题精讲】mysql中的两阶段提交</a><time datetime="2023-10-20T09:22:38.063Z" title="更新于 2023-10-20 17:22:38">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../7a4b4a1c.html" title="【面试题精讲】mysql-update语句执行流程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-update语句执行流程"/></a><div class="content"><a class="title" href="../7a4b4a1c.html" title="【面试题精讲】mysql-update语句执行流程">【面试题精讲】mysql-update语句执行流程</a><time datetime="2023-10-20T09:19:53.556Z" title="更新于 2023-10-20 17:19:53">2023-10-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="../e387cab.html" title="【面试题精讲】mysql-redolog和binlog区别"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='../img/404.jpg'" alt="【面试题精讲】mysql-redolog和binlog区别"/></a><div class="content"><a class="title" href="../e387cab.html" title="【面试题精讲】mysql-redolog和binlog区别">【面试题精讲】mysql-redolog和binlog区别</a><time datetime="2023-10-20T09:16:14.795Z" title="更新于 2023-10-20 17:16:14">2023-10-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(init)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>(() => {
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = "6180e08a-324f-4622-9954-c278ba178759";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+  $crisp.push(["safe", true])
+
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const open = () => {
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+    }
+
+    const close = () => {
+      $crisp.push(["do", "chat:hide"])
+    }
+
+    close()
+    $crisp.push(["on", "chat:closed", function() {
+      close()
+    }])
+
+    window.chatBtnFn = () => {
+      $crisp.is("chat:visible") ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        $crisp.push(["do", "chat:hide"])
+      },
+      show: () => {
+        $crisp.push(["do", "chat:show"])
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="../js/search/local-search.js"></script></div></div></body></html>
