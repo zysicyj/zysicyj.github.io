@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>2.配置生产环境 | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top   全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 https:&amp;#x2F;&amp;#x2F;st"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/564eb5d8.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2.配置生产环境',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-22 10:35:17'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">503</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="index.html" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">2.配置生产环境</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-21T02:03:26.000Z" title="发表于 2023-11-21 10:03:26">2023-11-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-22T02:35:17.300Z" title="更新于 2023-11-22 10:35:17">2023-11-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/column/">column</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/column/Docker-Compose%E5%AE%89%E8%A3%85Space/">Docker Compose安装Space</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="2.配置生产环境"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><div id="readmore-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
+<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p>
+</blockquote>
+<blockquote>
+<p>全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java<br>面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 <code>https://store.amazingmemo.com/chapterDetail/1685324709017001</code></p>
+</blockquote>
+<p>最后修改日期：2023 年 9 月 18 日</p>
+<h2 id="启用-Space-On-Premises-实例的自定义"><a href="#启用-Space-On-Premises-实例的自定义" class="headerlink" title="启用 Space On-Premises 实例的自定义"></a>启用 Space On-Premises 实例的自定义<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com.cn/en-us/help/space/configure-space-for-docker-compose-production-environment.html#enable-customization-of-your-space-on-premises-instance"></a></h2><p>Space On-Premises 的 Docker Compose 安装附带一个开箱即用的预定义配置。但是，要使 Space On-Premises 在生产环境中工作，应执行一些其他配置。</p>
+<p>Space On-Premises 配置是存储在 Space 应用程序容器中的一组文件。若要配置本地空间，应将文件复制到主机，对其进行修改，然后将空间指向新的文件位置。<code>conf</code></p>
+<ol>
+<li><p>打开目录（例如，）并运行：<code>&#123;space_install_dir/config&#125;``space-on-premises/config</code></p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp &#123;space_container_id&#125;<span class="symbol">:/home/space/circlet-server-onprem/config</span> .</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<h3 id="note"><a href="#note" class="headerlink" title="note"></a>note</h3><p>您的 Space On-Premises 实例必须正在运行。</p>
+</blockquote>
+<p>以下配置文件将被复制到主机上的目录中：<code>&#123;space_install_dir/config&#125;</code></p>
+<ul>
+<li><p><code>langservice.on-premises.conf</code></p>
+</li>
+<li><p><code>packages.on-premises.conf</code></p>
+</li>
+<li><p><code>space.on-premises.conf</code></p>
+</li>
+<li><p><code>vcs.on-premises.properties</code></p>
+</li>
+</ul>
+</li>
+<li><p>根据需要编辑配置文件。</p>
+</li>
+<li><p>停止 Space 实例：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker-compose -p <span class="literal">space</span>-<span class="keyword">on</span>-premises down</span><br><span class="line">docker-compose -p <span class="literal">space</span>-<span class="keyword">on</span>-premises rm -f</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开位于 Space 安装目录中的文件。<code>docker-compose.yml</code></p>
+</li>
+<li><p>更改 Space 配置文件的默认位置。为此，请编辑文件：<code>docker-compose.yml</code></p>
+<ol>
+<li><p>注释掉该行：<code>config:&#123;&#125;</code></p>
+</li>
+<li><p>将对 docker 卷配置的每个引用从 更改为 。即，来自：<code>config``./config</code></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- config:<span class="regexp">/home/i</span>nit-config/config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- config:<span class="regexp">/home/</span>space<span class="regexp">/circlet-server-onprem/</span>config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- config:<span class="regexp">/home/</span>space<span class="regexp">/git/</span>vcs-hosting/config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- config:<span class="regexp">/home/</span>space<span class="regexp">/packages-server/</span>config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- config:<span class="regexp">/home/</span>space<span class="regexp">/langservice-server/</span>config</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>自：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- .<span class="regexp">/config:/</span>home<span class="regexp">/init-config/</span>config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- .<span class="regexp">/config:/</span>home<span class="regexp">/space/</span>circlet-server-onprem/config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- .<span class="regexp">/config:/</span>home<span class="regexp">/space/gi</span>t<span class="regexp">/vcs-hosting/</span>config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- .<span class="regexp">/config:/</span>home<span class="regexp">/space/</span>packages-server/config</span><br><span class="line">...</span><br><span class="line">volumes:</span><br><span class="line">- .<span class="regexp">/config:/</span>home<span class="regexp">/space/</span>langservice-server/config</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li><p>Start Space On-Premises with the updated configuration:</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose -p <span class="literal">space</span>-<span class="keyword">on</span>-premises up -d</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="使-Space-On-Premises-实例可通过网络访问"><a href="#使-Space-On-Premises-实例可通过网络访问" class="headerlink" title="使 Space On-Premises 实例可通过网络访问"></a>使 Space On-Premises 实例可通过网络访问<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com.cn/en-us/help/space/configure-space-for-docker-compose-production-environment.html#make-space-on-premises-instance-network-accessible"></a></h2><p>默认情况下，Space On-Premises 的 Docker Compose 安装使用 和 作为基本 URL。此配置仅在本地运行 Space 时的概念验证方案中有效。如果要在单独的计算机上运行 Space 并使其可通过网络访问，则必须使用 nginx Web 服务器。它将用作反向代理并将请求重定向到 Space.’127.0.0.1’’localhost’</p>
+<p>先决条件：</p>
+<ul>
+<li><p>Space 组件的域名已注册并解析为主机的 IP 地址。空间组件包括：空间应用程序、VCS 和包服务器。在我们的示例中，我们将使用以下名称：、 和 .’space.example.com’’git.example.com’’packages.example.com’</p>
+</li>
+<li><p>相应的 TLS 证书安装在主机上。您可以从受信任的证书颁发机构（例如，[Let’s Encrypt]（<a target="_blank" rel="noopener external nofollow noreferrer" href="https://letsencrypt.org/getting-started/%EF%BC%89%EF%BC%89%E8%8E%B7%E5%8F%96%E8%AF%81%E4%B9%A6%E3%80%82">https://letsencrypt.org/getting-started/））获取证书。</a></p>
+</li>
+<li><p>主机安装了 nginx Web 服务器。您可以在 [官方网站]（<a target="_blank" rel="noopener external nofollow noreferrer" href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/%EF%BC%89%E4%B8%8A%E6%89%BE%E5%88%B0%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E%E3%80%82">https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/）上找到安装说明。</a></p>
+</li>
+</ul>
+<ol>
+<li>在主机上，在目录下创建 NGINX 配置文件。例如：’space.conf’’&#x2F;etc&#x2F;nginx&#x2F;conf.d’</li>
+</ol>
+<p>在上面的示例中，更改：</p>
+<ul>
+<li><p>所有和指向证书真实路径的路径ssl_certificate_key ssl_certificate。</p>
+</li>
+<li><p>所有值（、、、）为真实域名.’server_name’’space.example.com’’git.example.com’’packages.example.com’</p>
+</li>
+</ul>
+<ol start="2">
+<li><p>保存更改并应用配置：</p>
+</li>
+<li><p>[使您的 Space 实例可供自定义]（<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com.cn/en-us/help/space/configure-space-for-docker-compose-production-environment.html#customize-space-service-configuration%EF%BC%89%E3%80%82">https://www.jetbrains.com.cn/en-us/help/space/configure-space-for-docker-compose-production-environment.html#customize-space-service-configuration）。</a></p>
+</li>
+<li><p>如果 Space 实例正在运行，请停止该实例。</p>
+</li>
+<li><p>打开 Space 安装目录。</p>
+</li>
+<li><p>在文件中，使用新的 URL 值更新 all 和 参数。例如：“space.on-premises.conf”url“altUrls”</p>
+ <figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">circlet</span> &#123;</span><br><span class="line">    <span class="keyword">frontend</span> &#123;</span><br><span class="line">        url <span class="operator">=</span> <span class="string">&quot;https://space.example.com&quot;</span></span><br><span class="line">        internalUrl <span class="operator">=</span> <span class="string">&quot;http://space:9084&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">packages</span> &#123;</span><br><span class="line">        <span class="keyword">notifications</span> &#123;</span><br><span class="line">            enabled <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">types</span> &#123;</span><br><span class="line">            <span class="keyword">maven</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">nuget</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">npm</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">container</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">pypi</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">composer</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">dart</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">files</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">crates</span> &#123;</span><br><span class="line">                url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在文件中，使用新的 URL 值更新 all 和 参数。例如: <code>packages.on-premises.conf``url``internalUrl</code></p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">circlet &#123;</span><br><span class="line">    packages &#123;</span><br><span class="line">        url <span class="operator">=</span> <span class="string">&quot;https://packages.example.com&quot;</span></span><br><span class="line">        internalUrl <span class="operator">=</span> <span class="string">&quot;http://packages:9390&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    space &#123;</span><br><span class="line">        url <span class="operator">=</span> <span class="string">&quot;https://space.example.com&quot;</span></span><br><span class="line">        internalUrl <span class="operator">=</span> <span class="string">&quot;http://space:9084&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    storage &#123;</span><br><span class="line">        aws &#123;</span><br><span class="line">            publicUrl <span class="operator">=</span> <span class="string">&quot;https://minio.example.com&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在文件中，使用新的 URL 值更新 和 参数。例如: <code>vcs.on-premises.properties``base.url``circlet.url.ext</code></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">base.url=https:<span class="regexp">//gi</span>t.example.com</span><br><span class="line">circlet.url.int=http:<span class="regexp">//</span>space:<span class="number">9084</span></span><br><span class="line">circlet.url.ext=https:<span class="regexp">//</span>space.example.com</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用更新的配置启动 Space On-Premises：</p>
+</li>
+</ol>
+<h2 id="启用邮件服务器"><a href="#启用邮件服务器" class="headerlink" title="启用邮件服务器"></a>启用邮件服务器<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com.cn/en-us/help/space/configure-space-for-docker-compose-production-environment.html#enable-mail-server"></a></h2><p>Docker Compose 安装没有预配置的邮件服务器。下面的说明显示了如何创建 MailHog 邮件服务器并将其注册到 Space 中。</p>
+<ol>
+<li><p>如果 Space 实例正在运行，请停止该实例。</p>
+</li>
+<li><p>打开 Space 安装目录。</p>
+</li>
+<li><p>在文件中，添加邮件服务器配置：<code>docker-compose.yml</code></p>
+ <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">mailhog:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">mailhog/mailhog</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">1025</span><span class="string">:1025</span> <span class="comment"># SMTP server port</span></span><br><span class="line">    <span class="bullet">-</span> <span class="number">8025</span><span class="string">:8025</span> <span class="comment"># UI port</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;frontend&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>向 Space 提供邮件服务器设置。您可以通过两种不同的方式执行此操作：使用空间管理 UI 或使用空间配置文件。</p>
+<ol>
+<li><p>使用更新的配置启动 Space On-Premises：</p>
+</li>
+<li><p>在浏览器中打开您的 Space 实例并指定邮件设置，如下所示 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com.cn/en-us/help/space/administration-of-space-on-premises.html#configure-mail-server">page</a>.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="Case-specific-Enable-manual-downloads-in-Space-Packages"><a href="#Case-specific-Enable-manual-downloads-in-Space-Packages" class="headerlink" title="(Case-specific) Enable manual downloads in Space Packages﻿"></a>(Case-specific) Enable manual downloads in Space Packages﻿<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com.cn/en-us/help/space/configure-space-for-docker-compose-production-environment.html#custom-storage-only-enable-downloads-in-space-packages"></a></h2><blockquote>
+<h3 id="warning"><a href="#warning" class="headerlink" title="warning"></a>warning</h3><p>These instructions only apply if you use a custom S3 storage for your Space instance. If you use the default storage, you can skip this chapter.</p>
+</blockquote>
+<p>如果对 Space 实例使用自定义对象存储，则必须配置其 CORS 策略以允许接收来自任何源的 GET 请求：</p>
+<p>否则，用户将无法从 Space 中的存储库页面手动下载包。单击“下载”按钮将导致错误。</p>
+<ol>
+<li><p>登录 AWS 管理控制台并打开 [Amazon S3 控制台]（<a target="_blank" rel="noopener external nofollow noreferrer" href="https://console.aws.amazon.com/s3/%EF%BC%89%E3%80%82">https://console.aws.amazon.com/s3/）。</a></p>
+</li>
+<li><p>打开用于空间包的 S3 存储桶。</p>
+</li>
+<li><p>打开“权限”选项卡，将以下配置添加到“CORS”部分：</p>
+ <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;AllowedHeaders&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;*&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="string">&quot;AllowedMethods&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;GET&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="string">&quot;AllowedOrigins&quot;</span>: [</span><br><span class="line">            <span class="string">&quot;*&quot;</span></span><br><span class="line">        ],</span><br><span class="line">        <span class="string">&quot;ExposeHeaders&quot;</span>: []</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Save the changes.</p>
+</li>
+</ol>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></div>
+				<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
+				<script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script>
+				<script>
+				var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+				var isEncrypt = document.getElementById('hexo-blog-encrypt');
+				var allowMobile = false;
+				if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {
+					try {
+						var plugin = new ReadmorePlugin();
+						plugin.init({
+							"type": "hexo",
+							"id": "readmore-container",
+							"name": "程序员朱永胜",
+							"blogId": "39259-6450029321246-893",
+							"qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg",
+							"keyword": "1",
+							"random": "1",
+							"height": "auto",
+							"expires": "365",
+							"lockToc": "yes",
+							"interval": "60",
+							"baseUrl": ""
+						});
+					} catch(e) {
+						console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);
+					}
+				}
+				</script>
+			</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/564eb5d8.html">https://zysicyj.github.io/564eb5d8.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="d4ff2212.html" title="3备份和回复"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">3备份和回复</div></div></a></div><div class="next-post pull-right"><a href="eb5ef45f.html" title="使用DockerCompose安装空间"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">使用DockerCompose安装空间</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">点击积累，终有所获！</div></div><div class="card-info-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">503</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zysicyj@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加我个人微信 sheng_chenyuanjie 拉你进群。<div class="social-button"><a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" rel="external nofollow noreferrer" target="_blank">个人微信 👍</a> <a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" rel="external nofollow noreferrer" target="_blank">公众号 👍</a> <a class="button--animated" href="https://store.amazingmemo.com/chapterDetail/1685324709017001" rel="external nofollow noreferrer" target="_blank">全网最全最细面试题 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E7%94%A8-Space-On-Premises-%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89"><span class="toc-number">1.</span> <span class="toc-text">启用 Space On-Premises 实例的自定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#note"><span class="toc-number">1.1.</span> <span class="toc-text">note</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF-Space-On-Premises-%E5%AE%9E%E4%BE%8B%E5%8F%AF%E9%80%9A%E8%BF%87%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE"><span class="toc-number">2.</span> <span class="toc-text">使 Space On-Premises 实例可通过网络访问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E7%94%A8%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">3.</span> <span class="toc-text">启用邮件服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Case-specific-Enable-manual-downloads-in-Space-Packages"><span class="toc-number">4.</span> <span class="toc-text">(Case-specific) Enable manual downloads in Space Packages﻿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#warning"><span class="toc-number">4.1.</span> <span class="toc-text">warning</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="80ecb854.html" title="精简版 win11"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="精简版 win11"/></a><div class="content"><a class="title" href="80ecb854.html" title="精简版 win11">精简版 win11</a><time datetime="2023-12-01T16:23:41.293Z" title="更新于 2023-12-02 00:23:41">2023-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="23dd6700.html" title="记忆卡功能清单"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记忆卡功能清单"/></a><div class="content"><a class="title" href="23dd6700.html" title="记忆卡功能清单">记忆卡功能清单</a><time datetime="2023-12-01T16:23:41.290Z" title="更新于 2023-12-02 00:23:41">2023-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="d4ff2212.html" title="3备份和回复"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3备份和回复"/></a><div class="content"><a class="title" href="d4ff2212.html" title="3备份和回复">3备份和回复</a><time datetime="2023-12-01T16:11:59.898Z" title="更新于 2023-12-02 00:11:59">2023-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="84392d3f.html" title="1.深入了解Redis数据类型和底层数据结构"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1.深入了解Redis数据类型和底层数据结构"/></a><div class="content"><a class="title" href="84392d3f.html" title="1.深入了解Redis数据类型和底层数据结构">1.深入了解Redis数据类型和底层数据结构</a><time datetime="2023-11-27T08:51:36.254Z" title="更新于 2023-11-27 16:51:36">2023-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="75fdffb8.html" title="特殊情况设计"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="特殊情况设计"/></a><div class="content"><a class="title" href="75fdffb8.html" title="特殊情况设计">特殊情况设计</a><time datetime="2023-11-26T06:56:02.717Z" title="更新于 2023-11-26 14:56:02">2023-11-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(init)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>(() => {
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = "6180e08a-324f-4622-9954-c278ba178759";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+  $crisp.push(["safe", true])
+
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const open = () => {
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+    }
+
+    const close = () => {
+      $crisp.push(["do", "chat:hide"])
+    }
+
+    close()
+    $crisp.push(["on", "chat:closed", function() {
+      close()
+    }])
+
+    window.chatBtnFn = () => {
+      $crisp.is("chat:visible") ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        $crisp.push(["do", "chat:hide"])
+      },
+      show: () => {
+        $crisp.push(["do", "chat:show"])
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="js/search/local-search.js"></script></div></div></body></html>

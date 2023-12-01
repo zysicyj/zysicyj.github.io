@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-11-09T13:37:44.323Z</updated>
+  <updated>2023-12-01T16:23:41.293Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>脏读</title>
-    <link href="https://zysicyj.github.io/6854c349.html"/>
-    <id>https://zysicyj.github.io/6854c349.html</id>
-    <published>2023-11-09T13:37:28.849Z</published>
-    <updated>2023-11-09T13:37:44.323Z</updated>
+    <title>精简版 win11</title>
+    <link href="https://zysicyj.github.io/80ecb854.html"/>
+    <id>https://zysicyj.github.io/80ecb854.html</id>
+    <published>2023-11-27T09:59:45.000Z</published>
+    <updated>2023-12-01T16:23:41.293Z</updated>
     
     
       
@@ -33,16 +33,20 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="软件" scheme="https://zysicyj.github.io/categories/column/%E8%BD%AF%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
-    <title>隔离级别</title>
-    <link href="https://zysicyj.github.io/d1eb077d.html"/>
-    <id>https://zysicyj.github.io/d1eb077d.html</id>
-    <published>2023-11-09T13:37:28.849Z</published>
-    <updated>2023-11-09T13:37:44.325Z</updated>
+    <title>记忆卡功能清单</title>
+    <link href="https://zysicyj.github.io/23dd6700.html"/>
+    <id>https://zysicyj.github.io/23dd6700.html</id>
+    <published>2023-11-26T06:57:58.000Z</published>
+    <updated>2023-12-01T16:23:41.290Z</updated>
     
     
       
@@ -54,16 +58,20 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="记忆卡软件" scheme="https://zysicyj.github.io/categories/column/%E8%AE%B0%E5%BF%86%E5%8D%A1%E8%BD%AF%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
-    <title>幻读</title>
-    <link href="https://zysicyj.github.io/f232c356.html"/>
-    <id>https://zysicyj.github.io/f232c356.html</id>
-    <published>2023-11-09T13:37:28.766Z</published>
-    <updated>2023-11-09T13:37:44.326Z</updated>
+    <title>微软OneDrive5T 25T Office365onenote（5年+品质保证）数量有限</title>
+    <link href="https://zysicyj.github.io/e3.html"/>
+    <id>https://zysicyj.github.io/e3.html</id>
+    <published>2023-11-23T03:05:37.000Z</published>
+    <updated>2023-11-23T03:25:57.193Z</updated>
     
     
       
@@ -75,16 +83,20 @@
       
     
     
+    
+    <category term="private" scheme="https://zysicyj.github.io/categories/private/"/>
+    
+    <category term="商品" scheme="https://zysicyj.github.io/categories/private/%E5%95%86%E5%93%81/"/>
     
     
   </entry>
   
   <entry>
-    <title>事务的ACID</title>
-    <link href="https://zysicyj.github.io/d0f8bd1f.html"/>
-    <id>https://zysicyj.github.io/d0f8bd1f.html</id>
-    <published>2023-11-09T13:37:28.763Z</published>
-    <updated>2023-11-09T13:37:28.763Z</updated>
+    <title>奥斯特离职时间线全盘点</title>
+    <link href="https://zysicyj.github.io/2e7c68c3.html"/>
+    <id>https://zysicyj.github.io/2e7c68c3.html</id>
+    <published>2023-11-22T12:46:02.000Z</published>
+    <updated>2023-11-22T13:01:15.588Z</updated>
     
     
       
@@ -96,16 +108,20 @@
       
     
     
+    
+    <category term="private" scheme="https://zysicyj.github.io/categories/private/"/>
+    
+    <category term="临时" scheme="https://zysicyj.github.io/categories/private/%E4%B8%B4%E6%97%B6/"/>
     
     
   </entry>
   
   <entry>
-    <title>不可重复读</title>
-    <link href="https://zysicyj.github.io/e9ba61d2.html"/>
-    <id>https://zysicyj.github.io/e9ba61d2.html</id>
-    <published>2023-11-09T13:37:28.760Z</published>
-    <updated>2023-11-09T13:37:44.322Z</updated>
+    <title>2023年11月22日</title>
+    <link href="https://zysicyj.github.io/46537bf7.html"/>
+    <id>https://zysicyj.github.io/46537bf7.html</id>
+    <published>2023-11-22T02:36:30.000Z</published>
+    <updated>2023-11-22T03:25:23.910Z</updated>
     
     
       
@@ -117,16 +133,22 @@
       
     
     
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
+    
+    <category term="11月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/11%E6%9C%88/"/>
     
     
   </entry>
   
   <entry>
-    <title>脏读</title>
-    <link href="https://zysicyj.github.io/6854c349.html"/>
-    <id>https://zysicyj.github.io/6854c349.html</id>
-    <published>2023-11-06T15:41:23.204Z</published>
-    <updated>2023-11-09T13:22:51.902Z</updated>
+    <title>打算一个卡片记忆软件，全平台架构如何选型？</title>
+    <link href="https://zysicyj.github.io/2832a625.html"/>
+    <id>https://zysicyj.github.io/2832a625.html</id>
+    <published>2023-11-22T01:16:27.000Z</published>
+    <updated>2023-11-22T02:35:17.297Z</updated>
     
     
       
@@ -139,19 +161,19 @@
     
     
     
-    <category term="public" scheme="https://zysicyj.github.io/categories/public/"/>
+    <category term="private" scheme="https://zysicyj.github.io/categories/private/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/public/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="技术文章" scheme="https://zysicyj.github.io/categories/private/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/"/>
     
     
   </entry>
   
   <entry>
-    <title>事务的ACID</title>
-    <link href="https://zysicyj.github.io/d0f8bd1f.html"/>
-    <id>https://zysicyj.github.io/d0f8bd1f.html</id>
-    <published>2023-11-06T15:41:23.201Z</published>
-    <updated>2023-11-06T15:45:48.445Z</updated>
+    <title>解决npm安装electron总失败的问题</title>
+    <link href="https://zysicyj.github.io/7037d2dc.html"/>
+    <id>https://zysicyj.github.io/7037d2dc.html</id>
+    <published>2023-11-21T14:26:59.000Z</published>
+    <updated>2023-11-22T02:35:17.304Z</updated>
     
     
       
@@ -164,19 +186,19 @@
     
     
     
-    <category term="public" scheme="https://zysicyj.github.io/categories/public/"/>
+    <category term="private" scheme="https://zysicyj.github.io/categories/private/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/public/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="BUG" scheme="https://zysicyj.github.io/categories/private/BUG/"/>
     
     
   </entry>
   
   <entry>
-    <title>幻读</title>
-    <link href="https://zysicyj.github.io/f232c356.html"/>
-    <id>https://zysicyj.github.io/f232c356.html</id>
-    <published>2023-11-06T15:41:23.199Z</published>
-    <updated>2023-11-09T13:22:51.901Z</updated>
+    <title>4本地空间管理</title>
+    <link href="https://zysicyj.github.io/62f36f3c.html"/>
+    <id>https://zysicyj.github.io/62f36f3c.html</id>
+    <published>2023-11-21T02:08:14.000Z</published>
+    <updated>2023-11-22T02:35:17.302Z</updated>
     
     
       
@@ -189,19 +211,19 @@
     
     
     
-    <category term="public" scheme="https://zysicyj.github.io/categories/public/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/public/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="Docker Compose安装Space" scheme="https://zysicyj.github.io/categories/column/Docker-Compose%E5%AE%89%E8%A3%85Space/"/>
     
     
   </entry>
   
   <entry>
-    <title>隔离级别</title>
-    <link href="https://zysicyj.github.io/d1eb077d.html"/>
-    <id>https://zysicyj.github.io/d1eb077d.html</id>
-    <published>2023-11-06T15:41:23.196Z</published>
-    <updated>2023-11-09T13:22:51.903Z</updated>
+    <title>3备份和回复</title>
+    <link href="https://zysicyj.github.io/d4ff2212.html"/>
+    <id>https://zysicyj.github.io/d4ff2212.html</id>
+    <published>2023-11-21T02:06:52.000Z</published>
+    <updated>2023-12-01T16:11:59.898Z</updated>
     
     
       
@@ -214,19 +236,19 @@
     
     
     
-    <category term="public" scheme="https://zysicyj.github.io/categories/public/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/public/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="Docker Compose安装Space" scheme="https://zysicyj.github.io/categories/column/Docker-Compose%E5%AE%89%E8%A3%85Space/"/>
     
     
   </entry>
   
   <entry>
-    <title>不可重复读</title>
-    <link href="https://zysicyj.github.io/e9ba61d2.html"/>
-    <id>https://zysicyj.github.io/e9ba61d2.html</id>
-    <published>2023-11-06T15:41:23.194Z</published>
-    <updated>2023-11-09T13:22:51.898Z</updated>
+    <title>2.配置生产环境</title>
+    <link href="https://zysicyj.github.io/564eb5d8.html"/>
+    <id>https://zysicyj.github.io/564eb5d8.html</id>
+    <published>2023-11-21T02:03:26.000Z</published>
+    <updated>2023-11-22T02:35:17.300Z</updated>
     
     
       
@@ -239,19 +261,19 @@
     
     
     
-    <category term="public" scheme="https://zysicyj.github.io/categories/public/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/public/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="Docker Compose安装Space" scheme="https://zysicyj.github.io/categories/column/Docker-Compose%E5%AE%89%E8%A3%85Space/"/>
     
     
   </entry>
   
   <entry>
-    <title>mybatis plus所有配置项 .md</title>
-    <link href="https://zysicyj.github.io/8d222919.html"/>
-    <id>https://zysicyj.github.io/8d222919.html</id>
-    <published>2023-10-31T17:40:58.000Z</published>
-    <updated>2023-11-02T02:55:32.146Z</updated>
+    <title>使用DockerCompose安装空间</title>
+    <link href="https://zysicyj.github.io/eb5ef45f.html"/>
+    <id>https://zysicyj.github.io/eb5ef45f.html</id>
+    <published>2023-11-21T02:01:55.000Z</published>
+    <updated>2023-11-22T02:35:17.301Z</updated>
     
     
       
@@ -263,16 +285,20 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="Docker Compose安装Space" scheme="https://zysicyj.github.io/categories/column/Docker-Compose%E5%AE%89%E8%A3%85Space/"/>
     
     
   </entry>
   
   <entry>
-    <title>mybatis pus中的常用注解</title>
-    <link href="https://zysicyj.github.io/44fcffb7.html"/>
-    <id>https://zysicyj.github.io/44fcffb7.html</id>
-    <published>2023-10-31T17:33:48.000Z</published>
-    <updated>2023-11-02T02:55:32.152Z</updated>
+    <title>2023年11月17日</title>
+    <link href="https://zysicyj.github.io/362df115.html"/>
+    <id>https://zysicyj.github.io/362df115.html</id>
+    <published>2023-11-17T16:48:25.000Z</published>
+    <updated>2023-11-22T02:35:17.304Z</updated>
     
     
       
@@ -284,16 +310,22 @@
       
     
     
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
+    
+    <category term="11月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/11%E6%9C%88/"/>
     
     
   </entry>
   
   <entry>
-    <title>如何使用mybatis plus</title>
-    <link href="https://zysicyj.github.io/3c1f3171.html"/>
-    <id>https://zysicyj.github.io/3c1f3171.html</id>
-    <published>2023-10-31T17:31:05.000Z</published>
-    <updated>2023-11-02T02:55:32.153Z</updated>
+    <title>2023年11月16日</title>
+    <link href="https://zysicyj.github.io/8e919670.html"/>
+    <id>https://zysicyj.github.io/8e919670.html</id>
+    <published>2023-11-16T07:42:35.000Z</published>
+    <updated>2023-11-16T07:43:39.477Z</updated>
     
     
       
@@ -305,16 +337,22 @@
       
     
     
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
+    
+    <category term="11月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/11%E6%9C%88/"/>
     
     
   </entry>
   
   <entry>
-    <title>什么是mybatis plus</title>
-    <link href="https://zysicyj.github.io/1e330d6b.html"/>
-    <id>https://zysicyj.github.io/1e330d6b.html</id>
-    <published>2023-10-31T17:30:38.000Z</published>
-    <updated>2023-11-02T02:55:32.150Z</updated>
+    <title>2023年互联网公司100强名单</title>
+    <link href="https://zysicyj.github.io/a2c10472.html"/>
+    <id>https://zysicyj.github.io/a2c10472.html</id>
+    <published>2023-11-16T07:38:45.000Z</published>
+    <updated>2023-11-16T07:41:57.191Z</updated>
     
     
       
@@ -326,16 +364,20 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="有意思的文章" scheme="https://zysicyj.github.io/categories/column/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%96%87%E7%AB%A0/"/>
     
     
   </entry>
   
   <entry>
-    <title>2012年10月-Today</title>
-    <link href="https://zysicyj.github.io/today_2023_10.html"/>
-    <id>https://zysicyj.github.io/today_2023_10.html</id>
-    <published>2023-10-31T17:21:06.000Z</published>
-    <updated>2023-11-09T13:36:17.725Z</updated>
+    <title>2023年11月15日</title>
+    <link href="https://zysicyj.github.io/9c24399e.html"/>
+    <id>https://zysicyj.github.io/9c24399e.html</id>
+    <published>2023-11-15T01:15:35.000Z</published>
+    <updated>2023-11-16T07:39:52.426Z</updated>
     
     
       
@@ -347,16 +389,22 @@
       
     
     
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
+    
+    <category term="11月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/11%E6%9C%88/"/>
     
     
   </entry>
   
   <entry>
-    <title>G1垃圾回收器</title>
-    <link href="https://zysicyj.github.io/4e1ac63c.html"/>
-    <id>https://zysicyj.github.io/4e1ac63c.html</id>
-    <published>2023-10-31T16:59:52.000Z</published>
-    <updated>2023-10-31T17:36:28.406Z</updated>
+    <title>常见的磁盘调度算法有哪些</title>
+    <link href="https://zysicyj.github.io/8c748e5b.html"/>
+    <id>https://zysicyj.github.io/8c748e5b.html</id>
+    <published>2023-11-14T08:36:30.000Z</published>
+    <updated>2023-11-16T07:39:52.458Z</updated>
     
     
       
@@ -368,16 +416,22 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="操作系统" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
   
   <entry>
-    <title>PO垃圾回收器</title>
-    <link href="https://zysicyj.github.io/a32b7c2a.html"/>
-    <id>https://zysicyj.github.io/a32b7c2a.html</id>
-    <published>2023-10-31T16:57:48.000Z</published>
-    <updated>2023-10-31T17:36:28.282Z</updated>
+    <title>提高文件系统性能的方式有哪些</title>
+    <link href="https://zysicyj.github.io/d655e89d.html"/>
+    <id>https://zysicyj.github.io/d655e89d.html</id>
+    <published>2023-11-14T08:36:19.000Z</published>
+    <updated>2023-11-16T07:39:52.464Z</updated>
     
     
       
@@ -389,16 +443,22 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="操作系统" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
   
   <entry>
-    <title>PS垃圾回收器</title>
-    <link href="https://zysicyj.github.io/50a05747.html"/>
-    <id>https://zysicyj.github.io/50a05747.html</id>
-    <published>2023-10-31T16:56:28.000Z</published>
-    <updated>2023-10-31T17:36:28.303Z</updated>
+    <title>硬链接为什么不能跨文件系统</title>
+    <link href="https://zysicyj.github.io/459c0f85.html"/>
+    <id>https://zysicyj.github.io/459c0f85.html</id>
+    <published>2023-11-14T08:36:09.000Z</published>
+    <updated>2023-11-16T07:39:52.478Z</updated>
     
     
       
@@ -410,16 +470,22 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="操作系统" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
   
   <entry>
-    <title>CMS垃圾回收器</title>
-    <link href="https://zysicyj.github.io/c7196bdb.html"/>
-    <id>https://zysicyj.github.io/c7196bdb.html</id>
-    <published>2023-10-31T16:53:03.000Z</published>
-    <updated>2023-10-31T17:36:28.366Z</updated>
+    <title>硬链接和软链接有什么区别</title>
+    <link href="https://zysicyj.github.io/63b57d9a.html"/>
+    <id>https://zysicyj.github.io/63b57d9a.html</id>
+    <published>2023-11-14T08:35:57.000Z</published>
+    <updated>2023-11-16T07:39:52.477Z</updated>
     
     
       
@@ -431,16 +497,22 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="操作系统" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
   
   <entry>
-    <title>ParNew垃圾回收器</title>
-    <link href="https://zysicyj.github.io/ce03c339.html"/>
-    <id>https://zysicyj.github.io/ce03c339.html</id>
-    <published>2023-10-31T16:51:43.000Z</published>
-    <updated>2023-10-31T17:36:28.326Z</updated>
+    <title>文件系统主要做了什么</title>
+    <link href="https://zysicyj.github.io/c37dd6d2.html"/>
+    <id>https://zysicyj.github.io/c37dd6d2.html</id>
+    <published>2023-11-14T08:35:46.000Z</published>
+    <updated>2023-11-16T07:39:52.465Z</updated>
     
     
       
@@ -452,6 +524,12 @@
       
     
     
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="操作系统" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
