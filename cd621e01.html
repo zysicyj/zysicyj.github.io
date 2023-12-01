@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>MySQL高可用九种方案 | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top   全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 https:&amp;#x2F;&amp;#x2F;st"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/cd621e01.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>MySQL 高可用九种方案 | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准 https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top    全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java 面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 https"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/cd621e01.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
@@ -45,12 +45,12 @@
   },
   autoDarkmode: true
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'MySQL高可用九种方案',
+  title: 'MySQL 高可用九种方案',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-11-13 09:59:48'
+  postUpdate: '2023-12-01 16:47:07'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -179,15 +179,15 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">503</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="index.html" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">MySQL高可用九种方案</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-10T08:38:50.000Z" title="发表于 2023-09-10 16:38:50">2023-09-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-13T01:59:48.638Z" title="更新于 2023-11-13 09:59:48">2023-11-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/private/">private</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/private/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">技术文章</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>23分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="MySQL高可用九种方案"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><div id="readmore-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
-<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步,认准<code>https://blog.zysicyj.top</code></p>
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">503</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="index.html" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">MySQL 高可用九种方案</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-10T16:38:50.000Z" title="发表于 2023-09-10 16:38:50">2023-09-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-01T16:47:07.037Z" title="更新于 2023-12-01 16:47:07">2023-12-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/private/">private</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/private/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/">技术文章</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>23分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="MySQL 高可用九种方案"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><div id="readmore-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
+<p> 有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准 <code>https://blog.zysicyj.top</code></p>
 </blockquote>
 <blockquote>
-<p>全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java<br>面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 <code>https://store.amazingmemo.com/chapterDetail/1685324709017001</code></p>
+<p> 全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java<br> 面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 <code>https://store.amazingmemo.com/chapterDetail/1685324709017001</code></p>
 </blockquote>
-<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1m44y1Q7ZF/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=e20dd501f3625acc92539eae83023bbb">参考视频</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bilibili.com/video/BV1m44y1Q7ZF/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=e20dd501f3625acc92539eae83023bbb"> 参考视频 </a></p>
 <hr>
-<h1 id="先总结下各方案硬性要求"><a href="#先总结下各方案硬性要求" class="headerlink" title="先总结下各方案硬性要求"></a>先总结下各方案硬性要求</h1><p>| 选型 | 端口需求 | SSH通信 | 最低节点数 | 硬件要求 |<br>|</p>
+<h1 id="先总结下各方案硬性要求"><a href="# 先总结下各方案硬性要求" class="headerlink" title="先总结下各方案硬性要求"></a> 先总结下各方案硬性要求 </h1><p>| 选型 | 端口需求 | SSH 通信 | 最低节点数 | 硬件要求 |<br>|</p>
 <table>
 <thead>
 <tr>
@@ -222,120 +222,120 @@
 <td>PXC (Percona XtraDB Cluster)</td>
 </tr>
 </tbody></table>
-<h1 id="MMM方案（单主）"><a href="#MMM方案（单主）" class="headerlink" title="MMM方案（单主）"></a>MMM方案（单主）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109161189180600.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109161189180600.png"></a></p>
-<p>MySQL高可用方案之MMM（Multi-Master Replication Manager）是一种常用的解决方案，用于实现MySQL数据库的高可用性和负载均衡。</p>
-<p>MMM基于MySQL的复制机制，通过在多个MySQL实例之间进行主从复制，实现了数据的同步和备份。它的主要特点是可以实现多主复制，即多个MySQL实例可以同时作为主节点接收写操作，并将这些写操作同步到其他从节点上。</p>
-<p>MMM的工作原理如下：</p>
+<h1 id="MMM 方案（单主）"><a href="#MMM 方案（单主）" class="headerlink" title="MMM 方案（单主）"></a>MMM 方案（单主）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109161189180600.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109161189180600.png"></a></p>
+<p>MySQL 高可用方案之 MMM（Multi-Master Replication Manager）是一种常用的解决方案，用于实现 MySQL 数据库的高可用性和负载均衡。</p>
+<p>MMM 基于 MySQL 的复制机制，通过在多个 MySQL 实例之间进行主从复制，实现了数据的同步和备份。它的主要特点是可以实现多主复制，即多个 MySQL 实例可以同时作为主节点接收写操作，并将这些写操作同步到其他从节点上。</p>
+<p>MMM 的工作原理如下：</p>
 <ol>
-<li>MMM通过监控MySQL实例的状态来实现故障检测和自动故障转移。当一个主节点发生故障时，MMM会自动将其中一个从节点提升为新的主节点，确保数据库的可用性。</li>
-<li>MMM还可以根据负载情况自动进行负载均衡。它可以根据每个节点的负载情况，将读操作分发到不同的节点上，从而提高系统的整体性能。</li>
-<li>MMM还提供了一些管理工具，可以方便地进行节点的添加、删除和配置修改等操作。</li>
+<li>MMM 通过监控 MySQL 实例的状态来实现故障检测和自动故障转移。当一个主节点发生故障时，MMM 会自动将其中一个从节点提升为新的主节点，确保数据库的可用性。</li>
+<li>MMM 还可以根据负载情况自动进行负载均衡。它可以根据每个节点的负载情况，将读操作分发到不同的节点上，从而提高系统的整体性能。</li>
+<li>MMM 还提供了一些管理工具，可以方便地进行节点的添加、删除和配置修改等操作。</li>
 </ol>
-<p>使用MMM可以有效地提高MySQL数据库的可用性和性能。然而，需要注意的是，MMM并不能解决所有的高可用问题，例如**网络分区和数据一致性<br>**等问题。在实际应用中，还需要结合其他技术和方案，如数据库集群、数据复制和数据备份等，来构建更完善的高可用架构。</p>
-<p>MMM作为MySQL高可用方案，具有以下优点和缺点：</p>
-<p>优点：</p>
+<p> 使用 MMM 可以有效地提高 MySQL 数据库的可用性和性能。然而，需要注意的是，MMM 并不能解决所有的高可用问题，例如 ** 网络分区和数据一致性 <br>** 等问题。在实际应用中，还需要结合其他技术和方案，如数据库集群、数据复制和数据备份等，来构建更完善的高可用架构。</p>
+<p>MMM 作为 MySQL 高可用方案，具有以下优点和缺点：</p>
+<p> 优点：</p>
 <ol>
-<li>高可用性：MMM通过自动故障检测和故障转移机制，可以快速将一个从节点提升为新的主节点，从而实现数据库的高可用性，减少系统的停机时间。</li>
-<li>负载均衡：MMM可以根据节点的负载情况，将读操作分发到不同的节点上，从而实现负载均衡，提高系统的整体性能。</li>
-<li>简单易用：MMM提供了一些管理工具，可以方便地进行节点的添加、删除和配置修改等操作，使得系统的管理和维护变得简单易用。</li>
+<li> 高可用性：MMM 通过自动故障检测和故障转移机制，可以快速将一个从节点提升为新的主节点，从而实现数据库的高可用性，减少系统的停机时间。</li>
+<li> 负载均衡：MMM 可以根据节点的负载情况，将读操作分发到不同的节点上，从而实现负载均衡，提高系统的整体性能。</li>
+<li> 简单易用：MMM 提供了一些管理工具，可以方便地进行节点的添加、删除和配置修改等操作，使得系统的管理和维护变得简单易用。</li>
 </ol>
-<p>缺点：</p>
+<p> 缺点：</p>
 <ol>
-<li>数据一致性：由于MMM采用的是异步复制机制，主节点和从节点之间存在一定的延迟，可能导致数据的不一致。在某些场景下，可能需要额外的措施来确保数据的一致性。</li>
-<li>单点故障：虽然MMM可以自动进行故障转移，但在故障转移过程中，可能会存在一段时间的数据库不可用。如果MMM本身发生故障，可能会导致整个系统的不可用。</li>
-<li>配置复杂性：MMM的配置相对复杂，需要对MySQL的复制机制和MMM的工作原理有一定的了解。在配置过程中，需要注意各个节点的配置一致性和正确性。</li>
+<li> 数据一致性：由于 MMM 采用的是异步复制机制，主节点和从节点之间存在一定的延迟，可能导致数据的不一致。在某些场景下，可能需要额外的措施来确保数据的一致性。</li>
+<li> 单点故障：虽然 MMM 可以自动进行故障转移，但在故障转移过程中，可能会存在一段时间的数据库不可用。如果 MMM 本身发生故障，可能会导致整个系统的不可用。</li>
+<li> 配置复杂性：MMM 的配置相对复杂，需要对 MySQL 的复制机制和 MMM 的工作原理有一定的了解。在配置过程中，需要注意各个节点的配置一致性和正确性。</li>
 </ol>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog.zysicyj.top/mysql_mmm">http://blog.zysicyj.top/mysql_mmm</a></p>
-<h1 id="MHA架构（单主）"><a href="#MHA架构（单主）" class="headerlink" title="MHA架构（单主）"></a>MHA架构（单主）</h1><p>架构图</p>
+<h1 id="MHA 架构（单主）"><a href="#MHA 架构（单主）" class="headerlink" title="MHA 架构（单主）"></a>MHA 架构（单主）</h1><p> 架构图 </p>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109459060983300.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/109459060983300.png"></a></p>
-<p>MySQL MHA（Master High Availability）是一种用于MySQL数据库的高可用性架构。它的设计目标是确保在主数据库发生故障时，能够快速自动地将备库（Slave）提升为新的主库，以保证系统的连续性和可用性。</p>
-<p>MHA架构由以下几个核心组件组成：</p>
+<p>MySQL MHA（Master High Availability）是一种用于 MySQL 数据库的高可用性架构。它的设计目标是确保在主数据库发生故障时，能够快速自动地将备库（Slave）提升为新的主库，以保证系统的连续性和可用性。</p>
+<p>MHA 架构由以下几个核心组件组成：</p>
 <ol>
-<li><p>Manager节点：Manager节点是MHA的核心组件，负责监控主库的状态并自动执行故障切换操作。它通过与MySQL主库和备库建立SSH连接，实时监测主库的状态，并在主库发生故障时触发自动故障切换。</p>
+<li><p>Manager 节点：Manager 节点是 MHA 的核心组件，负责监控主库的状态并自动执行故障切换操作。它通过与 MySQL 主库和备库建立 SSH 连接，实时监测主库的状态，并在主库发生故障时触发自动故障切换。</p>
 </li>
-<li><p>Master节点：Master节点是MySQL数据库的主库，负责处理所有的写操作和读操作。MHA会通过与Master节点建立SSH连接，实时监测主库的状态。</p>
+<li><p>Master 节点：Master 节点是 MySQL 数据库的主库，负责处理所有的写操作和读操作。MHA 会通过与 Master 节点建立 SSH 连接，实时监测主库的状态。</p>
 </li>
-<li><p>Slave节点：Slave节点是MySQL数据库的备库，负责复制主库的数据。MHA会通过与Slave节点建立SSH连接，实时监测备库的状态。</p>
+<li><p>Slave 节点：Slave 节点是 MySQL 数据库的备库，负责复制主库的数据。MHA 会通过与 Slave 节点建立 SSH 连接，实时监测备库的状态。</p>
 </li>
 </ol>
-<p>MHA的工作流程如下：</p>
+<p>MHA 的工作流程如下：</p>
 <ol>
-<li><p>Manager节点通过SSH连接与Master节点和Slave节点进行通信，实时监测它们的状态。</p>
+<li><p>Manager 节点通过 SSH 连接与 Master 节点和 Slave 节点进行通信，实时监测它们的状态。</p>
 </li>
-<li><p>当Manager节点检测到Master节点发生故障时，它会自动将一个备库提升为新的主库。</p>
+<li><p> 当 Manager 节点检测到 Master 节点发生故障时，它会自动将一个备库提升为新的主库。</p>
 </li>
-<li><p>在故障切换期间，Manager节点会自动更新应用程序的配置文件，将新的主库信息通知给应用程序。</p>
+<li><p> 在故障切换期间，Manager 节点会自动更新应用程序的配置文件，将新的主库信息通知给应用程序。</p>
 </li>
-<li><p>一旦新的主库上线，Manager节点会自动将其他备库重新配置为新的主库的从库，并开始复制数据。</p>
+<li><p> 一旦新的主库上线，Manager 节点会自动将其他备库重新配置为新的主库的从库，并开始复制数据。</p>
 </li>
 </ol>
-<p>MHA架构的优点包括：</p>
+<p>MHA 架构的优点包括：</p>
 <ol>
-<li><p>自动故障切换：MHA能够自动检测主库的故障，并快速将备库提升为新的主库，减少了手动干预的需要，提高了系统的可用性。</p>
+<li><p> 自动故障切换：MHA 能够自动检测主库的故障，并快速将备库提升为新的主库，减少了手动干预的需要，提高了系统的可用性。</p>
 </li>
-<li><p>实时监测：MHA通过与Master节点和Slave节点建立SSH连接，实时监测它们的状态，能够及时发现故障并采取相应的措施。</p>
+<li><p> 实时监测：MHA 通过与 Master 节点和 Slave 节点建立 SSH 连接，实时监测它们的状态，能够及时发现故障并采取相应的措施。</p>
 </li>
-<li><p>简化配置：MHA提供了简单易用的配置文件，可以轻松地配置主库和备库的信息，减少了配置的复杂性。</p>
+<li><p> 简化配置：MHA 提供了简单易用的配置文件，可以轻松地配置主库和备库的信息，减少了配置的复杂性。</p>
 </li>
-<li><p>高可扩展性：MHA支持多个备库，可以根据需求灵活地扩展系统的容量和性能。</p>
+<li><p> 高可扩展性：MHA 支持多个备库，可以根据需求灵活地扩展系统的容量和性能。</p>
 </li>
 </ol>
-<p>MHA架构虽然有很多优点，但也存在一些潜在的缺点：</p>
+<p>MHA 架构虽然有很多优点，但也存在一些潜在的缺点：</p>
 <ol>
-<li><p>配置复杂性：尽管MHA提供了简化的配置文件，但对于不熟悉MHA的用户来说，配置仍然可能是一项复杂的任务。特别是在涉及多个主库和备库的复杂环境中，配置可能变得更加困难。</p>
+<li><p> 配置复杂性：尽管 MHA 提供了简化的配置文件，但对于不熟悉 MHA 的用户来说，配置仍然可能是一项复杂的任务。特别是在涉及多个主库和备库的复杂环境中，配置可能变得更加困难。</p>
 </li>
-<li><p>依赖SSH连接：MHA使用SSH连接与主库和备库进行通信和监控。这意味着在配置和使用MHA时，必须确保SSH连接的可用性和稳定性。如果SSH连接出现问题，可能会导致MHA无法正常工作。</p>
+<li><p> 依赖 SSH 连接：MHA 使用 SSH 连接与主库和备库进行通信和监控。这意味着在配置和使用 MHA 时，必须确保 SSH 连接的可用性和稳定性。如果 SSH 连接出现问题，可能会导致 MHA 无法正常工作。</p>
 </li>
-<li><p>故障切换过程中的数据同步延迟：在故障切换期间，MHA需要将备库提升为新的主库，并重新配置其他备库作为新的从库。这个过程可能需要一些时间，导致在切换期间存在一定的数据同步延迟。这可能会对某些应用程序的数据一致性产生影响。</p>
+<li><p> 故障切换过程中的数据同步延迟：在故障切换期间，MHA 需要将备库提升为新的主库，并重新配置其他备库作为新的从库。这个过程可能需要一些时间，导致在切换期间存在一定的数据同步延迟。这可能会对某些应用程序的数据一致性产生影响。</p>
 </li>
-<li><p>依赖MySQL复制功能：MHA依赖MySQL的复制功能来实现数据的同步和复制。如果MySQL的复制功能出现问题，可能会导致MHA无法正常工作或数据同步不完整。</p>
+<li><p> 依赖 MySQL 复制功能：MHA 依赖 MySQL 的复制功能来实现数据的同步和复制。如果 MySQL 的复制功能出现问题，可能会导致 MHA 无法正常工作或数据同步不完整。</p>
 </li>
-<li><p>需要额外的硬件资源：为了实现高可用性，MHA需要至少一个备库来作为冗余备份。这意味着需要额外的硬件资源来支持备库的运行和数据复制，增加了系统的成本和复杂性。</p>
+<li><p> 需要额外的硬件资源：为了实现高可用性，MHA 需要至少一个备库来作为冗余备份。这意味着需要额外的硬件资源来支持备库的运行和数据复制，增加了系统的成本和复杂性。</p>
 </li>
 </ol>
-<p>需要注意的是，MHA并不是万能的解决方案，它适用于大多数的MySQL数据库场景，但在特定的情况下可能需要根据实际需求进行定制化的配置和调整。此外，为了确保MHA的正常运行，还需要进行定期的监控和维护工作，以保证系统的稳定性和可靠性。</p>
-<h1 id="MGR架构（单-多主）"><a href="#MGR架构（单-多主）" class="headerlink" title="MGR架构（单&#x2F;多主）"></a>MGR架构（单&#x2F;多主）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/110724066219000.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/110724066219000.png"></a></p>
-<p>MGR（MySQL Group Replication）是MySQL官方提供的一种高可用性架构，用于实现MySQL数据库的主从复制和自动故障切换。MGR基于MySQL的InnoDB存储引擎和Group<br>Replication插件，通过使用多主复制的方式来提供高可用性和数据一致性。</p>
-<p>MGR架构的核心组件包括：</p>
+<p> 需要注意的是，MHA 并不是万能的解决方案，它适用于大多数的 MySQL 数据库场景，但在特定的情况下可能需要根据实际需求进行定制化的配置和调整。此外，为了确保 MHA 的正常运行，还需要进行定期的监控和维护工作，以保证系统的稳定性和可靠性。</p>
+<h1 id="MGR 架构（单 - 多主）"><a href="#MGR 架构（单 - 多主）" class="headerlink" title="MGR 架构（单 &#x2F; 多主）"></a>MGR 架构（单 &#x2F; 多主）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/110724066219000.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/110724066219000.png"></a></p>
+<p>MGR（MySQL Group Replication）是 MySQL 官方提供的一种高可用性架构，用于实现 MySQL 数据库的主从复制和自动故障切换。MGR 基于 MySQL 的 InnoDB 存储引擎和 Group<br>Replication 插件，通过使用多主复制的方式来提供高可用性和数据一致性。</p>
+<p>MGR 架构的核心组件包括：</p>
 <ol>
-<li><p>Group Replication组件：Group Replication是MySQL官方提供的插件，用于实现多主复制和自动故障切换。它基于Paxos协议，通过在集群中的成员之间进行通信和协调，实现数据的同步和一致性。</p>
+<li><p>Group Replication 组件：Group Replication 是 MySQL 官方提供的插件，用于实现多主复制和自动故障切换。它基于 Paxos 协议，通过在集群中的成员之间进行通信和协调，实现数据的同步和一致性。</p>
 </li>
-<li><p>Primary节点：Primary节点是MGR集群中的主节点，负责处理所有的写操作和读操作。Primary节点接收来自应用程序的写请求，并将数据复制到其他节点（Secondary节点）上。</p>
+<li><p>Primary 节点：Primary 节点是 MGR 集群中的主节点，负责处理所有的写操作和读操作。Primary 节点接收来自应用程序的写请求，并将数据复制到其他节点（Secondary 节点）上。</p>
 </li>
-<li><p>Secondary节点：Secondary节点是MGR集群中的从节点，负责复制Primary节点上的数据。Secondary节点通过与Primary节点进行通信，接收并应用Primary节点上的写操作，以保持数据的一致性。</p>
+<li><p>Secondary 节点：Secondary 节点是 MGR 集群中的从节点，负责复制 Primary 节点上的数据。Secondary 节点通过与 Primary 节点进行通信，接收并应用 Primary 节点上的写操作，以保持数据的一致性。</p>
 </li>
 </ol>
-<p>MGR架构的工作流程如下：</p>
+<p>MGR 架构的工作流程如下：</p>
 <ol>
-<li><p>初始化集群：在MGR架构中，首先需要选择一个节点作为初始Primary节点，并将其配置为Group<br>Replication组件的成员。然后，其他节点可以加入到集群中，并通过与Primary节点进行通信，获取数据并成为Secondary节点。</p>
+<li><p> 初始化集群：在 MGR 架构中，首先需要选择一个节点作为初始 Primary 节点，并将其配置为 Group<br>Replication 组件的成员。然后，其他节点可以加入到集群中，并通过与 Primary 节点进行通信，获取数据并成为 Secondary 节点。</p>
 </li>
-<li><p>数据同步：一旦集群初始化完成，Primary节点开始接收来自应用程序的写请求，并将数据复制到其他节点上。Secondary节点通过与Primary节点进行通信，接收并应用Primary节点上的写操作，以保持数据的一致性。</p>
+<li><p> 数据同步：一旦集群初始化完成，Primary 节点开始接收来自应用程序的写请求，并将数据复制到其他节点上。Secondary 节点通过与 Primary 节点进行通信，接收并应用 Primary 节点上的写操作，以保持数据的一致性。</p>
 </li>
-<li><p>自动故障切换：如果Primary节点发生故障，Group<br>Replication组件会自动选择一个Secondary节点作为新的Primary节点，并将其他节点重新配置为新的Secondary节点。这个过程是自动的，无需人工干预。</p>
+<li><p> 自动故障切换：如果 Primary 节点发生故障，Group<br>Replication 组件会自动选择一个 Secondary 节点作为新的 Primary 节点，并将其他节点重新配置为新的 Secondary 节点。这个过程是自动的，无需人工干预。</p>
 </li>
 </ol>
-<p>MGR架构的优点包括：</p>
+<p>MGR 架构的优点包括：</p>
 <ol>
-<li><p>自动故障切换：MGR能够自动检测Primary节点的故障，并快速将一个Secondary节点提升为新的Primary节点，实现自动故障切换，提高了系统的可用性。</p>
+<li><p> 自动故障切换：MGR 能够自动检测 Primary 节点的故障，并快速将一个 Secondary 节点提升为新的 Primary 节点，实现自动故障切换，提高了系统的可用性。</p>
 </li>
-<li><p>数据一致性：MGR使用Paxos协议来保证数据的一致性。在写操作提交之前，集群中的成员会达成一致，确保数据在所有节点上的复制是一致的。</p>
+<li><p> 数据一致性：MGR 使用 Paxos 协议来保证数据的一致性。在写操作提交之前，集群中的成员会达成一致，确保数据在所有节点上的复制是一致的。</p>
 </li>
-<li><p>简化配置和管理：MGR提供了简单易用的配置选项和管理工具，使得集群的配置和管理变得更加简单和方便。</p>
+<li><p> 简化配置和管理：MGR 提供了简单易用的配置选项和管理工具，使得集群的配置和管理变得更加简单和方便。</p>
 </li>
-<li><p>高可扩展性：MGR支持多主复制，可以根据需求灵活地扩展系统的容量和性能。</p>
+<li><p> 高可扩展性：MGR 支持多主复制，可以根据需求灵活地扩展系统的容量和性能。</p>
 </li>
 </ol>
-<p>需要注意的是，MGR架构也有一些限制和注意事项：</p>
+<p> 需要注意的是，MGR 架构也有一些限制和注意事项：</p>
 <ol>
-<li><p>网络稳定性：MGR对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
+<li><p> 网络稳定性：MGR 对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
 </li>
-<li><p>数据冲突：由于MGR支持多主复制，如果应用程序在不同的节点上同时进行写操作，可能会导致数据冲突和一致性问题。因此，需要在应用程序层面进行合理的设计和处理。</p>
+<li><p> 数据冲突：由于 MGR 支持多主复制，如果应用程序在不同的节点上同时进行写操作，可能会导致数据冲突和一致性问题。因此，需要在应用程序层面进行合理的设计和处理。</p>
 </li>
-<li><p>配置复杂性：尽管MGR提供了简化的配置选项和管理工具，但对于不熟悉MGR的用户来说，配置仍然可能是一项复杂的任务。特别是在涉及多个节点和复杂环境中，配置可能变得更加困难。</p>
+<li><p> 配置复杂性：尽管 MGR 提供了简化的配置选项和管理工具，但对于不熟悉 MGR 的用户来说，配置仍然可能是一项复杂的任务。特别是在涉及多个节点和复杂环境中，配置可能变得更加困难。</p>
 </li>
 </ol>
-<p>在使用MGR之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性和性能要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
-<h1 id="Mysql-cluster（官方亲儿子）（多主）"><a href="#Mysql-cluster（官方亲儿子）（多主）" class="headerlink" title="Mysql cluster（官方亲儿子）（多主）"></a>Mysql cluster（官方亲儿子）（多主）</h1><p>官方PDF文档：</p>
+<p> 在使用 MGR 之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性和性能要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
+<h1 id="Mysql-cluster（官方亲儿子）（多主）"><a href="#Mysql-cluster（官方亲儿子）（多主）" class="headerlink" title="Mysql cluster（官方亲儿子）（多主）"></a>Mysql cluster（官方亲儿子）（多主）</h1><p> 官方 PDF 文档：</p>
 
 
 	<div class="row">
@@ -346,181 +346,179 @@
 
 
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111101033366200.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111101033366200.png"></a></p>
-<p>MySQL Cluster是MySQL官方提供的一种分布式数据库解决方案，旨在提供高可用性、可扩展性和实时性能。它基于NDB（Network<br>DataBase）存储引擎，使用多台服务器组成一个集群，提供数据的分片和复制，以实现高可用性和负载均衡。</p>
-<p>MySQL Cluster架构的核心组件包括：</p>
+<p>MySQL Cluster 是 MySQL 官方提供的一种分布式数据库解决方案，旨在提供高可用性、可扩展性和实时性能。它基于 NDB（Network<br>DataBase）存储引擎，使用多台服务器组成一个集群，提供数据的分片和复制，以实现高可用性和负载均衡。</p>
+<p>MySQL Cluster 架构的核心组件包括：</p>
 <ol>
-<li><p>Management节点：Management节点是MySQL Cluster的控制节点，负责集群的管理和配置。它负责监控集群中的各个节点，并协调数据的分片和复制。</p>
+<li><p>Management 节点：Management 节点是 MySQL Cluster 的控制节点，负责集群的管理和配置。它负责监控集群中的各个节点，并协调数据的分片和复制。</p>
 </li>
-<li><p>Data节点：Data节点是MySQL Cluster的存储节点，负责存储和处理数据。每个Data节点都运行NDB存储引擎，数据被分片存储在不同的Data节点上，以实现数据的分布和负载均衡。</p>
+<li><p>Data 节点：Data 节点是 MySQL Cluster 的存储节点，负责存储和处理数据。每个 Data 节点都运行 NDB 存储引擎，数据被分片存储在不同的 Data 节点上，以实现数据的分布和负载均衡。</p>
 </li>
-<li><p>SQL节点：SQL节点是MySQL Cluster的查询节点，负责处理应用程序的查询请求。SQL节点接收来自应用程序的SQL查询，并将查询分发到适当的Data节点上进行处理。</p>
+<li><p>SQL 节点：SQL 节点是 MySQL Cluster 的查询节点，负责处理应用程序的查询请求。SQL 节点接收来自应用程序的 SQL 查询，并将查询分发到适当的 Data 节点上进行处理。</p>
 </li>
 </ol>
-<p>MySQL Cluster架构的工作流程如下：</p>
+<p>MySQL Cluster 架构的工作流程如下：</p>
 <ol>
-<li><p>集群初始化：在MySQL Cluster中，首先需要配置和启动Management节点，然后配置和启动Data节点和SQL节点。Management节点负责监控和管理集群中的各个节点。</p>
+<li><p> 集群初始化：在 MySQL Cluster 中，首先需要配置和启动 Management 节点，然后配置和启动 Data 节点和 SQL 节点。Management 节点负责监控和管理集群中的各个节点。</p>
 </li>
-<li><p>数据分片和复制：一旦集群初始化完成，Management节点会根据配置的规则将数据分片存储在不同的Data节点上。数据的复制和同步由MySQL<br>Cluster自动处理，以保证数据的一致性和可用性。</p>
+<li><p> 数据分片和复制：一旦集群初始化完成，Management 节点会根据配置的规则将数据分片存储在不同的 Data 节点上。数据的复制和同步由 MySQL<br>Cluster 自动处理，以保证数据的一致性和可用性。</p>
 </li>
-<li><p>查询处理：当应用程序发送查询请求时，SQL节点接收并解析查询，并将查询分发到适当的Data节点上进行处理。Data节点返回查询结果给SQL节点，然后SQL节点将结果返回给应用程序。</p>
+<li><p> 查询处理：当应用程序发送查询请求时，SQL 节点接收并解析查询，并将查询分发到适当的 Data 节点上进行处理。Data 节点返回查询结果给 SQL 节点，然后 SQL 节点将结果返回给应用程序。</p>
 </li>
 </ol>
-<p>MySQL Cluster架构的优点包括：</p>
+<p>MySQL Cluster 架构的优点包括：</p>
 <ol>
-<li><p>高可用性：MySQL Cluster通过数据的分片和复制，以及自动故障检测和恢复机制，实现了高可用性。即使某个节点发生故障，集群仍然可以继续提供服务。</p>
+<li><p> 高可用性：MySQL Cluster 通过数据的分片和复制，以及自动故障检测和恢复机制，实现了高可用性。即使某个节点发生故障，集群仍然可以继续提供服务。</p>
 </li>
-<li><p>可扩展性：MySQL Cluster支持水平扩展，可以通过增加Data节点来扩展存储容量和处理能力。同时，由于数据的分片和负载均衡，可以实现更好的性能和吞吐量。</p>
+<li><p> 可扩展性：MySQL Cluster 支持水平扩展，可以通过增加 Data 节点来扩展存储容量和处理能力。同时，由于数据的分片和负载均衡，可以实现更好的性能和吞吐量。</p>
 </li>
-<li><p>实时性能：MySQL Cluster的设计目标之一是提供实时性能。通过将数据存储在内存中，并使用并行处理和分布式计算，可以实现较低的延迟和更高的吞吐量。</p>
+<li><p> 实时性能：MySQL Cluster 的设计目标之一是提供实时性能。通过将数据存储在内存中，并使用并行处理和分布式计算，可以实现较低的延迟和更高的吞吐量。</p>
 </li>
-<li><p>数据一致性：MySQL Cluster使用多副本复制和同步机制，以保证数据的一致性。即使在节点故障或网络分区的情况下，数据仍然可以保持一致。</p>
+<li><p> 数据一致性：MySQL Cluster 使用多副本复制和同步机制，以保证数据的一致性。即使在节点故障或网络分区的情况下，数据仍然可以保持一致。</p>
 </li>
 </ol>
-<p>需要注意的是，MySQL Cluster也有一些限制和注意事项：</p>
+<p> 需要注意的是，MySQL Cluster 也有一些限制和注意事项：</p>
 <ol>
-<li><p>配置复杂性：MySQL Cluster的配置相对复杂，需要考虑数据分片、复制和负载均衡等因素。对于不熟悉MySQL<br>Cluster的用户来说，配置可能是一项具有挑战性的任务。</p>
+<li><p> 配置复杂性：MySQL Cluster 的配置相对复杂，需要考虑数据分片、复制和负载均衡等因素。对于不熟悉 MySQL<br>Cluster 的用户来说，配置可能是一项具有挑战性的任务。</p>
 </li>
-<li><p>内存需求：由于MySQL Cluster将数据存储在内存中，因此对内存的需求较高。需要根据数据量和性能需求来配置足够的内存资源。</p>
+<li><p> 内存需求：由于 MySQL Cluster 将数据存储在内存中，因此对内存的需求较高。需要根据数据量和性能需求来配置足够的内存资源。</p>
 </li>
-<li><p>网络稳定性：MySQL Cluster对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
+<li><p> 网络稳定性：MySQL Cluster 对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
 </li>
 </ol>
-<p>在使用MySQL Cluster之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性、性能和扩展性要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
+<p> 在使用 MySQL Cluster 之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性、性能和扩展性要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
 <h1 id="Galera-Cluster（多主）"><a href="#Galera-Cluster（多主）" class="headerlink" title="Galera Cluster（多主）"></a>Galera Cluster（多主）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111247537982700.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111247537982700.png"></a></p>
-<p>Galera Cluster是一个基于同步多主复制的MySQL集群解决方案。它使用Galera Replication插件，通过在多个MySQL节点之间同步数据来实现高可用性和负载均衡。</p>
-<p>Galera Cluster的核心组件包括：</p>
+<p>Galera Cluster 是一个基于同步多主复制的 MySQL 集群解决方案。它使用 Galera Replication 插件，通过在多个 MySQL 节点之间同步数据来实现高可用性和负载均衡。</p>
+<p>Galera Cluster 的核心组件包括：</p>
 <ol>
-<li><p>Galera Replication插件：Galera Replication是一个基于同步复制的插件，用于实现数据的多主复制和一致性。它使用了多主复制协议，确保在集群中的所有节点之间的数据同步和一致性。</p>
+<li><p>Galera Replication 插件：Galera Replication 是一个基于同步复制的插件，用于实现数据的多主复制和一致性。它使用了多主复制协议，确保在集群中的所有节点之间的数据同步和一致性。</p>
 </li>
-<li><p>Primary Component：Primary Component是Galera Cluster中的主组件，负责处理所有的写操作和读操作。Primary<br>Component接收来自应用程序的写请求，并将数据复制到其他节点（Secondary Component）上。</p>
+<li><p>Primary Component：Primary Component 是 Galera Cluster 中的主组件，负责处理所有的写操作和读操作。Primary<br>Component 接收来自应用程序的写请求，并将数据复制到其他节点（Secondary Component）上。</p>
 </li>
-<li><p>Secondary Component：Secondary Component是Galera Cluster中的从组件，负责复制Primary Component上的数据。Secondary<br>Component通过与Primary Component进行通信，接收并应用Primary Component上的写操作，以保持数据的一致性。</p>
+<li><p>Secondary Component：Secondary Component 是 Galera Cluster 中的从组件，负责复制 Primary Component 上的数据。Secondary<br>Component 通过与 Primary Component 进行通信，接收并应用 Primary Component 上的写操作，以保持数据的一致性。</p>
 </li>
 </ol>
-<p>Galera Cluster的工作流程如下：</p>
+<p>Galera Cluster 的工作流程如下：</p>
 <ol>
-<li><p>初始化集群：在Galera Cluster中，首先需要配置和启动一个节点作为初始Primary Component，并将其配置为Galera<br>Replication插件的成员。然后，其他节点可以加入到集群中，并通过与Primary Component进行通信，获取数据并成为Secondary<br>Component。</p>
+<li><p> 初始化集群：在 Galera Cluster 中，首先需要配置和启动一个节点作为初始 Primary Component，并将其配置为 Galera<br>Replication 插件的成员。然后，其他节点可以加入到集群中，并通过与 Primary Component 进行通信，获取数据并成为 Secondary<br>Component。</p>
 </li>
-<li><p>数据同步和复制：一旦集群初始化完成，Primary Component开始接收来自应用程序的写请求，并将数据复制到其他节点上。Secondary<br>Component通过与Primary Component进行通信，接收并应用Primary Component上的写操作，以保持数据的一致性。</p>
+<li><p> 数据同步和复制：一旦集群初始化完成，Primary Component 开始接收来自应用程序的写请求，并将数据复制到其他节点上。Secondary<br>Component 通过与 Primary Component 进行通信，接收并应用 Primary Component 上的写操作，以保持数据的一致性。</p>
 </li>
-<li><p>自动故障切换：如果Primary Component发生故障，Galera Cluster会自动选择一个Secondary Component作为新的Primary<br>Component，并将其他节点重新配置为新的Secondary Component。这个过程是自动的，无需人工干预。</p>
+<li><p> 自动故障切换：如果 Primary Component 发生故障，Galera Cluster 会自动选择一个 Secondary Component 作为新的 Primary<br>Component，并将其他节点重新配置为新的 Secondary Component。这个过程是自动的，无需人工干预。</p>
 </li>
 </ol>
-<p>Galera Cluster的优点包括：</p>
+<p>Galera Cluster 的优点包括：</p>
 <ol>
-<li><p>高可用性：Galera Cluster通过数据的多主复制和自动故障切换，实现了高可用性。即使某个节点发生故障，集群仍然可以继续提供服务。</p>
+<li><p> 高可用性：Galera Cluster 通过数据的多主复制和自动故障切换，实现了高可用性。即使某个节点发生故障，集群仍然可以继续提供服务。</p>
 </li>
-<li><p>数据一致性：Galera Cluster使用多主复制协议，确保在集群中的所有节点之间的数据同步和一致性。在写操作提交之前，集群中的成员会达成一致，确保数据在所有节点上的复制是一致的。</p>
+<li><p> 数据一致性：Galera Cluster 使用多主复制协议，确保在集群中的所有节点之间的数据同步和一致性。在写操作提交之前，集群中的成员会达成一致，确保数据在所有节点上的复制是一致的。</p>
 </li>
-<li><p>简化配置和管理：Galera Cluster提供了简单易用的配置选项和管理工具，使得集群的配置和管理变得更加简单和方便。</p>
+<li><p> 简化配置和管理：Galera Cluster 提供了简单易用的配置选项和管理工具，使得集群的配置和管理变得更加简单和方便。</p>
 </li>
-<li><p>可扩展性：Galera Cluster支持水平扩展，可以通过增加节点来扩展存储容量和处理能力。同时，由于数据的多主复制和负载均衡，可以实现更好的性能和吞吐量。</p>
+<li><p> 可扩展性：Galera Cluster 支持水平扩展，可以通过增加节点来扩展存储容量和处理能力。同时，由于数据的多主复制和负载均衡，可以实现更好的性能和吞吐量。</p>
 </li>
 </ol>
-<p>需要注意的是，Galera Cluster也有一些限制和注意事项：</p>
+<p> 需要注意的是，Galera Cluster 也有一些限制和注意事项：</p>
 <ol>
-<li><p>网络稳定性：Galera Cluster对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
+<li><p> 网络稳定性：Galera Cluster 对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
 </li>
-<li><p>写冲突：由于Galera Cluster支持多主复制，如果应用程序在不同的节点上同时进行写操作，可能会导致写冲突和一致性问题。因此，需要在应用程序层面进行合理的设计和处理。</p>
+<li><p> 写冲突：由于 Galera Cluster 支持多主复制，如果应用程序在不同的节点上同时进行写操作，可能会导致写冲突和一致性问题。因此，需要在应用程序层面进行合理的设计和处理。</p>
 </li>
-<li><p>配置复杂性：尽管Galera Cluster提供了简化的配置选项和管理工具，但对于不熟悉Galera Cluster的用户来说，配置可能是一项具有挑战性的任务。</p>
+<li><p> 配置复杂性：尽管 Galera Cluster 提供了简化的配置选项和管理工具，但对于不熟悉 Galera Cluster 的用户来说，配置可能是一项具有挑战性的任务。</p>
 </li>
 </ol>
-<p>在使用Galera Cluster之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性、性能和扩展性要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
-<h1 id="PXC架构（多主）"><a href="#PXC架构（多主）" class="headerlink" title="PXC架构（多主）"></a>PXC架构（多主）</h1><p>PXC（Percona XtraDB Cluster）是一个基于Galera Cluster的高可用性和高性能的MySQL集群解决方案。它是由Percona开发的，建立在Galera<br>Replication插件之上，提供了多主复制和数据同步的功能。</p>
-<p>PXC架构的核心组件包括：</p>
+<p> 在使用 Galera Cluster 之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性、性能和扩展性要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
+<h1 id="PXC 架构（多主）"><a href="#PXC 架构（多主）" class="headerlink" title="PXC 架构（多主）"></a>PXC 架构（多主）</h1><p>PXC（Percona XtraDB Cluster）是一个基于 Galera Cluster 的高可用性和高性能的 MySQL 集群解决方案。它是由 Percona 开发的，建立在 Galera<br>Replication 插件之上，提供了多主复制和数据同步的功能。</p>
+<p>PXC 架构的核心组件包括：</p>
 <ol>
-<li><p>Galera Replication插件：PXC使用Galera Replication插件来实现数据的多主复制和一致性。该插件基于同步复制的原理，确保在集群中的所有节点之间的数据同步和一致性。</p>
+<li><p>Galera Replication 插件：PXC 使用 Galera Replication 插件来实现数据的多主复制和一致性。该插件基于同步复制的原理，确保在集群中的所有节点之间的数据同步和一致性。</p>
 </li>
-<li><p>Primary Component：Primary Component是PXC集群中的主组件，负责处理所有的写操作和读操作。Primary<br>Component接收来自应用程序的写请求，并将数据复制到其他节点（Secondary Component）上。</p>
+<li><p>Primary Component：Primary Component 是 PXC 集群中的主组件，负责处理所有的写操作和读操作。Primary<br>Component 接收来自应用程序的写请求，并将数据复制到其他节点（Secondary Component）上。</p>
 </li>
-<li><p>Secondary Component：Secondary Component是PXC集群中的从组件，负责复制Primary Component上的数据。Secondary<br>Component通过与Primary Component进行通信，接收并应用Primary Component上的写操作，以保持数据的一致性。</p>
+<li><p>Secondary Component：Secondary Component 是 PXC 集群中的从组件，负责复制 Primary Component 上的数据。Secondary<br>Component 通过与 Primary Component 进行通信，接收并应用 Primary Component 上的写操作，以保持数据的一致性。</p>
 </li>
 </ol>
-<p>PXC架构的工作流程如下：</p>
+<p>PXC 架构的工作流程如下：</p>
 <ol>
-<li><p>初始化集群：在PXC中，首先需要配置和启动一个节点作为初始Primary Component，并将其配置为Galera<br>Replication插件的成员。然后，其他节点可以加入到集群中，并通过与Primary Component进行通信，获取数据并成为Secondary<br>Component。</p>
+<li><p> 初始化集群：在 PXC 中，首先需要配置和启动一个节点作为初始 Primary Component，并将其配置为 Galera<br>Replication 插件的成员。然后，其他节点可以加入到集群中，并通过与 Primary Component 进行通信，获取数据并成为 Secondary<br>Component。</p>
 </li>
-<li><p>数据同步和复制：一旦集群初始化完成，Primary Component开始接收来自应用程序的写请求，并将数据复制到其他节点上。Secondary<br>Component通过与Primary Component进行通信，接收并应用Primary Component上的写操作，以保持数据的一致性。</p>
+<li><p> 数据同步和复制：一旦集群初始化完成，Primary Component 开始接收来自应用程序的写请求，并将数据复制到其他节点上。Secondary<br>Component 通过与 Primary Component 进行通信，接收并应用 Primary Component 上的写操作，以保持数据的一致性。</p>
 </li>
-<li><p>自动故障切换：如果Primary Component发生故障，PXC会自动选择一个Secondary Component作为新的Primary<br>Component，并将其他节点重新配置为新的Secondary Component。这个过程是自动的，无需人工干预。</p>
+<li><p> 自动故障切换：如果 Primary Component 发生故障，PXC 会自动选择一个 Secondary Component 作为新的 Primary<br>Component，并将其他节点重新配置为新的 Secondary Component。这个过程是自动的，无需人工干预。</p>
 </li>
 </ol>
-<p>PXC架构的优点包括：</p>
+<p>PXC 架构的优点包括：</p>
 <ol>
-<li><p>高可用性：PXC通过数据的多主复制和自动故障切换，实现了高可用性。即使某个节点发生故障，集群仍然可以继续提供服务。</p>
+<li><p> 高可用性：PXC 通过数据的多主复制和自动故障切换，实现了高可用性。即使某个节点发生故障，集群仍然可以继续提供服务。</p>
 </li>
-<li><p>数据一致性：PXC使用Galera Replication插件，确保在集群中的所有节点之间的数据同步和一致性。在写操作提交之前，集群中的成员会达成一致，确保数据在所有节点上的复制是一致的。</p>
+<li><p> 数据一致性：PXC 使用 Galera Replication 插件，确保在集群中的所有节点之间的数据同步和一致性。在写操作提交之前，集群中的成员会达成一致，确保数据在所有节点上的复制是一致的。</p>
 </li>
-<li><p>简化配置和管理：PXC提供了简单易用的配置选项和管理工具，使得集群的配置和管理变得更加简单和方便。</p>
+<li><p> 简化配置和管理：PXC 提供了简单易用的配置选项和管理工具，使得集群的配置和管理变得更加简单和方便。</p>
 </li>
-<li><p>可扩展性：PXC支持水平扩展，可以通过增加节点来扩展存储容量和处理能力。同时，由于数据的多主复制和负载均衡，可以实现更好的性能和吞吐量。</p>
+<li><p> 可扩展性：PXC 支持水平扩展，可以通过增加节点来扩展存储容量和处理能力。同时，由于数据的多主复制和负载均衡，可以实现更好的性能和吞吐量。</p>
 </li>
 </ol>
-<p>需要注意的是，PXC也有一些限制和注意事项：</p>
+<p> 需要注意的是，PXC 也有一些限制和注意事项：</p>
 <ol>
-<li><p>网络稳定性：PXC对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
+<li><p> 网络稳定性：PXC 对网络的稳定性要求较高，因为节点之间需要进行频繁的通信和数据同步。如果网络不稳定，可能会导致数据同步延迟或节点之间的通信故障。</p>
 </li>
-<li><p>写冲突：由于PXC支持多主复制，如果应用程序在不同的节点上同时进行写操作，可能会导致写冲突和一致性问题。因此，需要在应用程序层面进行合理的设计和处理。</p>
+<li><p> 写冲突：由于 PXC 支持多主复制，如果应用程序在不同的节点上同时进行写操作，可能会导致写冲突和一致性问题。因此，需要在应用程序层面进行合理的设计和处理。</p>
 </li>
-<li><p>配置复杂性：尽管PXC提供了简化的配置选项和管理工具，但对于不熟悉PXC的用户来说，配置可能是一项具有挑战性的任务。</p>
+<li><p> 配置复杂性：尽管 PXC 提供了简化的配置选项和管理工具，但对于不熟悉 PXC 的用户来说，配置可能是一项具有挑战性的任务。</p>
 </li>
 </ol>
-<p>在使用PXC之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性、性能和扩展性要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
+<p> 在使用 PXC 之前，建议进行充分的测试和评估，以确保它能够满足系统的可用性、性能和扩展性要求，并根据具体的应用场景和需求进行适当的配置和调整。</p>
 <h1 id="RAID10（数据可靠性方案）（单点问题）"><a href="#RAID10（数据可靠性方案）（单点问题）" class="headerlink" title="RAID10（数据可靠性方案）（单点问题）"></a>RAID10（数据可靠性方案）（单点问题）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111457590515500.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111457590515500.png"></a></p>
-<p>RAID10（Redundant Array of Independent Disks 10）是一种存储方案，它结合了RAID 1（镜像）和RAID<br>0（条带化）的特性。RAID10通过将多个磁盘组合在一起，提供了数据冗余和性能增强的优势。</p>
-<p>在RAID10中，磁盘被分为两组，每组至少有两个磁盘。其中一组磁盘使用镜像技术，即数据被同时写入两个磁盘，提供了数据的冗余备份。另一组磁盘使用条带化技术，即数据被分块地写入多个磁盘，提供了更好的读写性能。</p>
-<p>RAID10的特点和优势包括：</p>
+<p>RAID10（Redundant Array of Independent Disks 10）是一种存储方案，它结合了 RAID 1（镜像）和 RAID<br>0（条带化）的特性。RAID10 通过将多个磁盘组合在一起，提供了数据冗余和性能增强的优势。</p>
+<p> 在 RAID10 中，磁盘被分为两组，每组至少有两个磁盘。其中一组磁盘使用镜像技术，即数据被同时写入两个磁盘，提供了数据的冗余备份。另一组磁盘使用条带化技术，即数据被分块地写入多个磁盘，提供了更好的读写性能。</p>
+<p>RAID10 的特点和优势包括：</p>
 <ol>
-<li><p>数据冗余：RAID10通过镜像技术提供了数据的冗余备份。如果一个磁盘发生故障，数据仍然可以从镜像磁盘中恢复，保证了数据的可靠性和可用性。</p>
+<li><p> 数据冗余：RAID10 通过镜像技术提供了数据的冗余备份。如果一个磁盘发生故障，数据仍然可以从镜像磁盘中恢复，保证了数据的可靠性和可用性。</p>
 </li>
-<li><p>高性能：RAID10通过条带化技术提供了更好的读写性能。数据可以同时从多个磁盘读取或写入，提高了数据访问的速度和吞吐量。</p>
+<li><p> 高性能：RAID10 通过条带化技术提供了更好的读写性能。数据可以同时从多个磁盘读取或写入，提高了数据访问的速度和吞吐量。</p>
 </li>
-<li><p>故障容忍：由于RAID10具有数据冗余性，当一个磁盘发生故障时，系统可以继续正常运行，并且可以在更换故障磁盘后进行数据恢复，减少了系统停机时间。</p>
+<li><p> 故障容忍：由于 RAID10 具有数据冗余性，当一个磁盘发生故障时，系统可以继续正常运行，并且可以在更换故障磁盘后进行数据恢复，减少了系统停机时间。</p>
 </li>
-<li><p>容量利用率：RAID10的容量利用率较低，因为数据被同时写入两个磁盘。例如，如果有4个1TB的磁盘组成RAID10，实际可用的存储容量只有2TB。</p>
+<li><p> 容量利用率：RAID10 的容量利用率较低，因为数据被同时写入两个磁盘。例如，如果有 4 个 1TB 的磁盘组成 RAID10，实际可用的存储容量只有 2TB。</p>
 </li>
 </ol>
-<p>需要注意的是，RAID10的缺点包括：</p>
+<p> 需要注意的是，RAID10 的缺点包括：</p>
 <ol>
-<li><p>成本较高：由于RAID10需要使用多个磁盘进行数据镜像和条带化，所以成本较高。相比其他RAID级别，RAID10需要更多的磁盘。</p>
+<li><p> 成本较高：由于 RAID10 需要使用多个磁盘进行数据镜像和条带化，所以成本较高。相比其他 RAID 级别，RAID10 需要更多的磁盘。</p>
 </li>
-<li><p>容量利用率较低：由于数据被同时写入两个磁盘，RAID10的容量利用率较低。如果容量是一个关键因素，可能需要考虑其他RAID级别。</p>
+<li><p> 容量利用率较低：由于数据被同时写入两个磁盘，RAID10 的容量利用率较低。如果容量是一个关键因素，可能需要考虑其他 RAID 级别。</p>
 </li>
 </ol>
-<p>RAID10适用于对数据冗余性和性能要求较高的应用场景，如数据库服务器、虚拟化环境和高性能计算等。在选择RAID级别时，需要根据具体的需求和预算来权衡各种因素。</p>
-<h1 id="SAN存储网络（数据存储解决方案）（除了贵没有缺点）"><a href="#SAN存储网络（数据存储解决方案）（除了贵没有缺点）" class="headerlink" title="SAN存储网络（数据存储解决方案）（除了贵没有缺点）"></a>SAN存储网络（数据存储解决方案）（除了贵没有缺点）</h1><p>SAN（Storage Area Network）是一种专门用于存储数据的高速网络架构。它将存储设备（如磁盘阵列、磁带库等）与服务器连接起来，提供高性能、高可用性和可扩展性的存储解决方案。</p>
-<p>SAN存储网络的特点和优势包括：</p>
+<p>RAID10 适用于对数据冗余性和性能要求较高的应用场景，如数据库服务器、虚拟化环境和高性能计算等。在选择 RAID 级别时，需要根据具体的需求和预算来权衡各种因素。</p>
+<h1 id="SAN 存储网络（数据存储解决方案）（除了贵没有缺点）"><a href="#SAN 存储网络（数据存储解决方案）（除了贵没有缺点）" class="headerlink" title="SAN 存储网络（数据存储解决方案）（除了贵没有缺点）"></a>SAN 存储网络（数据存储解决方案）（除了贵没有缺点）</h1><p>SAN（Storage Area Network）是一种专门用于存储数据的高速网络架构。它将存储设备（如磁盘阵列、磁带库等）与服务器连接起来，提供高性能、高可用性和可扩展性的存储解决方案。</p>
+<p>SAN 存储网络的特点和优势包括：</p>
 <ol>
-<li><p>存储共享：SAN允许多台服务器共享存储设备，使得数据可以在不同的服务器之间共享和访问。这样可以提高数据的灵活性和共享性，减少存储资源的浪费。</p>
+<li><p> 存储共享：SAN 允许多台服务器共享存储设备，使得数据可以在不同的服务器之间共享和访问。这样可以提高数据的灵活性和共享性，减少存储资源的浪费。</p>
 </li>
-<li><p>高性能：SAN使用高速的网络连接（如光纤通道、以太网等），提供了高带宽和低延迟的数据传输。这使得存储设备可以提供更高的读写性能，满足对存储性能要求较高的应用场景。</p>
+<li><p> 高性能：SAN 使用高速的网络连接（如光纤通道、以太网等），提供了高带宽和低延迟的数据传输。这使得存储设备可以提供更高的读写性能，满足对存储性能要求较高的应用场景。</p>
 </li>
-<li><p>高可用性：SAN通过冗余和故障切换机制，提供了高可用性的存储解决方案。如果一个存储设备或连接发生故障，系统可以自动切换到备用设备或路径，保证数据的可靠性和可用性。</p>
+<li><p> 高可用性：SAN 通过冗余和故障切换机制，提供了高可用性的存储解决方案。如果一个存储设备或连接发生故障，系统可以自动切换到备用设备或路径，保证数据的可靠性和可用性。</p>
 </li>
-<li><p>可扩展性：SAN具有良好的可扩展性，可以根据需求灵活地扩展存储容量和性能。通过添加新的存储设备或扩展现有设备的容量，可以满足不断增长的存储需求。</p>
+<li><p> 可扩展性：SAN 具有良好的可扩展性，可以根据需求灵活地扩展存储容量和性能。通过添加新的存储设备或扩展现有设备的容量，可以满足不断增长的存储需求。</p>
 </li>
-<li><p>管理简便：SAN提供了集中管理和监控的功能，使得存储资源的配置、监控和管理变得更加简便和高效。管理员可以通过集中的管理界面对存储设备进行配置和管理，提高了管理效率。</p>
+<li><p> 管理简便：SAN 提供了集中管理和监控的功能，使得存储资源的配置、监控和管理变得更加简便和高效。管理员可以通过集中的管理界面对存储设备进行配置和管理，提高了管理效率。</p>
 </li>
 </ol>
-<p>需要注意的是，SAN存储网络也有一些限制和注意事项：</p>
+<p> 需要注意的是，SAN 存储网络也有一些限制和注意事项：</p>
 <ol>
-<li><p>成本较高：相比于其他存储解决方案，SAN的成本较高。它需要专用的硬件设备和高速网络连接，这增加了部署和维护的成本。</p>
+<li><p> 成本较高：相比于其他存储解决方案，SAN 的成本较高。它需要专用的硬件设备和高速网络连接，这增加了部署和维护的成本。</p>
 </li>
-<li><p>配置复杂性：SAN的配置和管理相对复杂，需要专业的知识和技能。对于不熟悉SAN的用户来说，配置和管理可能是一项具有挑战性的任务。</p>
+<li><p> 配置复杂性：SAN 的配置和管理相对复杂，需要专业的知识和技能。对于不熟悉 SAN 的用户来说，配置和管理可能是一项具有挑战性的任务。</p>
 </li>
 </ol>
-<p>SAN存储网络适用于对存储性能、可用性和扩展性要求较高的应用场景，如大型企业、数据中心、虚拟化环境等。在选择和部署SAN存储网络时，需要根据具体的需求和预算来权衡各种因素，并确保与服务器和应用程序的兼容性。</p>
-<h1 id="DRBD方案（数据存储解决方案）（系统自带）"><a href="#DRBD方案（数据存储解决方案）（系统自带）" class="headerlink" title="DRBD方案（数据存储解决方案）（系统自带）"></a>DRBD方案（数据存储解决方案）（系统自带）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111588503645700.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111588503645700.png"></a></p>
-<p>MySQL与DRBD结合使用可以实现高可用性的数据库方案。通过将MySQL数据库的数据目录配置为DRBD设备，可以实现数据的实时复制和故障转移。</p>
-<p>在MySQL与DRBD方案中，通常会有两个节点：一个主节点和一个备节点。主节点负责处理所有的读写操作，并将数据实时复制到备节点上。备节点会持续地从主节点复制数据，以保持数据的一致性。</p>
-<p>当主节点发生故障时，备节点可以接管主节点的角色，成为新的主节点，继续提供数据库服务。这种故障转移过程是自动的，可以通过配置和管理工具（如Pacemaker）来实现。</p>
-<p>使用MySQL与DRBD方案可以提供数据库的冗余和故障转移能力，从而提高数据库的可靠性和可用性。当主节点发生故障时，系统可以自动切换到备节点，减少数据库服务的中断时间。</p>
-<p>需要注意的是，配置和管理MySQL与DRBD方案需要一定的技术知识和经验。此外，对网络的稳定性和带宽要求较高，以确保数据的实时复制和同步。因此，在实施该方案之前，建议进行充分的规划和测试，以确保系统的稳定性和可靠性。</p>
+<p>SAN 存储网络适用于对存储性能、可用性和扩展性要求较高的应用场景，如大型企业、数据中心、虚拟化环境等。在选择和部署 SAN 存储网络时，需要根据具体的需求和预算来权衡各种因素，并确保与服务器和应用程序的兼容性。</p>
+<h1 id="DRBD 方案（数据存储解决方案）（系统自带）"><a href="#DRBD 方案（数据存储解决方案）（系统自带）" class="headerlink" title="DRBD 方案（数据存储解决方案）（系统自带）"></a>DRBD 方案（数据存储解决方案）（系统自带）</h1><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111588503645700.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2023-09-11/111588503645700.png"></a></p>
+<p>MySQL 与 DRBD 结合使用可以实现高可用性的数据库方案。通过将 MySQL 数据库的数据目录配置为 DRBD 设备，可以实现数据的实时复制和故障转移。</p>
+<p> 在 MySQL 与 DRBD 方案中，通常会有两个节点：一个主节点和一个备节点。主节点负责处理所有的读写操作，并将数据实时复制到备节点上。备节点会持续地从主节点复制数据，以保持数据的一致性。</p>
+<p> 当主节点发生故障时，备节点可以接管主节点的角色，成为新的主节点，继续提供数据库服务。这种故障转移过程是自动的，可以通过配置和管理工具（如 Pacemaker）来实现。</p>
+<p> 使用 MySQL 与 DRBD 方案可以提供数据库的冗余和故障转移能力，从而提高数据库的可靠性和可用性。当主节点发生故障时，系统可以自动切换到备节点，减少数据库服务的中断时间。</p>
+<p> 需要注意的是，配置和管理 MySQL 与 DRBD 方案需要一定的技术知识和经验。此外，对网络的稳定性和带宽要求较高，以确保数据的实时复制和同步。因此，在实施该方案之前，建议进行充分的规划和测试，以确保系统的稳定性和可靠性。</p>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
-        var options = {
-            selector: '.gallery-item'
-        };
+        var options = {selector: '.gallery-item'};
         lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
         }</script></div>
 				<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
@@ -551,7 +549,7 @@
 					}
 				}
 				</script>
-			</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/cd621e01.html">https://zysicyj.github.io/cd621e01.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="mysql_mmm.html" title="MySQL高可用搭建方案之（MMM）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MySQL高可用搭建方案之（MMM）</div></div></a></div><div class="next-post pull-right"><a href="af0c0de2.html" title="【日记】9月9日"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【日记】9月9日</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">点击积累，终有所获！</div></div><div class="card-info-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">503</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zysicyj@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加我个人微信 sheng_chenyuanjie 拉你进群。<div class="social-button"><a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" rel="external nofollow noreferrer" target="_blank">个人微信 👍</a> <a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" rel="external nofollow noreferrer" target="_blank">公众号 👍</a> <a class="button--animated" href="https://store.amazingmemo.com/chapterDetail/1685324709017001" rel="external nofollow noreferrer" target="_blank">全网最全最细面试题 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%88%E6%80%BB%E7%BB%93%E4%B8%8B%E5%90%84%E6%96%B9%E6%A1%88%E7%A1%AC%E6%80%A7%E8%A6%81%E6%B1%82"><span class="toc-number">1.</span> <span class="toc-text">先总结下各方案硬性要求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MMM%E6%96%B9%E6%A1%88%EF%BC%88%E5%8D%95%E4%B8%BB%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">MMM方案（单主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MHA%E6%9E%B6%E6%9E%84%EF%BC%88%E5%8D%95%E4%B8%BB%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">MHA架构（单主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MGR%E6%9E%B6%E6%9E%84%EF%BC%88%E5%8D%95-%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">MGR架构（单&#x2F;多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Mysql-cluster%EF%BC%88%E5%AE%98%E6%96%B9%E4%BA%B2%E5%84%BF%E5%AD%90%EF%BC%89%EF%BC%88%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">Mysql cluster（官方亲儿子）（多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Galera-Cluster%EF%BC%88%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">Galera Cluster（多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PXC%E6%9E%B6%E6%9E%84%EF%BC%88%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">PXC架构（多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#RAID10%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%A1%88%EF%BC%89%EF%BC%88%E5%8D%95%E7%82%B9%E9%97%AE%E9%A2%98%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">RAID10（数据可靠性方案）（单点问题）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SAN%E5%AD%98%E5%82%A8%E7%BD%91%E7%BB%9C%EF%BC%88%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%89%EF%BC%88%E9%99%A4%E4%BA%86%E8%B4%B5%E6%B2%A1%E6%9C%89%E7%BC%BA%E7%82%B9%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">SAN存储网络（数据存储解决方案）（除了贵没有缺点）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DRBD%E6%96%B9%E6%A1%88%EF%BC%88%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%89%EF%BC%88%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">DRBD方案（数据存储解决方案）（系统自带）</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="80ecb854.html" title="精简版 win11"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="精简版 win11"/></a><div class="content"><a class="title" href="80ecb854.html" title="精简版 win11">精简版 win11</a><time datetime="2023-12-01T16:23:41.293Z" title="更新于 2023-12-02 00:23:41">2023-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="23dd6700.html" title="记忆卡功能清单"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记忆卡功能清单"/></a><div class="content"><a class="title" href="23dd6700.html" title="记忆卡功能清单">记忆卡功能清单</a><time datetime="2023-12-01T16:23:41.290Z" title="更新于 2023-12-02 00:23:41">2023-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="d4ff2212.html" title="3备份和回复"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3备份和回复"/></a><div class="content"><a class="title" href="d4ff2212.html" title="3备份和回复">3备份和回复</a><time datetime="2023-12-01T16:11:59.898Z" title="更新于 2023-12-02 00:11:59">2023-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="84392d3f.html" title="1.深入了解Redis数据类型和底层数据结构"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1.深入了解Redis数据类型和底层数据结构"/></a><div class="content"><a class="title" href="84392d3f.html" title="1.深入了解Redis数据类型和底层数据结构">1.深入了解Redis数据类型和底层数据结构</a><time datetime="2023-11-27T08:51:36.254Z" title="更新于 2023-11-27 16:51:36">2023-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="75fdffb8.html" title="特殊情况设计"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="特殊情况设计"/></a><div class="content"><a class="title" href="75fdffb8.html" title="特殊情况设计">特殊情况设计</a><time datetime="2023-11-26T06:56:02.717Z" title="更新于 2023-11-26 14:56:02">2023-11-26</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+			</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/cd621e01.html">https://zysicyj.github.io/cd621e01.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="mysql_mmm.html" title="MySQL 高可用搭建方案之（MMM）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MySQL 高可用搭建方案之（MMM）</div></div></a></div><div class="next-post pull-right"><a href="af0c0de2.html" title="【日记】9 月 9 日"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【日记】9 月 9 日</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">点击积累，终有所获！</div></div><div class="card-info-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">503</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zysicyj@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加我个人微信 sheng_chenyuanjie 拉你进群。<div class="social-button"><a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" rel="external nofollow noreferrer" target="_blank">个人微信 👍</a> <a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" rel="external nofollow noreferrer" target="_blank">公众号 👍</a> <a class="button--animated" href="https://store.amazingmemo.com/chapterDetail/1685324709017001" rel="external nofollow noreferrer" target="_blank">全网最全最细面试题 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%88%E6%80%BB%E7%BB%93%E4%B8%8B%E5%90%84%E6%96%B9%E6%A1%88%E7%A1%AC%E6%80%A7%E8%A6%81%E6%B1%82"><span class="toc-number">1.</span> <span class="toc-text"> 先总结下各方案硬性要求 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MMM%20%E6%96%B9%E6%A1%88%EF%BC%88%E5%8D%95%E4%B8%BB%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">MMM 方案（单主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MHA%20%E6%9E%B6%E6%9E%84%EF%BC%88%E5%8D%95%E4%B8%BB%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">MHA 架构（单主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MGR%20%E6%9E%B6%E6%9E%84%EF%BC%88%E5%8D%95%20-%20%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">MGR 架构（单 &#x2F; 多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Mysql-cluster%EF%BC%88%E5%AE%98%E6%96%B9%E4%BA%B2%E5%84%BF%E5%AD%90%EF%BC%89%EF%BC%88%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">Mysql cluster（官方亲儿子）（多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Galera-Cluster%EF%BC%88%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">Galera Cluster（多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PXC%20%E6%9E%B6%E6%9E%84%EF%BC%88%E5%A4%9A%E4%B8%BB%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">PXC 架构（多主）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#RAID10%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%A1%88%EF%BC%89%EF%BC%88%E5%8D%95%E7%82%B9%E9%97%AE%E9%A2%98%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">RAID10（数据可靠性方案）（单点问题）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SAN%20%E5%AD%98%E5%82%A8%E7%BD%91%E7%BB%9C%EF%BC%88%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%89%EF%BC%88%E9%99%A4%E4%BA%86%E8%B4%B5%E6%B2%A1%E6%9C%89%E7%BC%BA%E7%82%B9%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">SAN 存储网络（数据存储解决方案）（除了贵没有缺点）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DRBD%20%E6%96%B9%E6%A1%88%EF%BC%88%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%89%EF%BC%88%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">DRBD 方案（数据存储解决方案）（系统自带）</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="29182850.html" title="SpringBoot 的传播机制详解"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot 的传播机制详解"/></a><div class="content"><a class="title" href="29182850.html" title="SpringBoot 的传播机制详解">SpringBoot 的传播机制详解</a><time datetime="2023-12-01T16:47:07.045Z" title="更新于 2023-12-01 16:47:07">2023-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="e27b9279.html" title="配置 Picgo 图床之 COS、OSS、Github 图床"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="配置 Picgo 图床之 COS、OSS、Github 图床"/></a><div class="content"><a class="title" href="e27b9279.html" title="配置 Picgo 图床之 COS、OSS、Github 图床">配置 Picgo 图床之 COS、OSS、Github 图床</a><time datetime="2023-12-01T16:47:07.045Z" title="更新于 2023-12-01 16:47:07">2023-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="9621200a.html" title="非华为笔记本安装华为电脑管家"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="非华为笔记本安装华为电脑管家"/></a><div class="content"><a class="title" href="9621200a.html" title="非华为笔记本安装华为电脑管家">非华为笔记本安装华为电脑管家</a><time datetime="2023-12-01T16:47:07.045Z" title="更新于 2023-12-01 16:47:07">2023-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="nginx1.html" title="【Nginx 系列】（一）Nginx 基础概念"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Nginx 系列】（一）Nginx 基础概念"/></a><div class="content"><a class="title" href="nginx1.html" title="【Nginx 系列】（一）Nginx 基础概念">【Nginx 系列】（一）Nginx 基础概念</a><time datetime="2023-12-01T16:47:07.045Z" title="更新于 2023-12-01 16:47:07">2023-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="b977578a.html" title="【ES 系列】(一) 简介与安装"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【ES 系列】(一) 简介与安装"/></a><div class="content"><a class="title" href="b977578a.html" title="【ES 系列】(一) 简介与安装">【ES 系列】(一) 简介与安装</a><time datetime="2023-12-01T16:47:07.045Z" title="更新于 2023-12-01 16:47:07">2023-12-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
