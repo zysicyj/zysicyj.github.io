@@ -1,0 +1,414 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>12 月 2 日 | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top   全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 https:&amp;#x2F;&amp;#x2F;s"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://zysicyj.github.io/fc18fdfb.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '12 月 2 日',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-04 00:42:41'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 20
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="atom.xml" title="" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">504</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">30</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="index.html" title=""><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"/><span class="site-name"></span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="index.html"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.zysicyj.top"><i class="fa-fw fas fa-book"></i><span> 专栏</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://daily.zysicyj.top"><i class="fa-fw fas fa-calendar-week"></i><span> 日记</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001"><i class="fa-fw fas fa-book-open-reader"></i><span> 面试题</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top/e3"><i class="fa-fw fas fa-solid fa-file-word"></i><span> Office365+5TOneDrive</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener external nofollow noreferrer" href="https://txc.qq.com/products/617412"><i class="fa-fw fas fa-bars"></i><span> 反馈</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-solid fa-newspaper"></i><span> 公告</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-solid fa-image"></i><span> 相册</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/songs/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/love/static/index.html"><i class="fa-fw fas fa-heart"></i><span> Love</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">12 月 2 日</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-02T14:53:13.000Z" title="发表于 2023-12-02 14:53:13">2023-12-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-04T00:42:41.645Z" title="更新于 2023-12-04 00:42:41">2023-12-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/daily/">daily</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/daily/2023%E5%B9%B4/">2023年</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="categories/daily/2023%E5%B9%B4/12%E6%9C%88/">12月</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>24分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="12 月 2 日"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><div id="readmore-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
+<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准<code>https://blog.zysicyj.top</code></p>
+</blockquote>
+<blockquote>
+<p>全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java<br>面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 <code>https://store.amazingmemo.com/chapterDetail/1685324709017001</code></p>
+</blockquote>
+<h1 id="昨夜今晨"><a href="# 昨夜今晨" class="headerlink" title="昨夜今晨"></a>昨夜今晨</h1><p>“科技昨夜今晨”时间，大家好，现在是 2023 年 12 月 2 日星期六，今天的重要科技资讯有：</p>
+<h2 id="1、消息称台积电 -3nm- 独家代工高通骁龙 -8-Gen-4，三星良率仍不理想"><a href="#1、消息称台积电 -3nm- 独家代工高通骁龙 -8-Gen-4，三星良率仍不理想" class="headerlink" title="1、消息称台积电 3nm 独家代工高通骁龙 8 Gen 4，三星良率仍不理想"></a>1、消息称台积电 3nm 独家代工高通骁龙 8 Gen 4，三星良率仍不理想 </h2><p> 台媒科技新报 12 月 1 日发布报告称，高通的下一代旗舰 3nm 骁龙 8 Gen 4 处理器，仍然仅由台积电代工，而非此前传言的台积电和三星双代工模式。报告称，根据最新的行业信息，由于三星对明年 3nm 产能的保守扩张计划和良率不理想，高通已正式取消明年处理器使用三星的计划。双代工模式被推迟到 2025 年。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/397.htm">查看详情</a></p>
+<h2 id="2、全国数十家 -985、211- 大学宣布开设华为鸿蒙 -HarmonyOS- 相关课程"><a href="#2、全国数十家 -985、211- 大学宣布开设华为鸿蒙 -HarmonyOS- 相关课程" class="headerlink" title="2、全国数十家 985、211 大学宣布开设华为鸿蒙 HarmonyOS 相关课程"></a>2、全国数十家 985、211 大学宣布开设华为鸿蒙 HarmonyOS 相关课程 </h2><p> 根据华为人才在线官网的最新公示信息，2023 年教育部产学合作协同育人项目的华为第二批项目已经立项公示，其中包括哈尔滨工业大学、天津大学、电子科技大学等 16 个知名高校的 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hmos.ithome.com/"> 鸿蒙 </a> 项目。在此之前，诸如清华大学、北京航空航天大学、武汉大学等 985 高校已经率先开设了 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://hmos.ithome.com/">HarmonyOS</a> 的相关课程。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/349.htm">查看详情</a></p>
+<h2 id="3、阿里云宣布通义千问 -720- 亿参数模型开源"><a href="#3、阿里云宣布通义千问 -720- 亿参数模型开源" class="headerlink" title="3、阿里云宣布通义千问 720 亿参数模型开源"></a>3、阿里云宣布通义千问 720 亿参数模型开源 </h2><p> 阿里云宣布开源通义千问 720 亿参数模型 Qwen-72B、18 亿参数模型 Qwen-1.8B 及音频大模型 Qwen-Audio，目前已上线阿里魔搭社区。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/339.htm">查看详情</a></p>
+<h2 id="4、生鲜灯 -12- 月 -1- 日起禁用、规范牙膏宣传功效，12- 月起影响你我生活的新规"><a href="#4、生鲜灯 -12- 月 -1- 日起禁用、规范牙膏宣传功效，12- 月起影响你我生活的新规" class="headerlink" title="4、生鲜灯 12 月 1 日起禁用、规范牙膏宣传功效，12 月起影响你我生活的新规"></a>4、生鲜灯 12 月 1 日起禁用、规范牙膏宣传功效，12 月起影响你我生活的新规 </h2><p> 国家市场监督管理总局于 7 月 22 日发布了《食用农产品市场销售质量安全监督管理办法》，自 2023 年 12 月 1 日起施行。该《办法》明确提到，针对群众反映“生鲜灯”误导消费者问题，增加对销售场所照明等设施的设置和使用要求：销售生鲜食用农产品，不得使用对食用农产品的真实色泽等感官性状造成明显改变的照明等设施误导消费者对商品的感官认知。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/310.htm">查看详情</a></p>
+<h2 id="5、特斯拉首批 -Cybertruck- 纯电皮卡交付：可牵引 -1-1- 万磅重物、0-60- 英里 - 小时加速 -2-6- 秒"><a href="#5、特斯拉首批 -Cybertruck- 纯电皮卡交付：可牵引 -1-1- 万磅重物、0-60- 英里 - 小时加速 -2-6- 秒" class="headerlink" title="5、特斯拉首批 Cybertruck 纯电皮卡交付：可牵引 1.1 万磅重物、0-60 英里 &#x2F; 小时加速 2.6 秒"></a>5、特斯拉首批 Cybertruck 纯电皮卡交付：可牵引 1.1 万磅重物、0-60 英里 &#x2F; 小时加速 2.6 秒 </h2><p> 特斯拉 12 月 1 日凌晨 4 点举办了 Cybertruck 交付活动，并透露了关于这辆纯电皮卡的相关信息。马斯克表示这辆纯电皮卡可以拖曳超过 11000 磅（约 4994 千克）的重量，并具有 2500 磅（约 1135 千克）的有效载荷能力，Cybertruck 货箱长 6 英尺（约 1.83 米），宽 4 英尺（约 1.22 米），离地间隙为 17 英寸（约 431.8 毫米）。马斯克还表示 Cybertruck 从 0 加速到 60 英里时间为 2.6 秒，可以在 11 秒内完成四分之一英里。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/259.htm">查看详情</a></p>
+<h2 id="6、小米公司发言人：关于雷军“冰冷的 -40- 亿”的传闻纯属子虚乌有，人生不是爽文"><a href="#6、小米公司发言人：关于雷军“冰冷的 -40- 亿”的传闻纯属子虚乌有，人生不是爽文" class="headerlink" title="6、小米公司发言人：关于雷军“冰冷的 40 亿”的传闻纯属子虚乌有，人生不是爽文"></a>6、小米公司发言人：关于雷军“冰冷的 40 亿”的传闻纯属子虚乌有，人生不是爽文 </h2><p> 小米公司发言人 12 月 1 日通过官微发布声明称，今日网上出现大量关于本集团创始人雷军的不实传闻，所谓“冰冷的 40 亿” 纯属子虚乌有、完全失实。请大家勿信、勿传。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/473.htm">查看详情</a></p>
+<h2 id="7、消息称华为 -nova-12- 系列、新款折叠屏搭载麒麟 -5G- 平台，手机壳已曝光"><a href="#7、消息称华为 -nova-12- 系列、新款折叠屏搭载麒麟 -5G- 平台，手机壳已曝光" class="headerlink" title="7、消息称华为 nova 12 系列、新款折叠屏搭载麒麟 5G 平台，手机壳已曝光"></a>7、消息称华为 nova 12 系列、新款折叠屏搭载麒麟 5G 平台，手机壳已曝光 </h2><p> 博主 @数码闲聊站 12 月 1 日在微博晒出华为新款竖向折叠屏以及 nova 12 系列手机壳照片，并透露这两款新机均搭载麒麟 5G 芯片，但供货量不大，预计明年中端 5G 才会全面回归。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/445.htm">查看详情</a></p>
+<h2 id="8、机构：今年 -Q3- 全球新能源车销量 -345-5- 万辆，比亚迪纯电车与特斯拉相差不到千辆"><a href="#8、机构：今年 -Q3- 全球新能源车销量 -345-5- 万辆，比亚迪纯电车与特斯拉相差不到千辆" class="headerlink" title="8、机构：今年 Q3 全球新能源车销量 345.5 万辆，比亚迪纯电车与特斯拉相差不到千辆"></a>8、机构：今年 Q3 全球新能源车销量 345.5 万辆，比亚迪纯电车与特斯拉相差不到千辆 </h2><p> 市场调研机构 TrendForce 集邦咨询 12 月 1 日发布 2023 年第三季度全球新能源车销售情况报告。数据显示，该季度新能源车销售总量为 345.5 万辆，较去年同期成长 28.1%。该季度纯电车型前 10 大品牌中，特斯拉与比亚迪的销量差异不到千辆。若将比亚迪旗下的“腾势”品牌纳入总量来算，则能够实现超越特斯拉。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/116.htm">查看详情</a></p>
+<h2 id="9、告别静音拨片，消息称苹果 -iPhone-16- 全系标配操作按钮"><a href="#9、告别静音拨片，消息称苹果 -iPhone-16- 全系标配操作按钮" class="headerlink" title="9、告别静音拨片，消息称苹果 iPhone 16 全系标配操作按钮"></a>9、告别静音拨片，消息称苹果 iPhone 16 全系标配操作按钮 </h2><p> 根据国外科技媒体 MacRumors 报道，苹果明年推出的 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://iphone.ithome.com/">iPhone</a> 16 四款机型全部配备操作按钮。</p>
+<p>在明年推出的 iPhone 16 系列中，苹果计划将操作按钮从机械式按钮更改为电容式按钮，并扩充提供更多功能。苹果内部改进操作按钮项目代号为“Atlas”，按钮特性类似于旧款 iPhone 机型上的 Touch ID Home 按钮，或较新 MacBook 上的 Force Touch 触控板。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/295.htm">查看详情</a></p>
+<h2 id="10、消息称小米平板 -7- 系列搭载骁龙 -8-Gen-2- 处理器，与小米 -14-Ultra- 一同登场"><a href="#10、消息称小米平板 -7- 系列搭载骁龙 -8-Gen-2- 处理器，与小米 -14-Ultra- 一同登场" class="headerlink" title="10、消息称小米平板 7 系列搭载骁龙 8 Gen 2 处理器，与小米 14 Ultra 一同登场"></a>10、消息称小米平板 7 系列搭载骁龙 8 Gen 2 处理器，与小米 14 Ultra 一同登场 </h2><p> 据博主 @数码闲聊站 12 月 1 日爆料，小米新款平板搭载骁龙 8 Gen 2 处理器，将与搭载骁龙 8 Gen 3 小米影像旗舰一同登场。结合此前的爆料来看，这两款产品预计分别为小米平板 7 系列和小米 14 Ultra 手机。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/472.htm">查看详情</a></p>
+<h2 id="11、高德地图与华为达成合作，启动鸿蒙原生应用开发"><a href="#11、高德地图与华为达成合作，启动鸿蒙原生应用开发" class="headerlink" title="11、高德地图与华为达成合作，启动鸿蒙原生应用开发"></a>11、高德地图与华为达成合作，启动鸿蒙原生应用开发 </h2><p> 华为 12 月 1 日官宣，高德地图与华为达成鸿蒙合作，高德将基于 HarmonyOS NEXT 正式启动鸿蒙原生应用开发，也成为导航界首个启动鸿蒙原生应用开发的伙伴。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/336.htm">查看详情</a></p>
+<h2 id="12、小米汽车 -xiaomiev-com- 网站开放访问，目前仅为官网截图占位"><a href="#12、小米汽车 -xiaomiev-com- 网站开放访问，目前仅为官网截图占位" class="headerlink" title="12、小米汽车 xiaomiev.com 网站开放访问，目前仅为官网截图占位"></a>12、小米汽车 xiaomiev.com 网站开放访问，目前仅为官网截图占位 </h2><p> 小米汽车科技有限公司于 8 月 2 日备案了 xiaomiev.com 网站域名，当时并没有解析到网页，因此不确定是否为保护性注册。<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/">IT 之家 </a>12 月 1 日再次访问发现，xiaomiev.com 已经可以解析跳转了，不过并没有小米汽车相关内容，而是由小米官网的几张截图拼接而成，从图中可以看到还停留在小米 13 Ultra 宣传阶段，也就是今年 4 月。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/434.htm"> 查看详情</a></p>
+<h2 id="13、江淮汽车与华为终端签署《智能新能源汽车合作协议》：开发、生产等领域全面合作，打造豪华智能网联电动汽车"><a href="#13、江淮汽车与华为终端签署《智能新能源汽车合作协议》：开发、生产等领域全面合作，打造豪华智能网联电动汽车" class="headerlink" title="13、江淮汽车与华为终端签署《智能新能源汽车合作协议》：开发、生产等领域全面合作，打造豪华智能网联电动汽车"></a>13、江淮汽车与华为终端签署《智能新能源汽车合作协议》：开发、生产等领域全面合作，打造豪华智能网联电动汽车 </h2><p> 江淮汽车 12 月 1 日公告，宣布与华为终端有限公司签署《智能新能源汽车合作协议》。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/489.htm">查看详情</a></p>
+<h2 id="14、消息称腾讯小世界将更名为 -QQ- 短视频"><a href="#14、消息称腾讯小世界将更名为 -QQ- 短视频" class="headerlink" title="14、消息称腾讯小世界将更名为 QQ 短视频"></a>14、消息称腾讯小世界将更名为 QQ 短视频 </h2><p> 据界面新闻报道，腾讯 QQ 的“小世界”（以下简称小世界）这款产品即将更名为“QQ 短视频”，进一步强化其短视频的产品定位。报道称，有来自 QQ 内部的消息人士表示，目前在整个 QQ 平台上，有很多用户只看短视频，而并不参与聊天。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/736/369.htm">查看详情</a></p>
+<p>今天就先聊到这里，科技昨夜今晨，咱们下周见。</p>
+<p>广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT 之家所有文章均包含本声明。</p>
+<h1 id="8 点 1 氪"><a href="#8 点 1 氪" class="headerlink" title="8 点 1 氪"></a>8 点 1 氪 </h1><h2 id="上市进行时"><a href="# 上市进行时" class="headerlink" title="上市进行时"></a> 上市进行时 </h2><p><strong> 极氪汽车</strong></p>
+<p>11 月 30 日，有市场消息称，由于市场人气疲软，中国电动汽车制造商极氪已暂时搁置美国 IPO 计划，公司将继续观察市况并决定何时恢复上市计划。对此，极氪汽车回应称，已向美国证监会公开递交招股书，各项筹备工作正在有序推进中。（界面新闻） </p>
+<h2 id="TOP3 大新闻"><a href="#TOP3 大新闻" class="headerlink" title="TOP3 大新闻"></a>TOP3 大新闻 </h2><p><strong> 宝马与梅赛德斯 - 奔驰将在中国成立合资公司，合作建设超级充电网络</strong></p>
+<p>36 氪获悉，据宝马集团官微，华晨宝马汽车有限公司与梅赛德斯 - 奔驰（中国）投资有限公司宣布签署合作协议，双方将以 50:50 的股比在中国成立合资公司，在中国市场运营超级充电网络。至 2026 年底，该合资公司计划在中国建设至少 1000 座具备先进技术的超级充电站，约 7000 根超充桩。首批充电站计划于 2024 年起在中国重点新能源汽车城市开始运营，后续充电站建设也将覆盖全国其他城市和地区。 </p>
+<p><strong>iPhone 16 显示屏及尺寸曝光</strong></p>
+<p>距离苹果发布 iPhone 16&#x2F;Pro 手机预估还 10 多个月，不过目前已经有不少关于 iPhone 16&#x2F;Pro 系列手机的爆料和已知内容，从可靠业界分析师 Ross Young 在内的多个消息来源称，iPhone 16 Pro 和 iPhone 16 Pro Max 都将配备更大的屏幕。iPhone 16 &#x2F; Pro 预计将配备 6.3 英寸显示屏，此前 iPhone 15 Pro 为 6.1 英寸。iPhone 16 Plus &#x2F; Pro Max 将配备 6.9 英寸显示屏，此前 iPhone 15 Pro Max 为 6.7 英寸。（IT 之家）</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://img.36krcdn.com/hsossms/20231201/v2_db72b43d5ee246568afe23bb5c820fca@5667365_oswg268370oswg1080oswg797_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.36krcdn.com/hsossms/20231201/v2_db72b43d5ee246568afe23bb5c820fca@5667365_oswg268370oswg1080oswg797_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1"></a></p>
+<p>配图</p>
+<p><strong>良品铺子将实施 17 年来最大规模降价，最高降幅 45%</strong></p>
+<p>良品铺子董事长、总经理杨银芬 29 日发布全员公开信表示，将启动新一轮改革，回归良品铺子邻家形象。良品铺子方面表示，业务端将实施 17 年来最大规模降价，300 款产品平均降价 22%，最高降幅 45%，主要集中在成本优化但不影响品质以及复购率高的零食上。（红星新闻） </p>
+<h2 id="大公司 - 大事件"><a href="# 大公司 - 大事件" class="headerlink" title="大公司 &#x2F; 大事件"></a>大公司 &#x2F; 大事件 </h2><p><strong> 腾讯游戏回应与暴雪谈判国服回归：只是直播测试，已经结束</strong></p>
+<p>有媒体报道称暴雪已在和包括网易、腾讯在内的多家游戏厂商谈判国服回归事宜，但目前尚未有确定的合作方和具体回归时间。针对此事，腾讯游戏官方回应称：只是直播测试，已经结束。“接近腾讯的人士”说明：魔方是腾讯旗下自研工作室，不会代理外部产品，传言不准确。（财经网）</p>
+<p><strong>美吉姆、ST 天山两家公司董事长失联，不确定无法取得联系的具体原因</strong></p>
+<p>据每日经济新闻报道，11 月 29 日，两家上市公司发布内容类似的公告：董事长失联，原因不明。11 月 29 日，美吉姆（002621）晚间公告，公司通过电话、微信等方式，均无法与董事长马红英女士取得联系。经与马红英女士家人沟通，截至目前，公司尚不确定无法与马红英女士取得联系的具体原因。马红英女士除担任公司董事长、董事会战略委员会主任委员职务外，未担任公司其他职务。公司表示，截至本公告披露日，公司董事会仍有 8 名董事正常履职，其中独立董事 3 名，符合法定最低人数。上述事项不会对公司董事会的运作和公司的正常经营产生重大影响。</p>
+<p>随后，*ST 天山（300313）公告，近日，公司通过电话、微信等方式，均无法与公司董事长马长水取得联系，经与马长水家人沟通，截至目前，公司尚不确定无法与马长水取得联系的具体原因。马长水除担任公司董事长、董事会战略委员会主任委员、提名委员会委员及薪酬与考核委员会委员职务外，未担任公司其他职务。截至本公告披露日，马长水未持有公司股份。截至本公告披露日，公司董事会仍有 8 名董事正常履职，其中独立董事 3 名，符合法定最低人数。上述事项不会对公司董事会的运作和公司的正常经营产生重大影响。（每日经济新闻）</p>
+<p><strong>三只羊网络 CEO 回应上市传闻：成立投资证券部并非为上市做准备</strong></p>
+<p>据九派新闻报道，11 月 26 日夜，小杨臻选演唱会在合肥体育中心上演，当日在三只羊集团新总部对话公司 CEO 杜刚，采访中，杜刚回应三只羊成立投资证券部原因时表示，其实只是为了投资，或者与上市公司合作更加方便，而不是在为将来上市做准备。“我思考过，上市能为三只羊带来什么，不外乎更高的融资金额和一份强有力的背书。从当前的情况看，我们不需要那么多资金，而规范合规是我们的内在约束，写进了公司创业的信条。”在谈到出海时，杜刚表示，出海是肯定会做的，目前下一步可能会先拓展新加坡市场。（九派新闻）</p>
+<p><strong>信雅达董事长二女儿是 Pika 创始人</strong></p>
+<p>近日，一家仅四人的初创公司发布全新的 AI 视频生成工具。29 日一整天，国内外社交平台、科技界都被它暴力刷屏。这家名叫 Pika 的初创公司，也一跃成为全球最炙手可热的 AI 视频生成公司。而它的创始人郭文景（DemiGuo）曾就读于杭二中，是浙江第一个被哈佛本科提前录取的学生。据悉，郭文景的母亲是 MIT 毕业的高材生，而父亲则是上市公司信雅达科技股份有限公司实控人郭华强。总部位于杭州滨江的信雅达成立于 1996 年，是浙江首家在国内主板上市的软件公司。截至 11 月 30 日发稿，信雅达股价涨停，股价暂报 11.04 元，总市值 51.53 亿元。据了解，Pika 已经获得 5500 万美元融资。据福布斯报道，Pika 估值目前在 2 亿美元至 3 亿美元之间。（每日经济新闻） </p>
+<p><strong>美国前国务卿亨利·基辛格去世</strong></p>
+<p>当地时间 11 月 29 日，美国前国务卿亨利·基辛格在康涅狄格州的家中去世，享年 100 岁。（央视新闻） </p>
+<p><strong>快手：近期将切断第三方微短剧小程序的商业推广和投放</strong></p>
+<p>从知情人士处获悉，快手拟于近期切断第三方微短剧小程序的商业推广和投放，专注发展基于快手小程序和快手内部链路的原生微短剧生态和商业链路。此举有助于加强平台自有微短剧的审核和运营。（界面新闻）</p>
+<p><strong>极越正式执行全新车型售价和权益优惠：极越 01 全系车型价格直降 3 万元</strong></p>
+<p>36 氪获悉，11 月 30 日晚，极越宣布即刻起正式执行全新车型售价和权益优惠。极越 01 全系车型价格直降 3 万元，长续航三元锂电池选装包（100kWh）同步下调 1 万元。调整后的极越 01 Max 起售价为 21.99 万，极越 01 Max 长续航版售价为 25.49 万元，极越 01 Max Performance 售价为 30.99 万元。同时，置换用户还可在降价基础上再减 5000 元。对于已提车老用户，极越将根据最新车型售价给予 3 万元差价的现金补偿。</p>
+<p><strong>理想汽车 2024 年启动出海，首批进入中东国家</strong></p>
+<p>从多位知情人士处获悉，理想汽车计划在 2024 年开启出海，首批进入的市场为阿联酋、沙特等中东国家，还可能包括部分北非国家。首批出海车型为理想 L9，根据海外消费者的接受程度，还可能加上理想 L8、理想 L7。（晚点 Auto）</p>
+<p><strong>12306 辟谣火车票退票不扣手续费：未出新规</strong></p>
+<p>据大象新闻报道，11 月 29 日，在网上，一则“12306 退票不收手续费了，开车前 10 分钟退票居然没有扣费”的信息引起网友关注。就此情况，记者通过 12306 铁路客服热线进行咨询时了解到，关于车票退订产生的手续费，仍按照现行退票费标准执行，目前没有新规出台。据介绍，按照 12306 官方规定，列车开车前 8 天（含）以上退票的，不收取退票费；票面乘车站开车时间前 48 小时以上的按票价 5% 计，24 小时以上、不足 48 小时的按票价 10% 计，不足 24 小时的按票价 20% 计。开车前 48 小时～8 天期间内，改签或变更到站至距开车 8 天以上的其他列车，又在距开车 8 天前退票的，仍核收 5% 的退票费。办理车票改签或“变更到站”时，新车票票价低于原车票的，退还差额，对差额部分核收退票费并执行现行退票费标准。（大象新闻）</p>
+<p><strong>魅族官宣将正式进入汽车市场</strong></p>
+<p>36 氪获悉，据魅族科技微博，魅族品牌将正式进入汽车市场。第一款魅族汽车 MEIZU DreamCar MX，将在 2024 年一季度启动 DreamCar 共创计划。</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://img.36krcdn.com/hsossms/20231201/v2_cd63547f2e3e420f980be3de06549d82@5667365_oswg499617oswg1080oswg933_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.36krcdn.com/hsossms/20231201/v2_cd63547f2e3e420f980be3de06549d82@5667365_oswg499617oswg1080oswg933_img_000?x-oss-process=image/format,jpg/interlace,1/format,jpg/interlace,1"></a></p>
+<p>配图</p>
+<p><strong>万科 A：杭州湖印光年府项目被张贴停工告示，告示内容不属实</strong></p>
+<p>36 氪获悉，万科 A 在互动平台表示，杭州万沙置业有限公司已发布声明，关于杭州湖印光年府项目被张贴停工告示一事，经查实，告示内容不属实。目前项目已临近竣工备案，现场具备验收条件，预计将于 2023 年 12 月举行工地开放活动。公司将有序推进各项交付事宜，确保项目按期保质交付。 </p>
+<p><strong>银行密集召开房企座谈会</strong></p>
+<p>日前，农业银行分别与万科集团、龙湖集团、朱孟依家族集团等企业高管进行业务座谈，听取企业诉求，开展项目对接，共同谋划建立长期稳固合作关系。在此之前，建设银行、交通银行、浙商银行已披露与房企召开座谈会的具体情况。记者还从业内获悉，近期还有多家主要金融机构与万科、碧桂园、龙湖、绿城等非国有房地产企业开展座谈，以加强沟通交流，加快解决企业合理诉求，改善房企融资环境。（上海证券报） </p>
+<p><strong>多家航司：未出现直飞泰国航班大规模取消情况，计划航班量呈增长态势</strong></p>
+<p>近日，“中国航空公司取消近 9000 个中泰航班”的消息引发关注。从多家中国航司了解到，按照目前的航班安排，今年 12 月和明年 1 月国内直飞泰国的航班并没有出现大规模取消的情况。实际上，截至目前，12 月国内航司前往泰国的机票预订量已超过 22 万张，恢复至 2019 年同期的 58% 左右，部分航司 12 月执飞中泰航班量环比增幅 40%。（红星新闻）</p>
+<p><strong>美股三大指数收盘涨跌不一，大型科技股多数下跌</strong></p>
+<p>36 氪获悉，11 月 30 日收盘，美股三大指数涨跌不一，纳指跌 0.23%，道指涨 1.47%，标普 500 指数涨 0.38%。大型科技股多数下跌，特斯拉、谷歌、Meta 跌超 1%，Netflix 跌 0.67%，亚马逊跌 0.16%，苹果涨、微软小幅上涨。热门中概股涨跌不一，微博跌超 10%，B 站跌超 4%，小鹏汽车、理想汽车跌超 3%，京东跌 0.04%，拼多多涨超 4%，蔚来涨超 1%，百度涨 0.53%，网易涨 0.31%，阿里巴巴涨 0.28%。</p>
+<p><strong>美国联邦航空管理（FAA）在波音 737 MAX 坠机事件后采取全新的飞机认证政策</strong></p>
+<p>美国联邦航空管理（FAA）采用了一项新的飞机认证政策，在波音 737 MAX 发生两起单独的重大坠机事故后，该政策现在要求飞行控制设计的任何关键细则变更必须被归类为“重大”类别。该联邦机构还就如何在认证申请中识别“安全关键信息”向飞机制造商提供了额外的指导意见。（智通财经） </p>
+<p><strong>英国中部工业城市诺丁汉市宣布“事实性破产”</strong></p>
+<p>当地时间 29 日，诺丁汉市市政委员会表示，该市将停止法律规定的服务之外的所有公共支出。诺丁汉市是英国仅次于伦敦的第二大贸易集散地，近年来一直受财政问题困扰，此前已被英国政府监管。2020 年，该市创办的“罗宾汉能源公司”出现经营问题，此后诺丁汉市政委员会一直面临着财务压力。今年 9 月，英国第二大城市伯明翰宣布事实性破产，同样暂停了非必要公共支出。（CCTV 国际时讯）</p>
+<p><strong>日本 2023 年超过 3 万种食品涨价</strong></p>
+<p>日本帝国数据库 11 月 30 日发布的调查结果显示，2023 年涨价食品达 32395 种。与出现创纪录涨价潮的 2022 年 25768 种相比大幅扩大。原材料价格高涨及人手不足引发的人工费上涨纷纷转嫁给销售价格。（界面新闻） </p>
+<p><strong>剑指特斯拉等 13 家汽车公司，美国汽车工人联合会（UAW）乘势发起新一轮工会运动</strong></p>
+<p>美国汽车工人联合会（UAW）在赢得了与底特律三大汽车制造商的劳动谈判之后，多次放出风声将针对非工会公司建立工会。UAW 在其网站上发布了一条尖锐的信息，敦促非工会汽车工人加入并“赢得经济正义”。除了特斯拉和丰田，UAW 的目标是将本田、现代、日产、宝马、梅赛德斯 - 奔驰、斯巴鲁、大众、马自达、里维安、Lucid 和沃尔沃等主要汽车制造商的工人联合起来，这些汽车制造商总共雇佣了大约 15 万名美国工人。（财联社）</p>
+<p><strong>迪士尼任命摩根士丹利 CEO 戈尔曼、天空集团前 CEO 达罗克为董事会成员</strong></p>
+<p>华特迪士尼公司当地时间 11 月 29 日发布声明称，任命摩根士丹利首席执行官詹姆斯·戈尔曼和天空集团前 CEO 杰里米·达罗克为董事会成员。达罗克的任命将于 1 月 9 日生效，戈尔曼的任命将于 2 月 5 日生效。华尔街激进投资者纳尔逊·佩尔茨和他的特里安基金管理公司正在计划明年的迪士尼董事会提名人选。特里安已积累了价值 26.6 亿美元的迪士尼股份，它还得到了漫威娱乐公司前董事长艾克·珀尔穆特（Ike Perlmutter）的支持。（界面新闻） </p>
+<p><strong>Meta、X 等公司 CEO 将在美国参议院听证会上作证</strong></p>
+<p>美国参议院司法委员会 11 月 29 日表示，社交媒体公司 Meta、X、Snap 和 Discord 的首席执行官将在 1 月 31 日的美国参议院听证会上就网络儿童性剥削问题作证。（界面新闻） </p>
+<p><strong>马斯克称脑机接口公司 Neuralink 从未造成猴子死亡</strong></p>
+<p>特斯拉 CEO 马斯克当地时间 11 月 29 日在活动上重申，他的脑机接口初创公司 Neuralink 公司从未造成过猴子死亡。因涉嫌违反美国《动物福利法》，Neuralink 去年起遭到美国农业部调查。今年 9 月，马斯克在社交平台 X 上称，Neuralink 在早期实验中使用过已经濒临死亡的猴子。（界面新闻）</p>
+<p><strong>特斯拉全球副总裁陶琳：特斯拉的生产优势离不开中国供应链</strong></p>
+<p>特斯拉全球副总裁陶琳在首届中国国际供应链促进博览会上接受采访时表示，世界正在不断向可持续能源转变。在这个过程中，特斯拉希望和更多优秀供应商一道推出更加具有竞争力与创新力的零部件，也希望能借助自身的力量，带领更多国内优秀供应商走向国际舞台，在全球的市场竞争中赢得新天地，加速全球汽车工业向电气化和可持续能源的转型，让世界见证“中国智造”硬实力。（21 财经） </p>
+<p><strong>腾讯大股东 Prosus2023 年 4 月以来减持超 1% 腾讯股份，套现 50 亿美元</strong></p>
+<p>腾讯大股东、南非 Naspers 集团荷兰子公司 Prosus 公布业绩，截至 9 月底的上半财年合并营收同比增长 13% 至 25.6 亿美元，核心收益同比增长 118% 至 20 亿美元。Prosus 预计 2024 财年的每股核心总体收益将下降 21% 至 28%。此外，Prosus 披露，上半财年（今年 4 月至 9 月）已出售约 1% 腾讯股份，持股由 26.2% 降至约 25%，获得 40 亿美元收益。其后在 10 月至 11 月 24 日期间，Prosus 进一步出售约 2622 万股腾讯股份，收益达 10 亿美元。（界面新闻） </p>
+<h2 id="AI 最前沿"><a href="#AI 最前沿" class="headerlink" title="AI 最前沿"></a>AI 最前沿 </h2><p><strong> 山姆·奥特曼重返 OpenAI 首席执行官职位，微软将在董事会获得一个无投票权观察员席位</strong></p>
+<p>OpenAI 创始人山姆·奥特曼当地时间 11 月 29 日在备忘录中宣布，他将重新担任 OpenAI 首席执行官，曾临时代任首席执行官的米拉·穆拉蒂将继续担任首席技术官，微软将在公司董事会中获得一个无投票权的观察员席位。（界面新闻） </p>
+<p><strong>微软将在 3 年内向英国人工智能基础设施投资 32 亿美元</strong></p>
+<p>微软 11 月 30 日宣布，计划在三年内向英国的人工智能基础设施投资 32 亿美元。微软将扩大其在伦敦和卡迪夫的数据中心，并有可能扩展到英格兰北部。英国财政大臣表示，微软的重大投资对于未来的创新至关重要，有助于推动该国成为“科技超级大国”。（界面新闻）</p>
+<p><strong>英伟达黄仁勋称 AI 将在 5 年内赶超人类</strong></p>
+<p>据环球市场播报报道，英伟达首席执行官黄仁勋 11 月 29 日表示，人工智能正在赶超人类。他在 DealBook 峰会上表示，如果将人工智能（AGI）定义为能够以与人类智能“相当竞争”的方式完成测试的计算机，那么“在未来五年内，人工智能可以完成这些测试。”（环球市场播报） </p>
+<h2 id="投融资"><a href="# 投融资" class="headerlink" title="投融资"></a>投融资</h2><p><strong>“拓烯科技”完成亿元战略轮融资</strong></p>
+<p>36 氪获悉，近日，高端聚合物新材料研发商“拓烯科技”完成亿元战略轮融资，由同歌创投领投，晨岭资本、厚雪资本跟投，老股东雷石投资持续加码，资金将用于二期项目建设以及补充铺底流动资金。</p>
+<p><strong>“中科慧远”完成数亿元 C+ 轮融资</strong></p>
+<p>36 氪获悉，机器视觉技术一体化解决方案提供商“中科慧远”已于近期完成数亿元人民币的 C+ 轮融资，本轮融资由中国移动旗下北京中移数字新经济产业基金、中科院资本、海通央视融媒体产业投资基金、申万创新投、齐芯资本以及洛阳市知识产权运营发展基金等多家投资方共同参与。本轮资金将主要用在新方向研发、新领域拓展及国内外市场扩张等。 </p>
+<h2 id="酷产品"><a href="# 酷产品" class="headerlink" title="酷产品"></a>酷产品 </h2><p><strong> 特斯拉电动皮卡 Cybertruck 北美正式开启交付，60990 美元起售</strong></p>
+<p>特斯拉电动皮卡 Cybertruck 交付活动在美国得州超级工厂举办，该款车型在北美地区正式开启交付。特斯拉美国官网显示，该款车型共提供三个版本，后轮驱动版、全轮驱动版、Cyberbeast 版起售价分别 60,990 美元、799,990 美元、99,990 美元。据介绍，野兽模式下，百公里加速仅需 2.7 秒；单次充电可行驶最高 547 公里。全轮驱动版和 Cyberbeast 版将于 2024 年交付，后轮驱动版将于 2025 年交付。（界面新闻）</p>
+<p><strong>魅族发布两款 AR 眼镜，售价 2499 元起</strong></p>
+<p>36 氪获悉，魅族发布两款 AR 眼镜 MYVU Discovery 和 MYVU 标准版，搭载量产的树脂衍射光波导镜片。此外，眼镜还搭配专属指环，用手势和按压，就能完成听音乐、刷视频、回信息等常用操作。两款眼镜都将首发 Flyme AI 大模型。MYVU Discovery 售价 9999 元，标准版售价 2499 元。 </p>
+<p><strong>整理｜</strong> 莫羽汐</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {selector: '.gallery-item'};
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></div>
+				<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
+				<script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script>
+				<script>
+				var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+				var isEncrypt = document.getElementById('hexo-blog-encrypt');
+				var allowMobile = false;
+				if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {
+					try {
+						var plugin = new ReadmorePlugin();
+						plugin.init({
+							"type": "hexo",
+							"id": "readmore-container",
+							"name": "程序员朱永胜",
+							"blogId": "39259-6450029321246-893",
+							"qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg",
+							"keyword": "1",
+							"random": "1",
+							"height": "auto",
+							"expires": "365",
+							"lockToc": "yes",
+							"interval": "60",
+							"baseUrl": ""
+						});
+					} catch(e) {
+						console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);
+					}
+				}
+				</script>
+			</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.zysicyj.top">程序员朱永胜</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zysicyj.github.io/fc18fdfb.html">https://zysicyj.github.io/fc18fdfb.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zysicyj.github.io" target="_blank"></a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="80ecb854.html" title="精简版 win11"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">精简版 win11</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">程序员朱永胜</div><div class="author-info__description">点击积累，终有所获！</div></div><div class="card-info-data site-data is-center"><a href="archives/"><div class="headline">文章</div><div class="length-num">504</div></a><a href="tags/"><div class="headline">标签</div><div class="length-num">926</div></a><a href="categories/"><div class="headline">分类</div><div class="length-num">30</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/zysicyj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zysicyj" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zysicyj@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142231851.png" rel="external nofollow noreferrer" target="_blank" title="微信"><i class="fas fa-brands fa-weixin" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg" rel="external nofollow noreferrer" target="_blank" title="微信公众号"><i class="fas fa-brands fa-weixin fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa-solid fa-blog fa-beat" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="Bilibili"><i class="fa-brands fa-bilibili" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://developer.aliyun.com/profile/uriwrrq5ogjao" rel="external nofollow noreferrer" target="_blank" title="阿里开发者社区"><i class="fa-solid fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://cloud.tencent.com/developer/user/1275095" rel="external nofollow noreferrer" target="_blank" title="腾讯云开发者社区"><i class="fa-regular fa-cloud" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAfLUOYrCr4xBK9g13tFhmHCUYeM8gAzX9QMkSNOCr434" rel="external nofollow noreferrer" target="_blank" title="今日头条"><i class="fa-brands fa-tiktok" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">如果你在使用中遇到问题，请到<a href="/lyb/" style="color:#49b1f5" data-pjax-state="">留言板</a> 进行反馈，你也可以加我个人微信 sheng_chenyuanjie 拉你进群。<div class="social-button"><a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230903222821.jpg" rel="external nofollow noreferrer" target="_blank">个人微信 👍</a> <a class="button--animated" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/%E4%BA%8C%E7%BB%B4%E7%A0%81/%E6%8E%A8%E5%B9%BF/qrcode_for_gh_de3cbab6482f_430" rel="external nofollow noreferrer" target="_blank">公众号 👍</a> <a class="button--animated" href="https://store.amazingmemo.com/chapterDetail/1685324709017001" rel="external nofollow noreferrer" target="_blank">全网最全最细面试题 👍</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%98%A8%E5%A4%9C%E4%BB%8A%E6%99%A8"><span class="toc-number">1.</span> <span class="toc-text">昨夜今晨</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%B6%88%E6%81%AF%E7%A7%B0%E5%8F%B0%E7%A7%AF%E7%94%B5%20-3nm-%20%E7%8B%AC%E5%AE%B6%E4%BB%A3%E5%B7%A5%E9%AB%98%E9%80%9A%E9%AA%81%E9%BE%99%20-8-Gen-4%EF%BC%8C%E4%B8%89%E6%98%9F%E8%89%AF%E7%8E%87%E4%BB%8D%E4%B8%8D%E7%90%86%E6%83%B3"><span class="toc-number">1.1.</span> <span class="toc-text">1、消息称台积电 3nm 独家代工高通骁龙 8 Gen 4，三星良率仍不理想 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%85%A8%E5%9B%BD%E6%95%B0%E5%8D%81%E5%AE%B6%20-985%E3%80%81211-%20%E5%A4%A7%E5%AD%A6%E5%AE%A3%E5%B8%83%E5%BC%80%E8%AE%BE%E5%8D%8E%E4%B8%BA%E9%B8%BF%E8%92%99%20-HarmonyOS-%20%E7%9B%B8%E5%85%B3%E8%AF%BE%E7%A8%8B"><span class="toc-number">1.2.</span> <span class="toc-text">2、全国数十家 985、211 大学宣布开设华为鸿蒙 HarmonyOS 相关课程 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E9%98%BF%E9%87%8C%E4%BA%91%E5%AE%A3%E5%B8%83%E9%80%9A%E4%B9%89%E5%8D%83%E9%97%AE%20-720-%20%E4%BA%BF%E5%8F%82%E6%95%B0%E6%A8%A1%E5%9E%8B%E5%BC%80%E6%BA%90"><span class="toc-number">1.3.</span> <span class="toc-text">3、阿里云宣布通义千问 720 亿参数模型开源 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E7%94%9F%E9%B2%9C%E7%81%AF%20-12-%20%E6%9C%88%20-1-%20%E6%97%A5%E8%B5%B7%E7%A6%81%E7%94%A8%E3%80%81%E8%A7%84%E8%8C%83%E7%89%99%E8%86%8F%E5%AE%A3%E4%BC%A0%E5%8A%9F%E6%95%88%EF%BC%8C12-%20%E6%9C%88%E8%B5%B7%E5%BD%B1%E5%93%8D%E4%BD%A0%E6%88%91%E7%94%9F%E6%B4%BB%E7%9A%84%E6%96%B0%E8%A7%84"><span class="toc-number">1.4.</span> <span class="toc-text">4、生鲜灯 12 月 1 日起禁用、规范牙膏宣传功效，12 月起影响你我生活的新规 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E7%89%B9%E6%96%AF%E6%8B%89%E9%A6%96%E6%89%B9%20-Cybertruck-%20%E7%BA%AF%E7%94%B5%E7%9A%AE%E5%8D%A1%E4%BA%A4%E4%BB%98%EF%BC%9A%E5%8F%AF%E7%89%B5%E5%BC%95%20-1-1-%20%E4%B8%87%E7%A3%85%E9%87%8D%E7%89%A9%E3%80%810-60-%20%E8%8B%B1%E9%87%8C%20-%20%E5%B0%8F%E6%97%B6%E5%8A%A0%E9%80%9F%20-2-6-%20%E7%A7%92"><span class="toc-number">1.5.</span> <span class="toc-text">5、特斯拉首批 Cybertruck 纯电皮卡交付：可牵引 1.1 万磅重物、0-60 英里 &#x2F; 小时加速 2.6 秒 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%B0%8F%E7%B1%B3%E5%85%AC%E5%8F%B8%E5%8F%91%E8%A8%80%E4%BA%BA%EF%BC%9A%E5%85%B3%E4%BA%8E%E9%9B%B7%E5%86%9B%E2%80%9C%E5%86%B0%E5%86%B7%E7%9A%84%20-40-%20%E4%BA%BF%E2%80%9D%E7%9A%84%E4%BC%A0%E9%97%BB%E7%BA%AF%E5%B1%9E%E5%AD%90%E8%99%9A%E4%B9%8C%E6%9C%89%EF%BC%8C%E4%BA%BA%E7%94%9F%E4%B8%8D%E6%98%AF%E7%88%BD%E6%96%87"><span class="toc-number">1.6.</span> <span class="toc-text">6、小米公司发言人：关于雷军“冰冷的 40 亿”的传闻纯属子虚乌有，人生不是爽文 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81%E6%B6%88%E6%81%AF%E7%A7%B0%E5%8D%8E%E4%B8%BA%20-nova-12-%20%E7%B3%BB%E5%88%97%E3%80%81%E6%96%B0%E6%AC%BE%E6%8A%98%E5%8F%A0%E5%B1%8F%E6%90%AD%E8%BD%BD%E9%BA%92%E9%BA%9F%20-5G-%20%E5%B9%B3%E5%8F%B0%EF%BC%8C%E6%89%8B%E6%9C%BA%E5%A3%B3%E5%B7%B2%E6%9B%9D%E5%85%89"><span class="toc-number">1.7.</span> <span class="toc-text">7、消息称华为 nova 12 系列、新款折叠屏搭载麒麟 5G 平台，手机壳已曝光 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81%E6%9C%BA%E6%9E%84%EF%BC%9A%E4%BB%8A%E5%B9%B4%20-Q3-%20%E5%85%A8%E7%90%83%E6%96%B0%E8%83%BD%E6%BA%90%E8%BD%A6%E9%94%80%E9%87%8F%20-345-5-%20%E4%B8%87%E8%BE%86%EF%BC%8C%E6%AF%94%E4%BA%9A%E8%BF%AA%E7%BA%AF%E7%94%B5%E8%BD%A6%E4%B8%8E%E7%89%B9%E6%96%AF%E6%8B%89%E7%9B%B8%E5%B7%AE%E4%B8%8D%E5%88%B0%E5%8D%83%E8%BE%86"><span class="toc-number">1.8.</span> <span class="toc-text">8、机构：今年 Q3 全球新能源车销量 345.5 万辆，比亚迪纯电车与特斯拉相差不到千辆 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E3%80%81%E5%91%8A%E5%88%AB%E9%9D%99%E9%9F%B3%E6%8B%A8%E7%89%87%EF%BC%8C%E6%B6%88%E6%81%AF%E7%A7%B0%E8%8B%B9%E6%9E%9C%20-iPhone-16-%20%E5%85%A8%E7%B3%BB%E6%A0%87%E9%85%8D%E6%93%8D%E4%BD%9C%E6%8C%89%E9%92%AE"><span class="toc-number">1.9.</span> <span class="toc-text">9、告别静音拨片，消息称苹果 iPhone 16 全系标配操作按钮 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10%E3%80%81%E6%B6%88%E6%81%AF%E7%A7%B0%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF%20-7-%20%E7%B3%BB%E5%88%97%E6%90%AD%E8%BD%BD%E9%AA%81%E9%BE%99%20-8-Gen-2-%20%E5%A4%84%E7%90%86%E5%99%A8%EF%BC%8C%E4%B8%8E%E5%B0%8F%E7%B1%B3%20-14-Ultra-%20%E4%B8%80%E5%90%8C%E7%99%BB%E5%9C%BA"><span class="toc-number">1.10.</span> <span class="toc-text">10、消息称小米平板 7 系列搭载骁龙 8 Gen 2 处理器，与小米 14 Ultra 一同登场 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E3%80%81%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E4%B8%8E%E5%8D%8E%E4%B8%BA%E8%BE%BE%E6%88%90%E5%90%88%E4%BD%9C%EF%BC%8C%E5%90%AF%E5%8A%A8%E9%B8%BF%E8%92%99%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91"><span class="toc-number">1.11.</span> <span class="toc-text">11、高德地图与华为达成合作，启动鸿蒙原生应用开发 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12%E3%80%81%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6%20-xiaomiev-com-%20%E7%BD%91%E7%AB%99%E5%BC%80%E6%94%BE%E8%AE%BF%E9%97%AE%EF%BC%8C%E7%9B%AE%E5%89%8D%E4%BB%85%E4%B8%BA%E5%AE%98%E7%BD%91%E6%88%AA%E5%9B%BE%E5%8D%A0%E4%BD%8D"><span class="toc-number">1.12.</span> <span class="toc-text">12、小米汽车 xiaomiev.com 网站开放访问，目前仅为官网截图占位 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13%E3%80%81%E6%B1%9F%E6%B7%AE%E6%B1%BD%E8%BD%A6%E4%B8%8E%E5%8D%8E%E4%B8%BA%E7%BB%88%E7%AB%AF%E7%AD%BE%E7%BD%B2%E3%80%8A%E6%99%BA%E8%83%BD%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE%E3%80%8B%EF%BC%9A%E5%BC%80%E5%8F%91%E3%80%81%E7%94%9F%E4%BA%A7%E7%AD%89%E9%A2%86%E5%9F%9F%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%EF%BC%8C%E6%89%93%E9%80%A0%E8%B1%AA%E5%8D%8E%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E7%94%B5%E5%8A%A8%E6%B1%BD%E8%BD%A6"><span class="toc-number">1.13.</span> <span class="toc-text">13、江淮汽车与华为终端签署《智能新能源汽车合作协议》：开发、生产等领域全面合作，打造豪华智能网联电动汽车 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14%E3%80%81%E6%B6%88%E6%81%AF%E7%A7%B0%E8%85%BE%E8%AE%AF%E5%B0%8F%E4%B8%96%E7%95%8C%E5%B0%86%E6%9B%B4%E5%90%8D%E4%B8%BA%20-QQ-%20%E7%9F%AD%E8%A7%86%E9%A2%91"><span class="toc-number">1.14.</span> <span class="toc-text">14、消息称腾讯小世界将更名为 QQ 短视频 </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8%20%E7%82%B9%201%20%E6%B0%AA"><span class="toc-number">2.</span> <span class="toc-text">8 点 1 氪 </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E5%B8%82%E8%BF%9B%E8%A1%8C%E6%97%B6"><span class="toc-number">2.1.</span> <span class="toc-text"> 上市进行时 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TOP3%20%E5%A4%A7%E6%96%B0%E9%97%BB"><span class="toc-number">2.2.</span> <span class="toc-text">TOP3 大新闻 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E5%85%AC%E5%8F%B8%20-%20%E5%A4%A7%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.3.</span> <span class="toc-text">大公司 &#x2F; 大事件 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI%20%E6%9C%80%E5%89%8D%E6%B2%BF"><span class="toc-number">2.4.</span> <span class="toc-text">AI 最前沿 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%95%E8%9E%8D%E8%B5%84"><span class="toc-number">2.5.</span> <span class="toc-text">投融资</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%B7%E4%BA%A7%E5%93%81"><span class="toc-number">2.6.</span> <span class="toc-text">酷产品 </span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最近更新</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="3672160f.html" title="基于 TechGrow 实现 Hexo 引流微信公众号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于 TechGrow 实现 Hexo 引流微信公众号"/></a><div class="content"><a class="title" href="3672160f.html" title="基于 TechGrow 实现 Hexo 引流微信公众号">基于 TechGrow 实现 Hexo 引流微信公众号</a><time datetime="2023-12-04T00:42:41.653Z" title="更新于 2023-12-04 00:42:41">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="e8e4863e.html" title="如何使用 Stream 的聚合功能"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何使用 Stream 的聚合功能"/></a><div class="content"><a class="title" href="e8e4863e.html" title="如何使用 Stream 的聚合功能">如何使用 Stream 的聚合功能</a><time datetime="2023-12-04T00:42:41.653Z" title="更新于 2023-12-04 00:42:41">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="d561c136.html" title="Mysql 如何实现乐观锁"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Mysql 如何实现乐观锁"/></a><div class="content"><a class="title" href="d561c136.html" title="Mysql 如何实现乐观锁">Mysql 如何实现乐观锁</a><time datetime="2023-12-04T00:42:41.653Z" title="更新于 2023-12-04 00:42:41">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="d429d716.html" title="如何实现每天定时给女友 / 老婆发消息"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何实现每天定时给女友 / 老婆发消息"/></a><div class="content"><a class="title" href="d429d716.html" title="如何实现每天定时给女友 / 老婆发消息">如何实现每天定时给女友 / 老婆发消息</a><time datetime="2023-12-04T00:42:41.653Z" title="更新于 2023-12-04 00:42:41">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="732f2d86.html" title="如何将二进制转为十六进制"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.xjh.me/random_img.php?return=302" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何将二进制转为十六进制"/></a><div class="content"><a class="title" href="732f2d86.html" title="如何将二进制转为十六进制">如何将二进制转为十六进制</a><time datetime="2023-12-04T00:42:41.653Z" title="更新于 2023-12-04 00:42:41">2023-12-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 程序员朱永胜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">欢迎订阅我的公众号【程序员朱永胜】</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(init)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://zysicyj.zeabur.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>(() => {
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = "6180e08a-324f-4622-9954-c278ba178759";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+  $crisp.push(["safe", true])
+
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const open = () => {
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+    }
+
+    const close = () => {
+      $crisp.push(["do", "chat:hide"])
+    }
+
+    close()
+    $crisp.push(["on", "chat:closed", function() {
+      close()
+    }])
+
+    window.chatBtnFn = () => {
+      $crisp.is("chat:visible") ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        $crisp.push(["do", "chat:hide"])
+      },
+      show: () => {
+        $crisp.push(["do", "chat:show"])
+      }
+    }
+  }
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="js/search/local-search.js"></script></div></div></body></html>
