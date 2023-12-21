@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-12-19T01:01:05.794Z</updated>
+  <updated>2023-12-21T02:00:37.348Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-19T01:01:05.794Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
+    <published>2023-12-21T09:03:11.000Z</published>
+    <updated>2023-12-21T02:00:37.348Z</updated>
     
     
       
@@ -40,80 +40,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-19T01:01:05.794Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-19T01:01:05.794Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.806Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consule 启动参数</title>
-    <link href="https://zysicyj.github.io/b86ceb73.html"/>
-    <id>https://zysicyj.github.io/b86ceb73.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
+    <title>zookeeper 概述</title>
+    <link href="https://zysicyj.github.io/6e7f6d53.html"/>
+    <id>https://zysicyj.github.io/6e7f6d53.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
     
     
       
@@ -134,161 +65,11 @@
   </entry>
   
   <entry>
-    <title>consule 启动时 -bootsharp-expect 命令</title>
-    <link href="https://zysicyj.github.io/b8ebbaa5.html"/>
-    <id>https://zysicyj.github.io/b8ebbaa5.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consule 如何实现服务注册与发现</title>
-    <link href="https://zysicyj.github.io/bc2c79c4.html"/>
-    <id>https://zysicyj.github.io/bc2c79c4.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consule 安装启动</title>
-    <link href="https://zysicyj.github.io/55b761a9.html"/>
-    <id>https://zysicyj.github.io/55b761a9.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consules 术语</title>
-    <link href="https://zysicyj.github.io/a671ca09.html"/>
-    <id>https://zysicyj.github.io/a671ca09.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consule 项目配置</title>
-    <link href="https://zysicyj.github.io/4084defa.html"/>
-    <id>https://zysicyj.github.io/4084defa.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consule 介绍</title>
-    <link href="https://zysicyj.github.io/f5a6cf82.html"/>
-    <id>https://zysicyj.github.io/f5a6cf82.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>consule 优势</title>
-    <link href="https://zysicyj.github.io/82469bf.html"/>
-    <id>https://zysicyj.github.io/82469bf.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
+    <title>zookeeper 10 zookeeper 选举</title>
+    <link href="https://zysicyj.github.io/165f522c.html"/>
+    <id>https://zysicyj.github.io/165f522c.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
     
     
       
@@ -312,8 +93,208 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-18T00:45:18.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 2 数据结构</title>
+    <link href="https://zysicyj.github.io/971a1e49.html"/>
+    <id>https://zysicyj.github.io/971a1e49.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper  3 节点类型</title>
+    <link href="https://zysicyj.github.io/413bcdbb.html"/>
+    <id>https://zysicyj.github.io/413bcdbb.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 4 基础命令</title>
+    <link href="https://zysicyj.github.io/9da6043b.html"/>
+    <id>https://zysicyj.github.io/9da6043b.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 5 znode 结构</title>
+    <link href="https://zysicyj.github.io/931c19b3.html"/>
+    <id>https://zysicyj.github.io/931c19b3.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 6 分布式锁</title>
+    <link href="https://zysicyj.github.io/c793cf95.html"/>
+    <id>https://zysicyj.github.io/c793cf95.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 7 读写锁</title>
+    <link href="https://zysicyj.github.io/ceb8a415.html"/>
+    <id>https://zysicyj.github.io/ceb8a415.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 8 分布式锁 -Curator 实现</title>
+    <link href="https://zysicyj.github.io/866bb19b.html"/>
+    <id>https://zysicyj.github.io/866bb19b.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>zookeeper 9 zookeeper 集群节点个数配置</title>
+    <link href="https://zysicyj.github.io/487d2b6f.html"/>
+    <id>https://zysicyj.github.io/487d2b6f.html</id>
+    <published>2023-12-21T08:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.344Z</updated>
     
     
       
@@ -337,8 +318,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-18T00:44:00.000Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
+    <published>2023-12-21T02:00:37.348Z</published>
+    <updated>2023-12-21T02:00:37.348Z</updated>
     
     
       
@@ -360,54 +341,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-15T22:12:57.000Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Tue Dec 12 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</title>
-    <link href="https://zysicyj.github.io/bbb8b7aa.html"/>
-    <id>https://zysicyj.github.io/bbb8b7aa.html</id>
-    <published>2023-12-12T09:15:15.000Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Mon Dec 11 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</title>
-    <link href="https://zysicyj.github.io/f20d7a8c.html"/>
-    <id>https://zysicyj.github.io/f20d7a8c.html</id>
-    <published>2023-12-11T11:23:20.000Z</published>
-    <updated>2023-12-19T01:01:05.794Z</updated>
+    <published>2023-12-21T02:00:37.348Z</published>
+    <updated>2023-12-21T02:00:37.348Z</updated>
     
     
       
@@ -429,8 +364,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-10T20:36:12.000Z</published>
-    <updated>2023-12-19T01:01:05.806Z</updated>
+    <published>2023-12-21T02:00:37.348Z</published>
+    <updated>2023-12-21T02:00:37.348Z</updated>
     
     
       
@@ -443,17 +378,17 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
     
     
   </entry>
   
   <entry>
-    <title>UML- 实现接口</title>
-    <link href="https://zysicyj.github.io/8b0f0841.html"/>
-    <id>https://zysicyj.github.io/8b0f0841.html</id>
-    <published>2023-12-10T20:36:12.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
+    <title>dubbo2.7 41 隐式参数</title>
+    <link href="https://zysicyj.github.io/7ac4989.html"/>
+    <id>https://zysicyj.github.io/7ac4989.html</id>
+    <published>2023-12-21T00:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.340Z</updated>
     
     
       
@@ -470,15 +405,17 @@
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
+    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
+    
     
   </entry>
   
   <entry>
-    <title>UML- 接口</title>
-    <link href="https://zysicyj.github.io/aba13512.html"/>
-    <id>https://zysicyj.github.io/aba13512.html</id>
-    <published>2023-12-10T20:36:12.000Z</published>
-    <updated>2023-12-19T01:01:05.786Z</updated>
+    <title>dubbo2.7 42 异步调用</title>
+    <link href="https://zysicyj.github.io/fd02c6fc.html"/>
+    <id>https://zysicyj.github.io/fd02c6fc.html</id>
+    <published>2023-12-21T00:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.340Z</updated>
     
     
       
@@ -494,6 +431,89 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>dubbo2.7 43 异步执行</title>
+    <link href="https://zysicyj.github.io/4c08c53e.html"/>
+    <id>https://zysicyj.github.io/4c08c53e.html</id>
+    <published>2023-12-21T00:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.340Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>dubbo2.7 44 本地调用</title>
+    <link href="https://zysicyj.github.io/e05a3f41.html"/>
+    <id>https://zysicyj.github.io/e05a3f41.html</id>
+    <published>2023-12-21T00:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.340Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>dubbo2.7 45 参数回调</title>
+    <link href="https://zysicyj.github.io/b47d67d2.html"/>
+    <id>https://zysicyj.github.io/b47d67d2.html</id>
+    <published>2023-12-21T00:45:18.000Z</published>
+    <updated>2023-12-21T02:00:37.340Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
