@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2023-12-27T01:27:01.475Z</updated>
+  <updated>2024-01-02T15:20:20.072Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -17,57 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-27T09:05:17.000Z</published>
-    <updated>2023-12-27T01:27:01.475Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-26T14:26:37.000Z</published>
-    <updated>2023-12-27T01:27:01.475Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>zookeeper 概述</title>
-    <link href="https://zysicyj.github.io/6e7f6d53.html"/>
-    <id>https://zysicyj.github.io/6e7f6d53.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>ASM</title>
+    <link href="https://zysicyj.github.io/17e20d5f.html"/>
+    <id>https://zysicyj.github.io/17e20d5f.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.072Z</updated>
     
     
       
@@ -88,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 10 zookeeper 选举</title>
-    <link href="https://zysicyj.github.io/165f522c.html"/>
-    <id>https://zysicyj.github.io/165f522c.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>Bytebuddy</title>
+    <link href="https://zysicyj.github.io/3de9af01.html"/>
+    <id>https://zysicyj.github.io/3de9af01.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.072Z</updated>
     
     
       
@@ -113,11 +67,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>Cglib</title>
+    <link href="https://zysicyj.github.io/29cef8e0.html"/>
+    <id>https://zysicyj.github.io/29cef8e0.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.072Z</updated>
     
     
       
@@ -138,11 +92,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 2 数据结构</title>
-    <link href="https://zysicyj.github.io/971a1e49.html"/>
-    <id>https://zysicyj.github.io/971a1e49.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>IO 多路复用</title>
+    <link href="https://zysicyj.github.io/b21cb050.html"/>
+    <id>https://zysicyj.github.io/b21cb050.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.072Z</updated>
     
     
       
@@ -163,11 +117,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper  3 节点类型</title>
-    <link href="https://zysicyj.github.io/413bcdbb.html"/>
-    <id>https://zysicyj.github.io/413bcdbb.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>IO 选型</title>
+    <link href="https://zysicyj.github.io/cbceef21.html"/>
+    <id>https://zysicyj.github.io/cbceef21.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.072Z</updated>
     
     
       
@@ -188,11 +142,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 4 基础命令</title>
-    <link href="https://zysicyj.github.io/9da6043b.html"/>
-    <id>https://zysicyj.github.io/9da6043b.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>JDK 动态代理</title>
+    <link href="https://zysicyj.github.io/dfdc2005.html"/>
+    <id>https://zysicyj.github.io/dfdc2005.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.072Z</updated>
     
     
       
@@ -213,11 +167,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 5 znode 结构</title>
-    <link href="https://zysicyj.github.io/931c19b3.html"/>
-    <id>https://zysicyj.github.io/931c19b3.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>Javassist</title>
+    <link href="https://zysicyj.github.io/2e60fe2e.html"/>
+    <id>https://zysicyj.github.io/2e60fe2e.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -238,11 +192,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 6 分布式锁</title>
-    <link href="https://zysicyj.github.io/c793cf95.html"/>
-    <id>https://zysicyj.github.io/c793cf95.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>RMI 远程方法调用</title>
+    <link href="https://zysicyj.github.io/9d7a5107.html"/>
+    <id>https://zysicyj.github.io/9d7a5107.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -263,11 +217,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 7 读写锁</title>
-    <link href="https://zysicyj.github.io/ceb8a415.html"/>
-    <id>https://zysicyj.github.io/ceb8a415.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>RPC 中熔断的概念</title>
+    <link href="https://zysicyj.github.io/25219240.html"/>
+    <id>https://zysicyj.github.io/25219240.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -288,11 +242,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 8 分布式锁 -Curator 实现</title>
-    <link href="https://zysicyj.github.io/866bb19b.html"/>
-    <id>https://zysicyj.github.io/866bb19b.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>RPC 中的滑动窗口算法</title>
+    <link href="https://zysicyj.github.io/49e9cde4.html"/>
+    <id>https://zysicyj.github.io/49e9cde4.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -313,11 +267,11 @@
   </entry>
   
   <entry>
-    <title>zookeeper 9 zookeeper 集群节点个数配置</title>
-    <link href="https://zysicyj.github.io/487d2b6f.html"/>
-    <id>https://zysicyj.github.io/487d2b6f.html</id>
-    <published>2023-12-21T08:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.471Z</updated>
+    <title>RPC 架构设计</title>
+    <link href="https://zysicyj.github.io/88d7756b.html"/>
+    <id>https://zysicyj.github.io/88d7756b.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -338,11 +292,11 @@
   </entry>
   
   <entry>
-    <title>dubbo2.7 41 隐式参数</title>
-    <link href="https://zysicyj.github.io/7ac4989.html"/>
-    <id>https://zysicyj.github.io/7ac4989.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>RPC 调用时序</title>
+    <link href="https://zysicyj.github.io/1c5fca1a.html"/>
+    <id>https://zysicyj.github.io/1c5fca1a.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -358,18 +312,16 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
   
   <entry>
-    <title>dubbo2.7 42 异步调用</title>
-    <link href="https://zysicyj.github.io/fd02c6fc.html"/>
-    <id>https://zysicyj.github.io/fd02c6fc.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>RPC 远程过程调用</title>
+    <link href="https://zysicyj.github.io/d569e991.html"/>
+    <id>https://zysicyj.github.io/d569e991.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -385,18 +337,16 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
   
   <entry>
-    <title>dubbo2.7 43 异步执行</title>
-    <link href="https://zysicyj.github.io/4c08c53e.html"/>
-    <id>https://zysicyj.github.io/4c08c53e.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>RPC 限流策略</title>
+    <link href="https://zysicyj.github.io/84ecfe61.html"/>
+    <id>https://zysicyj.github.io/84ecfe61.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -412,18 +362,16 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
   
   <entry>
-    <title>dubbo2.7 44 本地调用</title>
-    <link href="https://zysicyj.github.io/e05a3f41.html"/>
-    <id>https://zysicyj.github.io/e05a3f41.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>baseline</title>
+    <link href="https://zysicyj.github.io/f619d346.html"/>
+    <id>https://zysicyj.github.io/f619d346.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.084Z</updated>
     
     
       
@@ -439,18 +387,16 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
   
   <entry>
-    <title>dubbo2.7 45 参数回调</title>
-    <link href="https://zysicyj.github.io/b47d67d2.html"/>
-    <id>https://zysicyj.github.io/b47d67d2.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>dubbo 在 zookeeper 中结构</title>
+    <link href="https://zysicyj.github.io/1488286.html"/>
+    <id>https://zysicyj.github.io/1488286.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.088Z</updated>
     
     
       
@@ -466,18 +412,16 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
   
   <entry>
-    <title>dubbo2.7 46 事件通知</title>
-    <link href="https://zysicyj.github.io/7396a438.html"/>
-    <id>https://zysicyj.github.io/7396a438.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>一次 RPC 请求响应的具体过程</title>
+    <link href="https://zysicyj.github.io/34612b1.html"/>
+    <id>https://zysicyj.github.io/34612b1.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.088Z</updated>
     
     
       
@@ -493,18 +437,16 @@
     <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
     
     
   </entry>
   
   <entry>
-    <title>dubbo2.7 47 本地存根</title>
-    <link href="https://zysicyj.github.io/ef9533db.html"/>
-    <id>https://zysicyj.github.io/ef9533db.html</id>
-    <published>2023-12-21T00:45:18.000Z</published>
-    <updated>2023-12-27T01:27:01.467Z</updated>
+    <title>为什么需要代理</title>
+    <link href="https://zysicyj.github.io/41590634.html"/>
+    <id>https://zysicyj.github.io/41590634.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.088Z</updated>
     
     
       
@@ -521,7 +463,55 @@
     
     <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
-    <category term="dubbo" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/dubbo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>主流注册工具</title>
+    <link href="https://zysicyj.github.io/1bf4117a.html"/>
+    <id>https://zysicyj.github.io/1bf4117a.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>信号驱动 IO</title>
+    <link href="https://zysicyj.github.io/24b95112.html"/>
+    <id>https://zysicyj.github.io/24b95112.html</id>
+    <published>2024-01-02T20:49:36.000Z</published>
+    <updated>2024-01-02T15:20:20.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
