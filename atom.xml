@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2024-01-02T15:20:20.072Z</updated>
+  <updated>2024-01-04T00:57:26.007Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -17,11 +17,457 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://zysicyj.github.io/0.html"/>
+    <id>https://zysicyj.github.io/0.html</id>
+    <published>2024-01-04T00:57:26.007Z</published>
+    <updated>2024-01-04T00:57:26.007Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>BIO 模型</title>
+    <link href="https://zysicyj.github.io/dde05ea6.html"/>
+    <id>https://zysicyj.github.io/dde05ea6.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.979Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaAIO 模型</title>
+    <link href="https://zysicyj.github.io/1187105b.html"/>
+    <id>https://zysicyj.github.io/1187105b.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java 中的协程</title>
+    <link href="https://zysicyj.github.io/68943c79.html"/>
+    <id>https://zysicyj.github.io/68943c79.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO 中 Buffer 类解读</title>
+    <link href="https://zysicyj.github.io/a58a03b1.html"/>
+    <id>https://zysicyj.github.io/a58a03b1.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO 中 ByteBuffer 类解读</title>
+    <link href="https://zysicyj.github.io/774eb08b.html"/>
+    <id>https://zysicyj.github.io/774eb08b.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO 中 buffer 的概念</title>
+    <link href="https://zysicyj.github.io/6d3eba0a.html"/>
+    <id>https://zysicyj.github.io/6d3eba0a.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO 中 channel 的概念</title>
+    <link href="https://zysicyj.github.io/3a19a84c.html"/>
+    <id>https://zysicyj.github.io/3a19a84c.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO 中 selector 的概念</title>
+    <link href="https://zysicyj.github.io/a75d9fb0.html"/>
+    <id>https://zysicyj.github.io/a75d9fb0.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NIO 模型</title>
+    <link href="https://zysicyj.github.io/3bd4adb2.html"/>
+    <id>https://zysicyj.github.io/3bd4adb2.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Select, Poll, and Epoll 概念</title>
+    <link href="https://zysicyj.github.io/f80a1e8.html"/>
+    <id>https://zysicyj.github.io/f80a1e8.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Socket 编程概念</title>
+    <link href="https://zysicyj.github.io/55362c0a.html"/>
+    <id>https://zysicyj.github.io/55362c0a.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.991Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是 IO</title>
+    <link href="https://zysicyj.github.io/6620ef31.html"/>
+    <id>https://zysicyj.github.io/6620ef31.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.999Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>内核空间和用户空间</title>
+    <link href="https://zysicyj.github.io/4468e276.html"/>
+    <id>https://zysicyj.github.io/4468e276.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.999Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>协程的概念</title>
+    <link href="https://zysicyj.github.io/a133a5ef.html"/>
+    <id>https://zysicyj.github.io/a133a5ef.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.999Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>同步 / 异步，阻塞 / 非阻塞</title>
+    <link href="https://zysicyj.github.io/cb516d03.html"/>
+    <id>https://zysicyj.github.io/cb516d03.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.999Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>常见的 IO 模型</title>
+    <link href="https://zysicyj.github.io/e6368064.html"/>
+    <id>https://zysicyj.github.io/e6368064.html</id>
+    <published>2024-01-03T08:54:47.000Z</published>
+    <updated>2024-01-04T00:57:25.999Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://zysicyj.github.io/0.html"/>
+    <id>https://zysicyj.github.io/0.html</id>
+    <published>2024-01-03T08:54:23.000Z</published>
+    <updated>2024-01-04T00:57:26.011Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>ASM</title>
     <link href="https://zysicyj.github.io/17e20d5f.html"/>
     <id>https://zysicyj.github.io/17e20d5f.html</id>
     <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.072Z</updated>
+    <updated>2024-01-04T00:57:25.979Z</updated>
     
     
       
@@ -46,457 +492,7 @@
     <link href="https://zysicyj.github.io/3de9af01.html"/>
     <id>https://zysicyj.github.io/3de9af01.html</id>
     <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cglib</title>
-    <link href="https://zysicyj.github.io/29cef8e0.html"/>
-    <id>https://zysicyj.github.io/29cef8e0.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IO 多路复用</title>
-    <link href="https://zysicyj.github.io/b21cb050.html"/>
-    <id>https://zysicyj.github.io/b21cb050.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>IO 选型</title>
-    <link href="https://zysicyj.github.io/cbceef21.html"/>
-    <id>https://zysicyj.github.io/cbceef21.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>JDK 动态代理</title>
-    <link href="https://zysicyj.github.io/dfdc2005.html"/>
-    <id>https://zysicyj.github.io/dfdc2005.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.072Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Javassist</title>
-    <link href="https://zysicyj.github.io/2e60fe2e.html"/>
-    <id>https://zysicyj.github.io/2e60fe2e.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RMI 远程方法调用</title>
-    <link href="https://zysicyj.github.io/9d7a5107.html"/>
-    <id>https://zysicyj.github.io/9d7a5107.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC 中熔断的概念</title>
-    <link href="https://zysicyj.github.io/25219240.html"/>
-    <id>https://zysicyj.github.io/25219240.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC 中的滑动窗口算法</title>
-    <link href="https://zysicyj.github.io/49e9cde4.html"/>
-    <id>https://zysicyj.github.io/49e9cde4.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC 架构设计</title>
-    <link href="https://zysicyj.github.io/88d7756b.html"/>
-    <id>https://zysicyj.github.io/88d7756b.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC 调用时序</title>
-    <link href="https://zysicyj.github.io/1c5fca1a.html"/>
-    <id>https://zysicyj.github.io/1c5fca1a.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC 远程过程调用</title>
-    <link href="https://zysicyj.github.io/d569e991.html"/>
-    <id>https://zysicyj.github.io/d569e991.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC 限流策略</title>
-    <link href="https://zysicyj.github.io/84ecfe61.html"/>
-    <id>https://zysicyj.github.io/84ecfe61.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>baseline</title>
-    <link href="https://zysicyj.github.io/f619d346.html"/>
-    <id>https://zysicyj.github.io/f619d346.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.084Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>dubbo 在 zookeeper 中结构</title>
-    <link href="https://zysicyj.github.io/1488286.html"/>
-    <id>https://zysicyj.github.io/1488286.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.088Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一次 RPC 请求响应的具体过程</title>
-    <link href="https://zysicyj.github.io/34612b1.html"/>
-    <id>https://zysicyj.github.io/34612b1.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.088Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>为什么需要代理</title>
-    <link href="https://zysicyj.github.io/41590634.html"/>
-    <id>https://zysicyj.github.io/41590634.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.088Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>主流注册工具</title>
-    <link href="https://zysicyj.github.io/1bf4117a.html"/>
-    <id>https://zysicyj.github.io/1bf4117a.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.092Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>信号驱动 IO</title>
-    <link href="https://zysicyj.github.io/24b95112.html"/>
-    <id>https://zysicyj.github.io/24b95112.html</id>
-    <published>2024-01-02T20:49:36.000Z</published>
-    <updated>2024-01-02T15:20:20.092Z</updated>
+    <updated>2024-01-04T00:57:25.979Z</updated>
     
     
       
