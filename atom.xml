@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2024-01-05T07:23:34.732Z</updated>
+  <updated>2024-01-05T14:05:18.128Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -20,31 +20,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-05T15:15:05.000Z</published>
-    <updated>2024-01-05T07:23:34.732Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.740Z</updated>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.128Z</updated>
     
     
       
@@ -63,11 +40,11 @@
   </entry>
   
   <entry>
-    <title>DMA 技术</title>
-    <link href="https://zysicyj.github.io/916ce1f9.html"/>
-    <id>https://zysicyj.github.io/916ce1f9.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.700Z</updated>
+    <title>ES 倒排索引？正排索引？存储结构？怎么用的？快在哪？</title>
+    <link href="https://zysicyj.github.io/284cc7b.html"/>
+    <id>https://zysicyj.github.io/284cc7b.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.088Z</updated>
     
     
       
@@ -88,11 +65,11 @@
   </entry>
   
   <entry>
-    <title>MySQL 选择合适的字段类型提升性能</title>
-    <link href="https://zysicyj.github.io/1b8bb06e.html"/>
-    <id>https://zysicyj.github.io/1b8bb06e.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.712Z</updated>
+    <title>HashMap 和 Redis 的 rehash 过程</title>
+    <link href="https://zysicyj.github.io/a2275141.html"/>
+    <id>https://zysicyj.github.io/a2275141.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.088Z</updated>
     
     
       
@@ -113,11 +90,11 @@
   </entry>
   
   <entry>
-    <title>MySQL 避免索引失效</title>
-    <link href="https://zysicyj.github.io/163c8b41.html"/>
-    <id>https://zysicyj.github.io/163c8b41.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.712Z</updated>
+    <title>HashMap 线程安全吗？ConHashMap 怎么实现线程安全的？size 方法怎么实现线程安全的？</title>
+    <link href="https://zysicyj.github.io/21ea9f4f.html"/>
+    <id>https://zysicyj.github.io/21ea9f4f.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.088Z</updated>
     
     
       
@@ -138,11 +115,11 @@
   </entry>
   
   <entry>
-    <title> Sentinel 和 Hystrix 对比</title>
-    <link href="https://zysicyj.github.io/34575edf.html"/>
-    <id>https://zysicyj.github.io/34575edf.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.712Z</updated>
+    <title>JDK1.8 为什么使用元空间代替了永久代</title>
+    <link href="https://zysicyj.github.io/a1eab854.html"/>
+    <id>https://zysicyj.github.io/a1eab854.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.088Z</updated>
     
     
       
@@ -163,11 +140,11 @@
   </entry>
   
   <entry>
-    <title>Show Profile 分析 SQL 执行性能</title>
-    <link href="https://zysicyj.github.io/c6cd835c.html"/>
-    <id>https://zysicyj.github.io/c6cd835c.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.712Z</updated>
+    <title>JVM Rset 与 CardTable 是干嘛使的？</title>
+    <link href="https://zysicyj.github.io/8269c672.html"/>
+    <id>https://zysicyj.github.io/8269c672.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.088Z</updated>
     
     
       
@@ -188,11 +165,11 @@
   </entry>
   
   <entry>
-    <title>ThreadPoolExecutor</title>
-    <link href="https://zysicyj.github.io/9545bc72.html"/>
-    <id>https://zysicyj.github.io/9545bc72.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.712Z</updated>
+    <title>JVM 安全点和安全区域是什么？</title>
+    <link href="https://zysicyj.github.io/1a854ab9.html"/>
+    <id>https://zysicyj.github.io/1a854ab9.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.092Z</updated>
     
     
       
@@ -213,11 +190,11 @@
   </entry>
   
   <entry>
-    <title>mmap</title>
-    <link href="https://zysicyj.github.io/84e4836b.html"/>
-    <id>https://zysicyj.github.io/84e4836b.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.716Z</updated>
+    <title>LRU 怎么实现？怎么实现 O(1) 增加删除？不用 Hashmap 可以吗？</title>
+    <link href="https://zysicyj.github.io/e04134c.html"/>
+    <id>https://zysicyj.github.io/e04134c.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.100Z</updated>
     
     
       
@@ -238,11 +215,11 @@
   </entry>
   
   <entry>
-    <title>七层负载均衡可以怎么做</title>
-    <link href="https://zysicyj.github.io/d9b81c16.html"/>
-    <id>https://zysicyj.github.io/d9b81c16.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.720Z</updated>
+    <title>MVCC 怎么实现 RR 和 RC 的？具体讲讲？</title>
+    <link href="https://zysicyj.github.io/6fff3df2.html"/>
+    <id>https://zysicyj.github.io/6fff3df2.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.100Z</updated>
     
     
       
@@ -263,11 +240,11 @@
   </entry>
   
   <entry>
-    <title>什么是负载均衡？</title>
-    <link href="https://zysicyj.github.io/3f9d6f98.html"/>
-    <id>https://zysicyj.github.io/3f9d6f98.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.720Z</updated>
+    <title>RDB 和 AOF 是什么？哪些场景用 RDB 哪些场景用 AOF？</title>
+    <link href="https://zysicyj.github.io/bf2f25a5.html"/>
+    <id>https://zysicyj.github.io/bf2f25a5.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.100Z</updated>
     
     
       
@@ -288,11 +265,11 @@
   </entry>
   
   <entry>
-    <title>什么是零拷贝</title>
-    <link href="https://zysicyj.github.io/a1d8d5e6.html"/>
-    <id>https://zysicyj.github.io/a1d8d5e6.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.720Z</updated>
+    <title>Redis 穿透、击穿、雪崩问题，以及怎么处理？</title>
+    <link href="https://zysicyj.github.io/73569018.html"/>
+    <id>https://zysicyj.github.io/73569018.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.100Z</updated>
     
     
       
@@ -313,11 +290,11 @@
   </entry>
   
   <entry>
-    <title>什么是高可用？可用性的判断标准是啥？</title>
-    <link href="https://zysicyj.github.io/4170cea4.html"/>
-    <id>https://zysicyj.github.io/4170cea4.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.720Z</updated>
+    <title>Session 和 Cookie 的区别</title>
+    <link href="https://zysicyj.github.io/5b6a59de.html"/>
+    <id>https://zysicyj.github.io/5b6a59de.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.100Z</updated>
     
     
       
@@ -338,11 +315,11 @@
   </entry>
   
   <entry>
-    <title>分页优化</title>
-    <link href="https://zysicyj.github.io/e802919.html"/>
-    <id>https://zysicyj.github.io/e802919.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.724Z</updated>
+    <title>WebSocket 的理解，什么时候需要用</title>
+    <link href="https://zysicyj.github.io/c988b5a7.html"/>
+    <id>https://zysicyj.github.io/c988b5a7.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.100Z</updated>
     
     
       
@@ -363,11 +340,11 @@
   </entry>
   
   <entry>
-    <title>客户端负载均衡通常是怎么做的</title>
-    <link href="https://zysicyj.github.io/9ac21f49.html"/>
-    <id>https://zysicyj.github.io/9ac21f49.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.724Z</updated>
+    <title>cas 除了原子类还有那些用法？</title>
+    <link href="https://zysicyj.github.io/49f14812.html"/>
+    <id>https://zysicyj.github.io/49f14812.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.104Z</updated>
     
     
       
@@ -388,11 +365,11 @@
   </entry>
   
   <entry>
-    <title>尽量用 UNION ALL 代替 UNION</title>
-    <link href="https://zysicyj.github.io/f9c543af.html"/>
-    <id>https://zysicyj.github.io/f9c543af.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.724Z</updated>
+    <title>java 中的乐观锁和悲观锁？</title>
+    <link href="https://zysicyj.github.io/21ddc18a.html"/>
+    <id>https://zysicyj.github.io/21ddc18a.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.104Z</updated>
     
     
       
@@ -413,11 +390,11 @@
   </entry>
   
   <entry>
-    <title>尽量避免多表做 join</title>
-    <link href="https://zysicyj.github.io/b3c44cf0.html"/>
-    <id>https://zysicyj.github.io/b3c44cf0.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.724Z</updated>
+    <title>jvm 运行时分区？</title>
+    <link href="https://zysicyj.github.io/7a894737.html"/>
+    <id>https://zysicyj.github.io/7a894737.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.104Z</updated>
     
     
       
@@ -438,11 +415,11 @@
   </entry>
   
   <entry>
-    <title>建议不要使用外键与级联</title>
-    <link href="https://zysicyj.github.io/83ad8073.html"/>
-    <id>https://zysicyj.github.io/83ad8073.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.724Z</updated>
+    <title>top 和 limit 的区别？</title>
+    <link href="https://zysicyj.github.io/c97c8ba7.html"/>
+    <id>https://zysicyj.github.io/c97c8ba7.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.108Z</updated>
     
     
       
@@ -463,11 +440,11 @@
   </entry>
   
   <entry>
-    <title>微服务中的雪崩指的是什么</title>
-    <link href="https://zysicyj.github.io/996555a9.html"/>
-    <id>https://zysicyj.github.io/996555a9.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.724Z</updated>
+    <title>三色标记的大致流程可以讲一下吗</title>
+    <link href="https://zysicyj.github.io/f32b26e6.html"/>
+    <id>https://zysicyj.github.io/f32b26e6.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.108Z</updated>
     
     
       
@@ -488,11 +465,36 @@
   </entry>
   
   <entry>
-    <title>有哪些提高系统可用性的方法？</title>
-    <link href="https://zysicyj.github.io/15379402.html"/>
-    <id>https://zysicyj.github.io/15379402.html</id>
-    <published>2024-01-05T10:27:56.000Z</published>
-    <updated>2024-01-05T07:23:34.728Z</updated>
+    <title>不用 Redis，Java 后端有没有什么本地缓存的实现方案</title>
+    <link href="https://zysicyj.github.io/e4d7232d.html"/>
+    <id>https://zysicyj.github.io/e4d7232d.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为什么会有直接内存呢，跟垃圾回收有什么关联，使用它有什么好处？</title>
+    <link href="https://zysicyj.github.io/acba153f.html"/>
+    <id>https://zysicyj.github.io/acba153f.html</id>
+    <published>2024-01-05T15:27:56.000Z</published>
+    <updated>2024-01-05T14:05:18.108Z</updated>
     
     
       
