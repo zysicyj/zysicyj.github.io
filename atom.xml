@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2024-01-05T14:05:18.128Z</updated>
+  <updated>2024-01-08T05:11:10.566Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.128Z</updated>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -40,11 +40,11 @@
   </entry>
   
   <entry>
-    <title>ES 倒排索引？正排索引？存储结构？怎么用的？快在哪？</title>
-    <link href="https://zysicyj.github.io/284cc7b.html"/>
-    <id>https://zysicyj.github.io/284cc7b.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.088Z</updated>
+    <title>CMS 收集器</title>
+    <link href="https://zysicyj.github.io/5a9c4f52.html"/>
+    <id>https://zysicyj.github.io/5a9c4f52.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -57,19 +57,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>HashMap 和 Redis 的 rehash 过程</title>
-    <link href="https://zysicyj.github.io/a2275141.html"/>
-    <id>https://zysicyj.github.io/a2275141.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.088Z</updated>
+    <title>ChannelHandler 体系结构</title>
+    <link href="https://zysicyj.github.io/b18b5778.html"/>
+    <id>https://zysicyj.github.io/b18b5778.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -82,19 +80,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>HashMap 线程安全吗？ConHashMap 怎么实现线程安全的？size 方法怎么实现线程安全的？</title>
-    <link href="https://zysicyj.github.io/21ea9f4f.html"/>
-    <id>https://zysicyj.github.io/21ea9f4f.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.088Z</updated>
+    <title>ChannelHandler 分类</title>
+    <link href="https://zysicyj.github.io/365f6b0c.html"/>
+    <id>https://zysicyj.github.io/365f6b0c.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -107,19 +103,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>JDK1.8 为什么使用元空间代替了永久代</title>
-    <link href="https://zysicyj.github.io/a1eab854.html"/>
-    <id>https://zysicyj.github.io/a1eab854.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.088Z</updated>
+    <title>ChannelPipeline &amp; ChannelHandler</title>
+    <link href="https://zysicyj.github.io/4b82bacd.html"/>
+    <id>https://zysicyj.github.io/4b82bacd.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -132,19 +126,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>JVM Rset 与 CardTable 是干嘛使的？</title>
-    <link href="https://zysicyj.github.io/8269c672.html"/>
-    <id>https://zysicyj.github.io/8269c672.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.088Z</updated>
+    <title>G1 收集器</title>
+    <link href="https://zysicyj.github.io/3a8ed118.html"/>
+    <id>https://zysicyj.github.io/3a8ed118.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -157,19 +149,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>JVM 安全点和安全区域是什么？</title>
-    <link href="https://zysicyj.github.io/1a854ab9.html"/>
-    <id>https://zysicyj.github.io/1a854ab9.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.092Z</updated>
+    <title>Java 的锁升级过程</title>
+    <link href="https://zysicyj.github.io/e101b7d2.html"/>
+    <id>https://zysicyj.github.io/e101b7d2.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -182,19 +172,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>LRU 怎么实现？怎么实现 O(1) 增加删除？不用 Hashmap 可以吗？</title>
-    <link href="https://zysicyj.github.io/e04134c.html"/>
-    <id>https://zysicyj.github.io/e04134c.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.100Z</updated>
+    <title>Kafka 如何保证消息的消费顺序</title>
+    <link href="https://zysicyj.github.io/6337722e.html"/>
+    <id>https://zysicyj.github.io/6337722e.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -207,19 +195,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>MVCC 怎么实现 RR 和 RC 的？具体讲讲？</title>
-    <link href="https://zysicyj.github.io/6fff3df2.html"/>
-    <id>https://zysicyj.github.io/6fff3df2.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.100Z</updated>
+    <title>Lock 底层原理</title>
+    <link href="https://zysicyj.github.io/2178c018.html"/>
+    <id>https://zysicyj.github.io/2178c018.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -232,19 +218,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>RDB 和 AOF 是什么？哪些场景用 RDB 哪些场景用 AOF？</title>
-    <link href="https://zysicyj.github.io/bf2f25a5.html"/>
-    <id>https://zysicyj.github.io/bf2f25a5.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.100Z</updated>
+    <title>NIO 下 Reactor 单线程</title>
+    <link href="https://zysicyj.github.io/5871443b.html"/>
+    <id>https://zysicyj.github.io/5871443b.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -257,19 +241,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 穿透、击穿、雪崩问题，以及怎么处理？</title>
-    <link href="https://zysicyj.github.io/73569018.html"/>
-    <id>https://zysicyj.github.io/73569018.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.100Z</updated>
+    <title>NIO 下 Reactor 多线程</title>
+    <link href="https://zysicyj.github.io/48004daf.html"/>
+    <id>https://zysicyj.github.io/48004daf.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -282,19 +264,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Session 和 Cookie 的区别</title>
-    <link href="https://zysicyj.github.io/5b6a59de.html"/>
-    <id>https://zysicyj.github.io/5b6a59de.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.100Z</updated>
+    <title>Netty 现状如何</title>
+    <link href="https://zysicyj.github.io/fafe701f.html"/>
+    <id>https://zysicyj.github.io/fafe701f.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -307,19 +287,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>WebSocket 的理解，什么时候需要用</title>
-    <link href="https://zysicyj.github.io/c988b5a7.html"/>
-    <id>https://zysicyj.github.io/c988b5a7.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.100Z</updated>
+    <title>Netty 线程模型其他事项</title>
+    <link href="https://zysicyj.github.io/53bc479b.html"/>
+    <id>https://zysicyj.github.io/53bc479b.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -332,19 +310,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>cas 除了原子类还有那些用法？</title>
-    <link href="https://zysicyj.github.io/49f14812.html"/>
-    <id>https://zysicyj.github.io/49f14812.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.104Z</updated>
+    <title>Netty 中的 Reactor 实现</title>
+    <link href="https://zysicyj.github.io/4138800d.html"/>
+    <id>https://zysicyj.github.io/4138800d.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -357,19 +333,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>java 中的乐观锁和悲观锁？</title>
-    <link href="https://zysicyj.github.io/21ddc18a.html"/>
-    <id>https://zysicyj.github.io/21ddc18a.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.104Z</updated>
+    <title>Netty 如何使用 Reactor 模式</title>
+    <link href="https://zysicyj.github.io/f7157f55.html"/>
+    <id>https://zysicyj.github.io/f7157f55.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -382,19 +356,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>jvm 运行时分区？</title>
-    <link href="https://zysicyj.github.io/7a894737.html"/>
-    <id>https://zysicyj.github.io/7a894737.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.104Z</updated>
+    <title>Netty 对三种 IO 的支持</title>
+    <link href="https://zysicyj.github.io/1a019377.html"/>
+    <id>https://zysicyj.github.io/1a019377.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -407,19 +379,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>top 和 limit 的区别？</title>
-    <link href="https://zysicyj.github.io/c97c8ba7.html"/>
-    <id>https://zysicyj.github.io/c97c8ba7.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.108Z</updated>
+    <title>Netty 核心架构</title>
+    <link href="https://zysicyj.github.io/e720d2e9.html"/>
+    <id>https://zysicyj.github.io/e720d2e9.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -432,19 +402,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>三色标记的大致流程可以讲一下吗</title>
-    <link href="https://zysicyj.github.io/f32b26e6.html"/>
-    <id>https://zysicyj.github.io/f32b26e6.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.108Z</updated>
+    <title>Reactor 编程模型</title>
+    <link href="https://zysicyj.github.io/dc17b4ad.html"/>
+    <id>https://zysicyj.github.io/dc17b4ad.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -457,19 +425,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>不用 Redis，Java 后端有没有什么本地缓存的实现方案</title>
-    <link href="https://zysicyj.github.io/e4d7232d.html"/>
-    <id>https://zysicyj.github.io/e4d7232d.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.108Z</updated>
+    <title>coutdownlanuch 使用场景和原理</title>
+    <link href="https://zysicyj.github.io/7a653702.html"/>
+    <id>https://zysicyj.github.io/7a653702.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -482,19 +448,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>为什么会有直接内存呢，跟垃圾回收有什么关联，使用它有什么好处？</title>
-    <link href="https://zysicyj.github.io/acba153f.html"/>
-    <id>https://zysicyj.github.io/acba153f.html</id>
-    <published>2024-01-05T15:27:56.000Z</published>
-    <updated>2024-01-05T14:05:18.108Z</updated>
+    <title>inbound/outbound 加载顺序和执行顺序</title>
+    <link href="https://zysicyj.github.io/dd2ad2ef.html"/>
+    <id>https://zysicyj.github.io/dd2ad2ef.html</id>
+    <published>2024-01-08T07:27:56.000Z</published>
+    <updated>2024-01-08T05:11:10.566Z</updated>
     
     
       
@@ -507,9 +471,7 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
