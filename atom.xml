@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2024-01-08T05:11:10.566Z</updated>
+  <updated>2024-01-09T03:20:34.824Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -20,8 +20,31 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <published>2024-01-09T10:39:09.000Z</published>
+    <updated>2024-01-09T03:20:34.824Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://zysicyj.github.io/0.html"/>
+    <id>https://zysicyj.github.io/0.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.832Z</updated>
     
     
       
@@ -40,11 +63,11 @@
   </entry>
   
   <entry>
-    <title>CMS 收集器</title>
-    <link href="https://zysicyj.github.io/5a9c4f52.html"/>
-    <id>https://zysicyj.github.io/5a9c4f52.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 主从切换导致库存同步异常以及超卖问题</title>
+    <link href="https://zysicyj.github.io/2df301d9.html"/>
+    <id>https://zysicyj.github.io/2df301d9.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -57,17 +80,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>ChannelHandler 体系结构</title>
-    <link href="https://zysicyj.github.io/b18b5778.html"/>
-    <id>https://zysicyj.github.io/b18b5778.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 分布式锁主从架构锁失效问题如何解决</title>
+    <link href="https://zysicyj.github.io/e926f2fb.html"/>
+    <id>https://zysicyj.github.io/e926f2fb.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -80,17 +105,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>ChannelHandler 分类</title>
-    <link href="https://zysicyj.github.io/365f6b0c.html"/>
-    <id>https://zysicyj.github.io/365f6b0c.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 底层 ZSet 实现压缩列表和跳表如何选择</title>
+    <link href="https://zysicyj.github.io/c24324c6.html"/>
+    <id>https://zysicyj.github.io/c24324c6.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -103,17 +130,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>ChannelPipeline &amp; ChannelHandler</title>
-    <link href="https://zysicyj.github.io/4b82bacd.html"/>
-    <id>https://zysicyj.github.io/4b82bacd.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 底层 ZSet 跳表是如何设计与实现的</title>
+    <link href="https://zysicyj.github.io/856913f.html"/>
+    <id>https://zysicyj.github.io/856913f.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -126,17 +155,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>G1 收集器</title>
-    <link href="https://zysicyj.github.io/3a8ed118.html"/>
-    <id>https://zysicyj.github.io/3a8ed118.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 缓存与数据库双写不一致如何解决</title>
+    <link href="https://zysicyj.github.io/8c275d40.html"/>
+    <id>https://zysicyj.github.io/8c275d40.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -149,17 +180,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Java 的锁升级过程</title>
-    <link href="https://zysicyj.github.io/e101b7d2.html"/>
-    <id>https://zysicyj.github.io/e101b7d2.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 集群崩溃时如何保证秒杀系统高可用</title>
+    <link href="https://zysicyj.github.io/53a13206.html"/>
+    <id>https://zysicyj.github.io/53a13206.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -172,17 +205,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Kafka 如何保证消息的消费顺序</title>
-    <link href="https://zysicyj.github.io/6337722e.html"/>
-    <id>https://zysicyj.github.io/6337722e.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>Redis 集群架构如何抗住 12306 与双 11 的洪峰流量</title>
+    <link href="https://zysicyj.github.io/dbab2974.html"/>
+    <id>https://zysicyj.github.io/dbab2974.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.800Z</updated>
     
     
       
@@ -195,17 +230,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Lock 底层原理</title>
-    <link href="https://zysicyj.github.io/2178c018.html"/>
-    <id>https://zysicyj.github.io/2178c018.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>十万订单每秒热点数据架构如何优化</title>
+    <link href="https://zysicyj.github.io/54433b21.html"/>
+    <id>https://zysicyj.github.io/54433b21.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.812Z</updated>
     
     
       
@@ -218,17 +255,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>NIO 下 Reactor 单线程</title>
-    <link href="https://zysicyj.github.io/5871443b.html"/>
-    <id>https://zysicyj.github.io/5871443b.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>双十一亿级用户日活统计如何用 Redis 快速计算</title>
+    <link href="https://zysicyj.github.io/5d78726f.html"/>
+    <id>https://zysicyj.github.io/5d78726f.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.812Z</updated>
     
     
       
@@ -241,17 +280,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>NIO 下 Reactor 多线程</title>
-    <link href="https://zysicyj.github.io/48004daf.html"/>
-    <id>https://zysicyj.github.io/48004daf.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>双十一电商推荐系统如何用 Redis 实现</title>
+    <link href="https://zysicyj.github.io/443b3b15.html"/>
+    <id>https://zysicyj.github.io/443b3b15.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.812Z</updated>
     
     
       
@@ -264,17 +305,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Netty 现状如何</title>
-    <link href="https://zysicyj.github.io/fafe701f.html"/>
-    <id>https://zysicyj.github.io/fafe701f.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>如何用 Redis 高效实现 12306 的复杂售票业务</title>
+    <link href="https://zysicyj.github.io/a35431f.html"/>
+    <id>https://zysicyj.github.io/a35431f.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.812Z</updated>
     
     
       
@@ -287,17 +330,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Netty 线程模型其他事项</title>
-    <link href="https://zysicyj.github.io/53bc479b.html"/>
-    <id>https://zysicyj.github.io/53bc479b.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>新浪微博突发事件如何做好 Redis 缓存的高可用</title>
+    <link href="https://zysicyj.github.io/486a3877.html"/>
+    <id>https://zysicyj.github.io/486a3877.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.816Z</updated>
     
     
       
@@ -310,17 +355,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Netty 中的 Reactor 实现</title>
-    <link href="https://zysicyj.github.io/4138800d.html"/>
-    <id>https://zysicyj.github.io/4138800d.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>日均百亿级微信红包系统如何架构</title>
+    <link href="https://zysicyj.github.io/3fb8ca03.html"/>
+    <id>https://zysicyj.github.io/3fb8ca03.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.816Z</updated>
     
     
       
@@ -333,17 +380,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Netty 如何使用 Reactor 模式</title>
-    <link href="https://zysicyj.github.io/f7157f55.html"/>
-    <id>https://zysicyj.github.io/f7157f55.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>秒杀链路中 Redis 与 MQ 如何保证事务一致性</title>
+    <link href="https://zysicyj.github.io/fd18fa41.html"/>
+    <id>https://zysicyj.github.io/fd18fa41.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.816Z</updated>
     
     
       
@@ -356,17 +405,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Netty 对三种 IO 的支持</title>
-    <link href="https://zysicyj.github.io/1a019377.html"/>
-    <id>https://zysicyj.github.io/1a019377.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>类似微信的社交 App 朋友圈关注模型如何设计实现</title>
+    <link href="https://zysicyj.github.io/c8b78904.html"/>
+    <id>https://zysicyj.github.io/c8b78904.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.816Z</updated>
     
     
       
@@ -379,17 +430,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Netty 核心架构</title>
-    <link href="https://zysicyj.github.io/e720d2e9.html"/>
-    <id>https://zysicyj.github.io/e720d2e9.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>线上 MQ 百万秒杀订单积压如何优化</title>
+    <link href="https://zysicyj.github.io/2065b59b.html"/>
+    <id>https://zysicyj.github.io/2065b59b.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.816Z</updated>
     
     
       
@@ -402,17 +455,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>Reactor 编程模型</title>
-    <link href="https://zysicyj.github.io/dc17b4ad.html"/>
-    <id>https://zysicyj.github.io/dc17b4ad.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>美团单车如何基于 Redis 快速找到附近的车</title>
+    <link href="https://zysicyj.github.io/7162dd77.html"/>
+    <id>https://zysicyj.github.io/7162dd77.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.820Z</updated>
     
     
       
@@ -425,17 +480,19 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
+    
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>coutdownlanuch 使用场景和原理</title>
-    <link href="https://zysicyj.github.io/7a653702.html"/>
-    <id>https://zysicyj.github.io/7a653702.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
+    <title>超大并发的分布式锁架构该如何设计</title>
+    <link href="https://zysicyj.github.io/6f0f3a56.html"/>
+    <id>https://zysicyj.github.io/6f0f3a56.html</id>
+    <published>2024-01-09T07:27:56.000Z</published>
+    <updated>2024-01-09T03:20:34.820Z</updated>
     
     
       
@@ -448,30 +505,9 @@
     
     
     
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>inbound/outbound 加载顺序和执行顺序</title>
-    <link href="https://zysicyj.github.io/dd2ad2ef.html"/>
-    <id>https://zysicyj.github.io/dd2ad2ef.html</id>
-    <published>2024-01-08T07:27:56.000Z</published>
-    <updated>2024-01-08T05:11:10.566Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
+    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
   </entry>
