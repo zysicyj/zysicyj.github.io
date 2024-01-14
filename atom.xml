@@ -6,7 +6,7 @@
   <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
   
   <link href="https://zysicyj.github.io/"/>
-  <updated>2024-01-09T03:20:34.824Z</updated>
+  <updated>2024-01-14T16:06:52.206Z</updated>
   <id>https://zysicyj.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-09T10:39:09.000Z</published>
-    <updated>2024-01-09T03:20:34.824Z</updated>
+    <published>2024-01-14T23:25:54.000Z</published>
+    <updated>2024-01-14T16:06:52.206Z</updated>
     
     
       
@@ -43,8 +43,31 @@
     <title></title>
     <link href="https://zysicyj.github.io/0.html"/>
     <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.832Z</updated>
+    <published>2024-01-14T16:06:52.202Z</published>
+    <updated>2024-01-14T16:06:52.202Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://zysicyj.github.io/0.html"/>
+    <id>https://zysicyj.github.io/0.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -63,11 +86,11 @@
   </entry>
   
   <entry>
-    <title>Redis 主从切换导致库存同步异常以及超卖问题</title>
-    <link href="https://zysicyj.github.io/2df301d9.html"/>
-    <id>https://zysicyj.github.io/2df301d9.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>GATEWAY 如何处理前缀</title>
+    <link href="https://zysicyj.github.io/38da1a9e.html"/>
+    <id>https://zysicyj.github.io/38da1a9e.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -80,19 +103,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 分布式锁主从架构锁失效问题如何解决</title>
-    <link href="https://zysicyj.github.io/e926f2fb.html"/>
-    <id>https://zysicyj.github.io/e926f2fb.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>Gateway-Predicate</title>
+    <link href="https://zysicyj.github.io/b8132844.html"/>
+    <id>https://zysicyj.github.io/b8132844.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -105,19 +126,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 底层 ZSet 实现压缩列表和跳表如何选择</title>
-    <link href="https://zysicyj.github.io/c24324c6.html"/>
-    <id>https://zysicyj.github.io/c24324c6.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>Gateway 工作原理</title>
+    <link href="https://zysicyj.github.io/af106abb.html"/>
+    <id>https://zysicyj.github.io/af106abb.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -130,19 +149,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 底层 ZSet 跳表是如何设计与实现的</title>
-    <link href="https://zysicyj.github.io/856913f.html"/>
-    <id>https://zysicyj.github.io/856913f.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>Gateway 路由</title>
+    <link href="https://zysicyj.github.io/bc25ca0b.html"/>
+    <id>https://zysicyj.github.io/bc25ca0b.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -155,19 +172,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 缓存与数据库双写不一致如何解决</title>
-    <link href="https://zysicyj.github.io/8c275d40.html"/>
-    <id>https://zysicyj.github.io/8c275d40.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>Gateway 过滤器</title>
+    <link href="https://zysicyj.github.io/9e1f759d.html"/>
+    <id>https://zysicyj.github.io/9e1f759d.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -180,19 +195,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 集群崩溃时如何保证秒杀系统高可用</title>
-    <link href="https://zysicyj.github.io/53a13206.html"/>
-    <id>https://zysicyj.github.io/53a13206.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>SpringCloud Gateway 架构</title>
+    <link href="https://zysicyj.github.io/24b98937.html"/>
+    <id>https://zysicyj.github.io/24b98937.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -205,19 +218,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>Redis 集群架构如何抗住 12306 与双 11 的洪峰流量</title>
-    <link href="https://zysicyj.github.io/dbab2974.html"/>
-    <id>https://zysicyj.github.io/dbab2974.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.800Z</updated>
+    <title>SpringCloud Gateway 跨域配置</title>
+    <link href="https://zysicyj.github.io/6dda0f70.html"/>
+    <id>https://zysicyj.github.io/6dda0f70.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -230,19 +241,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>十万订单每秒热点数据架构如何优化</title>
-    <link href="https://zysicyj.github.io/54433b21.html"/>
-    <id>https://zysicyj.github.io/54433b21.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.812Z</updated>
+    <title>SpringCloud Gateway 过滤器分类</title>
+    <link href="https://zysicyj.github.io/205ba209.html"/>
+    <id>https://zysicyj.github.io/205ba209.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -255,19 +264,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>双十一亿级用户日活统计如何用 Redis 快速计算</title>
-    <link href="https://zysicyj.github.io/5d78726f.html"/>
-    <id>https://zysicyj.github.io/5d78726f.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.812Z</updated>
+    <title>SpringCloud Gateway 默认过滤器的使用</title>
+    <link href="https://zysicyj.github.io/5f8791b6.html"/>
+    <id>https://zysicyj.github.io/5f8791b6.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -280,19 +287,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>双十一电商推荐系统如何用 Redis 实现</title>
-    <link href="https://zysicyj.github.io/443b3b15.html"/>
-    <id>https://zysicyj.github.io/443b3b15.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.812Z</updated>
+    <title>SpringCloud 技术栈</title>
+    <link href="https://zysicyj.github.io/9598d277.html"/>
+    <id>https://zysicyj.github.io/9598d277.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -305,19 +310,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>如何用 Redis 高效实现 12306 的复杂售票业务</title>
-    <link href="https://zysicyj.github.io/a35431f.html"/>
-    <id>https://zysicyj.github.io/a35431f.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.812Z</updated>
+    <title>SpringCloud 经典技术</title>
+    <link href="https://zysicyj.github.io/e058e435.html"/>
+    <id>https://zysicyj.github.io/e058e435.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -330,19 +333,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>新浪微博突发事件如何做好 Redis 缓存的高可用</title>
-    <link href="https://zysicyj.github.io/486a3877.html"/>
-    <id>https://zysicyj.github.io/486a3877.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.816Z</updated>
+    <title>gataway 断言源码剖析</title>
+    <link href="https://zysicyj.github.io/4b8c40cf.html"/>
+    <id>https://zysicyj.github.io/4b8c40cf.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.218Z</updated>
     
     
       
@@ -355,19 +356,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>日均百亿级微信红包系统如何架构</title>
-    <link href="https://zysicyj.github.io/3fb8ca03.html"/>
-    <id>https://zysicyj.github.io/3fb8ca03.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.816Z</updated>
+    <title>网关实现限流</title>
+    <link href="https://zysicyj.github.io/2638684.html"/>
+    <id>https://zysicyj.github.io/2638684.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.218Z</updated>
     
     
       
@@ -380,19 +379,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>秒杀链路中 Redis 与 MQ 如何保证事务一致性</title>
-    <link href="https://zysicyj.github.io/fd18fa41.html"/>
-    <id>https://zysicyj.github.io/fd18fa41.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.816Z</updated>
+    <title>自定义 GatewayFilter</title>
+    <link href="https://zysicyj.github.io/81e38120.html"/>
+    <id>https://zysicyj.github.io/81e38120.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.218Z</updated>
     
     
       
@@ -405,19 +402,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>类似微信的社交 App 朋友圈关注模型如何设计实现</title>
-    <link href="https://zysicyj.github.io/c8b78904.html"/>
-    <id>https://zysicyj.github.io/c8b78904.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.816Z</updated>
+    <title>自定义 GlobalFilter</title>
+    <link href="https://zysicyj.github.io/ba1937bd.html"/>
+    <id>https://zysicyj.github.io/ba1937bd.html</id>
+    <published>2024-01-14T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.218Z</updated>
     
     
       
@@ -430,19 +425,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
   
   <entry>
-    <title>线上 MQ 百万秒杀订单积压如何优化</title>
-    <link href="https://zysicyj.github.io/2065b59b.html"/>
-    <id>https://zysicyj.github.io/2065b59b.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.816Z</updated>
+    <title></title>
+    <link href="https://zysicyj.github.io/0.html"/>
+    <id>https://zysicyj.github.io/0.html</id>
+    <published>2024-01-12T09:15:53.000Z</published>
+    <updated>2024-01-14T16:06:52.206Z</updated>
     
     
       
@@ -455,19 +448,17 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
     
     
   </entry>
   
   <entry>
-    <title>美团单车如何基于 Redis 快速找到附近的车</title>
-    <link href="https://zysicyj.github.io/7162dd77.html"/>
-    <id>https://zysicyj.github.io/7162dd77.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.820Z</updated>
+    <title># AQS (AbstractQueuedSynchronizer) 概述</title>
+    <link href="https://zysicyj.github.io/c3fb59c2.html"/>
+    <id>https://zysicyj.github.io/c3fb59c2.html</id>
+    <published>2024-01-12T05:27:56.000Z</published>
+    <updated>2024-01-14T16:06:52.214Z</updated>
     
     
       
@@ -480,34 +471,7 @@
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>超大并发的分布式锁架构该如何设计</title>
-    <link href="https://zysicyj.github.io/6f0f3a56.html"/>
-    <id>https://zysicyj.github.io/6f0f3a56.html</id>
-    <published>2024-01-09T07:27:56.000Z</published>
-    <updated>2024-01-09T03:20:34.820Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <category term="temp" scheme="https://zysicyj.github.io/categories/temp/"/>
     
     
   </entry>
