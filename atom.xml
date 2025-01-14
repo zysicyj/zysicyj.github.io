@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title></title>
-  <icon>https://zysicyj.github.io/icon.png</icon>
+  <icon>https://blog.zysicyj.top/icon.png</icon>
   
-  <link href="https://zysicyj.github.io/atom.xml" rel="self"/>
+  <link href="https://blog.zysicyj.top/atom.xml" rel="self"/>
   
-  <link href="https://zysicyj.github.io/"/>
-  <updated>2024-01-31T05:09:18.300Z</updated>
-  <id>https://zysicyj.github.io/</id>
+  <link href="https://blog.zysicyj.top/"/>
+  <updated>2025-01-14T14:32:25.008Z</updated>
+  <id>https://blog.zysicyj.top/</id>
   
   <author>
     <name>程序员朱永胜</name>
@@ -17,571 +17,652 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-31T05:09:18.300Z</published>
-    <updated>2024-01-31T05:09:18.300Z</updated>
+    <title>解决 java 中 Post 请求，在拦截器取 requestBody 数据后，controller 层接收的数据为空问题.md</title>
+    <link href="https://blog.zysicyj.top/20240925152848.html"/>
+    <id>https://blog.zysicyj.top/20240925152848.html</id>
+    <published>2024-09-25T15:28:00.000Z</published>
+    <updated>2025-01-14T14:32:25.008Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">原文地址：https://blog.csdn.net/weixin_43946446/article/details/121498068
+
+解决方案如下：
+
+ 1. 创建一个类BodyReaderHttpServletRequestWrapper，继承HttpServletRequestWrapper，重写getInputStream和getReader方法，把request请求体继续往下传。
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+3</summary>
     
     
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
-    
-    <category term="12月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/12%E6%9C%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-31T05:09:18.300Z</published>
-    <updated>2024-01-31T05:09:18.300Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
-    
-    <category term="12月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/12%E6%9C%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-31T05:09:18.300Z</published>
-    <updated>2024-01-31T05:09:18.300Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
-    
-    <category term="12月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/12%E6%9C%88/"/>
     
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://zysicyj.github.io/0.html"/>
-    <id>https://zysicyj.github.io/0.html</id>
-    <published>2024-01-31T05:09:18.300Z</published>
-    <updated>2024-01-31T05:09:18.300Z</updated>
+    <title>Docker Desktop 启动不了.md</title>
+    <link href="https://blog.zysicyj.top/20240913170908.html"/>
+    <id>https://blog.zysicyj.top/20240913170908.html</id>
+    <published>2024-09-13T17:09:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">修改镜像地址
+https://mirror.ccs.tencentyun.com
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+
+
+{
+  &quot;builder&quot;: {
+    &quot;gc&quot;: {
+      &quot;defaultKeepStorage&quot;: &quot;20GB&quot;,
+      &quot;enabled&quot;: true
+    }
+  },
+  &quot;experimental&quot;: false,
+  &quot;registry-mirrors&quot;: [
+    &quot;https://mirror.ccs.tencentyun.com&quot;,
+    &quot;https://docker.1panel.live&quot;
+  ]
+}</summary>
     
     
-    
-    <category term="daily" scheme="https://zysicyj.github.io/categories/daily/"/>
-    
-    <category term="2023年" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/"/>
-    
-    <category term="12月" scheme="https://zysicyj.github.io/categories/daily/2023%E5%B9%B4/12%E6%9C%88/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SpringCloud 架构基础（上）</title>
-    <link href="https://zysicyj.github.io/5e419a31.html"/>
-    <id>https://zysicyj.github.io/5e419a31.html</id>
-    <published>2024-01-26T14:43:37.000Z</published>
-    <updated>2024-01-31T05:09:18.276Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="SpringCloud" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/SpringCloud/"/>
     
     
   </entry>
   
   <entry>
-    <title>Nacos 服务发现性能测试报告</title>
-    <link href="https://zysicyj.github.io/e7e44f00.html"/>
-    <id>https://zysicyj.github.io/e7e44f00.html</id>
-    <published>2024-01-26T11:24:29.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>如何离线安装 Docker-compose.md</title>
+    <link href="https://blog.zysicyj.top/20240913141537.html"/>
+    <id>https://blog.zysicyj.top/20240913141537.html</id>
+    <published>2024-09-13T14:15:00.000Z</published>
+    <updated>2025-01-14T14:32:25.008Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">离线安装 Docker Compose 可以通过以下步骤完成：
+
+ 1. 下载 Docker Compose 二进制文件：
+    
+     * 首先，你需要在有网络访问的环境中下载 Docker Compose 的二进制文件。可以从 Docker Compose 的 GitHub Releases 页面下载： * 访问 Docker Compose Releases。
+        * 找到你要下载的版本，选择与你的操作系统和架构匹配的二进制文件。例如，Linux 系统可以下载 docker-compose-Linux-x86_64。
+       
+       
     
     
+</summary>
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="运维指南" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E8%BF%90%E7%BB%B4%E6%8C%87%E5%8D%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>Nacos 服务配置性能测试报告</title>
-    <link href="https://zysicyj.github.io/2f791917.html"/>
-    <id>https://zysicyj.github.io/2f791917.html</id>
-    <published>2024-01-26T11:23:23.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>xxl-job.md</title>
+    <link href="https://blog.zysicyj.top/20240905093800.html"/>
+    <id>https://blog.zysicyj.top/20240905093800.html</id>
+    <published>2024-09-05T09:38:00.000Z</published>
+    <updated>2025-01-14T14:32:25.008Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">《分布式任务调度平台XXL-JOB》
+
+
+
+
+
+
+
+
+一、简介
+1.1 概述
+XXL-JOB是一个分布式任务调度平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。
+
+1.2 社区交流
+ * 社区交流
+
+1.3 特性
+ * 1、简单：支持通过Web页面对任务进行CRUD操作，操作简单，一分钟上手；
+ * 2、动态：支持动态修改任务状态、启动/停止任务，以及终止运行中任务，即时生效；
+ * 3、调度中心HA（中心式）：调度采用中心式设计，“调度中心”自研调度组件并支持集群部署，可保证调度中心HA；
+ * 4、执行器HA（分布式）：任务分布式</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="运维指南" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E8%BF%90%E7%BB%B4%E6%8C%87%E5%8D%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Nacos 监控手册</title>
-    <link href="https://zysicyj.github.io/1639578b.html"/>
-    <id>https://zysicyj.github.io/1639578b.html</id>
-    <published>2024-01-26T11:19:12.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="运维指南" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E8%BF%90%E7%BB%B4%E6%8C%87%E5%8D%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>控制台手册</title>
-    <link href="https://zysicyj.github.io/fb610e70.html"/>
-    <id>https://zysicyj.github.io/fb610e70.html</id>
-    <published>2024-01-26T11:09:18.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>Windows 更新 wsl.md</title>
+    <link href="https://blog.zysicyj.top/20240829090332.html"/>
+    <id>https://blog.zysicyj.top/20240829090332.html</id>
+    <published>2024-08-29T09:03:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">要更新 Windows Subsystem for Linux (WSL)，可以按照以下步骤进行。WSL 是一个 Windows 10 和 Windows 11 的功能，允许用户在 Windows 上运行 Linux 二进制可执行文件。更新 WSL 可以确保你拥有最新的功能和修复。
+
+1. 什么是 WSL？为什么需要更新 WSL？
+WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在 Windows 上运行 Linux 命令行工具和应用程序，而无需使用虚拟机或双启动系统。WSL 的主要优点包括：
+
+ * 无缝集成：在 Windows 和 Linux 之间无缝共享文件</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="运维指南" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E8%BF%90%E7%BB%B4%E6%8C%87%E5%8D%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>集群部署说明</title>
-    <link href="https://zysicyj.github.io/c7d16053.html"/>
-    <id>https://zysicyj.github.io/c7d16053.html</id>
-    <published>2024-01-26T11:08:12.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md</title>
+    <link href="https://blog.zysicyj.top/20240823163819.html"/>
+    <id>https://blog.zysicyj.top/20240823163819.html</id>
+    <published>2024-08-23T16:38:00.000Z</published>
+    <updated>2025-01-14T14:32:25.008Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">原文地址
+
+
+
+一、现状
+目前是通过 swagger + knife4j 的方式集成到微服务项目中，后端同学在开发或修改接口后，需要手动同步维护至公司内部的wiki中供前端和测试同学们查阅。
+
+目前来说，这种现有方式存在如下的几个问题：
+
+ 1. 接口调试和在线文档依赖服务的启动。
+ 2. 现有服务基于k8s，服务是无状态的，无固定IP，文档查看需要配置映射。
+ 3. 一般开发同学比较习惯使用Markdown语言（.md）撰写文档，但是公司wiki平台不支持导入md文件，因此需要开发同学手动添加wiki，效率过低。
+ 4. Api更新不及时或未更新。主要由于接口文档依赖于注解的更新，wiki也</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="运维指南" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E8%BF%90%E7%BB%B4%E6%8C%87%E5%8D%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>部署手册</title>
-    <link href="https://zysicyj.github.io/3e666ebb.html"/>
-    <id>https://zysicyj.github.io/3e666ebb.html</id>
-    <published>2024-01-26T11:07:51.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>docker 让更新 wsl.md</title>
+    <link href="https://blog.zysicyj.top/20240823153250.html"/>
+    <id>https://blog.zysicyj.top/20240823153250.html</id>
+    <published>2024-08-23T15:32:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">在 Windows 上使用 Docker 时，Docker Desktop 通常依赖于 WSL 2（Windows Subsystem for Linux 2）来提供一个轻量级的 Linux 内核环境。因此，保持 WSL 2 的更新对于确保 Docker 的最佳性能和兼容性是很重要的。以下是更新 WSL 的步骤：
+
+1. 确保 Windows 已更新
+首先，确保你的 Windows 10 或 Windows 11 版本是最新的，因为 WSL 2 的更新可能依赖于 Windows 的功能更新。
+
+ * 打开“设置” -&gt; “更新和安全” -&gt; “Windows 更新”。
+ * 点击“检查更新”并</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="运维指南" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E8%BF%90%E7%BB%B4%E6%8C%87%E5%8D%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>NacosSync 介绍</title>
-    <link href="https://zysicyj.github.io/951eed77.html"/>
-    <id>https://zysicyj.github.io/951eed77.html</id>
-    <published>2024-01-26T10:57:45.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>maven 打包遇到 Aggregator projects require &#39;pom&#39; as packaging 问题解决.md</title>
+    <link href="https://blog.zysicyj.top/20240822162936.html"/>
+    <id>https://blog.zysicyj.top/20240822162936.html</id>
+    <published>2024-08-22T16:29:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">保证依赖的模块和父模块都是 pom 格式，自己是jar 格式</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
     
     
   </entry>
   
   <entry>
-    <title>Kubernetes Nacos</title>
-    <link href="https://zysicyj.github.io/c47e1ac2.html"/>
-    <id>https://zysicyj.github.io/c47e1ac2.html</id>
-    <published>2024-01-26T10:57:22.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>minio 自愈策略.md</title>
+    <link href="https://blog.zysicyj.top/20240821172554.html"/>
+    <id>https://blog.zysicyj.top/20240821172554.html</id>
+    <published>2024-08-21T17:25:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">你所提到的 MinIO 的自愈机制正在从多个独立的模式转换为一个统一的模型。这种变化旨在提高系统的可靠性和数据一致性，同时减少对用户手动干预的需求。以下是对这些自愈机制的详细解释：
+
+当前的自愈机制
+ 1. 整个命名空间的定期自愈：
+    
+     * 每30天，MinIO 会自动对整个命名空间进行一次自愈。这是为了确保所有数据块和奇偶校验块在长时间内保持一致。
     
     
+ 2. 新磁盘的自愈：
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
+     * 当检测到磁盘替换时，系统将在大约10分钟内开始对新磁盘进行自愈。这确保了新加入的磁盘能够迅速与集群中的其他磁盘同步。
     
     
-  </entry>
-  
-  <entry>
-    <title>Dubbo 融合 Nacos 成为注册中心</title>
-    <link href="https://zysicyj.github.io/1c00d4cd.html"/>
-    <id>https://zysicyj.github.io/1c00d4cd.html</id>
-    <published>2024-01-26T10:53:52.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+ 3. 位腐蚀自愈：
+ </summary>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
     
     
   </entry>
   
   <entry>
-    <title>Nacos Docker 快速开始</title>
-    <link href="https://zysicyj.github.io/e75c6b2.html"/>
-    <id>https://zysicyj.github.io/e75c6b2.html</id>
-    <published>2024-01-26T10:53:29.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>miniowatch 命令和 replacation 名命令区别.md</title>
+    <link href="https://blog.zysicyj.top/20240821172425.html"/>
+    <id>https://blog.zysicyj.top/20240821172425.html</id>
+    <published>2024-08-21T17:24:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">在 MinIO 中，watch 和 replication 是两个不同的功能，分别用于监控和数据复制。它们在功能和使用场景上有明显的区别。下面是对这两个命令的详细解释：
+
+watch 命令
+ * 功能：
+   
+    * watch 命令用于实时监控 MinIO 存储桶中的事件。例如，文件的上传、删除等操作。
+    * 通过监控这些事件，用户可以及时响应存储桶内的变化。
+   
+   
+ * 使用场景：
+   
+    * 开发者和运维人员可以使用 watch 来调试应用程序或监控存储桶的活动。
+    * 可以用于触发自动化任务，比如在新文件上传后立即处理文件。
+   
+   
+ * 实</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Nacos Spring Cloud 快速开始</title>
-    <link href="https://zysicyj.github.io/3e1a6160.html"/>
-    <id>https://zysicyj.github.io/3e1a6160.html</id>
-    <published>2024-01-26T10:53:08.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
     
     
   </entry>
   
   <entry>
-    <title>Nacos Spring Boot 快速开始</title>
-    <link href="https://zysicyj.github.io/7ce0551f.html"/>
-    <id>https://zysicyj.github.io/7ce0551f.html</id>
-    <published>2024-01-26T10:52:50.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>minio 报错版本一致性问题.md</title>
+    <link href="https://blog.zysicyj.top/20240821172454.html"/>
+    <id>https://blog.zysicyj.top/20240821172454.html</id>
+    <published>2024-08-21T17:24:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">1
+2
+3
+4
+5
+
+
+Error: http://192.168.137.1:9000-&gt;http://192.168.137.224:9000 has incorrect configuration: Expected MinIO binary checksum: dd726a40d050dbed4522db85019061ef, seen: 576bfa927fa682ff6104229835fbb3de (*fmt.wrapError)
+       4: internal&#92;logger&#92;logonce.go:118:logger.(*logOnceType).logOnceIf()
+</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
     
     
   </entry>
   
   <entry>
-    <title>nacos spring</title>
-    <link href="https://zysicyj.github.io/a578dba2.html"/>
-    <id>https://zysicyj.github.io/a578dba2.html</id>
-    <published>2024-01-26T10:52:32.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>如何模拟磁盘损坏.md</title>
+    <link href="https://blog.zysicyj.top/20240821172341.html"/>
+    <id>https://blog.zysicyj.top/20240821172341.html</id>
+    <published>2024-08-21T17:23:00.000Z</published>
+    <updated>2025-01-14T14:32:25.008Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">在测试和开发环境中，模拟磁盘损坏可以帮助你了解和验证系统在故障情况下的行为和恢复能力。以下是在 Windows 和 Linux 环境下模拟磁盘损坏的方法。
+
+在 Linux 环境中模拟磁盘损坏
+ 1. 使用 dd 命令清除磁盘数据：
+    
+     * 你可以使用 dd 命令将随机数据写入磁盘，模拟磁盘损坏。
+     * 例如，假设你要模拟 /dev/sdb 磁盘的损坏：1
+       
+       
+       sudo dd if=/dev/urandom of=/dev/sdb bs=1M count=100
+       
+       
+       
+     * 这会</summary>
     
     
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nacos</title>
-    <link href="https://zysicyj.github.io/2428cc0.html"/>
-    <id>https://zysicyj.github.io/2428cc0.html</id>
-    <published>2024-01-26T10:52:09.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
-    
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
-    
-    <category term="快速开始" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B/"/>
     
     
   </entry>
   
   <entry>
-    <title>nacos 架构</title>
-    <link href="https://zysicyj.github.io/d8ef9a4b.html"/>
-    <id>https://zysicyj.github.io/d8ef9a4b.html</id>
-    <published>2024-01-26T10:48:59.000Z</published>
-    <updated>2024-01-31T05:09:18.284Z</updated>
+    <title>minio_plus 接口文档.md</title>
+    <link href="https://blog.zysicyj.top/20240819175049.html"/>
+    <id>https://blog.zysicyj.top/20240819175049.html</id>
+    <published>2024-08-19T17:50:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;div id=&quot;readmore-container&quot;&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">MinIO Plus API 文档
+简介:MinIO Plus API 文档
+
+HOST:mpdemo.liuxp.me
+
+联系人:刘小平
+
+Version:1.0.0
+
+接口路径:/v2/api-docs
+
+[TOC]
+
+MinIO Plus Demo 接口
+文件下载
+接口地址:/storage/download/{fileKey}
+
+请求方式:GET
+
+请求数据类型:application/x-www-form-urlencoded
+
+响应数据类型:*/*
+
+接口描述:
+
+请求参数:
+
+参数名称参数说明请求类型是否必须数据类型schemafileKeyfileKeypathtruestri</summary>
     
     
     
-    <category term="column" scheme="https://zysicyj.github.io/categories/column/"/>
     
-    <category term="面试题" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+  </entry>
+  
+  <entry>
+    <title>nginx.conf 和 conf.d.md</title>
+    <link href="https://blog.zysicyj.top/20240819170822.html"/>
+    <id>https://blog.zysicyj.top/20240819170822.html</id>
+    <published>2024-08-19T17:08:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
     
-    <category term="nacos" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/"/>
     
-    <category term="nacos是什么" scheme="https://zysicyj.github.io/categories/column/%E9%9D%A2%E8%AF%95%E9%A2%98/nacos/nacos%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+    <summary type="html">在Nginx中，nginx.conf 和 conf.d 目录都用于配置Nginx服务器，但它们的用途和使用方式有所不同。下面是对这两者的详细说明：
+
+nginx.conf
+nginx.conf 是Nginx的主配置文件，通常位于 /etc/nginx/nginx.conf 路径下。这个文件包含了Nginx服务器的全局配置和默认的服务器块配置。以下是一个典型的 nginx.conf 文件结构：
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>minio 配置 nginx.md</title>
+    <link href="https://blog.zysicyj.top/20240819170705.html"/>
+    <id>https://blog.zysicyj.top/20240819170705.html</id>
+    <published>2024-08-19T17:07:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
+    
+    
+    <summary type="html">在生产环境中，使用Nginx作为反向代理来访问MinIO可以为你提供更好的安全性、负载均衡以及SSL/TLS支持。以下是配置Nginx来代理MinIO的详细步骤：
+
+前提条件
+ * 已经部署好MinIO，并且可以通过其内部地址访问。
+ * Nginx已经安装在你的服务器上。
+
+配置步骤
+ 1. 安装 Nginx
+    
+    如果还没有安装Nginx，可以使用以下命令进行安装：
+    
+    1
+    
+    
+    sudo yum install nginx -y
+    
+    
+    
+ 2. 生成SSL证书（可选）
+    
+    如果需要通过HTTPS访问Min</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>minio 部署 centos 版.md</title>
+    <link href="https://blog.zysicyj.top/20240819170522.html"/>
+    <id>https://blog.zysicyj.top/20240819170522.html</id>
+    <published>2024-08-19T17:05:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
+    
+    
+    <summary type="html">在CentOS 7上部署MinIO也分为单机部署和集群部署。以下是详细步骤：
+
+单机部署
+ 1. 更新系统
+    
+    确保你的系统软件包是最新的：
+    
+    1
+    
+    
+    sudo yum update -y
+    
+    
+    
+ 2. 下载 MinIO 服务器
+    
+    使用 wget 从MinIO官方获取最新的MinIO二进制文件：
+    
+    1
+    
+    
+    wget https://dl.min.io/server/minio/release/linux-amd64/minio
+    
+    
+    
+ 3</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>minio 部署 k8s 版.md</title>
+    <link href="https://blog.zysicyj.top/20240819170545.html"/>
+    <id>https://blog.zysicyj.top/20240819170545.html</id>
+    <published>2024-08-19T17:05:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
+    
+    
+    <summary type="html">在Kubernetes (k8s) 上部署 MinIO 可以实现高可用和可扩展的对象存储系统。以下是详细步骤：
+
+前提条件
+ * 一个运行中的 Kubernetes 集群。
+ * kubectl 已经配置好并连接到你的 Kubernetes 集群。
+
+部署步骤
+ 1. 创建命名空间（可选）
+    
+    为了更好地管理资源，可以创建一个单独的命名空间：
+    
+    1
+    
+    
+    kubectl create namespace minio
+    
+    
+    
+ 2. 创建 MinIO 配置文件
+    
+    创建一个名为 minio-deploymen</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>minio 部署 windows 版</title>
+    <link href="https://blog.zysicyj.top/20240819171450.html"/>
+    <id>https://blog.zysicyj.top/20240819171450.html</id>
+    <published>2024-08-19T17:04:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
+    
+    
+    <summary type="html">MinIO 是一个高性能的对象存储系统，支持S3 API。可以在Windows上进行单机和集群部署。下面分别介绍单机和集群部署的方法。
+
+单机部署
+ 1. 下载 MinIO 服务器
+    从 MinIO 官方下载页面 下载 Windows 版本的 MinIO 服务器。
+    
+    
+ 2. 安装和运行 MinIO
+    将下载的 minio.exe 文件放置在一个目录中，然后打开命令提示符（CMD），导航到该目录。
+    
+    1
+    
+    
+    minio.exe server D:&#92;minio-data
+    
+    
+    这里 D:&#92;minio-dat</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>minio 如何进行分布式部署.md</title>
+    <link href="https://blog.zysicyj.top/20240819093129.html"/>
+    <id>https://blog.zysicyj.top/20240819093129.html</id>
+    <published>2024-08-19T09:31:00.000Z</published>
+    <updated>2025-01-14T14:32:25.007Z</updated>
+    
+    
+    <summary type="html">在选择对象存储系统时，MinIO 和 FastDFS 是两种常见的选择。每种系统都有其独特的优势和适用场景，因此在做出选择时需要根据具体的需求和环境来决定。下面我们将详细讨论为什么在某些情况下可能会选择 MinIO 而不是 FastDFS。
+
+1. 什么是 MinIO 和 FastDFS？为什么需要它们？
+MinIO
+MinIO 是一个高性能的对象存储系统，完全兼容 Amazon S3 API。它是用 Go 语言编写的，设计上非常轻量化，支持分布式架构。MinIO 的目标是提供高性能、低延迟的对象存储服务，适用于大规模数据存储场景。
+
+特点：
+
+ * 兼容性：完全兼容 S3 API，方便与现有</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何设置 docker 镜像不自动启动 .md</title>
+    <link href="https://blog.zysicyj.top/20240819092907.html"/>
+    <id>https://blog.zysicyj.top/20240819092907.html</id>
+    <published>2024-08-19T09:29:00.000Z</published>
+    <updated>2025-01-14T14:32:25.008Z</updated>
+    
+    
+    <summary type="html">在 Docker 中，控制容器是否自动启动有几种方法，主要是通过设置容器的重启策略来实现。如果你希望 Docker 容器在宿主机重启之后不自动启动，可以在创建容器时设置适当的重启策略。
+
+以下是一些常见的方法：
+
+[](# 方法一：使用 -restart- 选项 “方法一：使用 –restart 选项”)方法一：使用 --restart 选项
+你可以在运行 docker run 命令时使用 --restart 选项来设置重启策略。要让容器不自动重启，可以将其设置为 no。
+
+1
+
+
+docker run --restart=no ...
+
+
+例如：
+
+1
+
+
+docker run --name</summary>
+    
+    
     
     
   </entry>

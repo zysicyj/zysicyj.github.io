@@ -1,0 +1,794 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md"><meta name="application-name" content="接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md"><meta property="og:url" content="https://blog.zysicyj.top/20240823163819.html"><meta property="og:site_name" content=""><meta property="og:description" content="原文地址  一、现状  目前是通过 swagger + knife4j 的方式集成到微服务项目中，后端同学在开发或修改接口后，需要手动同步维护至公司内部的 wiki 中供前端和测试同学们查阅。 目前来说，这种现有方式存在如下的几个问题：  接口调试和在线文档依赖服务的启动。 现有服务基于 k8s，服"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://img.xjh.me/random_img.php?return=302&amp;_r_=5d275cb6-577e-033d-0682-6b6d9fd6960d"><meta property="article:author" content="程序员朱永胜"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://img.xjh.me/random_img.php?return=302&amp;_r_=5d275cb6-577e-033d-0682-6b6d9fd6960d"><meta name="description" content="原文地址  一、现状  目前是通过 swagger + knife4j 的方式集成到微服务项目中，后端同学在开发或修改接口后，需要手动同步维护至公司内部的 wiki 中供前端和测试同学们查阅。 目前来说，这种现有方式存在如下的几个问题：  接口调试和在线文档依赖服务的启动。 现有服务基于 k8s，服"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://blog.zysicyj.top/20240823163819.html"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-9343722716173603',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: {"enable":true,"ck":"3Is8EMFcqgGHzmLJ","LingQueMonitorID":"3Is8EMFcqgGHzmLJ"},
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":1},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 程序员朱永胜","link":"链接: ","source":"来源: ","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '',
+  title: '接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md',
+  postAI: '',
+  pageFillDescription: '一、现状 , 二、需求 , 三、调研 , Swagger,  官方地址, 介绍, Knife4j, 官方地址, 介绍, Apifox, 官方地址, 介绍, Smart-doc + Torna, 官方地址, 介绍, EasyYapi + Yapi, 官方地址, 介绍 , 四、对比 , （一）Swagger, 1、部署方式, 2、优点, 3、缺点, 4、分享方式, （二）Knife4j, 1、部署方式 , 2、优点, 3、缺点, 4、分享方式, （三）Apifox, 1、部署方式 , 2、优点 , 3、缺点 , 4、分享方式 , （四）Smart-doc + Torna, 1、部署方式 , 2、优点, 3、缺点, 4、分享方式, （五）EasyYapi + Yapi, 1、部署方式 , 2、优点 , 3、缺点, 4、分享方式 , 五、选择与使用 , 安装部署 torna, 方式 1：下载 zip 本地运行, Linux 服务器快速部署, 方式 2：docker 运行 , docker-compose 部署 torna, kubernetes 部署 torna, 代码集成 smart-doc 插件实现推送, 六、总结 原文地址一现状目前是通过的方式集成到微服务项目中后端同学在开发或修改接口后需要手动同步维护至公司内部的中供前端和测试同学们查阅目前来说这种现有方式存在如下的几个问题接口调试和在线文档依赖服务的启动现有服务基于服务是无状态的无固定文档查看需要配置映射一般开发同学比较习惯使用语言撰写文档但是公司平台不支持导入文件因此需要开发同学手动添加效率过低更新不及时或未更新主要由于接口文档依赖于注解的更新也需要人工进行更新维护难免发生疏漏公司内部跨部门接口对接时存在某些接口无权限需要项管协助开通或者需要我们手动把中的接口文档以的形式导出工作效率比较低并且也存在文档变更不及时通知的场景与第三方对接时公司内部的由于是内网而且需要登录所以文档都是通过导出的方式每次接口变更都需要同步修改后在导出一份出来提供给第三方二需求后端同学角度减少撰写接口文档上的时间花销提高工作效率有这个时间去优化优化代码优化优化注释不是最好嘛现有服务过多文档不方便集中管理目前都是按照业务去撰写的开发在撰写接口文档时基本上是各写各的导致目录接口层级比较乱期望可以有一个更好集中管理文档的平台方便按照微服务归类可以提供在线接口调试的功能前端同学角度接口文档清晰有条理格式统一化现有维护可以说是百花齐放有些人文档写的比较清晰有些人就写的很随意不利于接口对接影响开发效率接口文档最好可以支持与调试当开发工期短的时候后端开发只能先把接口定义出来由于逻辑未完成所以前端没法进行接口的调试文档更新及时当接口变动某些参数时可以在文档上很好的体现出来便于前端同步维护代码测试同学角度文档的稳定性可以得到保证持续查阅由于目前项目组使用的是的方式接口文档基于服务的启动所以在线接口文档非高可用的接口文档变更有消息通知与变更记录方便接口及时对接与文档溯源省的与后端扯皮对接灵活最好可以对接到公司层面的平台项目管理角度有统一的文档管理平台各个部门可以很好的协同同时有较为合理的权限控制在对接三方公司时可以很方便的提供接口文档给第三方分享方式灵活多样公司角度文档保证安全性最好可以在公司层面私有化部署同时减少成本开销三调研官方地址介绍是一个文档维护组织后来成为了标准的主要定义者现在最新的版本为年发布的同时是一个规范且完整的框架用于生成描述调用和可视化风格的服务并于年重命名为的目标是对定义一个标准且和语言无关的接口可以让人和计算机拥有无须访问源码文档或网络流量监测就可以发现和理解服务的能力当通过进行正确定义用户可以理解远程服务并使用最少实现逻辑与远程服务进行交互与为底层编程所实现的接口类似消除了调用服务时可能会有的猜测官方地址介绍是为框架集成生成文档的增强解决方案前身是取名是希望她能像一把匕首一样小巧轻量并且功能强悍的前身是为了契合微服务的架构发展由于原来采用的是后端代码前端混合打包的方式在微服务架构下显的很臃肿因此项目正式更名为官方地址文档介绍是集文档调试自动化测试多项实用功能为一体的管理平台定位为旨在通过一套系统一份数据解决多个工具之间的数据同步问题只需在中定义文档调试数据自动化测试等功能就可以直接使用无需再次定义文档和开发调试流程在同一个工具内闭环调试完成后即可确保与文档定义完全一致高效及时准确官方地址官方网址官方网址整合教程介绍是一款同时支持和接口文档生成的工具在业内率先提出基于泛型定义推导的理念完全基于接口源码来分析生成接口文档不采用任何注解侵入到业务代码中你只需要按照标准编写注释就能帮你生成一个简易明了的的文档是由官方独家推动联合研发的企业级文档管理系统因此官方不会对接其它任何的外部文档管理系统例如像之类的对接请自定内部处理是一个文档推导工具可以根据原生的及自定义的一些生成多种格式的接口文档而是一个文档管理平台官方提供了很好的聚合方案例如使用的插件方式下面会说到官方地址文档介绍是由去哪儿网移动架构组简称一群由和工程师共同组成的最具想象力创造力和影响力的大前端团队开发的可视化接口管理工具是一个可本地部署的打通前后端及的接口管理平台旨在为开发产品和测试人员提供更优雅的接口管理服务可以帮助开发者轻松创建发布和维护不同项目不同平台的有了我们可以很方便的测试管理和维护多个项目的接口不像那样是随应用生和灭的且线上环境下大多数须关闭是一个独立的服务平台是一款插件帮你导出到参考安装的使用参考文档四对比一部署方式本地化部署优点基于风格项目集成简单支持多语言等缺点依赖于服务的启动依赖注解存在多个服务的时候不便于统一管理界面比较简单接口和响应对象分开展示参数字典对照不方便不支持自定义的请求头分享方式支持分享二部署方式本地化部署优点在基础上做了增强更加直观比支持了导出格式的离线文档支持自定义的请求头支持多种框架有细微的版本控制识别后端接口的新增与修改缺点导出只支持全量导出功能相对比较单一依赖于服务的启动依赖注解存在多个服务的时候不便于统一管理个人的开源项目分享方式支持导出三部署方式免费是版私有版需要付费优点功能丰富包括文档管理接口调试接口自动化测试等商业软件更新和维护比较稳定有桌面版和版桌面版功能比较全免费版可用基本无限制方便集成和缺点免费是版需要进行定期的账号管理防止泄露同时接口的安全风险可能需要进一步考虑分享方式支持网页访问支持网页分享支持导出静态文档但是目前不支持直接导出四部署方式国产开源项目私有化本地部署支持多种方式优点基于的方式推导出接口文档对代码的侵入性低支持插件插件多种方式集成文档为开源项目部署成本低的社区相对活跃亲测在群里问了一些问题作者及时响应并答复可以满足目前大多数现有需求场景基于开发项目组技术栈相对成熟方便后续二开缺点国产开源项目存在作者后续不维护的风险目前不支持的导出方式不过是支持的分享方式支持网页分享可以分享公开链接或带秘钥的私有链接支持导出五部署方式支持本地化部署支持部署优点功能丰富包括文档管理接口调试方便集成和有较为细致的权限管理缺点目前已经不怎么维护更新了社区活跃度较低分享方式支持网页访问支持网页分享支持导出静态文档但是目前不支持直接导出五选择与使用基于以上的对比加上目前公司的开发方式最后选型实现文档全流程自动化原因如下使用注释的方式代替侵入性注解可以简化代码结构规范代码注释由于目前微服务过多需要一个聚合平台统一管理且文档不依赖于项目的启动国内开源项目可以本地化部署安全性能得到保证可以以项目组的形式管理接口各项目组之间接口互不影响权限划分细致便于团队文档可见性管理有丰富的文档导出功能现有项目使用的插件可以很方便的推送接口文档到中改造成本相对较低安装部署方式下载本地运行准备工作环境最低要求要求及以后之前的版本见支持低版本前往发行版页面下载最新版本解压导入数据库执行打开配置文件修改数据库连接配置执行启动执行访问登录账号用户名密码后续升级无特殊说明只需要覆盖文件和文件夹然后重启即可服务器快速部署前提导入数据库执行创建配置文件执行命令修改数据库连接配置拉取最新版本并启动以为例后续更新版本只需执行版本号方式运行导入数据库执行下载公共镜像创建配置文件执行命令修改数据库连接配置执行命令浏览器访问对应宿主机器非容器运维脚本部署方式部署部署部署代码集成插件实现推送先在上创建对应的应用在代码里添加的插件在代码目录下添加文件并且修改配置本地环境参数说明固定填这个不用变项目名称接口对应的目录多个用隔开中的接口中的中调试环境名称中调试环境地址是否开启调试初次使用建议开始后面稳定了关闭是否替换文档建议这里是快速配置完整版的配置参考参考中规范对代码进行规范化注释参考支持的原生名称使用描述对于在接口层对于简单类型的参数必须在使用时写上注释描述对于类型则不会检查可以在注释中用于标记接口已经废弃作用同注解是新增的文档使用的注释作为方法的详细描述因此可以使用来写一段长注释如果一个方法不写注释说明直接使用方法默认注释填充会提取代码中标注到文档中可以写在方法上也可以写到类上例如自定义名称描述如果加到方法上则接口方法不会输出到文档从开始支持添加到上进行忽略不想生成文档的接口类也可以用于方法上忽略某个请求参数如果你没有使用参数验证规范实现的方式来标注字段就可以使用去标注请求参数对象的字段标注在输出参数列表时会设置为不建议使用以后会删除从开始用于在对象基本类型字段设置自定义文档展示值设置值后不再帮你生成随机值方便可以通过直接输出交付文档从开始用于在的接口类上添加让可以扫描到的接口生成文档从开始用于支持去扫描的定义接口生成文档从开始用于设置接口或者入口的自定义排序序号就表示设置序号为从开始用于忽略设置的包装类从开始用于标注在的文件下载方法上生成页面时可实现文件下载测试并且支持下载文件带请求头参数测试从开始用于标注在的方法上表示该方法用来渲染返回一个静态页面生成页面时如果发起测试测试页面会自动在浏览器开启新标签显示页面从开始用于标注在方法上忽略掉不想显示在文档中的参数例如多个参数名用空格隔开从开始标注在方法上可以允许用这自己定义返回的建议只在返回基础类型时使用如类型这种泛型是简单原生类型的响应用于将方法分类可以将不同下的方法指定到多个分类下同时也可以直接指定为一个分类或多个分类不要使用不支持直接用分组配置代替双击右侧插件栏中的实现文档推送当然也可以使用的命令行模式如下对于多模块项目推荐使用命令行的形式推送某个具体的服务至可以参考多模块中使用插件示例如下六总结后端同学推荐对历史服务建议完善相应的注释方式或注解插件方式强制对新服务新接口需要编写注解或注释便于后续文档维护强制在开发阶段使用统一的分支进行文档推送防止出现分支代码不一致的场景强制后面文档稳定了关闭中的防止文档误操作变更前端同学推荐对与前端同学来说在版本开发时需要及时关注版本迭代接口并在个人中心绑定钉钉手机号这样可以在文档群中接收到来自钉钉机器人的消息测试同学推荐对与测试同学来说在版本提测后需要及时关注版本迭代的接口并在个人中心绑定钉钉手机号这样可以在文档群中接收到来自钉钉机器人的消息推荐平台在最近的版本中支持了平台的接口文档推送可能存在些许问题自动化测试同学可以在空间中配置相关配置每当接口变更时及时查看的相关空间接口是否同步变更确保接口变更同步及时程序员朱永胜',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-01-14 14:32:25',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="atom.xml" title="" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.zysicyj.top/" title="个人主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/13/64d8c2748ef34.jpg" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">写作软件</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://editor.runjs.cool/post?id=demo" title="Mdx"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4296739868700.png" alt="Mdx"/><span class="back-menu-item-text">Mdx</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://openwrite.cn/" title="OpenWrite"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://openwrite.cn/logo.png" alt="OpenWrite"/><span class="back-menu-item-text">OpenWrite</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/writerside/" title="WriteSide"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="data:image/jpeg;base64,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" alt="WriteSide"/><span class="back-menu-item-text">WriteSide</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">开发工具</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/idea/" title="idea"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4576710485000.png" alt="idea"/><span class="back-menu-item-text">idea</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/datagrip/" title="DataGrip"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="DataGrip"/><span class="back-menu-item-text">DataGrip</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4663369180700.png" title="WebStorm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="WebStorm"/><span class="back-menu-item-text">WebStorm</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="微信开发者工具"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4743988475500.png" alt="微信开发者工具"/><span class="back-menu-item-text">微信开发者工具</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="HBuilder"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.dcloud.io/hbuilderx.html" alt="HBuilder"/><span class="back-menu-item-text">HBuilder</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://mobaxterm.mobatek.net/" title="MobaXterm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4849682167700.png" alt="MobaXterm"/><span class="back-menu-item-text">MobaXterm</span></a></div></div></div></div><a id="site-name" href="index.html" accesskey="h"><div class="title"></div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)" rel="external nofollow noreferrer">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="index.html"><i class="fas fa-home faa-tada"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-link faa-tada"></i><span> 目录</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="fas fa-archive faa-tada"></i><span> 时间轴</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="fas fa-folder-open faa-tada"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-list faa-tada"></i><span> 清单</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/movies/"><i class="fas fa-video faa-tada"></i><span> 电影</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/books/"><i class="fas fa-book faa-tada"></i><span> 阅读</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/songs/"><i class="fas fa-music faa-tada"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追番</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/cinemas/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追剧</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="fas fa-link faa-tada"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/gallery/"><i class="fas fa-solid fa-image faa-tada"></i><span> 相册集</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/love/static/index.html"><i class="fas fa-heart faa-tada"></i><span> Love</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="fa-solid  fa-comment faa-tada"></i><span> 闲言碎语</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="wechat" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="alipay" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="tags/2024%E5%B9%B4/" style="font-size: 1.05rem;">2024年<sup>1</sup></a><a href="tags/2024%E5%B9%B47%E6%9C%88/" style="font-size: 1.05rem;">2024年7月<sup>1</sup></a><a href="tags/2%E6%97%A5/" style="font-size: 1.05rem;">2日<sup>1</sup></a><a href="tags/7%E6%9C%88/" style="font-size: 1.05rem;">7月<sup>1</sup></a><a href="tags/Butterfly/" style="font-size: 1.05rem;">Butterfly<sup>2</sup></a><a href="tags/CSS/" style="font-size: 1.05rem;">CSS<sup>2</sup></a><a href="tags/Docker-Compose%E5%AE%89%E8%A3%85Space/" style="font-size: 1.05rem;">Docker Compose安装Space<sup>1</sup></a><a href="tags/Footer%E8%AE%BE%E7%BD%AE/" style="font-size: 1.05rem;">Footer设置<sup>1</sup></a><a href="tags/NR/" style="font-size: 1.05rem;">NR<sup>8</sup></a><a href="tags/TOC/" style="font-size: 1.05rem;">TOC<sup>1</sup></a><a href="tags/nari/" style="font-size: 1.05rem;">nari<sup>22</sup></a><a href="tags/xxc/" style="font-size: 1.05rem;">xxc<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81/" style="font-size: 1.05rem;">代码<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6/" style="font-size: 1.05rem;">代码复制<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E6%8D%A2%E8%A1%8C/" style="font-size: 1.05rem;">代码换行<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E6%A1%86%E5%B1%95%E5%BC%80-%E5%85%B3%E9%97%AD/" style="font-size: 1.05rem;">代码框展开/关闭<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A2%98/" style="font-size: 1.05rem;">代码高亮主题<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E5%BA%A6%E9%99%90%E5%88%B6/" style="font-size: 1.05rem;">代码高度限制<sup>1</sup></a><a href="tags/%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE/" style="font-size: 1.05rem;">参数设置<sup>1</sup></a><a href="tags/%E5%95%86%E5%93%81/" style="font-size: 1.05rem;">商品<sup>9</sup></a><a href="tags/%E5%9B%BE%E7%89%87%E6%8F%8F%E8%BF%B0/" style="font-size: 1.05rem;">图片描述<sup>1</sup></a><a href="tags/%E5%A4%8D%E5%88%B6%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" style="font-size: 1.05rem;">复制相关配置<sup>1</sup></a><a href="tags/%E5%A4%B4%E5%83%8F/" style="font-size: 1.05rem;">头像<sup>1</sup></a><a href="tags/%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3/" style="font-size: 1.05rem;">安装文档<sup>2</sup></a><a href="tags/%E5%AF%BC%E8%88%AA%E6%A0%8F%E8%AE%BE%E7%BD%AE/" style="font-size: 1.05rem;">导航栏设置<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E5%88%86%E9%A1%B5%E6%8C%89%E9%92%AE/" style="font-size: 1.05rem;">文章分页按钮<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E6%89%93%E8%B5%8F/" style="font-size: 1.05rem;">文章打赏<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83/" style="font-size: 1.05rem;">文章版权<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91%E6%8C%89%E9%92%AE/" style="font-size: 1.05rem;">文章编辑按钮<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E8%BF%87%E6%9C%9F%E6%8F%90%E9%86%92/" style="font-size: 1.05rem;">文章过期提醒<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E9%A1%B5%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" style="font-size: 1.05rem;">文章页相关配置<sup>1</sup></a><a href="tags/%E6%97%A5%E8%AE%B0/" style="font-size: 1.05rem;">日记<sup>14</sup></a><a href="tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" style="font-size: 1.05rem;">更新日志<sup>10</sup></a><a href="tags/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/" style="font-size: 1.05rem;">相关文章<sup>1</sup></a><a href="tags/%E7%A4%BE%E4%BA%A4%E5%9B%BE%E6%A0%87/" style="font-size: 1.05rem;">社交图标<sup>1</sup></a><a href="tags/%E7%BD%91%E7%AB%99%E8%B5%84%E6%96%99/" style="font-size: 1.05rem;">网站资料<sup>1</sup></a><a href="tags/%E8%8F%9C%E5%8D%95-%E7%9B%AE%E5%BD%95/" style="font-size: 1.05rem;">菜单/目录<sup>1</sup></a><a href="tags/%E8%AF%AD%E8%A8%80/" style="font-size: 1.05rem;">语言<sup>1</sup></a><a href="tags/%E8%B5%84%E6%BA%90/" style="font-size: 1.05rem;">资源<sup>9</sup></a><a href="tags/%E9%A1%B6%E9%83%A8%E5%9B%BE/" style="font-size: 1.05rem;">顶部图<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/09/"><span class="card-archive-list-date">九月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">16</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">66</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/06/"><span class="card-archive-list-date">六月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">16</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">27</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">31</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">37</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);" rel="external nofollow noreferrer"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a></div></div><h1 class="post-title" itemprop="name headline">接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2024-08-23T16:38:00.000Z" title="发表于 2024-08-23 16:38:00">2024-08-23</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-01-14T14:32:25.008Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">5.3k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>18分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为南京"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>南京</span></div></div></div><article class="post-content" id="article-container" itemscope itemtype="https://blog.zysicyj.top/20240823163819.html"><header><h1 id="CrawlerTitle" itemprop="name headline">接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">程序员朱永胜</span><time itemprop="dateCreated datePublished" datetime="2024-08-23T16:38:00.000Z" title="发表于 2024-08-23 16:38:00">2024-08-23</time><time itemprop="dateCreated datePublished" datetime="2025-01-14T14:32:25.008Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></header><div id="readmore-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/m0_46109609/article/details/132475041">原文地址</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26305574173600.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26305574173600.png"></a></p>
+<h2 id="一、现状"><a href="# 一、现状" class="headerlink" title="一、现状"></a>一、现状 </h2><p> 目前是通过 swagger + <a target="_blank" rel="noopener external nofollow noreferrer" href="https://so.csdn.net/so/search?q=knife4j&spm=1001.2101.3001.7020">knife4j</a> 的方式集成到微服务项目中，后端同学在开发或修改接口后，需要手动同步维护至公司内部的 wiki 中供前端和测试同学们查阅。</p>
+<p>目前来说，这种现有方式存在如下的几个问题：</p>
+<ol>
+<li>接口调试和在线文档依赖服务的启动。</li>
+<li>现有服务基于 k8s，服务是无状态的，无固定 IP，文档查看需要配置映射。</li>
+<li>一般开发同学比较习惯使用 Markdown 语言（.md）撰写文档，但是公司 wiki 平台不支持导入 md 文件，因此需要开发同学手动添加 wiki，效率过低。</li>
+<li><strong>Api 更新不及时或未更新</strong>。主要由于接口文档依赖于注解的更新，wiki 也需要人工进行更新维护，难免发生疏漏。</li>
+<li>公司内部跨部门接口对接时，存在某些接口 wiki 无权限，需要项管协助开通或者需要我们手动把 wiki 中的接口文档以 word 的形式导出，工作效率比较低，并且也存在文档变更不及时通知的场景。</li>
+<li>与第三方对接时，公司内部的 wiki 由于是内网，而且需要登录。所以文档都是通过 word 导出的方式，每次接口变更都需要同步修改 wiki 后，在导出一份 word 出来提供给第三方。</li>
+</ol>
+<h2 id="二、需求"><a href="# 二、需求" class="headerlink" title="二、需求"></a>二、需求 </h2><p> 后端同学角度：</p>
+<ul>
+<li>减少撰写接口文档上的时间花销，<strong>提高工作效率</strong>。有这个时间去优化优化代码，优化优化注释不是最好嘛。</li>
+<li>现有服务过多，文档不方便集中管理。目前 wiki 都是按照业务去撰写的，开发在撰写接口文档时，基本上是各写各的，导致 wiki 目录接口层级比较乱。期望可以有一个更好 <strong> 集中管理文档 </strong> 的平台，方便按照微服务归类。</li>
+<li>可以提供 <strong> 在线接口调试 </strong> 的功能。</li>
+</ul>
+<p>前端同学角度：</p>
+<ul>
+<li>接口 <strong> 文档清晰 </strong> 有条理，<strong>格式统一 </strong> 化。现有 wiki 维护可以说是百花齐放，有些人文档写的比较清晰，有些人就写的很随意。不利于接口对接，影响开发效率。</li>
+<li>接口文档最好可以 <strong> 支持 Mock 与调试</strong>。当开发工期短的时候，后端开发只能先把接口定义出来，由于逻辑未完成，所以前端没法进行接口的调试。</li>
+<li><strong>文档更新及时</strong>。当接口变动某些参数时，可以在文档上很好的体现出来，便于前端同步维护代码。</li>
+</ul>
+<p>测试同学角度：</p>
+<ul>
+<li>文档的 <strong> 稳定性 </strong> 可以得到保证，持续查阅。由于目前项目组使用的是 knife4j 的方式，接口文档基于服务的启动，所以在线接口文档非高可用的。</li>
+<li>接口文档变更有 <strong> 消息通知与变更记录 </strong>，方便接口及时对接与文档<strong> 溯源</strong>，省的与后端扯皮。</li>
+<li><strong>对接灵活</strong>，最好可以对接到公司层面的 QC 平台。</li>
+</ul>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://so.csdn.net/so/search?q=%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86&spm=1001.2101.3001.7020">项目管理 </a> 角度：</p>
+<ul>
+<li>有统一的文档管理平台，各个部门可以很好的协同，同时有较为 <strong> 合理的权限控制</strong>。</li>
+<li>在对接三方公司时，可以很方便的提供接口文档给第三方，<strong>分享方式灵活多样</strong>。</li>
+</ul>
+<p>公司角度：</p>
+<ul>
+<li>文档 <strong> 保证安全性 </strong>，最好可以在公司层面<strong> 私有化部署 </strong>，同时<strong> 减少成本 </strong> 开销。</li>
+</ul>
+<h2 id="三、调研"><a href="# 三、调研" class="headerlink" title="三、调研"></a>三、调研 </h2><h3 id="Swagger"><a href="#Swagger" class="headerlink" title="Swagger"></a>Swagger</h3><h4 id="官方地址"><a href="# 官方地址" class="headerlink" title="官方地址"></a> 官方地址</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://swagger.io/">https://swagger.io/</a></p>
+<h4 id="介绍"><a href="# 介绍" class="headerlink" title="介绍"></a>介绍</h4><p>swagger 是一个 api 文档维护组织，后来成为了 Open API 标准的主要定义者，现在最新的版本为 17 年发布的 Swagger3（Open Api3）。</p>
+<p>同时 Swagger 是一个规范且完整的框架，用于生成、描述、调用和可视化 RESTful 风格的 Web 服务，并于 2015 年重命名为 OpenApi。</p>
+<p>Swagger 的目标是对 REST API 定义一个标准且和语言无关的接口，可以让人和计算机拥有无须访问源码、文档或网络流量监测就可以发现和理解服务的能力。当通过 Swagger 进行正确定义，用户可以理解远程服务并使用最少实现逻辑与远程服务进行交互。与为底层编程所实现的接口类似，Swagger 消除了调用服务时可能会有的猜测。</p>
+<h3 id="Knife4j"><a href="#Knife4j" class="headerlink" title="Knife4j"></a>Knife4j</h3><h4 id="官方地址 -1"><a href="# 官方地址 -1" class="headerlink" title="官方地址"></a>官方地址</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://doc.xiaominfo.com/knife4j/">https://doc.xiaominfo.com/knife4j/</a></p>
+<h4 id="介绍 -1"><a href="# 介绍 -1" class="headerlink" title="介绍"></a>介绍</h4><p>knife4j 是为 Java MVC 框架集成 Swagger 生成 Api 文档的增强解决方案, 前身是 swagger-bootstrap-ui, 取名 knife4j 是希望她能像一把匕首一样小巧, 轻量, 并且功能强悍!</p>
+<p>knife4j 的前身是 <code>swagger-bootstrap-ui</code>，为了契合微服务的架构发展, 由于原来<code>swagger-bootstrap-ui</code> 采用的是后端 Java 代码 + 前端 Ui 混合打包的方式, 在微服务架构下显的很臃肿, 因此项目正式更名为<code>knife4j</code></p>
+<h3 id="Apifox"><a href="#Apifox" class="headerlink" title="Apifox"></a>Apifox</h3><h4 id="官方地址 -2"><a href="# 官方地址 -2" class="headerlink" title="官方地址"></a>官方地址</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.apifox.cn/">https://www.apifox.cn</a></p>
+<p>文档：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://apifox.com/help/">https://apifox.com/help/</a></p>
+<h4 id="介绍 -2"><a href="# 介绍 -2" class="headerlink" title="介绍"></a>介绍</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://apifox.com/">Apifox</a> 是集 API 文档、API 调试、API Mock、API 自动化测试多项实用功能为一体的 API 管理平台，定位为 <code>Postman + Swagger + Mock + JMeter</code>。旨在通过一套系统、一份数据，解决多个工具之间的数据同步问题。只需在 Apifox 中定义 API 文档；API 调试、API 数据 Mock、API 自动化测试等功能就可以直接使用，无需再次定义。API 文档和 API 开发调试流程在同一个工具内闭环，API 调试完成后即可确保与 API 文档定义完全一致。高效、及时、准确！</p>
+<h3 id="Smart-doc-Torna"><a href="#Smart-doc-Torna" class="headerlink" title="Smart-doc + Torna"></a>Smart-doc + Torna</h3><h4 id="官方地址 -3"><a href="# 官方地址 -3" class="headerlink" title="官方地址"></a>官方地址</h4><p>smart-doc 官方网址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://smart-doc-group.github.io/#/zh-cn/">https://smart-doc-group.github.io/#/zh-cn/</a></p>
+<p>Torna 官方网址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.torna.cn/">https://www.torna.cn/</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26188388874700.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26188388874700.png"></a></p>
+<p>Torna 整合 smart-doc 教程 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://torna.cn/dev/smart-doc.html">https://torna.cn/dev/smart-doc.html</a><br><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26193597670800.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26193597670800.png"></a></p>
+<h4 id="介绍 -3"><a href="# 介绍 -3" class="headerlink" title="介绍"></a>介绍</h4><p>smart-doc 是一款同时支持 JAVA REST API 和 Apache Dubbo RPC 接口文档生成的工具，smart-doc 在业内率先提出基于 JAVA 泛型定义推导的理念， 完全基于接口源码来分析生成接口文档，不采用任何注解侵入到业务代码中。你只需要按照 java-doc 标准编写注释， smart-doc 就能帮你生成一个简易明了的 Markdown、HTML5、Postman Collection2.0+、OpenAPI 3.0+ 的文档。</p>
+<p>Torna 是由 smart-doc 官方独家推动联合研发的企业级文档管理系统，因此 smart-doc 官方不会对接其它任何的外部文档管理系统，例如像 showdoc、yapi 之类的对接请自定内部处理。</p>
+<p>smart-doc 是一个文档推导工具，可以根据原生的 javadoc 及自定义的一些 javedoc 生成多种格式的接口文档。而 Torna 是一个文档管理平台，官方提供了很好的聚合方案，例如：使用 smart-doc 的插件方式（下面会说到）。</p>
+<h3 id="EasyYapi-Yapi"><a href="#EasyYapi-Yapi" class="headerlink" title="EasyYapi + Yapi"></a>EasyYapi + Yapi</h3><h4 id="官方地址 -4"><a href="# 官方地址 -4" class="headerlink" title="官方地址"></a>官方地址</h4><p>Yapi： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://yapi.mglicai.com/">http://yapi.mglicai.com/</a></p>
+<p>Yapi 文档： <a target="_blank" rel="noopener external nofollow noreferrer" href="http://hellosean1025.github.io/yapi">http://hellosean1025.github.io/yapi</a></p>
+<p>EasyYapi：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://easyyapi.com/">https://easyyapi.com/</a></p>
+<h4 id="介绍 -4"><a href="# 介绍 -4" class="headerlink" title="介绍"></a>介绍 </h4><p>YApi 是由去哪儿网移动架构组(简称 YMFE，一群由 FE、iOS 和 Android 工程师共同组成的最具想象力、创造力和影响力的大前端团队) 开发的可视化接口管理工具，是一个可本地部署的、打通前后端及 QA 的接口管理平台。</p>
+<p>YApi 旨在为开发、产品和测试人员提供更优雅的接口管理服务，可以帮助开发者轻松创建、发布和维护不同项目，不同平台的 API。有了 YApi，我们可以很方便的测试、管理和维护多个项目的 API 接口，不像 Swagger 那样是随应用生和灭的(且线上环境下大多数须关闭)，YApi 是一个独立的服务平台。</p>
+<p>EasyYapi 是一款 Idea 插件，帮你导出 API 到 YApi、postman、markdown。</p>
+<p>Yapi 参考安装：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://mp.weixin.qq.com/s?%5C_%5C_biz=MzA4ODIyMzEwMg==&mid=2447536869&idx=1&sn=5cf1a994e428312054ff5e015f0a57dd&chksm=843baef4b34c27e2be91e4216f44710f3e40c6b2ac2ea82c27e2eac509ae8330d09dfcf2577e&scene=21#wechat\_redirect">https://mp.weixin.qq.com/s?\_\_biz=MzA4ODIyMzEwMg==&amp;mid=2447536869&amp;idx=1&amp;sn=5cf1a994e428312054ff5e015f0a57dd&amp;chksm=843baef4b34c27e2be91e4216f44710f3e40c6b2ac2ea82c27e2eac509ae8330d09dfcf2577e&amp;scene=21#wechat\_redirect</a></p>
+<p>EasyYapi 的使用参考文档：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://mp.weixin.qq.com/s?%5C_%5C_biz=MzA4ODIyMzEwMg==&mid=2447536892&idx=1&sn=b49f4f39ae39c83744f27df29e41a107&chksm=843baeedb34c27fb712b1b21bdd37891ca82249838b87f7aaf042ad9835dcb98ddd21f44c731&cur%5C_album%5C_id=2329480871705296897&scene=189#wechat\_redirect">https://mp.weixin.qq.com/s?\_\_biz=MzA4ODIyMzEwMg==&amp;mid=2447536892&amp;idx=1&amp;sn=b49f4f39ae39c83744f27df29e41a107&amp;chksm=843baeedb34c27fb712b1b21bdd37891ca82249838b87f7aaf042ad9835dcb98ddd21f44c731&amp;cur\_album\_id=2329480871705296897&amp;scene=189#wechat\_redirect</a></p>
+<h2 id="四、对比"><a href="# 四、对比" class="headerlink" title="四、对比"></a>四、对比 </h2><h3 id="（一）Swagger"><a href="#（一）Swagger" class="headerlink" title="（一）Swagger"></a>（一）Swagger</h3><h4 id="1、部署方式"><a href="#1、部署方式" class="headerlink" title="1、部署方式"></a>1、部署方式</h4><p> 本地化部署</p>
+<h4 id="2、优点"><a href="#2、优点" class="headerlink" title="2、优点"></a>2、优点</h4><ul>
+<li>基于 RESTFUL 风格</li>
+<li>项目集成简单</li>
+<li>支持多语言（java，go，python 等）</li>
+</ul>
+<h4 id="3、缺点"><a href="#3、缺点" class="headerlink" title="3、缺点"></a>3、缺点</h4><ul>
+<li>依赖于服务的启动</li>
+<li>依赖注解</li>
+<li>存在多个服务的时候不便于统一管理</li>
+<li>界面比较简单，接口和响应对象分开展示，参数字典对照不方便。</li>
+<li>不支持自定义的请求头</li>
+</ul>
+<h4 id="4、分享方式"><a href="#4、分享方式" class="headerlink" title="4、分享方式"></a>4、分享方式</h4><ul>
+<li>支持 openapi 分享</li>
+</ul>
+<h3 id="（二）Knife4j"><a href="#（二）Knife4j" class="headerlink" title="（二）Knife4j"></a>（二）Knife4j</h3><h4 id="1、部署方式 -1"><a href="#1、部署方式 -1" class="headerlink" title="1、部署方式"></a>1、部署方式 </h4><p> 本地化部署</p>
+<h4 id="2、优点 -1"><a href="#2、优点 -1" class="headerlink" title="2、优点"></a>2、优点</h4><ul>
+<li>在 swagger 基础上，做了增强，UI 更加直观。</li>
+<li>比 swagger 支持了导出 markdown，html，word 格式的离线文档。</li>
+<li>支持自定义的请求头。</li>
+<li>支持多种 java 框架。</li>
+<li>有细微的版本控制，识别后端接口的新增与修改。</li>
+</ul>
+<h4 id="3、缺点 -1"><a href="#3、缺点 -1" class="headerlink" title="3、缺点"></a>3、缺点</h4><ul>
+<li>导出只支持全量导出</li>
+<li>功能相对比较单一</li>
+<li>依赖于服务的启动</li>
+<li>依赖注解</li>
+<li>存在多个服务的时候不便于统一管理</li>
+<li>个人的开源项目</li>
+</ul>
+<h4 id="4、分享方式 -1"><a href="#4、分享方式 -1" class="headerlink" title="4、分享方式"></a>4、分享方式</h4><ul>
+<li>支持 markdown，html，word，openapi 导出。</li>
+</ul>
+<h3 id="（三）Apifox"><a href="#（三）Apifox" class="headerlink" title="（三）Apifox"></a>（三）Apifox</h3><h4 id="1、部署方式 -2"><a href="#1、部署方式 -2" class="headerlink" title="1、部署方式"></a>1、部署方式 </h4><p> 免费是 Saas 版，私有版需要付费</p>
+<h4 id="2、优点 -2"><a href="#2、优点 -2" class="headerlink" title="2、优点"></a>2、优点 </h4><p> 功能丰富，包括文档管理、接口调试、Mock、接口自动化测试等 商业软件，更新和维护比较稳定。 有桌面版和 web 版，桌面版功能比较全 免费版可用，基本无限制 方便集成 Swagger 和 Springdoc</p>
+<h4 id="3、缺点 -2"><a href="#3、缺点 -2" class="headerlink" title="3、缺点"></a>3、缺点 </h4><p> 免费是 Saas 版，需要进行定期的账号管理，防止泄露。同时接口的安全风险可能需要进一步考虑</p>
+<h4 id="4、分享方式 -2"><a href="#4、分享方式 -2" class="headerlink" title="4、分享方式"></a>4、分享方式 </h4><p> 支持 App、网页访问、支持网页分享 支持导出静态文档（但是目前不支持直接导出 word）。</p>
+<h3 id="（四）Smart-doc-Torna"><a href="#（四）Smart-doc-Torna" class="headerlink" title="（四）Smart-doc + Torna"></a>（四）Smart-doc + Torna</h3><h4 id="1、部署方式 -3"><a href="#1、部署方式 -3" class="headerlink" title="1、部署方式"></a>1、部署方式 </h4><p> 国产开源项目，私有化本地部署。支持 windows，linux，docker，k8s 多种方式。</p>
+<h4 id="2、优点 -3"><a href="#2、优点 -3" class="headerlink" title="2、优点"></a>2、优点</h4><ul>
+<li>smart-doc 基于 javadoc 的方式推导出接口文档，对代码的侵入性低。</li>
+<li>torna 支持 smart-doc 插件、swagger 插件、openapi 多种方式集成文档。</li>
+<li>torna 为开源项目，部署成本低。</li>
+<li>torna 的社区相对活跃（亲测！在群里问了一些问题，作者及时响应并答复）</li>
+<li>torna 可以满足目前大多数现有需求场景。</li>
+<li>torna 基于 java+vue 开发，项目组技术栈相对成熟，方便后续二开。</li>
+</ul>
+<h4 id="3、缺点 -3"><a href="#3、缺点 -3" class="headerlink" title="3、缺点"></a>3、缺点</h4><ul>
+<li>国产开源项目，存在作者后续不维护的风险。</li>
+<li>torna 目前不支持 openAPI 的导出方式（不过 smart-doc 是支持的）</li>
+</ul>
+<h4 id="4、分享方式 -3"><a href="#4、分享方式 -3" class="headerlink" title="4、分享方式"></a>4、分享方式</h4><ul>
+<li>支持网页分享。可以分享公开链接或带秘钥的私有链接。</li>
+<li>支持 markdown，html，doc 导出。</li>
+</ul>
+<h3 id="（五）EasyYapi-Yapi"><a href="#（五）EasyYapi-Yapi" class="headerlink" title="（五）EasyYapi + Yapi"></a>（五）EasyYapi + Yapi</h3><h4 id="1、部署方式 -4"><a href="#1、部署方式 -4" class="headerlink" title="1、部署方式"></a>1、部署方式 </h4><p> 支持本地化部署，支持 Docker 部署</p>
+<h4 id="2、优点 -4"><a href="#2、优点 -4" class="headerlink" title="2、优点"></a>2、优点 </h4><p> 功能丰富，包括文档管理、接口调试、Mock。 方便集成 Swagger 和 Springdoc。</p>
+<p>Yapi 有较为细致的权限管理。</p>
+<h4 id="3、缺点 -4"><a href="#3、缺点 -4" class="headerlink" title="3、缺点"></a>3、缺点</h4><p>Yapi 目前已经不怎么维护更新了，社区活跃度较低</p>
+<h4 id="4、分享方式 -4"><a href="#4、分享方式 -4" class="headerlink" title="4、分享方式"></a>4、分享方式 </h4><p> 支持 App、网页访问、支持网页分享 支持导出静态文档（但是目前不支持直接导出 word）。</p>
+<h2 id="五、选择与使用"><a href="# 五、选择与使用" class="headerlink" title="五、选择与使用"></a>五、选择与使用 </h2><p> 基于以上的对比，加上目前公司的开发方式，最后选型 <strong>smart-doc + Torna 实现文档全流程自动化</strong>。</p>
+<p>原因如下：</p>
+<ol>
+<li>使用 javadoc 注释的方式代替侵入性注解，可以简化代码结构，规范代码注释。</li>
+<li>由于目前微服务过多，需要一个聚合平台统一管理，且文档不依赖于项目的启动。</li>
+<li>国内开源项目，可以本地化部署，安全性能得到保证。</li>
+<li>可以以项目组的形式管理接口，各项目组之间接口互不影响。权限划分细致，便于团队文档可见性管理。</li>
+<li>有丰富的文档导出功能。</li>
+<li>现有项目使用 smart-doc 的 maven 插件可以很方便的推送接口文档到 torna 中，改造成本相对较低。</li>
+</ol>
+<h4 id="安装部署 torna"><a href="# 安装部署 torna" class="headerlink" title="安装部署 torna"></a>安装部署 torna</h4><h5 id="方式 1：下载 zip 本地运行"><a href="# 方式 1：下载 zip 本地运行" class="headerlink" title="方式 1：下载 zip 本地运行"></a>方式 1：下载 zip 本地运行</h5><ul>
+<li>准备工作<ul>
+<li>Java 环境，最低要求 Java8</li>
+<li>MySQL，要求 5.6.5 及以后，5.6.5 之前的版本见：<a href="https://gitee.com/link?target=http://torna.cn/dev/mysql-lower-version.html" rel="external nofollow noreferrer">支持低版本 MySQL</a></li>
+</ul>
+</li>
+</ul>
+<p>前往 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/durcframework/torna/releases">发行版页面</a> ，下载最新版本，解压 zip</p>
+<p>导入数据库，执行<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/durcframework/torna/blob/master/mysql.sql">mysql.sql</a></p>
+<p>打开 <code>application.properties</code> 配置文件，修改数据库连接配置</p>
+<p>执行 <code>sh startup.sh</code> 启动（Windows 执行<code>startup.bat</code>）</p>
+<p>访问：<code>http://ip:7700</code></p>
+<ul>
+<li>登录账号：</li>
+</ul>
+<p>用户名：<code>admin</code>，密码：<code>123456</code><br><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26208803990000.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26208803990000.png"></a></p>
+<ul>
+<li>后续升级</li>
+</ul>
+<p>无特殊说明，只需要覆盖 <code>torna.jar 文件</code> 和<code>dist 文件夹</code>，然后重启即可</p>
+<h5 id="Linux 服务器快速部署"><a href="#Linux 服务器快速部署" class="headerlink" title="Linux 服务器快速部署"></a>Linux 服务器快速部署</h5><ul>
+<li>前提：导入数据库，执行<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/durcframework/torna/blob/master/mysql.sql">mysql.sql</a></li>
+</ul>
+<p>创建配置文件，执行命令：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">`mkdir <span class="regexp">/etc/</span>torna &amp;&amp; wget https:<span class="regexp">//gi</span>tee.com<span class="regexp">/durcframework/</span>torna<span class="regexp">/raw/m</span>aster<span class="regexp">/install/</span>application.properties -O <span class="regexp">/etc/</span>torna/application.properties` </span><br><span class="line"></span><br><span class="line">*   <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>vim /etc/torna/application.properties</code>修改数据库连接配置</p>
+<p>拉取最新版本并启动，以 1.21.0 为例</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">`wget https:<span class="regexp">//gi</span>tee.com<span class="regexp">/durcframework/</span>torna<span class="regexp">/raw/m</span>aster<span class="regexp">/install/</span>restart-torna.sh &amp;&amp; sh restart-torna.sh <span class="number">1.21</span>.<span class="number">0</span>` </span><br><span class="line"></span><br><span class="line">*   <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>后续更新版本只需执行<code>sh restart-torna.sh 版本号</code></p>
+<h5 id="方式 2：docker 运行"><a href="# 方式 2：docker 运行" class="headerlink" title="方式 2：docker 运行"></a>方式 2：docker 运行 </h5><p> 导入数据库，执行<a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/durcframework/torna/blob/master/mysql.sql">mysql.sql</a></p>
+<p>下载公共镜像</p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">`docker pull tanghc2020/torna:<span class="number">1.21</span>.<span class="number">0</span>` </span><br><span class="line"></span><br><span class="line">*   <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>创建配置文件，执行命令：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">`mkdir <span class="regexp">/etc/</span>torna &amp;&amp; wget https:<span class="regexp">//gi</span>tee.com<span class="regexp">/durcframework/</span>torna<span class="regexp">/raw/m</span>aster<span class="regexp">/install/</span>application.properties -O <span class="regexp">/etc/</span>torna/application.properties` </span><br><span class="line"></span><br><span class="line">*   <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>vim /etc/torna/application.properties</code>修改数据库连接配置</p>
+<p>执行 docker 命令：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">`docker run --name torna --restart=always \</span><br><span class="line">  -p <span class="number">7700</span>:<span class="number">7700</span> \</span><br><span class="line">  -e JAVA_OPTS=<span class="string">&quot;-server -Xms512m -Xmx512m&quot;</span> \</span><br><span class="line">  -v <span class="regexp">/etc/</span>torna<span class="regexp">/application.properties:/</span>torna<span class="regexp">/config/</span>application.properties \</span><br><span class="line">  -d tanghc2020/torna:<span class="number">1.21</span>.<span class="number">0</span>` </span><br><span class="line"></span><br><span class="line">*   <span class="number">1</span></span><br><span class="line">*   <span class="number">2</span></span><br><span class="line">*   <span class="number">3</span></span><br><span class="line">*   <span class="number">4</span></span><br><span class="line">*   <span class="number">5</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>浏览器访问<code>http://ip:7700</code>，ip 对应 docker 宿主机器 ip，非 docker 容器 ip</p>
+<p><a href="https://gitee.com/link?target=http://torna.cn/dev/common-script.html%23docker%E9%87%8D%E5%90%AFtorna%E8%84%9A%E6%9C%AC" rel="external nofollow noreferrer">运维脚本</a></p>
+<h5 id="docker-compose 部署 torna"><a href="#docker-compose 部署 torna" class="headerlink" title="docker-compose 部署 torna"></a>docker-compose 部署 torna</h5><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/durcframework/torna/tree/master/torna-docker-compose">【docker-compose 方式部署 torna】</a></p>
+<h5 id="kubernetes 部署 torna"><a href="#kubernetes 部署 torna" class="headerlink" title="kubernetes 部署 torna"></a>kubernetes 部署 torna</h5><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/durcframework/torna/tree/master/torna-on-kubernetes">【kubernetes 部署 torna】</a></p>
+<h4 id="代码集成 smart-doc 插件实现推送"><a href="# 代码集成 smart-doc 插件实现推送" class="headerlink" title="代码集成 smart-doc 插件实现推送"></a>代码集成 smart-doc 插件实现推送</h4><ol>
+<li>先在 torna 上创建对应的应用</li>
+</ol>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26223506055800.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26223506055800.png"></a></p>
+<ol start="2">
+<li>在代码里，pom.xml 添加 smart-doc 的 maven 插件</li>
+</ol>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"> `&lt;<span class="keyword">plugin</span>&gt;</span><br><span class="line">    &lt;groupId&gt;com.github.shalousun&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;smart-doc-maven-<span class="keyword">plugin</span>&lt;/artifactId&gt;</span><br><span class="line">    &lt;<span class="keyword">version</span>&gt;2.4.9&lt;/<span class="keyword">version</span>&gt;</span><br><span class="line">    &lt;configuration&gt;</span><br><span class="line">        </span><br><span class="line">        &lt;configFile&gt;<span class="variable">$&#123;basedir&#125;</span>/src/main/resources/smart-doc.json&lt;/configFile&gt;</span><br><span class="line">    &lt;/configuration&gt;</span><br><span class="line">    &lt;executions&gt;</span><br><span class="line">        &lt;execution&gt;</span><br><span class="line">            &lt;phase&gt;package&lt;/phase&gt;</span><br><span class="line">        &lt;/execution&gt;</span><br><span class="line">    &lt;/executions&gt;</span><br><span class="line">&lt;/<span class="keyword">plugin</span>&gt;` </span><br><span class="line"></span><br><span class="line"><span class="comment">*   1</span></span><br><span class="line"><span class="comment">*   2</span></span><br><span class="line"><span class="comment">*   3</span></span><br><span class="line"><span class="comment">*   4</span></span><br><span class="line"><span class="comment">*   5</span></span><br><span class="line"><span class="comment">*   6</span></span><br><span class="line"><span class="comment">*   7</span></span><br><span class="line"><span class="comment">*   8</span></span><br><span class="line"><span class="comment">*   9</span></span><br><span class="line"><span class="comment">*   10</span></span><br><span class="line"><span class="comment">*   11</span></span><br><span class="line"><span class="comment">*   12</span></span><br><span class="line"><span class="comment">*   13</span></span><br><span class="line"><span class="comment">*   14</span></span><br><span class="line"><span class="comment">*   15</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26230854207300.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26230854207300.png"></a></p>
+<ol start="3">
+<li>在代码 &#x2F;resources 目录下添加 smart-doc.json 文件，并且修改配置。</li>
+</ol>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">`&#123;</span><br><span class="line">  <span class="string">&quot;outPath&quot;</span>: <span class="string">&quot;target/doc&quot;</span>,</span><br><span class="line">  <span class="string">&quot;projectName&quot;</span>: <span class="string">&quot;torna-test&quot;</span>,</span><br><span class="line">  <span class="string">&quot;packageFilters&quot;</span>: <span class="string">&quot;com.tmzh.apidoc.torna.web.controller.*&quot;</span>,</span><br><span class="line">  <span class="string">&quot;openUrl&quot;</span>: <span class="string">&quot;http://localhost:7700/api&quot;</span>,</span><br><span class="line">  <span class="string">&quot;appToken&quot;</span>: <span class="string">&quot;7af425085ee94d7d8b74d4074e51af32&quot;</span>,</span><br><span class="line">  <span class="string">&quot;debugEnvName&quot;</span>:<span class="string">&quot; 本地环境 &quot;</span>,</span><br><span class="line">  <span class="string">&quot;debugEnvUrl&quot;</span>:<span class="string">&quot;http://127.0.0.1:8080&quot;</span>,</span><br><span class="line">  <span class="string">&quot;tornaDebug&quot;</span>: true,</span><br><span class="line">  <span class="string">&quot;replace&quot;</span>: true</span><br><span class="line">&#125;` </span><br><span class="line"></span><br><span class="line"><span class="comment">*   1</span></span><br><span class="line"><span class="comment">*   2</span></span><br><span class="line"><span class="comment">*   3</span></span><br><span class="line"><span class="comment">*   4</span></span><br><span class="line"><span class="comment">*   5</span></span><br><span class="line"><span class="comment">*   6</span></span><br><span class="line"><span class="comment">*   7</span></span><br><span class="line"><span class="comment">*   8</span></span><br><span class="line"><span class="comment">*   9</span></span><br><span class="line"><span class="comment">*   10</span></span><br><span class="line"><span class="comment">*   11</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>参数说明:</p>
+<ul>
+<li>outPath：固定填这个不用变</li>
+<li>projectName：项目名称</li>
+<li>packageFilters：Controller 接口对应的 package 目录，多个用 <code>,</code> 隔开</li>
+<li>openUrl：Torna 中的 OpenAPI 接口</li>
+<li>appToken：Torna 中的 OpenAPI token</li>
+<li>debugEnvName：Torna 中调试环境名称</li>
+<li>debugEnvUrl：Torna 中调试环境地址</li>
+<li>tornaDebug：是否开启调试，初次使用建议开始，后面稳定了关闭</li>
+<li>replace：是否替换文档，建议 true</li>
+</ul>
+<p>这里是快速配置，完整版的配置参考：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://smart-doc-group.github.io/#/zh-cn/diy/config">https://smart-doc-group.github.io/#/zh-cn/diy/config</a></p>
+<ol start="4">
+<li>参考 smart-doc 中 javadoc 规范，对代码进行规范化注释。</li>
+</ol>
+<p>参考：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://smart-doc-group.github.io/#/zh-cn/start/javadoc">https://smart-doc-group.github.io/#/zh-cn/start/javadoc</a></p>
+<p>smart-doc 支持的原生 javadoc：</p>
+<table>
+<thead>
+<tr>
+<th>tag 名称</th>
+<th>使用描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>@param</code></td>
+<td>对于在 <code>Spring Boot</code> 接口层，对于简单类型的参数必须在使用 <code>@param</code> 时写上注释描述，对于 <code>Entity</code> 类型 <code>smart-doc</code> 则不会检查</td>
+</tr>
+<tr>
+<td><code>@deprecated</code></td>
+<td>可以在注释中用于标记接口已经废弃，作用同 <code>@Deprecated</code> 注解</td>
+</tr>
+<tr>
+<td><code>@apiNote</code></td>
+<td><code>@apiNote</code>是 <code>JAVA</code> 新增的文档 <code>tag</code>,<code>smart-doc</code> 使用 <code>@apiNote</code> 的注释作为方法的详细描述，因此可以使用 <code>@apiNote</code> 来写一段长注释。如果一个方法不写 <code>@apiNote</code>注释说明，<code>smart-doc</code>直接使用方法默认注释填充</td>
+</tr>
+<tr>
+<td><code>@author</code></td>
+<td><code>smart-doc</code>会提取代码中 <code>@author</code> 标注到文档中，<code>@author</code>可以写在方法上也可以写到类上。例如：<code>@author sunyu on 2016/12/6.</code></td>
+</tr>
+</tbody></table>
+<p>smart-doc 自定义 Tag：</p>
+<table>
+<thead>
+<tr>
+<th>tag 名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>@ignore</code></td>
+<td><code>@ignore</code> 如果 <code>@ignore</code> 加到方法上，则接口方法不会输出到文档。从 <code>1.8.4</code> 开始 <code>@ignore</code> 支持添加到 <code>Controller</code> 上进行忽略不想生成文档的接口类。<code>@ignore</code>也可以用于方法上忽略某个请求参数。</td>
+</tr>
+<tr>
+<td><code>@required</code></td>
+<td>如果你没有使用 <code>JSR303</code> 参数验证规范实现的方式来标注字段，就可以使用 <code>@required</code> 去标注请求参数对象的字段，标注 <code>smart-doc</code> 在输出参数列表时会设置为<code>true</code>。【不建议使用，以后会删除】</td>
+</tr>
+<tr>
+<td><code>@mock</code></td>
+<td>从 <code>smart-doc 1.8.0</code> 开始，<code>@mock</code> <code>tag</code>用于在对象基本类型字段设置自定义文档展示值。设置值后 <code>smart-doc</code> 不再帮你生成随机值。方便可以通过 <code>smart-doc</code> 直接输出交付文档。</td>
+</tr>
+<tr>
+<td><code>@dubbo</code></td>
+<td>从 <code>smart-doc 1.8.7</code> 开始，<code>@dubbo</code> <code>tag</code>用于在 <code>Dubbo</code> 的<code>API</code>接口类上添加让 <code>smart-doc</code> 可以扫描到 <code>Dubbo RPC</code> 的接口生成文档。</td>
+</tr>
+<tr>
+<td><code>@restApi</code></td>
+<td>从 <code>smart-doc 1.8.8</code> 开始，<code>@restApi</code> <code>tag</code>用于支持 <code>smart-doc</code> 去扫描 <code>Spring Cloud Feign</code> 的定义接口生成文档。</td>
+</tr>
+<tr>
+<td><code>@order</code></td>
+<td>从 <code>smart-doc 1.9.4</code> 开始，<code>@order</code> <code>tag</code>用于设置 <code>Controller</code> 接口或者 <code>API</code> 入口的自定义排序序号，<code>@order 1</code>就表示设置序号为<code>1</code>。</td>
+</tr>
+<tr>
+<td><code>@ignoreResponseBodyAdvice</code></td>
+<td>从 <code>smart-doc 1.9.8</code> 开始，<code>@ignoreResponseBodyAdvice</code> <code>tag</code>用于忽略 <code>ResponseBodyAdvice</code> 设置的包装类。</td>
+</tr>
+<tr>
+<td><code>@download</code></td>
+<td>从 <code>smart-doc 2.0.1</code> 开始，<code>@download</code> <code>tag</code>用于标注在 <code>Controller</code> 的文件下载方法上，生成 <code>debug</code> 页面时可实现文件下载测试。并且支持下载文件带请求头参数测试。</td>
+</tr>
+<tr>
+<td><code>@page</code></td>
+<td>从 <code>smart-doc 2.0.2</code> 开始，<code>@page</code> <code>tag</code>用于标注在 <code>Controller</code> 的方法上表示该方法用来渲染返回一个静态页面，生成 <code>debug</code> 页面时如果发起测试，测试页面会自动在浏览器开启新标签显示页面。</td>
+</tr>
+<tr>
+<td><code>@ignoreParams</code></td>
+<td>从 <code>smart-doc 2.1.0</code> 开始，<code>@ignoreParams</code> <code>tag</code>用于标注在 <code>Controller</code> 方法上忽略掉不想显示在文档中的参数，例如：<code>@ignoreParams id name</code>，多个参数名用空格隔开</td>
+</tr>
+<tr>
+<td><code>@response</code></td>
+<td>从 <code>smart-doc 2.2.0</code> 开始，<code>@response</code> <code>tag</code>标注在 <code>Controller</code> 方法上可以允许用这自己定义返回的 <code>json example</code>。建议只在返回基础类型时使用，如：<code>Result</code> 类型这种泛型是简单原生类型的响应。</td>
+</tr>
+<tr>
+<td><code>@tag</code></td>
+<td><code>@since 2.2.5</code>, <code>@tag</code>用于将 <code>Controller</code> 方法分类, 可以将不同 <code>Contoller</code> 下的方法指定到多个分类下, 同时也可以直接指定 <code>Controller</code> 为一个分类或多个分类，【不要使用，不支持，直接用分组配置代替】</td>
+</tr>
+</tbody></table>
+<ol start="5">
+<li>双击右侧 maven 插件栏中的 smart-doc:torna-rest 实现文档推送，当然也可以使用 maven 的命令行模式，如下</li>
+</ol>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">`mvn -Dfile.encoding=UTF-8 smart-doc:torna-rest -<span class="keyword">pl</span> :torna-<span class="keyword">test</span> -am` </span><br><span class="line"></span><br><span class="line"><span class="comment">*   1</span></span><br><span class="line"><span class="comment">*   2</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>对于 maven 多模块项目，推荐使用命令行的形式，推送某个具体的服务至 torna。可以参考：</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://smart-doc-group.github.io/#/zh-cn/plugins/maven_plugin?id=maven%e5%a4%9a%e6%a8%a1%e5%9d%97%e4%b8%ad%e4%bd%bf%e7%94%a8%e6%8f%92%e4%bb%b6">maven 多模块中使用插件</a> 示例如下：</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26240815168400.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26240815168400.png"></a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26247613417300.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26247613417300.png"></a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26257675606100.png" class="gallery-item"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-08-23/26257675606100.png"></a></p>
+<h2 id="六、总结"><a href="# 六、总结" class="headerlink" title="六、总结"></a>六、总结 </h2><p><strong> 后端同学：</strong></p>
+<ul>
+<li>【推荐】对历史服务建议完善相应的 tag 注释（smart-doc 方式），或 swagger 注解（swagger 插件方式）。</li>
+<li>【<strong>强制</strong>】对新服务、新接口，需要编写 openapi 注解（swagger）或 javadoc 注释（smart-doc），便于后续文档维护。</li>
+<li>【<strong>强制</strong>】在开发阶段，使用统一的分支进行文档推送，防止出现分支代码不一致的场景。</li>
+<li>【<strong>强制</strong>】后面文档稳定了，关闭 smart-doc.json 中的 replace，防止文档误操作变更。</li>
+</ul>
+<p><strong>前端同学：</strong></p>
+<ul>
+<li>【推荐】对与前端同学来说，在版本开发时，需要及时关注版本迭代接口，并在个人中心绑定钉钉手机号，这样可以在文档群中接收到来自钉钉机器人的 @消息。</li>
+</ul>
+<p><strong>测试同学：</strong></p>
+<ul>
+<li>【推荐】对与测试同学来说，在版本提测后，需要及时关注版本迭代的接口，并在个人中心绑定钉钉手机号，这样可以在文档群中接收到来自钉钉机器人的 @消息。</li>
+<li>【推荐】torna 平台在最近的版本中，支持了 MeterSphere 平台的接口文档推送（可能存在些许问题）。自动化测试同学可以在空间中配置 MeterSphere 相关配置。每当接口变更时，及时查看 MeterSphere 的相关空间接口是否同步变更，确保接口变更同步及时。</li>
+</ul>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {selector: '.gallery-item'};
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></div>
+				<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
+				<script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script>
+				<script>
+				var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+				var isEncrypt = document.getElementById('hexo-blog-encrypt');
+				var allowMobile = false;
+				if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {
+					try {
+						var plugin = new ReadmorePlugin();
+						plugin.init({
+							"type": "hexo",
+							"id": "readmore-container",
+							"name": "程序员朱永胜",
+							"blogId": "39259-6450029321246-893",
+							"qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg",
+							"keyword": "1",
+							"random": "1",
+							"height": "auto",
+							"expires": "365",
+							"lockToc": "yes",
+							"interval": "60",
+							"baseUrl": ""
+						});
+					} catch(e) {
+						console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);
+					}
+				}
+				</script>
+			</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="index.html" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">程序员朱永胜</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://blog.zysicyj.top/20240823163819.html">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://blog.zysicyj.top/20240823163819.html')">接口文档管理解决方案调研及 Torna+Smart-doc 的使用 .md</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://blog.zysicyj.top/20240823163819.html"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=undefined&amp;url=https://blog.zysicyj.top/20240823163819.html&amp;pic=undefined" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.zysicyj.top" target="_blank"></a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302&amp;_r_=451e912d-32d3-d044-2ead-ab940b3cea41" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="20240823153250.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=ba26b3f4-9f39-685d-2ea1-7e270d7cc6cb" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">docker 让更新 wsl.md</div></div></a></div><div class="next-post pull-right"><a href="20240829090332.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=b504703f-ceda-0bd8-ddca-5c6dbf4e553a" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Windows 更新 wsl.md</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">程序员朱永胜</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="mailto:zhuyongsheng@xxc99.cn" rel="external nofollow noreferrer" target="_blank" title="fas fa-envelope"></a><a class="social-icon faa-parent animated-hover" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="fa-solid fa-blog fa-beat"></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="fa-brands fa-bilibili"></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://img02.anheyu.com/adminuploads/1/2022/09/11/631ddb7c9b250.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/tc/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%8E%B0%E7%8A%B6"><span class="toc-number">1.</span> <span class="toc-text">一、现状 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%9C%80%E6%B1%82"><span class="toc-number">2.</span> <span class="toc-text">二、需求 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%B0%83%E7%A0%94"><span class="toc-number">3.</span> <span class="toc-text">三、调研 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Swagger"><span class="toc-number">3.1.</span> <span class="toc-text">Swagger</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9C%B0%E5%9D%80"><span class="toc-number">3.1.1.</span> <span class="toc-text"> 官方地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">3.1.2.</span> <span class="toc-text">介绍</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Knife4j"><span class="toc-number">3.2.</span> <span class="toc-text">Knife4j</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9C%B0%E5%9D%80%20-1"><span class="toc-number">3.2.1.</span> <span class="toc-text">官方地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%20-1"><span class="toc-number">3.2.2.</span> <span class="toc-text">介绍</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Apifox"><span class="toc-number">3.3.</span> <span class="toc-text">Apifox</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9C%B0%E5%9D%80%20-2"><span class="toc-number">3.3.1.</span> <span class="toc-text">官方地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%20-2"><span class="toc-number">3.3.2.</span> <span class="toc-text">介绍</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Smart-doc-Torna"><span class="toc-number">3.4.</span> <span class="toc-text">Smart-doc + Torna</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9C%B0%E5%9D%80%20-3"><span class="toc-number">3.4.1.</span> <span class="toc-text">官方地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%20-3"><span class="toc-number">3.4.2.</span> <span class="toc-text">介绍</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#EasyYapi-Yapi"><span class="toc-number">3.5.</span> <span class="toc-text">EasyYapi + Yapi</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9C%B0%E5%9D%80%20-4"><span class="toc-number">3.5.1.</span> <span class="toc-text">官方地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%20-4"><span class="toc-number">3.5.2.</span> <span class="toc-text">介绍 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%AF%B9%E6%AF%94"><span class="toc-number">4.</span> <span class="toc-text">四、对比 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89Swagger"><span class="toc-number">4.1.</span> <span class="toc-text">（一）Swagger</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F"><span class="toc-number">4.1.1.</span> <span class="toc-text">1、部署方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BC%98%E7%82%B9"><span class="toc-number">4.1.2.</span> <span class="toc-text">2、优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E7%BC%BA%E7%82%B9"><span class="toc-number">4.1.3.</span> <span class="toc-text">3、缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%88%86%E4%BA%AB%E6%96%B9%E5%BC%8F"><span class="toc-number">4.1.4.</span> <span class="toc-text">4、分享方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89Knife4j"><span class="toc-number">4.2.</span> <span class="toc-text">（二）Knife4j</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F%20-1"><span class="toc-number">4.2.1.</span> <span class="toc-text">1、部署方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BC%98%E7%82%B9%20-1"><span class="toc-number">4.2.2.</span> <span class="toc-text">2、优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E7%BC%BA%E7%82%B9%20-1"><span class="toc-number">4.2.3.</span> <span class="toc-text">3、缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%88%86%E4%BA%AB%E6%96%B9%E5%BC%8F%20-1"><span class="toc-number">4.2.4.</span> <span class="toc-text">4、分享方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89Apifox"><span class="toc-number">4.3.</span> <span class="toc-text">（三）Apifox</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F%20-2"><span class="toc-number">4.3.1.</span> <span class="toc-text">1、部署方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BC%98%E7%82%B9%20-2"><span class="toc-number">4.3.2.</span> <span class="toc-text">2、优点 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E7%BC%BA%E7%82%B9%20-2"><span class="toc-number">4.3.3.</span> <span class="toc-text">3、缺点 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%88%86%E4%BA%AB%E6%96%B9%E5%BC%8F%20-2"><span class="toc-number">4.3.4.</span> <span class="toc-text">4、分享方式 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89Smart-doc-Torna"><span class="toc-number">4.4.</span> <span class="toc-text">（四）Smart-doc + Torna</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F%20-3"><span class="toc-number">4.4.1.</span> <span class="toc-text">1、部署方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BC%98%E7%82%B9%20-3"><span class="toc-number">4.4.2.</span> <span class="toc-text">2、优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E7%BC%BA%E7%82%B9%20-3"><span class="toc-number">4.4.3.</span> <span class="toc-text">3、缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%88%86%E4%BA%AB%E6%96%B9%E5%BC%8F%20-3"><span class="toc-number">4.4.4.</span> <span class="toc-text">4、分享方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89EasyYapi-Yapi"><span class="toc-number">4.5.</span> <span class="toc-text">（五）EasyYapi + Yapi</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F%20-4"><span class="toc-number">4.5.1.</span> <span class="toc-text">1、部署方式 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BC%98%E7%82%B9%20-4"><span class="toc-number">4.5.2.</span> <span class="toc-text">2、优点 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E7%BC%BA%E7%82%B9%20-4"><span class="toc-number">4.5.3.</span> <span class="toc-text">3、缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%88%86%E4%BA%AB%E6%96%B9%E5%BC%8F%20-4"><span class="toc-number">4.5.4.</span> <span class="toc-text">4、分享方式 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E9%80%89%E6%8B%A9%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">五、选择与使用 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%20torna"><span class="toc-number">5.0.1.</span> <span class="toc-text">安装部署 torna</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%201%EF%BC%9A%E4%B8%8B%E8%BD%BD%20zip%20%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C"><span class="toc-number">5.0.1.1.</span> <span class="toc-text">方式 1：下载 zip 本地运行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Linux%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2"><span class="toc-number">5.0.1.2.</span> <span class="toc-text">Linux 服务器快速部署</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%202%EF%BC%9Adocker%20%E8%BF%90%E8%A1%8C"><span class="toc-number">5.0.1.3.</span> <span class="toc-text">方式 2：docker 运行 </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#docker-compose%20%E9%83%A8%E7%BD%B2%20torna"><span class="toc-number">5.0.1.4.</span> <span class="toc-text">docker-compose 部署 torna</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#kubernetes%20%E9%83%A8%E7%BD%B2%20torna"><span class="toc-number">5.0.1.5.</span> <span class="toc-text">kubernetes 部署 torna</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%9B%86%E6%88%90%20smart-doc%20%E6%8F%92%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%8E%A8%E9%80%81"><span class="toc-number">5.0.2.</span> <span class="toc-text">代码集成 smart-doc 插件实现推送</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-number">6.</span> <span class="toc-text">六、总结 </span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="today_2023_09.html" title="Today For 2023 年 9 月"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=13ee6d1b-29c4-1f49-d7ff-186b509f4703" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Today For 2023 年 9 月"/></a><div class="content"><a class="title" href="today_2023_09.html" title="Today For 2023 年 9 月">Today For 2023 年 9 月</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="c37612c9.html" title="博客优化差不多了"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=a87b0dce-9204-07e0-7d5f-c1e1b61aa276" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客优化差不多了"/></a><div class="content"><a class="title" href="c37612c9.html" title="博客优化差不多了">博客优化差不多了</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="cb2b755d.html" title="老婆七夕快乐"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=7bc20739-95c1-a2a6-932d-59252bdd914a" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="老婆七夕快乐"/></a><div class="content"><a class="title" href="cb2b755d.html" title="老婆七夕快乐">老婆七夕快乐</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="71f4c8f5.html" title="聊聊近况，一个字【累】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=421e3d76-2d8e-5ed0-d82f-7a2f25c71e25" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="聊聊近况，一个字【累】"/></a><div class="content"><a class="title" href="71f4c8f5.html" title="聊聊近况，一个字【累】">聊聊近况，一个字【累】</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="cb19af19.html" title="2024 年 07 月 10 日 (日记)"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=a5d69cdc-9cf4-68ed-f1c9-2409366c7be8" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2024 年 07 月 10 日 (日记)"/></a><div class="content"><a class="title" href="cb19af19.html" title="2024 年 07 月 10 日 (日记)">2024 年 07 月 10 日 (日记)</a><time datetime="2025-01-14T14:32:25.135Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="workboard"><div id="runtimeTextTip"></div></div><div class="footer_custom_text"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn/"><span>苏ICP备2024066768号-1</span></a></div></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 - 2025 By <a class="footer-bar-link" href="index.html" title="程序员朱永胜" target="_blank">程序员朱永胜</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="archives/" title="archive"><div class="headline">文章</div><div class="length-num">1217</div></a><a href="tags/" title="tag"><div class="headline">标签</div><div class="length-num">886</div></a><a href="categories/" title="category"><div class="headline">分类</div><div class="length-num">14</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" rel="external nofollow noreferrer" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.zysicyj.top/" title="个人主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/13/64d8c2748ef34.jpg" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">写作软件</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://editor.runjs.cool/post?id=demo" title="Mdx"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4296739868700.png" alt="Mdx"/><span class="back-menu-item-text">Mdx</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://openwrite.cn/" title="OpenWrite"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://openwrite.cn/logo.png" alt="OpenWrite"/><span class="back-menu-item-text">OpenWrite</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/writerside/" title="WriteSide"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="data:image/jpeg;base64,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" alt="WriteSide"/><span class="back-menu-item-text">WriteSide</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">开发工具</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/idea/" title="idea"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4576710485000.png" alt="idea"/><span class="back-menu-item-text">idea</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/datagrip/" title="DataGrip"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="DataGrip"/><span class="back-menu-item-text">DataGrip</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4663369180700.png" title="WebStorm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="WebStorm"/><span class="back-menu-item-text">WebStorm</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="微信开发者工具"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4743988475500.png" alt="微信开发者工具"/><span class="back-menu-item-text">微信开发者工具</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="HBuilder"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.dcloud.io/hbuilderx.html" alt="HBuilder"/><span class="back-menu-item-text">HBuilder</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://mobaxterm.mobatek.net/" title="MobaXterm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4849682167700.png" alt="MobaXterm"/><span class="back-menu-item-text">MobaXterm</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="index.html"><i class="fas fa-home faa-tada"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-link faa-tada"></i><span> 目录</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="fas fa-archive faa-tada"></i><span> 时间轴</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="fas fa-folder-open faa-tada"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-list faa-tada"></i><span> 清单</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/movies/"><i class="fas fa-video faa-tada"></i><span> 电影</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/books/"><i class="fas fa-book faa-tada"></i><span> 阅读</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/songs/"><i class="fas fa-music faa-tada"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追番</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/cinemas/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追剧</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="fas fa-link faa-tada"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/gallery/"><i class="fas fa-solid fa-image faa-tada"></i><span> 相册集</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/love/static/index.html"><i class="fas fa-heart faa-tada"></i><span> Love</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="fa-solid  fa-comment faa-tada"></i><span> 闲言碎语</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("07/01/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 程序员朱永胜 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("07/01/2023 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="js/search/local-search.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>

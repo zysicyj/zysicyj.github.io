@@ -1,0 +1,661 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time) | </title><meta name="author" content="程序员朱永胜"><meta name="copyright" content="程序员朱永胜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"><meta name="application-name" content="Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"><meta property="og:url" content="https://blog.zysicyj.top/dc2f1c0d.html"><meta property="og:site_name" content=""><meta property="og:description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top   全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java 面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 https:&amp;#x2F;&amp;#x2F;"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://img.xjh.me/random_img.php?return=302&amp;_r_=81acd849-d347-4ee9-2b65-bb7a764e15a9"><meta property="article:author" content="程序员朱永胜"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://img.xjh.me/random_img.php?return=302&amp;_r_=81acd849-d347-4ee9-2b65-bb7a764e15a9"><meta name="description" content="有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准https:&amp;#x2F;&amp;#x2F;blog.zysicyj.top   全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java 面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 https:&amp;#x2F;&amp;#x2F;"><link rel="shortcut icon" href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg"><link rel="canonical" href="https://blog.zysicyj.top/dc2f1c0d.html"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: 'ca-pub-9343722716173603',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?16bc6435aa26c2ae803ad0e62e4f5fa8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: {"enable":true,"ck":"3Is8EMFcqgGHzmLJ","LingQueMonitorID":"3Is8EMFcqgGHzmLJ"},
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":1},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🏃 脚踏实地行动派","🧱 团队小组发动机","💢 壮汉人狠话不多"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 程序员朱永胜","link":"链接: ","source":"来源: ","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '',
+  title: 'Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)',
+  postAI: '',
+  pageFillDescription: '8 点 1 氪 , TOP3 大新闻, 大公司 x2F 大事件 , AI 最前沿 , 投融资 , 酷产品 , 昨夜今晨, 1、问界 M9 正式发布：搭载华为最新全栈技术解决方案46.98 万元起 , 2、淘宝平台争议处理规则变更推动快速退货退款 , 3、网易大神社区已重新开始更新《魔兽世界》内容原停服通知删除 , 4、消息称苹果自研 Wi-Fi 芯片遇阻iPhone 17 能否用上存疑 , 5、柔宇科技被曝欠薪长达一年员工罢工讨薪 , 6、雷军：小米 SU7 定位 C 级高性能生态科技轿车定价确实有点贵, 7、2999 元起华为 nova 12 x2F Pro x2F Ultra 系列手机发布 , nova 12 Ultra, nova 12 Pro, nova 12, 8、B 站通知 50 万粉丝以上 UP 主前台实名：可选择不外显将影响流量、收益 , 9、华为内部人士：PC 端鸿蒙操作系统已接近完成 , 复习 ,  垃圾回收机制实现原理 ,  查找, 回收算法, JDK 中的 MAP（1.8）, HashMap, TreeMap, ConcurrentHashMap, LinkedHashMap, AIO, 字节码文件的组成, 字节码构成 - 常量池 , clint 指令 , 虚拟机栈 , 帧数据, 方法区的回收, Java 中的五种引用类型, Java 中引用对象的方式, 当 new 一个 HashMap 的时候会发生什么 , 当 put 元素的时候传递的 key 是怎么计算哈希值的, hashset 中 put 或 get 的实现 , PUT, GET, Java 中对象引用方式, HashMap 如何判断 key 是否相同, 什么情况下才会用红黑树 , 线程安全的数组除了 Vector 还有什么 , CAS, 为什么要使用 CAS有的时候博客内容会有变动首发博客是最新的其他博客地址可能会未同步认准全网最细面试题手册支持艾宾浩斯记忆法这是一份最全面最详细最高质量的面试题不建议你死记硬背只要每天复习一遍有个大概印象就行了点氪大新闻闲鱼回应加拿大鹅援助物资被倒卖是虚假信息已封号针对有网友反映在闲鱼上发现加拿大鹅捐赠甘肃震区物资被倒卖的事件闲鱼回应称平台客服已第一时间进行排查实际情况为该用户为了蹭热点引流售卖羽绒服编造了赈灾物资信息属于恶意营销引流行为平台已第一时间下架商品并对账号永久封禁处理上海市慈善基金会表示这些不实信息已对甘肃地震灾区的支援和救灾行动造成了不良影响针对这些情况上海市慈善基金会高度重视并已向有关部门提出声明月日该批捐赠物资安全运抵甘肃积石山县徐扈家乡清点无误并妥善放置目前甘肃省民政厅正在牵头制定物资的分配方案上海市慈善基金会也将持续关注物资分配的全过程和信息公开界面新闻澎湃新闻麦当劳月日起涨价客服会在各个点餐渠道明码标价公示月日麦当劳回应将涨价话题冲上微博热搜麦当劳官方客服确认月日麦当劳会对部分单品和套餐的价格进行调整会在各个点餐渠道进行明码标价公示据了解麦当劳上次涨价为今年月日当时调整了旗下热门套餐随心配的价格从原来的元调整至元澎湃新闻财经网近一半老玩家不愿回归暴雪国服网易暴雪复合条件尚未完全谈妥日晚间有报道称暴雪正与国内多家游戏厂商洽谈国服回归事宜最终选择与网易重新牵手合作对此多家媒体向网易游戏方面求证截至发稿网易游戏及暴雪方面均未确认此事有接近网易游戏的人士表示双方目前的条件没有完全谈妥但此事的确信度很高在一项你会回归暴雪国服吗的投票中人参与投票的结果显示约的用户表示不再会回归暴雪国服理由是担忧又出什么事新浪科技大公司大事件工信部公布减免车辆购置税的新能源汽车车型目录第一批两款小米在列氪获悉据工信部官网工信部公布减免车辆购置税的新能源汽车车型目录第一批两款小米在列汽车生产企业名称为北京汽车集团越野车有限公司乐视开放平台正式发布氪获悉日乐视开放平台发布会举办据介绍乐视开放平台是乐视推出的全自研一站式视频内容分账平台乐视视频版权负责人许天扬介绍乐视开放平台分账模式的商务政策与行业现有的分账模式有着本质区别在给予版权方最优的分账模式同时首次带来了行业里开放自主成本分账的入驻条件配合乐视开放平台发布目前乐视视频已上线点播厅专区参与分账合作的所有内容将汇集在点播厅魔兽世界社区已重新在网易大神上线记者发现从月日开始魔兽世界社区已重新在网易大神中上线魔兽世界社区已开始陆续更新相关蓝贴内容更新了包括地心之战魔兽探索服在内的新内容此前社区圈子中关于网易停止代理魔兽世界的新闻已经搜索不到南方都市报理想汽车年第周周销量达万辆氪获悉据理想汽车官方微博消息年第周理想汽车周销量达万辆持续向万辆月销目标发起冲击截至月日理想汽车本月销量已达万辆继续领跑新势力董宇辉新账号与辉同行上线已获平台认证氪获悉月日董宇辉新账号与辉同行获平台认证认证信息为与辉同行北京科技有限公司账号介绍为这是真的与辉同行端鸿蒙操作系统已经接近完成从华为内部人士处了解到除手机鸿蒙之外端的鸿蒙操作系统已经接近完成而鸿蒙更加独立走向更多终端也意味着华为软件产业链的新升级财经中信证券建议关注参与硬件产业链的相关公司氪获悉中信证券研报称苹果首款头显设备发售在即我们认为在硬件端展现了当前消费电子领域顶尖的参数水平有望提供全面超越市面相关产品的硬件体验而软件应用端空间计算所代表的体验不同于当前主流的屏幕有望从手势眼动语言等维度塑造用户交互的全新范式并进一步催动软件应用及制作技术的变革在投资机会上我们建议关注参与硬件产业链的相关公司同时有望受益于软件应用新范式的游戏视频内容制作及商业化等方向亦值得重点关注中国石油集团事业部制改革全面启动据中国石油报消息中国石油集团党组研究决定在油气新能源业务炼化新材料业务推行事业部制改革月日日宣布两大业务有关人事的任免决定为事业部制改革按下启动键据悉油气和新能源分公司炼化和新材料分公司已编制了实施方案明确了工作计划和时间节点安排加强统筹协调沟通对接协同推进确保年月起按照新的组织结构管理运行证券时报天奇股份目前与特斯拉业务合作集中于汽车整车制造装备相关产品及服务氪获悉天奇股份在互动平台表示目前公司与特斯拉的业务合作集中于汽车整车制造装备相关产品及服务已承接并顺利交付特斯拉上海工厂柏林工厂等项目基于双方良好合作基础未来不排除共同开展其他领域的业务合作基康仪器公司产品订单稳定在手订单饱和氪获悉基康仪器近日接受机构调研时表示公司产品订单稳定在手订单饱和目前在手订单主要为能源和水利核心行业公司将继续加强与核心行业客户的合作关系积极开拓交通智慧城市地质灾害等行业市场沪深北交易所除夕当日休市氪获悉上交所深交所北交所公布年部分节假日休市安排除夕当日休市月日星期五至月日星期六休市月日星期一起照常开市另外月日星期日月日星期日为周末休市美股三大指数集体收涨大型科技股多数上涨氪获悉月日收盘美股三大指数集体上涨道指涨纳指涨标普指数涨大型科技股多数上涨特斯拉涨超涨近涨微软谷歌涨苹果跌亚马逊跌热门中概股多数上涨蔚来涨超网易涨超理想汽车涨超小鹏汽车腾讯音乐涨超唯品会携程跌超韩媒本地泡菜太贵韩国人改囤中国泡菜据韩国媒体报道虽然年韩国泡菜出口量增长迅速但在性价比竞争中渐渐被中国泡菜拉开韩国海关总署日发布的进出口贸易统计数据显示今年月至月泡菜出口额亿美元而进口额达到亿美元逆差多万美元虽然逆差同比显著减少但媒体分析发现逆差减少的重要原因是中国泡菜单价持续下降而其实际进口量增长达韩媒担心未来泡菜贸易逆差会进一步拉大韩国对中国泡菜的需求源于价格竞争力报道称不仅许多韩国餐馆使用中国泡菜降低成本普通消费者购买中国泡菜的比例也在逐渐增加在韩国电商平台泡菜检索排名上中国泡菜名列前茅环球网消息称台积电年新芯片设计定案数量激增且特斯拉将成为客户供应链消息称台积电年新芯片设计定案数量激增除了联发科英伟达英特尔高通等客户将接力导入外目标年下半量产的也传捷报特斯拉已名列客户名单之中预计生产后续新一代芯片财联社苹果公司就苹果手表进口禁令提起上诉月日消息白宫拒绝推翻苹果公司智能手表在美国的销售禁令苹果公司表示已就进口禁令提起上诉界面新闻业内人士称系列仍难以实现搭载苹果自研芯片据消息业内人士称苹果可能不会在年的系列中采用自研芯片设计在未来两年内很难实现这一目标界面新闻三星将美国新工厂的量产计划推迟至年三星电子推迟了在德克萨斯州新芯片工厂的量产计划这可能对拜登政府增加国内半导体供应的雄心又一次造成打击三星晶圆代工业务总裁称这座即将投资亿美元的晶圆厂将于年开始量产新浪财经最前沿奥拓电子子公司创想数维计划向数字资产生成和共享分发平台建设方面投入更多资源和精力氪获悉奥拓电子近日接受机构调研时表示子公司创想数维将继续以技术为核心在打造虚拟直播新玩法新产品新平台新市场的同时计划向数字资产生成和共享分发平台建设方面投入更多的资源和精力让更多的普通用户能够快速上手数字资产生成并可以通过分发平台进行价值变现实现终端入口数字资产内容生成能力工具数字资产内容变现能力平台的闭环投融资视频孪生企业智汇云舟完成数千万元轮融资氪获悉近日视频孪生企业智汇云舟完成数千万元轮融资本轮融资由合肥高新创业投资管理合伙企业有限合伙领投所融资金将主要用于公司核心技术研发投入标准化产品线扩充迭代及全国营销渠道建设酷产品华为发布新款手机系列及新车问界氪获悉月日下午华为召开问界及冬季全场景发布会正式发布了新款手机系列以及问界问界问界新将于明年推出记者从接近华为的业内人士处获悉问界将于明年上半年推出新定位于与之间的全新车型问界也会在明年下半年推出财联社整理武六七昨夜今晨科技昨夜今晨时间大家好现在是年月日星期三今天的重要科技资讯有问界正式发布搭载华为最新全栈技术解决方案万元起月日下午华为举行了问界及华为冬季全场景发布会除了系列新机耳夹耳机以及智慧屏新品外作为鸿蒙智行旗下年度最重磅产品也是年中国汽车最重磅压轴之作问界豪华级车也重磅登场号称万以内最好的问界搭载了华为最新的全栈技术解决方案官方表示新车将为用户带来前所未有的智能汽车体验售价万元起查看详情淘宝平台争议处理规则变更推动快速退货退款淘宝发布公示拟变更淘宝平台争议处理规则的相关规则月日起正式生效从新规上看如果卖家差评或者违规情况过多可能在收到投诉后直接被判定退货退款或仅退款核心变更点新增淘宝基于平台自身大数据能力识别多维度结合对于买家发起符合相关情形的售后做出快速退款或退货退款的规则依据针对卖家存在延迟发货强制发货的且未经买家同意的情形补充钱款处理方向规则依据新增针对支持天无理由退货或经平台判定可支持买家拒收的商品针对买家已拒签成功的支持退款处理的条款查看详情网易大神社区已重新开始更新魔兽世界内容原停服通知删除据长期关注暴雪游戏的博主雪暴君消息从月日开始魔兽世界社区已重新在网易大神陆续更新相关蓝贴内容更新了包括年魔兽世界线路图最新资料片地心之战等资讯此前社区圈子中关于网易停止代理魔兽世界的新闻已经搜索不到查看详情消息称苹果自研芯片遇阻能否用上存疑近期有关苹果自研芯片的消息频频见诸报端包括联发科可能会通过等非主流产品进入苹果供应链苹果可能在年将自研芯片应用于新款中查看详情柔宇科技被曝欠薪长达一年员工罢工讨薪据界面新闻报道月日在深圳龙岗区的柔宇国际显示基地约名柔宇的员工在基地门口举着横幅和标语要求公司尽快发放工资据多名参与罢工的员工介绍年月至今柔宇拖欠员工薪酬已长达一年时间查看详情雷军小米定位级高性能生态科技轿车定价确实有点贵小米汽车技术发布会将于月日下午点举行小米创办人董事长兼雷军月日对网友最关心的一些问题进行了解答小米首款汽车取名雷军表示是的缩写雷军还表示小米没有准确的对标车辆正在试产爬坡阶段正式上市还需要几个月时间定价方面小米确实有点贵但是有理由的贵查看详情元起华为系列手机发布在月日下午的问界及华为冬季全场景发布会上华为系列手机正式发布售价元起售价元售价元售价元售价元心钥套装元售价元售价元查看详情其他产品包括华为耳夹耳机国内发布支持左右耳自适应单次小时续航元查看详情华为智慧屏发布搭载灵犀指向遥控鸿鹄画质升级查看详情首发星闪键盘华为英寸新套装发布查看详情元起华为推出活力版手机前置万像素自拍镜头查看详情站通知万粉丝以上主前台实名可选择不外显将影响流量收益据之家网友反馈站开始向万粉丝以上主发送通知要求进行实名外显也可以选择不外显前台实名但后续账号流量收益等会受到限制查看详情华为内部人士端鸿蒙操作系统已接近完成世纪经济报道从华为内部人士处获悉除手机鸿蒙之外端的鸿蒙操作系统已经接近完成鸿蒙系统即将走向独立走向更多终端查看详情今天就先聊到这里科技昨夜今晨咱们明天见广告声明文内含有的对外跳转链接包括不限于超链接二维码口令等形式用于传递更多信息节省甄选时间结果仅供参考之家所有文章均包含本声明复习垃圾回收机制实现原理查找根可达算法栈分配的变量静态变量静态常量引用计数法回收算法标记清除算法标记整理算法复制算法中的是一个接口下面有四个子类实现数组链表红黑树实现红黑树数组链表红黑树原理数组链表红黑树双向链表其实就是异步实现原理是基于操作系统的多路复用技术通过事件监听机制实现读写缓存回调字节码文件的组成基础属性魔术版本等常量池当前类所有常量源码等字段当前类或接口中的所有字段方法当前类或接口中的所有方法属性当前类所在字节码的基本属性比如字节码文件名等字节码构成常量池存放所有静态常量和动态常量静态常量字节码文件中通过编号查询到的常量动态常量运行时通过内存地址查找到的常量指令保证类加载时静态方法和静态属性加载顺序的一致性实现原理就是在遇到静态方法属性的时候调用暂存执行的时候按照放入的顺序依次执行保证初始化顺序虚拟机栈虚拟机栈是在栈中分配的一块区域主要包括局部变量表操作数栈帧数据区别于本地方法栈本地方法栈存放方法的临时数据虚拟机栈存放虚拟机创建的数据帧数据符号引用返回值方法区的回收该类及其子类没有对象该类所属类加载器已被销毁无法通过反射查找到中的五种引用类型强引用所有的对象手动回收弱引用随时可能被回收每次垃圾回收都会被回收软引用只有在内存不足的时候才会被回收虚引用随时可能被回收回收时会触发回调主要用于资源回收中引用对象的方式值传递引用传递当一个的时候会发生什么实际上有好几个构造方法我们需要关注的属性有两个一个是初始值默认是一个是负载因子默认是我们创建的数量只能是的次幂比如设置为实际就是存储的为什么是的幂次呢因为在对做的时候使用的是位移运算而不是取模运算使用的幂次就是为了方便运算负载因子的大小决定扩容大小实际就是初始值负载因子当超过该值的时候就会扩容默认会扩容倍可以可以调大扩容因子不推荐会增加哈西碰撞的概率影响查询效率当元素的时候传递的是怎么计算哈希值的先进行计算然后对高位进行异或操作尽量打乱值最大程度防止哈西冲突中或的实现先通过负载因子和初始值计算出是否需要扩容如果扩容就先扩容然后先计算的哈希值如果冲突就判断是链表还是红黑树然后替换值如果没有哈西冲突直接替换值哈希计算不冲突直接获取冲突先判断链表还是红黑树然后拿取中对象引用方式值传递引用传递如何判断是否相同比较比较什么情况下才会用红黑树数组长度大于且链表长度大于如果链表长度小于会退化为数组线程安全的数组除了还有什么最简单的就是工具类只不过性能很差是包下面有个类在说明这个我们可以先说一下线程中线程其实都是从线程中出来的此时子线程物理地址都是指向父线程只有当父线程发生变化时才会拷贝一个新的物理地址给线程类似于这种核心思想就是在数据变动的时候通过拷贝数组简单就是读不加锁写加锁这里拿方法举例的时候拷贝当前数组到新的空间并加锁修改完毕后再释放锁这里面主要注意的是只能保证最终一致性不能保证实时一致性复制交换实际对应的就是的一个指令是一个原子操作核心概念是当前值内存值期望值比如当前值是内存值是不相同那么就会自旋等待内存值和当前值一样的时候修改为期望值为什么要使用程序员朱永胜',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-01-14 14:32:25',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="atom.xml" title="" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.zysicyj.top/" title="个人主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/13/64d8c2748ef34.jpg" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">写作软件</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://editor.runjs.cool/post?id=demo" title="Mdx"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4296739868700.png" alt="Mdx"/><span class="back-menu-item-text">Mdx</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://openwrite.cn/" title="OpenWrite"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://openwrite.cn/logo.png" alt="OpenWrite"/><span class="back-menu-item-text">OpenWrite</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/writerside/" title="WriteSide"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="data:image/jpeg;base64,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" alt="WriteSide"/><span class="back-menu-item-text">WriteSide</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">开发工具</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/idea/" title="idea"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4576710485000.png" alt="idea"/><span class="back-menu-item-text">idea</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/datagrip/" title="DataGrip"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="DataGrip"/><span class="back-menu-item-text">DataGrip</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4663369180700.png" title="WebStorm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="WebStorm"/><span class="back-menu-item-text">WebStorm</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="微信开发者工具"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4743988475500.png" alt="微信开发者工具"/><span class="back-menu-item-text">微信开发者工具</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="HBuilder"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.dcloud.io/hbuilderx.html" alt="HBuilder"/><span class="back-menu-item-text">HBuilder</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://mobaxterm.mobatek.net/" title="MobaXterm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4849682167700.png" alt="MobaXterm"/><span class="back-menu-item-text">MobaXterm</span></a></div></div></div></div><a id="site-name" href="index.html" accesskey="h"><div class="title"></div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)" rel="external nofollow noreferrer">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="index.html"><i class="fas fa-home faa-tada"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-link faa-tada"></i><span> 目录</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="fas fa-archive faa-tada"></i><span> 时间轴</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="fas fa-folder-open faa-tada"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-list faa-tada"></i><span> 清单</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/movies/"><i class="fas fa-video faa-tada"></i><span> 电影</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/books/"><i class="fas fa-book faa-tada"></i><span> 阅读</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/songs/"><i class="fas fa-music faa-tada"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追番</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/cinemas/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追剧</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="fas fa-link faa-tada"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/gallery/"><i class="fas fa-solid fa-image faa-tada"></i><span> 相册集</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/love/static/index.html"><i class="fas fa-heart faa-tada"></i><span> Love</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="fa-solid  fa-comment faa-tada"></i><span> 闲言碎语</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="wechat" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="alipay" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="tags/2024%E5%B9%B4/" style="font-size: 1.05rem;">2024年<sup>1</sup></a><a href="tags/2024%E5%B9%B47%E6%9C%88/" style="font-size: 1.05rem;">2024年7月<sup>1</sup></a><a href="tags/2%E6%97%A5/" style="font-size: 1.05rem;">2日<sup>1</sup></a><a href="tags/7%E6%9C%88/" style="font-size: 1.05rem;">7月<sup>1</sup></a><a href="tags/Butterfly/" style="font-size: 1.05rem;">Butterfly<sup>2</sup></a><a href="tags/CSS/" style="font-size: 1.05rem;">CSS<sup>2</sup></a><a href="tags/Docker-Compose%E5%AE%89%E8%A3%85Space/" style="font-size: 1.05rem;">Docker Compose安装Space<sup>1</sup></a><a href="tags/Footer%E8%AE%BE%E7%BD%AE/" style="font-size: 1.05rem;">Footer设置<sup>1</sup></a><a href="tags/NR/" style="font-size: 1.05rem;">NR<sup>8</sup></a><a href="tags/TOC/" style="font-size: 1.05rem;">TOC<sup>1</sup></a><a href="tags/nari/" style="font-size: 1.05rem;">nari<sup>22</sup></a><a href="tags/xxc/" style="font-size: 1.05rem;">xxc<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81/" style="font-size: 1.05rem;">代码<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6/" style="font-size: 1.05rem;">代码复制<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E6%8D%A2%E8%A1%8C/" style="font-size: 1.05rem;">代码换行<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E6%A1%86%E5%B1%95%E5%BC%80-%E5%85%B3%E9%97%AD/" style="font-size: 1.05rem;">代码框展开/关闭<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A2%98/" style="font-size: 1.05rem;">代码高亮主题<sup>1</sup></a><a href="tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E5%BA%A6%E9%99%90%E5%88%B6/" style="font-size: 1.05rem;">代码高度限制<sup>1</sup></a><a href="tags/%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE/" style="font-size: 1.05rem;">参数设置<sup>1</sup></a><a href="tags/%E5%95%86%E5%93%81/" style="font-size: 1.05rem;">商品<sup>9</sup></a><a href="tags/%E5%9B%BE%E7%89%87%E6%8F%8F%E8%BF%B0/" style="font-size: 1.05rem;">图片描述<sup>1</sup></a><a href="tags/%E5%A4%8D%E5%88%B6%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" style="font-size: 1.05rem;">复制相关配置<sup>1</sup></a><a href="tags/%E5%A4%B4%E5%83%8F/" style="font-size: 1.05rem;">头像<sup>1</sup></a><a href="tags/%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3/" style="font-size: 1.05rem;">安装文档<sup>2</sup></a><a href="tags/%E5%AF%BC%E8%88%AA%E6%A0%8F%E8%AE%BE%E7%BD%AE/" style="font-size: 1.05rem;">导航栏设置<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E5%88%86%E9%A1%B5%E6%8C%89%E9%92%AE/" style="font-size: 1.05rem;">文章分页按钮<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E6%89%93%E8%B5%8F/" style="font-size: 1.05rem;">文章打赏<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83/" style="font-size: 1.05rem;">文章版权<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E7%BC%96%E8%BE%91%E6%8C%89%E9%92%AE/" style="font-size: 1.05rem;">文章编辑按钮<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E8%BF%87%E6%9C%9F%E6%8F%90%E9%86%92/" style="font-size: 1.05rem;">文章过期提醒<sup>1</sup></a><a href="tags/%E6%96%87%E7%AB%A0%E9%A1%B5%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" style="font-size: 1.05rem;">文章页相关配置<sup>1</sup></a><a href="tags/%E6%97%A5%E8%AE%B0/" style="font-size: 1.05rem;">日记<sup>14</sup></a><a href="tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" style="font-size: 1.05rem;">更新日志<sup>10</sup></a><a href="tags/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/" style="font-size: 1.05rem;">相关文章<sup>1</sup></a><a href="tags/%E7%A4%BE%E4%BA%A4%E5%9B%BE%E6%A0%87/" style="font-size: 1.05rem;">社交图标<sup>1</sup></a><a href="tags/%E7%BD%91%E7%AB%99%E8%B5%84%E6%96%99/" style="font-size: 1.05rem;">网站资料<sup>1</sup></a><a href="tags/%E8%8F%9C%E5%8D%95-%E7%9B%AE%E5%BD%95/" style="font-size: 1.05rem;">菜单/目录<sup>1</sup></a><a href="tags/%E8%AF%AD%E8%A8%80/" style="font-size: 1.05rem;">语言<sup>1</sup></a><a href="tags/%E8%B5%84%E6%BA%90/" style="font-size: 1.05rem;">资源<sup>9</sup></a><a href="tags/%E9%A1%B6%E9%83%A8%E5%9B%BE/" style="font-size: 1.05rem;">顶部图<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span><a class="card-more-btn" href="archives/" title="查看更多">
+    <i class="anzhiyufont anzhiyu-icon-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/09/"><span class="card-archive-list-date">九月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">16</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">66</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/06/"><span class="card-archive-list-date">六月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">16</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">27</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">31</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">37</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);" rel="external nofollow noreferrer"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a></div></div><h1 class="post-title" itemprop="name headline">Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-12-27T09:05:17.000Z" title="发表于 2023-12-27 09:05:17">2023-12-27</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-01-14T14:32:25.128Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">6.3k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为南京"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>南京</span></div></div></div><article class="post-content" id="article-container" itemscope itemtype="https://blog.zysicyj.top/dc2f1c0d.html"><header><h1 id="CrawlerTitle" itemprop="name headline">Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">程序员朱永胜</span><time itemprop="dateCreated datePublished" datetime="2023-12-27T09:05:17.000Z" title="发表于 2023-12-27 09:05:17">2023-12-27</time><time itemprop="dateCreated datePublished" datetime="2025-01-14T14:32:25.128Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></header><div id="readmore-container"><link rel="stylesheet external nofollow noreferrer" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><blockquote>
+<p>有的时候博客内容会有变动，首发博客是最新的，其他博客地址可能会未同步, 认准<code>https://blog.zysicyj.top</code></p>
+</blockquote>
+<blockquote>
+<p>全网最细面试题手册，支持艾宾浩斯记忆法。这是一份最全面、最详细、最高质量的 java 面试题，不建议你死记硬背，只要每天复习一遍，有个大概印象就行了。 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://store.amazingmemo.com/chapterDetail/1685324709017001%60">https://store.amazingmemo.com/chapterDetail/1685324709017001`</a></p>
+</blockquote>
+<h1 id="8 点 1 氪"><a href="#8 点 1 氪" class="headerlink" title="8 点 1 氪"></a>8 点 1 氪 </h1><h2 id="TOP3 大新闻"><a href="#TOP3 大新闻" class="headerlink" title="TOP3 大新闻"></a>TOP3 大新闻</h2><p><strong> 闲鱼回应加拿大鹅援助物资被倒卖：是虚假信息，已封号</strong></p>
+<p>针对有网友反映在闲鱼上发现加拿大鹅捐赠甘肃震区物资被倒卖的事件，闲鱼回应称，平台客服已第一时间进行排查，实际情况为该用户为了蹭热点引流售卖羽绒服，编造了赈灾物资信息，属于恶意营销引流行为。平台已第一时间下架商品，并对账号永久封禁处理。 </p>
+<p>上海市慈善基金会表示，这些不实信息已对甘肃地震灾区的支援和救灾行动造成了不良影响。针对这些情况，上海市慈善基金会高度重视并已向有关部门提出声明。12 月 25 日 18：20，该批捐赠物资安全运抵甘肃积石山县徐扈家乡，清点无误并妥善放置。目前甘肃省民政厅正在牵头制定物资的分配方案。上海市慈善基金会也将持续关注物资分配的全过程和信息公开。（界面新闻、澎湃新闻） </p>
+<p><strong>麦当劳 12 月 27 日起涨价，客服：会在各个点餐渠道明码标价公示</strong></p>
+<p>12 月 25 日，“麦当劳回应将涨价”话题冲上微博热搜。麦当劳官方客服确认：12 月 27 日，“麦当劳会对部分单品和套餐的价格进行调整”，会在各个点餐渠道进行明码标价公示。据了解，麦当劳上次涨价为今年 1 月 4 日，当时调整了旗下热门套餐“随心配 1+1”的价格，从原来的 12.9 元调整至 13.9 元。（澎湃新闻、财经网） </p>
+<p><strong>近一半老玩家不愿回归暴雪国服，网易暴雪复合条件尚未完全谈妥</strong></p>
+<p>25 日晚间，有报道称，暴雪正与国内多家游戏厂商洽谈“国服回归”事宜，最终选择与网易重新牵手合作。对此，多家媒体向网易游戏方面求证，截至发稿，网易游戏及暴雪方面均未确认此事。有接近网易游戏的人士表示，“双方目前的条件没有完全谈妥，但此事的确信度很高”。在一项“你会回归暴雪国服吗”的投票中，1225 人参与投票的结果显示，约 44% 的用户表示不再会回归暴雪国服，理由是担忧“又出什么事”。（新浪科技）</p>
+<h2 id="大公司 - 大事件"><a href="# 大公司 - 大事件" class="headerlink" title="大公司 &#x2F; 大事件"></a>大公司 &#x2F; 大事件 </h2><p><strong> 工信部公布《减免车辆购置税的新能源汽车车型目录》（第一批），两款小米 SU7 在列</strong></p>
+<p>36 氪获悉，据工信部官网，工信部公布《减免车辆购置税的新能源汽车车型目录》（第一批），两款小米 SU7 在列，汽车生产企业名称为“北京汽车集团越野车有限公司”。 </p>
+<p><strong>乐视开放平台正式发布</strong></p>
+<p>36 氪获悉，26 日，乐视开放平台发布会举办。据介绍，乐视开放平台是乐视推出的全自研、一站式视频内容分账平台。乐视视频版权负责人许天扬介绍，“乐视开放平台分账模式的商务政策与行业现有的分账模式有着本质区别，在给予版权方最优的分账模式同时，首次带来了行业里开放、自主、0 成本、100% 分账的入驻条件。”配合乐视开放平台发布，目前乐视视频 APP 已上线“点播厅”专区，参与分账合作的所有内容将汇集在“点播厅”。 </p>
+<p><strong>魔兽世界社区已重新在网易大神上线</strong></p>
+<p>记者发现，从 12 月 20 日开始，《魔兽世界》社区已重新在“网易大神”中上线，《魔兽世界》社区已开始陆续更新相关“蓝贴”内容，更新了包括地心之战、魔兽探索服在内的新内容。此前，社区圈子中关于网易停止代理《魔兽世界》的新闻已经搜索不到。（南方都市报） </p>
+<p><strong>理想汽车：2023 年第 52 周周销量达 1.21 万辆</strong></p>
+<p>36 氪获悉，据理想汽车官方微博消息，2023 年第 52 周（12.18-12.24），理想汽车周销量达 1.21 万辆。持续向 5 万辆月销目标发起冲击。截至 12 月 24 日，理想汽车本月销量已达 3.64 万辆，继续领跑新势力。</p>
+<p><strong>董宇辉新账号与辉同行上线，已获平台认证</strong></p>
+<p>36 氪获悉，12 月 26 日，董宇辉新账号“与辉同行”获平台认证，认证信息为“与辉同行（北京）科技有限公司”。账号介绍为：这是真的，与辉同行。</p>
+<p><strong>PC 端鸿蒙操作系统已经接近完成</strong></p>
+<p>从华为内部人士处了解到，除手机鸿蒙之外，PC 端的鸿蒙操作系统已经接近完成。而鸿蒙更加独立、走向更多终端，也意味着华为软件产业链的新升级。（21 财经）</p>
+<p><strong>中信证券：建议关注参与 Vision pro 硬件产业链的相关公司</strong></p>
+<p>36 氪获悉，中信证券研报称，苹果首款 MR 头显设备 Vision pro 发售在即，我们认为，Vision pro 在硬件端展现了当前消费电子领域顶尖的参数水平，有望提供全面超越市面相关产品的硬件体验，而软件应用端，空间计算所代表的 3D 体验不同于当前主流的 2D 屏幕，有望从手势、眼动、语言等维度塑造用户交互的全新范式，并进一步催动软件应用及制作技术的变革。在投资机会上，我们建议关注参与 Vision pro 硬件产业链的相关公司，同时，有望受益于软件应用新范式的游戏、视频、内容制作及商业化等方向亦值得重点关注。 </p>
+<p><strong>中国石油集团事业部制改革全面启动</strong></p>
+<p>据中国石油报消息，中国石油集团党组研究决定在油气新能源业务、炼化新材料业务推行事业部制改革，12 月 24 日、25 日宣布两大业务有关人事的任免决定，为事业部制改革按下启动键。据悉，油气和新能源分公司、炼化和新材料分公司已编制了实施方案，明确了工作计划和时间节点安排，加强统筹协调、沟通对接、协同推进，确保 2024 年 1 月起按照新的组织结构管理运行。（证券时报） </p>
+<p><strong>天奇股份：目前与特斯拉业务合作集中于汽车整车制造装备相关产品及服务</strong></p>
+<p>36 氪获悉，天奇股份在互动平台表示，目前公司与特斯拉的业务合作集中于汽车整车制造装备相关产品及服务，已承接并顺利交付特斯拉上海工厂、柏林工厂等 项目。基于双方良好合作基础，未来不排除共同开展其他领域的业务合作。 </p>
+<p><strong>基康仪器：公司产品订单稳定，在手订单饱和</strong></p>
+<p>36 氪获悉，基康仪器近日接受机构调研时表示，公司产品订单稳定，在手订单饱和，目前在手订单主要为能源和水利核心行业。公司将继续加强与核心行业客户的合作关系，积极开拓交通、智慧城市、地质灾害等行业市场。 </p>
+<p><strong>沪深北交易所：除夕当日休市</strong></p>
+<p>36 氪获悉，上交所、深交所、北交所公布 2024 年部分节假日休市安排， 除夕当日休市。 2 月 9 日（星期五）至 2 月 17 日（星期六）休市， 2 月 19 日（星期一）起照常开市。另外， 2 月 4 日（星期日）、 2 月 18 日（星期日）为周末休市。 </p>
+<p><strong>美股三大指数集体收涨，大型科技股多数上涨</strong></p>
+<p>36 氪获悉， 12 月 26 日收盘，美股三大指数集体上涨，道指涨 0.43%，纳指涨 0.54%，标普 500 指数涨 0.42%。大型科技股多数上涨，特斯拉涨超 1％，Netflix 涨近 1％，Meta 涨 0.41％，微软、谷歌涨 0.02％，苹果跌 0.28％，亚马逊跌 0.01％。热门中概股多数上涨，蔚来涨超 10％，网易涨超 5％，理想汽车涨超 3％，小鹏汽车、腾讯音乐涨超 1％，唯品会、携程跌超 1％。 </p>
+<p><strong>韩媒：本地泡菜太贵，韩国人改囤中国泡菜</strong></p>
+<p>据韩国媒体报道，虽然 2023 年韩国泡菜出口量增长迅速，但在性价比竞争中渐渐被中国泡菜拉开。韩国海关总署 24 日发布的进出口贸易统计数据显示，今年 1 月至 11 月泡菜出口额 1.42 亿美元，而进口额达到 1.51 亿美元，逆差 880 多万美元。虽然逆差同比显著减少，但媒体分析发现，逆差减少的重要原因是中国泡菜单价持续下降，而其实际进口量增长达 9.5%。韩媒担心，未来泡菜贸易逆差会进一步拉大。韩国对中国泡菜的需求源于“价格竞争力”。报道称，不仅许多韩国餐馆使用中国泡菜降低成本，普通消费者购买中国泡菜的比例也在逐渐增加。在韩国电商平台泡菜检索排名上，中国泡菜名列前茅。（环球网） </p>
+<p><strong>消息称台积电 2024 年 3nm 新芯片设计定案数量激增，且特斯拉将成为 N3P 客户</strong></p>
+<p>供应链消息称，台积电 2024 年 3nm 新芯片设计定案（NewTape-Outs，NTOs）数量激增，除了联发科、AMD、英伟达、英特尔、高通等客户将接力导入外，目标 2024 年下半量产的 N3P 也传捷报，特斯拉已名列客户名单之中，预计生产后续新一代 FSD 芯片。 （财联社） </p>
+<p><strong>苹果公司就苹果手表进口禁令提起上诉</strong></p>
+<p>12 月 26 日消息，白宫拒绝推翻苹果公司智能手表在美国的销售禁令。 苹果公司表示，已就进口禁令提起上诉。 （界面新闻 ） </p>
+<p><strong>业内人士称 iPhone 17 系列仍难以实现搭载苹果自研 Wi-Fi 芯片</strong></p>
+<p>据 DIGITIMES 消息，业内人士称，苹果可能不会在 2025 年的 iPhone 17 系列中采用自研 Wi-Fi 芯片设计，在未来两年内很难实现这一目标。（界面新闻） </p>
+<p><strong>三星将美国新工厂的量产计划推迟至 2025 年</strong></p>
+<p>三星电子推迟了在德克萨斯州 Taylor 新芯片工厂的量产计划，这可能对拜登政府增加国内半导体供应的雄心又一次造成打击。 三星 晶圆代工业务总裁 Choi Siyoung 称，这座即将投资 170 亿美元的晶圆厂将于 2025 年开始量产。 （新浪财经） </p>
+<h2 id="AI 最前沿"><a href="#AI 最前沿" class="headerlink" title="AI 最前沿"></a>AI 最前沿 </h2><p><strong> 奥拓电子：子公司创想数维计划向 AIGC 数字资产生成和共享分发平台建设方面投入更多资源和精力</strong></p>
+<p>36 氪获悉，奥拓电子近日接受机构调研时表示，子公司创想数维将继续以 XR 技术为核心，在打造虚拟直播新玩法、新产品、新平台、新市场的同时，计划向 AIGC 数字资产生成和共享分发平台建设方面投入更多的资源和精力，让更多的普通用户能够快速上手数字资产生成，并可以通过分发平台进行价值变现，实现 Metabox 终端入口 - 数字资产内容生成能力工具 - 数字资产内容变现能力平台的闭环。 </p>
+<h2 id="投融资"><a href="# 投融资" class="headerlink" title="投融资"></a>投融资 </h2><p><strong> 视频孪生企业“智汇云舟”完成数千万元 B 轮融资</strong></p>
+<p>36 氪获悉，近日，视频孪生企业“智汇云舟”完成数千万元 B 轮融资。本轮融资由合肥高新创业投资管理合伙企业（有限合伙）领投，所融资金将主要用于公司核心技术研发投入、标准化产品线扩充迭代及全国营销渠道建设。</p>
+<h2 id="酷产品"><a href="# 酷产品" class="headerlink" title="酷产品"></a>酷产品 </h2><p><strong> 华为发布新款手机 nova12 系列及新车问界 M9</strong></p>
+<p>36 氪获悉，12 月 26 日下午，华为召开问界 M9 及冬季全场景发布会，正式发布了新款手机 nova12 系列以及问界 M9。 </p>
+<p><strong>问界 M8、问界新 M5 将于明年推出</strong></p>
+<p>记者从接近华为的业内人士处获悉，AITO 问界将于明年上半年推出新 M5，定位于 M7 与 M9 之间的全新车型问界 M8 也会在明年下半年推出。（财联社）</p>
+<p><strong>整理｜</strong> 武六七</p>
+<h1 id="昨夜今晨"><a href="# 昨夜今晨" class="headerlink" title="昨夜今晨"></a>昨夜今晨</h1><p>“科技昨夜今晨”时间，大家好，现在是 2023 年 12 月 27 日星期三，今天的重要科技资讯有：</p>
+<h2 id="1、问界 -M9- 正式发布：搭载华为最新全栈技术解决方案，46-98- 万元起"><a href="#1、问界 -M9- 正式发布：搭载华为最新全栈技术解决方案，46-98- 万元起" class="headerlink" title="1、问界 M9 正式发布：搭载华为最新全栈技术解决方案，46.98 万元起"></a>1、问界 M9 正式发布：搭载华为最新全栈技术解决方案，46.98 万元起 </h2><p>12 月 26 日下午华为举行了问界 M9 及华为冬季全场景发布会，除了 nova12 系列新机、FreeClip 耳夹耳机以及智慧屏新品外，作为<a target="_blank" rel="noopener external nofollow noreferrer" href="https://hmos.ithome.com/"> 鸿蒙 </a> 智行旗下年度最重磅产品，也是 2023 年中国汽车最重磅压轴之作，问界 M9 豪华 D 级车也重磅登场，号称“1000 万以内最好的 SUV”。问界 M9 搭载了华为最新的全栈技术解决方案，官方表示，新车将为用户带来前所未有的智能汽车体验，售价 46.98 万元起。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/670.htm">查看详情</a></p>
+<h2 id="2、淘宝平台争议处理规则变更，推动快速退货退款"><a href="#2、淘宝平台争议处理规则变更，推动快速退货退款" class="headerlink" title="2、淘宝平台争议处理规则变更，推动快速退货退款"></a>2、淘宝平台争议处理规则变更，推动快速退货退款 </h2><p> 淘宝发布公示，拟变更淘宝平台争议处理规则的相关规则，12 月 26 日起正式生效。从新规上看，如果卖家差评或者违规情况过多，可能在收到投诉后直接被判定退货退款或仅退款。 核心变更点 新增淘宝基于平台自身大数据能力，识别多维度结合，对于买家发起符合相关情形的售后，做出快速退款或退货退款的规则依据； 针对卖家存在延迟发货、强制发货的且未经买家同意的情形，补充钱款处理方向规则依据； 新增针对支持 7 天无理由退货或经平台判定可支持买家拒收的商品，针对买家已拒签成功的，支持退款处理的条款。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/623.htm">查看详情</a></p>
+<h2 id="3、网易大神社区已重新开始更新《魔兽世界》内容，原停服通知删除"><a href="#3、网易大神社区已重新开始更新《魔兽世界》内容，原停服通知删除" class="headerlink" title="3、网易大神社区已重新开始更新《魔兽世界》内容，原停服通知删除"></a>3、网易大神社区已重新开始更新《魔兽世界》内容，原停服通知删除 </h2><p> 据长期关注暴雪游戏的博主 @雪暴君 消息，从 12 月 20 日开始，《魔兽世界》社区已重新在“网易大神”陆续更新相关“蓝贴”内容，更新了包括 2024 年魔兽世界线路图，最新资料片地心之战等资讯。此前，社区圈子中关于网易停止代理《魔兽世界》的新闻已经搜索不到。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/568.htm">查看详情</a></p>
+<h2 id="4、消息称苹果自研 -Wi-Fi- 芯片遇阻，iPhone-17- 能否用上存疑"><a href="#4、消息称苹果自研 -Wi-Fi- 芯片遇阻，iPhone-17- 能否用上存疑" class="headerlink" title="4、消息称苹果自研 Wi-Fi 芯片遇阻，iPhone 17 能否用上存疑"></a>4、消息称苹果自研 Wi-Fi 芯片遇阻，iPhone 17 能否用上存疑 </h2><p> 近期，有关苹果自研 Wi-Fi 芯片的消息频频见诸报端，包括联发科可能会通过 Apple TV 等非主流产品进入苹果供应链，苹果可能在 2025 年将自研 Wi-Fi 芯片应用于新款 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://iphone.ithome.com/">iPhone</a> 17 中。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/579.htm">查看详情</a></p>
+<h2 id="5、柔宇科技被曝欠薪长达一年，员工罢工讨薪"><a href="#5、柔宇科技被曝欠薪长达一年，员工罢工讨薪" class="headerlink" title="5、柔宇科技被曝欠薪长达一年，员工罢工讨薪"></a>5、柔宇科技被曝欠薪长达一年，员工罢工讨薪 </h2><p> 据界面新闻报道，12 月 25 日在深圳龙岗区的柔宇国际显示基地约 50 名柔宇的员工在基地门口举着横幅和标语，要求公司尽快发放工资。据多名参与罢工的员工介绍，2022 年 11 月至今，柔宇拖欠员工薪酬已长达一年时间。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/534.htm">查看详情</a></p>
+<h2 id="6、雷军：小米 -SU7- 定位 -C- 级高性能生态科技轿车，定价“确实有点贵”"><a href="#6、雷军：小米 -SU7- 定位 -C- 级高性能生态科技轿车，定价“确实有点贵”" class="headerlink" title="6、雷军：小米 SU7 定位 C 级高性能生态科技轿车，定价“确实有点贵”"></a>6、雷军：小米 SU7 定位 C 级高性能生态科技轿车，定价“确实有点贵”</h2><p>小米汽车技术发布会将于 12 月 28 日下午 2 点举行，小米创办人、董事长兼 CEO 雷军 12 月 26 日对网友最关心的一些问题进行了解答。小米首款汽车取名 SU7，雷军表示 SU 是 Speed Ultra 的缩写。</p>
+<p>雷军还表示，小米 SU7 没有准确的对标车辆，正在试产爬坡阶段，正式上市还需要几个月时间。定价方面，<strong>小米 SU7“确实有点贵”，但是“有理由的贵”</strong>。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/720.htm">查看详情</a></p>
+<h2 id="7、2999- 元起，华为 -nova-12-Pro-Ultra- 系列手机发布"><a href="#7、2999- 元起，华为 -nova-12-Pro-Ultra- 系列手机发布" class="headerlink" title="7、2999 元起，华为 nova 12 &#x2F; Pro &#x2F; Ultra 系列手机发布"></a>7、2999 元起，华为 nova 12 &#x2F; Pro &#x2F; Ultra 系列手机发布 </h2><p> 在 12 月 26 日下午的问界 M9 及华为冬季全场景发布会上，华为 nova 12 系列手机正式发布，售价 2999 元起。</p>
+<h3 id="nova-12-Ultra"><a href="#nova-12-Ultra" class="headerlink" title="nova 12 Ultra"></a>nova 12 Ultra</h3><ul>
+<li><p>12GB+512GB 售价 4699 元</p>
+</li>
+<li><p>12GB+1TB 售价 5499 元</p>
+</li>
+</ul>
+<h3 id="nova-12-Pro"><a href="#nova-12-Pro" class="headerlink" title="nova 12 Pro"></a>nova 12 Pro</h3><ul>
+<li><p>12GB+256GB 售价 3999 元</p>
+</li>
+<li><p>12GB+512GB 售价 4399 元</p>
+</li>
+<li><p>心钥套装 4699 元</p>
+</li>
+</ul>
+<h3 id="nova-12"><a href="#nova-12" class="headerlink" title="nova 12"></a>nova 12</h3><ul>
+<li><p>8GB+256GB 售价 2999 元</p>
+</li>
+<li><p>8GB+512GB 售价 3399 元 &gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/637.htm">查看详情</a></p>
+</li>
+</ul>
+<p>其他产品包括：</p>
+<ul>
+<li><p><strong>华为 FreeClip 耳夹耳机 </strong> 国内发布：支持左右耳自适应、单次 8 小时续航，1299 元 &gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/648.htm">查看详情</a></p>
+</li>
+<li><p><strong>华为智慧屏 V5</strong> 发布：搭载灵犀指向遥控，SuperMiniLED 鸿鹄画质升级 &gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/645.htm">查看详情</a></p>
+</li>
+<li><p>首发星闪键盘，<strong>华为 MatePad Pro 13.2&#x2F;11 英寸新套装 </strong> 发布 &gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/652.htm">查看详情</a></p>
+</li>
+<li><p>2499 元起，<strong>华为推出 nova 12 活力版手机 </strong>：前置 6000 万像素自拍镜头 &gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/665.htm"> 查看详情</a></p>
+</li>
+</ul>
+<h2 id="8、B 站通知 -50- 万粉丝以上 -UP- 主前台实名：可选择不外显，将影响流量、收益"><a href="#8、B 站通知 -50- 万粉丝以上 -UP- 主前台实名：可选择不外显，将影响流量、收益" class="headerlink" title="8、B 站通知 50 万粉丝以上 UP 主前台实名：可选择不外显，将影响流量、收益"></a>8、B 站通知 50 万粉丝以上 UP 主前台实名：可选择不外显，将影响流量、收益 </h2><p> 据<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/">IT 之家 </a> 网友反馈，B 站开始向 50 万粉丝以上 UP 主发送通知，要求进行实名外显，也可以选择不外显前台实名，但后续账号流量、收益等会受到限制。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/701.htm">查看详情</a></p>
+<h2 id="9、华为内部人士：PC- 端鸿蒙操作系统已接近完成"><a href="#9、华为内部人士：PC- 端鸿蒙操作系统已接近完成" class="headerlink" title="9、华为内部人士：PC 端鸿蒙操作系统已接近完成"></a>9、华为内部人士：PC 端鸿蒙操作系统已接近完成 </h2><p>21 世纪经济报道从华为内部人士处获悉，除手机鸿蒙之外，PC 端的鸿蒙操作系统已经接近完成，鸿蒙系统即将走向独立，走向更多终端。&gt;&gt; <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.ithome.com/0/741/727.htm"> 查看详情</a></p>
+<p>今天就先聊到这里，科技昨夜今晨，咱们明天见。</p>
+<p>广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT 之家所有文章均包含本声明。</p>
+<h1 id="复习"><a href="# 复习" class="headerlink" title="复习"></a>复习 </h1><h3 id="垃圾回收机制实现原理"><a href="# 垃圾回收机制实现原理" class="headerlink" title="垃圾回收机制实现原理"></a> 垃圾回收机制实现原理 </h3><h4 id="查找"><a href="# 查找" class="headerlink" title="查找"></a> 查找</h4><ol>
+<li>根可达算法<ol>
+<li>栈分配的变量</li>
+<li>静态变量</li>
+<li>静态常量</li>
+<li>JNI</li>
+</ol>
+</li>
+<li>引用计数法</li>
+</ol>
+<h4 id="回收算法"><a href="# 回收算法" class="headerlink" title="回收算法"></a>回收算法</h4><ol>
+<li>标记 - 清除算法</li>
+<li>标记 - 整理算法</li>
+<li>复制算法</li>
+</ol>
+<h3 id="JDK 中的 MAP（1-8）"><a href="#JDK 中的 MAP（1-8）" class="headerlink" title="JDK 中的 MAP（1.8）"></a>JDK 中的 MAP（1.8）</h3><p>Map 是一个接口，下面有四个子类</p>
+<h4 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h4><ul>
+<li>实现：数组 + 链表 &#x2F; 红黑树</li>
+</ul>
+<h4 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h4><ul>
+<li>实现：红黑树</li>
+</ul>
+<h4 id="ConcurrentHashMap"><a href="#ConcurrentHashMap" class="headerlink" title="ConcurrentHashMap"></a>ConcurrentHashMap</h4><ul>
+<li>数组 + 链表 &#x2F; 红黑树</li>
+</ul>
+<h4 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h4><ul>
+<li>原理：数组 + 链表 &#x2F; 红黑树 + 双向链表</li>
+</ul>
+<h3 id="AIO"><a href="#AIO" class="headerlink" title="AIO"></a>AIO</h3><p>AIO 其实就是异步 IO。实现原理是基于操作系统的多路复用技术，通过事件监听机制实现。</p>
+<ul>
+<li>channel：IO 读写</li>
+<li>Buffered：缓存</li>
+<li>ComplainHandler：回调</li>
+</ul>
+<h3 id="字节码文件的组成"><a href="# 字节码文件的组成" class="headerlink" title="字节码文件的组成"></a>字节码文件的组成</h3><ul>
+<li>基础属性（魔术、版本等）</li>
+<li>常量池（当前类所有常量，源码等）</li>
+<li>字段（当前类 <strong> 或接口 </strong> 中的所有字段）</li>
+<li>方法（当前类 <strong> 或接口 </strong> 中的所有方法）</li>
+<li>属性（当前类所在字节码的基本属性，比如字节码文件名等）</li>
+</ul>
+<h3 id="字节码构成 - 常量池"><a href="# 字节码构成 - 常量池" class="headerlink" title="字节码构成 - 常量池"></a>字节码构成 - 常量池 </h3><p> 存放所有静态常量和动态常量 <br> 静态常量：字节码文件中通过编号查询到的常量 <br> 动态常量：运行时通过内存地址查找到的常量</p>
+<h3 id="clint 指令"><a href="#clint 指令" class="headerlink" title="clint 指令"></a>clint 指令 </h3><p> 保证类加载时静态方法和静态属性加载顺序的一致性 <br> 实现原理就是在遇到静态方法、属性的时候，调用 clint 暂存，执行的时候按照放入的顺序依次执行，保证初始化顺序</p>
+<h3 id="虚拟机栈"><a href="# 虚拟机栈" class="headerlink" title="虚拟机栈"></a>虚拟机栈 </h3><p> 虚拟机栈是 JVM 在栈中分配的一块区域，主要包括</p>
+<ul>
+<li>局部变量表</li>
+<li>操作数栈</li>
+<li>帧数据 <br> 区别于本地方法栈</li>
+<li>本地方法栈：存放 Native 方法的临时数据</li>
+<li>虚拟机栈：存放虚拟机创建的数据</li>
+</ul>
+<h3 id="帧数据"><a href="# 帧数据" class="headerlink" title="帧数据"></a>帧数据</h3><ul>
+<li>符号引用</li>
+<li>返回值</li>
+</ul>
+<h3 id="方法区的回收"><a href="# 方法区的回收" class="headerlink" title="方法区的回收"></a>方法区的回收</h3><ol>
+<li>该类及其子类没有对象</li>
+<li>该类所属类加载器已被销毁</li>
+<li>无法通过反射查找到</li>
+</ol>
+<h3 id="Java 中的五种引用类型"><a href="#Java 中的五种引用类型" class="headerlink" title="Java 中的五种引用类型"></a>Java 中的五种引用类型</h3><ul>
+<li>强引用：所有 new 的对象，手动回收</li>
+<li><strong>弱引用：随时可能被回收，每次垃圾回收都会被回收</strong></li>
+<li><strong>软引用：只有在内存不足的时候才会被回收</strong></li>
+<li>虚引用：随时可能被回收，回收时会触发回调，主要用于资源回收</li>
+</ul>
+<h3 id="Java 中引用对象的方式"><a href="#Java 中引用对象的方式" class="headerlink" title="Java 中引用对象的方式"></a>Java 中引用对象的方式</h3><ul>
+<li><strong>值传递</strong></li>
+<li><strong>引用传递</strong></li>
+</ul>
+<h3 id="当 new 一个 HashMap 的时候会发生什么"><a href="# 当 new 一个 HashMap 的时候会发生什么" class="headerlink" title="当 new 一个 HashMap 的时候会发生什么"></a>当 new 一个 HashMap 的时候会发生什么 </h3><p>HashMap 实际上有好几个构造方法，我们需要关注的属性有两个。一个是初始值，默认是 16，一个是负载因子，默认是 0.75。<br> 我们创建的数量只能是 2 的 n 次幂。比如设置为 10，实际就是存储的 16。<br>为什么是 2 的幂次呢，因为 HashMap 在对 key 做 hash 的时候，使用的是位移运算而不是取模运算。使用 2 的幂次就是为了方便运算。<br>负载因子的大小决定扩容大小，实际就是初始值 <code>*</code> 负载因子，当超过该值的时候，就会扩容，默认会扩容 2 倍。<br>可以可以调大扩容因子，不推荐，会增加哈西碰撞的概率，影响查询效率。</p>
+<h3 id="当 put 元素的时候，传递的 key 是怎么计算哈希值的"><a href="# 当 put 元素的时候，传递的 key 是怎么计算哈希值的" class="headerlink" title="当 put 元素的时候，传递的 key 是怎么计算哈希值的"></a>当 put 元素的时候，传递的 key 是怎么计算哈希值的</h3><ul>
+<li>先进行 hashcode 计算</li>
+<li>然后对高 16 位进行异或操作 <br> 尽量打乱 key 值，最大程度防止哈西冲突</li>
+</ul>
+<h3 id="hashset 中 put 或 get 的实现"><a href="#hashset 中 put 或 get 的实现" class="headerlink" title="hashset 中 put 或 get 的实现"></a>hashset 中 put 或 get 的实现 </h3><h4 id="PUT"><a href="#PUT" class="headerlink" title="PUT"></a>PUT</h4><p> 先通过负载因子和初始值计算出是否需要扩容，如果扩容，就先扩容。然后先计算 key 的哈希值，如果冲突，就判断是链表还是红黑树，然后替换值。如果没有哈西冲突，直接替换值。</p>
+<h4 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h4><p>哈希计算，不冲突直接获取，冲突先判断链表还是红黑树，然后拿取</p>
+<h3 id="Java 中对象引用方式"><a href="#Java 中对象引用方式" class="headerlink" title="Java 中对象引用方式"></a>Java 中对象引用方式</h3><ul>
+<li>值传递</li>
+<li>引用传递</li>
+</ul>
+<h3 id="HashMap 如何判断 key 是否相同"><a href="#HashMap 如何判断 key 是否相同" class="headerlink" title="HashMap 如何判断 key 是否相同"></a>HashMap 如何判断 key 是否相同</h3><ul>
+<li>比较 hash</li>
+<li>比较 equals</li>
+</ul>
+<h3 id="什么情况下才会用红黑树"><a href="# 什么情况下才会用红黑树" class="headerlink" title="什么情况下才会用红黑树"></a>什么情况下才会用红黑树 </h3><p> 数组长度大于 64 且链表长度大于 8，如果链表长度小于 6 会退化为数组</p>
+<h3 id="线程安全的数组，除了 Vector 还有什么"><a href="# 线程安全的数组，除了 Vector 还有什么" class="headerlink" title="线程安全的数组，除了 Vector 还有什么"></a>线程安全的数组，除了 Vector 还有什么 </h3><p> 最简单的就是 Collections 工具类，只不过性能很差，是 synchronized。<br>cul 包下面有个类，copyonwritelist。在说明这个我们可以先说一下 Linux 线程，<br>Linux 中线程其实都是从 init 线程中 fork 出来的，此时子线程物理地址都是指向父线程。<br>只有当父线程发生变化时，才会拷贝一个新的物理地址给线程。<br>copyonwrite 类似于这种，核心思想就是，在数据变动的时候通过拷贝数组，简单就是读不加锁，写加锁。<br>这里拿 add 方法举例，add 的时候拷贝当前数组到新的空间，并加锁，修改完毕后再释放锁。这里面主要注意的是只能保证最终一致性，不能保证实时一致性。</p>
+<h3 id="CAS"><a href="#CAS" class="headerlink" title="CAS"></a>CAS</h3><p>copy on swap，复制交换，实际对应的就是 cpu 的一个指令，copoch。是一个原子操作。核心概念是当前值，内存值，期望值。<br>比如当前值是 A，内存值是 B，不相同，那么就会自旋等待内存值和当前值一样的时候修改为期望值。</p>
+<h3 id="为什么要使用 CAS"><a href="# 为什么要使用 CAS" class="headerlink" title="为什么要使用 CAS"></a>为什么要使用 CAS</h3></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {selector: '.gallery-item'};
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></div>
+				<link rel="stylesheet" type="text/css" href="https://qiniu.techgrow.cn/readmore/dist/hexo.css">
+				<script src="https://qiniu.techgrow.cn/readmore/dist/readmore.js" type="text/javascript"></script>
+				<script>
+				var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
+				var isEncrypt = document.getElementById('hexo-blog-encrypt');
+				var allowMobile = false;
+				if (!isEncrypt && (!isMobile || (isMobile && allowMobile))) {
+					try {
+						var plugin = new ReadmorePlugin();
+						plugin.init({
+							"type": "hexo",
+							"id": "readmore-container",
+							"name": "程序员朱永胜",
+							"blogId": "39259-6450029321246-893",
+							"qrcode": "https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142242856.jpg",
+							"keyword": "1",
+							"random": "1",
+							"height": "auto",
+							"expires": "365",
+							"lockToc": "yes",
+							"interval": "60",
+							"baseUrl": ""
+						});
+					} catch(e) {
+						console.warn("readmore plugin occurred error: " + e.name + " | " + e.message);
+					}
+				}
+				</script>
+			</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="index.html" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">程序员朱永胜</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://blog.zysicyj.top/dc2f1c0d.html">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://blog.zysicyj.top/dc2f1c0d.html')">Wed Dec 27 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142337659.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/blog/202308142338230.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://blog.zysicyj.top/dc2f1c0d.html"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=undefined&amp;url=https://blog.zysicyj.top/dc2f1c0d.html&amp;pic=undefined" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blog.zysicyj.top" target="_blank"></a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"></div><div class="post_share"><div class="social-share" data-image="https://img.xjh.me/random_img.php?return=302&amp;_r_=451e912d-32d3-d044-2ead-ab940b3cea41" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="94d42f82.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=7e90a034-116f-ebc9-8f76-555e34cd61c5" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Tue Dec 26 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</div></div></a></div><div class="next-post pull-right"><a href="71b5d588.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=f08c73e3-4cc6-9320-ca4a-f08000db1e5b" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Sun Dec 31 2023 00:00:00 GMT+0000 (Coordinated Universal Time)</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/aliyun/202308012321669.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">程序员朱永胜</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="mailto:zhuyongsheng@xxc99.cn" rel="external nofollow noreferrer" target="_blank" title="fas fa-envelope"></a><a class="social-icon faa-parent animated-hover" href="https://blog.csdn.net/njpkhuan" rel="external nofollow noreferrer" target="_blank" title="fa-solid fa-blog fa-beat"></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/258577429" rel="external nofollow noreferrer" target="_blank" title="fa-brands fa-bilibili"></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://img02.anheyu.com/adminuploads/1/2022/09/11/631ddb7c9b250.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://blog-1253652709.cos.ap-guangzhou.myqcloud.com/tc/%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E6%A0%87%E5%87%86%E8%89%B2%E7%89%88.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#8%20%E7%82%B9%201%20%E6%B0%AA"><span class="toc-number">1.</span> <span class="toc-text">8 点 1 氪 </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#TOP3%20%E5%A4%A7%E6%96%B0%E9%97%BB"><span class="toc-number">1.1.</span> <span class="toc-text">TOP3 大新闻</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E5%85%AC%E5%8F%B8%20-%20%E5%A4%A7%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">大公司 &#x2F; 大事件 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI%20%E6%9C%80%E5%89%8D%E6%B2%BF"><span class="toc-number">1.3.</span> <span class="toc-text">AI 最前沿 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%95%E8%9E%8D%E8%B5%84"><span class="toc-number">1.4.</span> <span class="toc-text">投融资 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%B7%E4%BA%A7%E5%93%81"><span class="toc-number">1.5.</span> <span class="toc-text">酷产品 </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%98%A8%E5%A4%9C%E4%BB%8A%E6%99%A8"><span class="toc-number">2.</span> <span class="toc-text">昨夜今晨</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E9%97%AE%E7%95%8C%20-M9-%20%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%EF%BC%9A%E6%90%AD%E8%BD%BD%E5%8D%8E%E4%B8%BA%E6%9C%80%E6%96%B0%E5%85%A8%E6%A0%88%E6%8A%80%E6%9C%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%EF%BC%8C46-98-%20%E4%B8%87%E5%85%83%E8%B5%B7"><span class="toc-number">2.1.</span> <span class="toc-text">1、问界 M9 正式发布：搭载华为最新全栈技术解决方案，46.98 万元起 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%B7%98%E5%AE%9D%E5%B9%B3%E5%8F%B0%E4%BA%89%E8%AE%AE%E5%A4%84%E7%90%86%E8%A7%84%E5%88%99%E5%8F%98%E6%9B%B4%EF%BC%8C%E6%8E%A8%E5%8A%A8%E5%BF%AB%E9%80%9F%E9%80%80%E8%B4%A7%E9%80%80%E6%AC%BE"><span class="toc-number">2.2.</span> <span class="toc-text">2、淘宝平台争议处理规则变更，推动快速退货退款 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E7%BD%91%E6%98%93%E5%A4%A7%E7%A5%9E%E7%A4%BE%E5%8C%BA%E5%B7%B2%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E6%9B%B4%E6%96%B0%E3%80%8A%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C%E3%80%8B%E5%86%85%E5%AE%B9%EF%BC%8C%E5%8E%9F%E5%81%9C%E6%9C%8D%E9%80%9A%E7%9F%A5%E5%88%A0%E9%99%A4"><span class="toc-number">2.3.</span> <span class="toc-text">3、网易大神社区已重新开始更新《魔兽世界》内容，原停服通知删除 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E6%B6%88%E6%81%AF%E7%A7%B0%E8%8B%B9%E6%9E%9C%E8%87%AA%E7%A0%94%20-Wi-Fi-%20%E8%8A%AF%E7%89%87%E9%81%87%E9%98%BB%EF%BC%8CiPhone-17-%20%E8%83%BD%E5%90%A6%E7%94%A8%E4%B8%8A%E5%AD%98%E7%96%91"><span class="toc-number">2.4.</span> <span class="toc-text">4、消息称苹果自研 Wi-Fi 芯片遇阻，iPhone 17 能否用上存疑 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%9F%94%E5%AE%87%E7%A7%91%E6%8A%80%E8%A2%AB%E6%9B%9D%E6%AC%A0%E8%96%AA%E9%95%BF%E8%BE%BE%E4%B8%80%E5%B9%B4%EF%BC%8C%E5%91%98%E5%B7%A5%E7%BD%A2%E5%B7%A5%E8%AE%A8%E8%96%AA"><span class="toc-number">2.5.</span> <span class="toc-text">5、柔宇科技被曝欠薪长达一年，员工罢工讨薪 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E9%9B%B7%E5%86%9B%EF%BC%9A%E5%B0%8F%E7%B1%B3%20-SU7-%20%E5%AE%9A%E4%BD%8D%20-C-%20%E7%BA%A7%E9%AB%98%E6%80%A7%E8%83%BD%E7%94%9F%E6%80%81%E7%A7%91%E6%8A%80%E8%BD%BF%E8%BD%A6%EF%BC%8C%E5%AE%9A%E4%BB%B7%E2%80%9C%E7%A1%AE%E5%AE%9E%E6%9C%89%E7%82%B9%E8%B4%B5%E2%80%9D"><span class="toc-number">2.6.</span> <span class="toc-text">6、雷军：小米 SU7 定位 C 级高性能生态科技轿车，定价“确实有点贵”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%812999-%20%E5%85%83%E8%B5%B7%EF%BC%8C%E5%8D%8E%E4%B8%BA%20-nova-12-Pro-Ultra-%20%E7%B3%BB%E5%88%97%E6%89%8B%E6%9C%BA%E5%8F%91%E5%B8%83"><span class="toc-number">2.7.</span> <span class="toc-text">7、2999 元起，华为 nova 12 &#x2F; Pro &#x2F; Ultra 系列手机发布 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nova-12-Ultra"><span class="toc-number">2.7.1.</span> <span class="toc-text">nova 12 Ultra</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nova-12-Pro"><span class="toc-number">2.7.2.</span> <span class="toc-text">nova 12 Pro</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nova-12"><span class="toc-number">2.7.3.</span> <span class="toc-text">nova 12</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81B%20%E7%AB%99%E9%80%9A%E7%9F%A5%20-50-%20%E4%B8%87%E7%B2%89%E4%B8%9D%E4%BB%A5%E4%B8%8A%20-UP-%20%E4%B8%BB%E5%89%8D%E5%8F%B0%E5%AE%9E%E5%90%8D%EF%BC%9A%E5%8F%AF%E9%80%89%E6%8B%A9%E4%B8%8D%E5%A4%96%E6%98%BE%EF%BC%8C%E5%B0%86%E5%BD%B1%E5%93%8D%E6%B5%81%E9%87%8F%E3%80%81%E6%94%B6%E7%9B%8A"><span class="toc-number">2.8.</span> <span class="toc-text">8、B 站通知 50 万粉丝以上 UP 主前台实名：可选择不外显，将影响流量、收益 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E3%80%81%E5%8D%8E%E4%B8%BA%E5%86%85%E9%83%A8%E4%BA%BA%E5%A3%AB%EF%BC%9APC-%20%E7%AB%AF%E9%B8%BF%E8%92%99%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%B7%B2%E6%8E%A5%E8%BF%91%E5%AE%8C%E6%88%90"><span class="toc-number">2.9.</span> <span class="toc-text">9、华为内部人士：PC 端鸿蒙操作系统已接近完成 </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%8D%E4%B9%A0"><span class="toc-number">3.</span> <span class="toc-text">复习 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="toc-number">3.0.1.</span> <span class="toc-text"> 垃圾回收机制实现原理 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE"><span class="toc-number">3.0.1.1.</span> <span class="toc-text"> 查找</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95"><span class="toc-number">3.0.1.2.</span> <span class="toc-text">回收算法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JDK%20%E4%B8%AD%E7%9A%84%20MAP%EF%BC%881-8%EF%BC%89"><span class="toc-number">3.0.2.</span> <span class="toc-text">JDK 中的 MAP（1.8）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HashMap"><span class="toc-number">3.0.2.1.</span> <span class="toc-text">HashMap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TreeMap"><span class="toc-number">3.0.2.2.</span> <span class="toc-text">TreeMap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ConcurrentHashMap"><span class="toc-number">3.0.2.3.</span> <span class="toc-text">ConcurrentHashMap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LinkedHashMap"><span class="toc-number">3.0.2.4.</span> <span class="toc-text">LinkedHashMap</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AIO"><span class="toc-number">3.0.3.</span> <span class="toc-text">AIO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E8%8A%82%E7%A0%81%E6%96%87%E4%BB%B6%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">3.0.4.</span> <span class="toc-text">字节码文件的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E8%8A%82%E7%A0%81%E6%9E%84%E6%88%90%20-%20%E5%B8%B8%E9%87%8F%E6%B1%A0"><span class="toc-number">3.0.5.</span> <span class="toc-text">字节码构成 - 常量池 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clint%20%E6%8C%87%E4%BB%A4"><span class="toc-number">3.0.6.</span> <span class="toc-text">clint 指令 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%A0%88"><span class="toc-number">3.0.7.</span> <span class="toc-text">虚拟机栈 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%A7%E6%95%B0%E6%8D%AE"><span class="toc-number">3.0.8.</span> <span class="toc-text">帧数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%8C%BA%E7%9A%84%E5%9B%9E%E6%94%B6"><span class="toc-number">3.0.9.</span> <span class="toc-text">方法区的回收</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java%20%E4%B8%AD%E7%9A%84%E4%BA%94%E7%A7%8D%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.0.10.</span> <span class="toc-text">Java 中的五种引用类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java%20%E4%B8%AD%E5%BC%95%E7%94%A8%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">3.0.11.</span> <span class="toc-text">Java 中引用对象的方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%20new%20%E4%B8%80%E4%B8%AA%20HashMap%20%E7%9A%84%E6%97%B6%E5%80%99%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88"><span class="toc-number">3.0.12.</span> <span class="toc-text">当 new 一个 HashMap 的时候会发生什么 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%93%20put%20%E5%85%83%E7%B4%A0%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E4%BC%A0%E9%80%92%E7%9A%84%20key%20%E6%98%AF%E6%80%8E%E4%B9%88%E8%AE%A1%E7%AE%97%E5%93%88%E5%B8%8C%E5%80%BC%E7%9A%84"><span class="toc-number">3.0.13.</span> <span class="toc-text">当 put 元素的时候，传递的 key 是怎么计算哈希值的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hashset%20%E4%B8%AD%20put%20%E6%88%96%20get%20%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-number">3.0.14.</span> <span class="toc-text">hashset 中 put 或 get 的实现 </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PUT"><span class="toc-number">3.0.14.1.</span> <span class="toc-text">PUT</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GET"><span class="toc-number">3.0.14.2.</span> <span class="toc-text">GET</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java%20%E4%B8%AD%E5%AF%B9%E8%B1%A1%E5%BC%95%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="toc-number">3.0.15.</span> <span class="toc-text">Java 中对象引用方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HashMap%20%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%20key%20%E6%98%AF%E5%90%A6%E7%9B%B8%E5%90%8C"><span class="toc-number">3.0.16.</span> <span class="toc-text">HashMap 如何判断 key 是否相同</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E6%89%8D%E4%BC%9A%E7%94%A8%E7%BA%A2%E9%BB%91%E6%A0%91"><span class="toc-number">3.0.17.</span> <span class="toc-text">什么情况下才会用红黑树 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E6%95%B0%E7%BB%84%EF%BC%8C%E9%99%A4%E4%BA%86%20Vector%20%E8%BF%98%E6%9C%89%E4%BB%80%E4%B9%88"><span class="toc-number">3.0.18.</span> <span class="toc-text">线程安全的数组，除了 Vector 还有什么 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CAS"><span class="toc-number">3.0.19.</span> <span class="toc-text">CAS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%20CAS"><span class="toc-number">3.0.20.</span> <span class="toc-text">为什么要使用 CAS</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="today_2023_09.html" title="Today For 2023 年 9 月"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=13ee6d1b-29c4-1f49-d7ff-186b509f4703" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Today For 2023 年 9 月"/></a><div class="content"><a class="title" href="today_2023_09.html" title="Today For 2023 年 9 月">Today For 2023 年 9 月</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="c37612c9.html" title="博客优化差不多了"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=a87b0dce-9204-07e0-7d5f-c1e1b61aa276" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客优化差不多了"/></a><div class="content"><a class="title" href="c37612c9.html" title="博客优化差不多了">博客优化差不多了</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="cb2b755d.html" title="老婆七夕快乐"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=7bc20739-95c1-a2a6-932d-59252bdd914a" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="老婆七夕快乐"/></a><div class="content"><a class="title" href="cb2b755d.html" title="老婆七夕快乐">老婆七夕快乐</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="71f4c8f5.html" title="聊聊近况，一个字【累】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=421e3d76-2d8e-5ed0-d82f-7a2f25c71e25" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="聊聊近况，一个字【累】"/></a><div class="content"><a class="title" href="71f4c8f5.html" title="聊聊近况，一个字【累】">聊聊近况，一个字【累】</a><time datetime="2025-01-14T14:32:25.136Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="cb19af19.html" title="2024 年 07 月 10 日 (日记)"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.xjh.me/random_img.php?return=302&amp;_r_=a5d69cdc-9cf4-68ed-f1c9-2409366c7be8" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2024 年 07 月 10 日 (日记)"/></a><div class="content"><a class="title" href="cb19af19.html" title="2024 年 07 月 10 日 (日记)">2024 年 07 月 10 日 (日记)</a><time datetime="2025-01-14T14:32:25.135Z" title="更新于 2025-01-14 14:32:25">2025-01-14</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="workboard"><div id="runtimeTextTip"></div></div><div class="footer_custom_text"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn/"><span>苏ICP备2024066768号-1</span></a></div></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 - 2025 By <a class="footer-bar-link" href="index.html" title="程序员朱永胜" target="_blank">程序员朱永胜</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="archives/" title="archive"><div class="headline">文章</div><div class="length-num">1217</div></a><a href="tags/" title="tag"><div class="headline">标签</div><div class="length-num">886</div></a><a href="categories/" title="category"><div class="headline">分类</div><div class="length-num">14</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" rel="external nofollow noreferrer" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.zysicyj.top/" title="个人主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/13/64d8c2748ef34.jpg" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">写作软件</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://editor.runjs.cool/post?id=demo" title="Mdx"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4296739868700.png" alt="Mdx"/><span class="back-menu-item-text">Mdx</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://openwrite.cn/" title="OpenWrite"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://openwrite.cn/logo.png" alt="OpenWrite"/><span class="back-menu-item-text">OpenWrite</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/writerside/" title="WriteSide"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQIHBAUGCAP/xABEEAACAAMBCQ8CAggHAAAAAAAAAQIDBAUGBxE1UVR0k7ISFBUWFzE0NlVzkaKxwtIh0UFhEyQlRFKUs+EiJjIzQ1Nx/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAECAwYFBAf/xAA0EQEBAAADBAcFCQEBAQAAAAAAAQIDcQQRM1IFExQVUaGxITJBkdEGEhYiIyQxNMFhckL/2gAMAwEAAhEDEQA/AN4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjeAF9jgu17OhiihirpCiTaacxfRondX0TZM+zfMF+ScMWbn9PrENyex7RyU4Ys3P6fWIbjse0clOGLNz+n1iG47HtHJThizc/p9YhuOx7RyU4Ys3P6fWIbjse0clOGLNz+n1iG47HtHJThizc/p9Yhup2PaOSnDFm5/T6xDdfA7HtHJThmzM/p9Yifu3wOx7RyU4ZsztCn1iH3MXgjsmfyU4Zs3P6fWIfcxeB2TP5KcM2Zn9PrEPuYvBHZM/kpw1ZnaFPrET1ePwOy5/JThqzO0KfWIdVj8DsufyVOG7L7Qp9YieqzPCnZs7lpw3ZfaFPrEOpzOWnZs7lorasxtQq0KdtvAl+kXOOpzOWo7PnctdgjNioAAAAAAI/wA0jaiXC1ofRdLnf1Ij6J/Efo2zX9DL/84fSONgWREt95gWRA3mBZEDeYFkQN5gWRA3mBZEDeYFkRMRvTAsiLyItYtLIi8ilqNLIjSRW1GlkReRG9GlkRrIrvYtLIi8itqYFkReRTfUwLIjSRG9MCyIvFbX60SW/6T6L/AH5e0icXuYtL6M8y/kxaX0b9hOVcQoAAAAAAJF+AGkrUxtaGlzv6kR9E/iP0bZuBl/8AnD6RxiW4AAAAAiENJFaxZpIrUZeRWoXkVRmkiKxwmkilQvIrvQvIhDSRVi2XkUfrRdPpO/l7SJxT8t0vozzPcul9G/kck4tQAAAAAARgeQn3A0VRUTp8dbVqKdMimNLc4E4m2/w/M06y7nu5fT2fl4JgmCeySfH4exhyd2fn1Z5PiOsq/wCIs/knn9Tk7s/PqzyfEdZT8RZ/JPP6nJ3Z+fVnk+I6yn4iz+Sef1OTuz8+rPJ8R1lPxFn8k8/qcndBn1Z5PiOsp+Ic/knn9Tk8oM+rPJ8Setvgj8Q5/JPP6o73VA/36s8nxJ6++B+IM/knn9Tk6s/PqzyfEt2i+ER3/nck8/qnJ1Z+f1nk+JPasXhEd/Z3JPP6jvcWe/3+t8nxLdsxeEO/s7knn9U5N7Pz+t8nxJ7bj8Ijv3O5J5/VOTez8/rfJ8S3b8c/+Z5/VHfmdyTz+pybWf2hW+T4k944+Wef1R35nck8/qnJrZ+f1vk+JM6SzOWef1R33nck8/q8hdhYcmwK+RTSJ02bDHJ/SOKbgw4d01+B6Wx5+LPwW2btHpbFteLacFxYpJ7fho6Bn3SPsftQYwpNIl7SJxz8l0vozzL+S6X0b+hONji4yJSAAAAAAAAAAAAAAAAAAAAAAAAGrb6n0tyk0X3s93orhYtXQ9EcHFq8UevI9S1+1BjCk0iXtIY5+S6X0Z5l/JdL6N/wnFONjIlIAAAfnMnS5WBzY4YE+bdRYMIThw4sXuzew35TZxJ1iC/U5nLfkb8ps4k6xA6nM5b8jflNnEnWIHU5nLfkb8ps4k6xA6nM5b8jflNnEnWIHU5nLfkb8ps4k6xA6nM5b8jflLnMnWIbqdTmct+RvylzmTrETup1WZy35G/KXOZOsQ3U6nM5b8jflLnMnWIbr4HVZnLfkb8pc5k6xD7t8DqszlpvylzmTrEPu4vA6rHy035S5zJ1iH3cXgdVj8Kb9pc5k6xE/cxeB1WPwoqymiiUMM+U2+ZKNfUfdxeCOrxz4V+5VQA1ZfWx7SaJ72e/0RN+Vi1e/wBE8HFq8UexI9S1+1A/2hSaRL2kMc/Ji0vozzL+S6X0fQK5ziHHqEgAAB4i+ev1Kz+/i2Wa5fxdF9neLmaT1a+wGjqjAAwAMAAmIRl5Eb2JeRXehpIrvRl5FUNJhVqPBkReYVd7FmkitqF5FajSyGkitrsrmMHGSzVg/wCdejM9pn6GK/8AHy7Zf2+PRvFcxzTjwDVl9bHtJonvZ0XQ8/Rxave6Jv6OLV4k9iR6e9+1C/2hSaRL2kMyfp4tL6M8y/kxaX0fQS5zhXJKAAAAPEXz+hWf38Wya5fxdF9neJmaT1a/NHVgAATIhMP0LyK2scJpIrvQvIrvQvIqxwmkiN6NmkilqF5FajLyKozSRFrFsvIra7K5h/5kszSF6MptM/Qx6Pl2y/t8ejeRyzkADVd9fHtJovvZ0nQvtyMWr3eiuFi1eJbPakelX7UGMKTSJe0hmT9PFpfRnmX9PFpfR9Bo4FyigAAADxF8/oVn9/FsmuX8XRfZ3iZmk9WvzR1YAJkQmEvIraxwmkitqF5Fd6F5FWLZpIhGzSRS1C8itqMvIqhpIi1i2XkUtYtmkiHZ3L9ZbM0hejM9qn6GPR821/18ejeZybkQDVV9jHtJovvZ03Qk/Qxa/R7nRfCxavEM9uR6O9+9n4xpNIl7SK5vDxaX0UzPcxaV9CI4ByqgAAADxF8/oVn9/FsmuX8XRfZ3iZmk9WvzR1YTIhC8itY4S8itQ0kVtQvIqxZpIhGzSRS1C8iu9C8iqGkiKxbLyKWsWzSRCGkitdncv1lsvSF6Mx2qft8ej5tsv7fHo3oci5MA1VfZx7R6L72dP0FwMWv+R7fRnCxavEHtvRfvZ+MaPSJe0imbw8Wl9Fcz3MWlfQiOAcqoAAAA8RfP6FZ/fxbJrl/F0X2d4mZpPVr81jqkLyK1iy8itRmkitQvIqxZpIhGzSRSoXkV3oXkQhpIrWLLyKVizSRCM0kVqMvIrXZ3L9ZbM0hejMtrn7bHo+ba+Bj0b1ONcqAaqvs49o9E97Oo6C4GLX/I9rozhYtXhz2npORZ+MaPSJe0imbw8Wl9Fcz3MWlfQiOAcqoAAAA8RfP6FZ/fxbJrlfzXRfZ3iZmk9Wvj6JHUViy8itRmkitQvIqxZpIhGzSRSoXkV3oXkQhpIrWLLyKVizSRCM0kVqMvIrULyK12dy3WazNIXozLbJ+2zNHzbXwMejexxTlwDVV9nHtHonvZ1HQXAxa/5HtdGcLFq8Oe09JyLPxjR6RL2kUzeHi0vorme5i0r6ERwDlVAAADA8RfQ6FZ/fxbJtk/zXQ/Z7iZmk9WvGfVI6eozSRWoy8iqM0kVtY4TSRWoXkVqF5EIaSKsW0XkUYs0kQhpIrajLyK1C8itRs0kVdncr1msvSF6Mw22ftsej5tq4GPRvc4hzIBqq+zj2j0T3s6joLgYtf8j2ujOFi1eHPaek5Fn4xo9Il7SKZvDxaX0VzPcxaV9CI4ByqgAAADw19LoNn9/Fss+jZ/5roPs/xMzSerXrPskdNajLyKoaSItY4TSRSoXkVtQvIqhpIjexbReRRizSRCGkitqF5FbULyK2o2aSK72JeRWu0uV6zWXpC9GfPt39bHow2ng49G+DhnMgGqr7OPaPRPezqOguBi1/yPa6M4WLV4c9p6TkWfjGj0iXtIpm8PFpfRXM9zFpX0IjgHKqAAAAPDX0ug2f38Wyz6tmntr3+gOJmaT1a8Z9sjpWOE0kVtTCaSK2oXkRaheRW1GaSK72LZeRTexbNJEIaSK2oXkVtQvIrajZpIraxwl5FbQlDtLles1l6QvRnzbd/Wx6MNp4GPRvg4ZzQBqm+zj6j0X3s6joLgYtf8j2ujOFi1eIPaek5Fn4xo9Il7SKZvDxaX0VzPcxaV9CI4ByqgAAADwt9P6UNn9/Fss+vZJvte/wBAcTM0nq13hPQkdHamEvIraxcSyo1kQjiWVF5FajihyovIj2o41lXiXkVYuKH+JeJpMNU9rHdQ/wAS8TSRHtTdQ5V4l5Ffam6hfM14mkw1WjZeRS1iy8itoShAO1uV6zWXpC9GfNt39bHow2ngY9G+DhnNAGqb7WPqPRfezqOguBi1/wAj2+jOFi1eIPaei5Fn4xo9Il7SKZvDxaX0VzPcxaV9CI4ByqgAABgeEvqP9Ss7v4tln27F7bdHvdA+/maT1a7wnpSOitYxP/Cy8h8W6LGsqzorJoooqCliiip5bbcmFtvcr8jw8zMxzHfa4nOz82ZmKTFf5vxczgmzez6TUQ/Yr1uZzX5su0Z3NfmcE2b2fSaiH7DrczmvzOvzea/M4Is3s+k1EP2HXZnNfmdfm81+ZwRZnZ9JqIfsOuzea/M67N5r8zgizez6TUQ/Ynr83mvzR12bzX5nBFm9n0moh+w6/N5r8zrszmvzdFdxZtDJuVtCbJo6aXMhl4YYoJUKa+uVH29H52bi2nBLivzfVsebjufhltadOv3PftCUIAA7W5XrNZekL0Z823f1sejDaeBj0b4OGc0AapvtY+o9F97Oo6C4GLX/ACPb6M4WLV4g9p6LkWfjGj0iXtIpm8PFpfRXM9zFpX0IjgHKqAAAR8wHhL6vQbN7+LYZ92wfzi0e70F7+ZpPVrtnqSOitYxf6X/4aSI3+1vWxMT0Ojy9lHO5vExa1w2fxcWtc0zZAAAAAAefu+6o2l3R9/Rn9vBq+rYv7GDVpM7R0SEAAA7W5XrNZekL0Z823f1sejDaeBj0b4OGc0AapvtY+o9F97Oo6C4GLX/I9vozhYtXiD2nouRZ+MaPSJe0imbw8Wl9Fcz3MWlfQiOAcqoAABHzAeEvrdBs3SIthnodHe9i0/17nQfv49I10z1ZHQ2sYsOBr8jTDPajf8W0rMu3sOns6lkTaiYo5cmCCJKTE/qoUjxcewZ+LFbI5fN6N2nFmYrJ8b8XJ4/XP51N1EX2I7t2nw82fde0+HnE4/XP51N1EX2J7s2nw84juzafDzhx/uezqbqI/sT3XtXh5w7s2nw84nKBc9nU3URfYnuravDzh3btPh5w5QLns6m6iP7E90bXy+cR3dtHh5w5Qbns6m/y8f2J7n2vl84ju/aPDzjqLq7srFtO5+so6SfMinTYMEKcmJLnys+vYejNpydow48c9k/632bYs7LzZjxT2RrM6R7HxAAADtbles1l6QvRnzbd/Wx6MNp4GPRvg4ZzQB4G725m1LdtSnqLPlyooJcjcRbuZufrumz3Oi9vyNmysWHM377fD/j0ti2rKycFw4/F5rk+ui/6Kb+Y/sen3xsnjfk+3vDZ/G/J+tLcFdBKq6ebFJp1DBNgjeCen9FEnkKZnS+y3BZLf48FcXSGRcNk3/w25CclHhMiQAAR8wHhL6/QbN0iLYZ6PRvvYtP9e50J7+PSerXJ7Ej36xZeRSsTSRCGkitRl5FaheRRGzSRDEvIqEoQAAAAAO1uV6zWXpC9GfNt39bHow2ngY9G+DhnNAEwLIBQAAAAAAR8wHhL6/QrN0iLYZ6fRnvYtHtdC+/j0nq1uz2ZHvVizSRCM0kVqMvIrULyK1GzSRViXkVCUAAAAAAAO0uV6zWXpC9GfNt39bM0YbVwMejfBwzmgAAAAAAAAAfMB19q2PQ2tBLgtCQp0MuLdQp/g8GA0ys7HlXfgu7e2ydozMm25d3b3XcTLA7Og8Wb9u2jmb947TzJxLuf7Og8WT2/aOY7w2nnOJVz/Z0Hiye8Npn/ANI7w2nmOJVz/ZsHix3jtXOdv2jmTiTc92bL8WT3ltXOjt+0cy8SbnuzZfiye89r50du2jmTiTc92ZL8WT3ptfOdu2jmOJFzvZkvxY702vnO3bRzHEi53syX4sd6bXznbto5jiRc72ZL8WO9Nr5zt20cxxIud7Ml+LHem18527aOY4kXO9mS/FjvTa+c7dtHMcSLnezJfix3ptfOdu2jmOJFzvZkvxY702vnO3bRzP0prkLCpKmXUU9nwQTpcW6giTf0ZTH0jtOPDcOLF7KjFtefin3bid8uZHxPmUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9k=" alt="WriteSide"/><span class="back-menu-item-text">WriteSide</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">开发工具</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/idea/" title="idea"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4576710485000.png" alt="idea"/><span class="back-menu-item-text">idea</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jetbrains.com/zh-cn/datagrip/" title="DataGrip"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="DataGrip"/><span class="back-menu-item-text">DataGrip</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4663369180700.png" title="WebStorm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4604435065400.png" alt="WebStorm"/><span class="back-menu-item-text">WebStorm</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="微信开发者工具"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4743988475500.png" alt="微信开发者工具"/><span class="back-menu-item-text">微信开发者工具</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" title="HBuilder"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.dcloud.io/hbuilderx.html" alt="HBuilder"/><span class="back-menu-item-text">HBuilder</span></a><a class="back-menu-item" target="_blank" rel="noopener external nofollow noreferrer" href="https://mobaxterm.mobatek.net/" title="MobaXterm"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://blog-1253652709.cos.ap-guangzhou.myqcloud.com/pasteimageintomarkdown/2024-07-16/4849682167700.png" alt="MobaXterm"/><span class="back-menu-item-text">MobaXterm</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="index.html"><i class="fas fa-home faa-tada"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-link faa-tada"></i><span> 目录</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="fas fa-archive faa-tada"></i><span> 时间轴</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="fas fa-folder-open faa-tada"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-list faa-tada"></i><span> 清单</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/movies/"><i class="fas fa-video faa-tada"></i><span> 电影</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/books/"><i class="fas fa-book faa-tada"></i><span> 阅读</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/songs/"><i class="fas fa-music faa-tada"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追番</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/cinemas/"><i class="fa-brands fa-bilibili faa-tada"></i><span> 追剧</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="fas fa-link faa-tada"></i><span> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/gallery/"><i class="fas fa-solid fa-image faa-tada"></i><span> 相册集</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/love/static/index.html"><i class="fas fa-heart faa-tada"></i><span> Love</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="fa-solid  fa-comment faa-tada"></i><span> 闲言碎语</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="js/utils.js"></script><script src="js/main.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("07/01/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 程序员朱永胜 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("07/01/2023 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="js/search/local-search.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
