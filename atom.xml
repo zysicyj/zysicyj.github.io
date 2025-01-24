@@ -278,7 +278,7 @@ Redis 使用单线程事件驱</summary>
     <link href="https://blog.zysicyj.top/20240925152848.html"/>
     <id>https://blog.zysicyj.top/20240925152848.html</id>
     <published>2024-09-25T15:28:00.000Z</published>
-    <updated>2025-01-24T02:36:40.218Z</updated>
+    <updated>2025-01-24T08:38:16.321Z</updated>
     
     
     <summary type="html">原文地址：https://blog.csdn.net/weixin_43946446/article/details/121498068
@@ -335,7 +335,7 @@ Redis 使用单线程事件驱</summary>
     <link href="https://blog.zysicyj.top/20240913170908.html"/>
     <id>https://blog.zysicyj.top/20240913170908.html</id>
     <published>2024-09-13T17:09:00.000Z</published>
-    <updated>2025-01-24T02:36:40.216Z</updated>
+    <updated>2025-01-24T08:38:16.318Z</updated>
     
     
     <summary type="html">修改镜像地址
@@ -380,7 +380,7 @@ https://mirror.ccs.tencentyun.com
     <link href="https://blog.zysicyj.top/20240913141537.html"/>
     <id>https://blog.zysicyj.top/20240913141537.html</id>
     <published>2024-09-13T14:15:00.000Z</published>
-    <updated>2025-01-24T02:36:40.218Z</updated>
+    <updated>2025-01-24T08:38:16.321Z</updated>
     
     
     <summary type="html">离线安装 Docker Compose 可以通过以下步骤完成：
@@ -405,7 +405,7 @@ https://mirror.ccs.tencentyun.com
     <link href="https://blog.zysicyj.top/20240905093800.html"/>
     <id>https://blog.zysicyj.top/20240905093800.html</id>
     <published>2024-09-05T09:38:00.000Z</published>
-    <updated>2025-01-24T02:36:40.218Z</updated>
+    <updated>2025-01-24T08:38:16.321Z</updated>
     
     
     <summary type="html">《分布式任务调度平台XXL-JOB》
@@ -440,7 +440,7 @@ XXL-JOB是一个分布式任务调度平台，其核心设计目标是开发迅�
     <link href="https://blog.zysicyj.top/20240829090332.html"/>
     <id>https://blog.zysicyj.top/20240829090332.html</id>
     <published>2024-08-29T09:03:00.000Z</published>
-    <updated>2025-01-24T02:36:40.216Z</updated>
+    <updated>2025-01-24T08:38:16.318Z</updated>
     
     
     <summary type="html">要更新 Windows Subsystem for Linux (WSL)，可以按照以下步骤进行。WSL 是一个 Windows 10 和 Windows 11 的功能，允许用户在 Windows 上运行 Linux 二进制可执行文件。更新 WSL 可以确保你拥有最新的功能和修复。
@@ -460,7 +460,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240823163819.html"/>
     <id>https://blog.zysicyj.top/20240823163819.html</id>
     <published>2024-08-23T16:38:00.000Z</published>
-    <updated>2025-01-24T02:36:40.218Z</updated>
+    <updated>2025-01-24T08:38:16.321Z</updated>
     
     
     <summary type="html">原文地址
@@ -487,7 +487,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240823153250.html"/>
     <id>https://blog.zysicyj.top/20240823153250.html</id>
     <published>2024-08-23T15:32:00.000Z</published>
-    <updated>2025-01-24T02:36:40.216Z</updated>
+    <updated>2025-01-24T08:38:16.318Z</updated>
     
     
     <summary type="html">在 Windows 上使用 Docker 时，Docker Desktop 通常依赖于 WSL 2（Windows Subsystem for Linux 2）来提供一个轻量级的 Linux 内核环境。因此，保持 WSL 2 的更新对于确保 Docker 的最佳性能和兼容性是很重要的。以下是更新 WSL 的步骤：
@@ -508,7 +508,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240822162936.html"/>
     <id>https://blog.zysicyj.top/20240822162936.html</id>
     <published>2024-08-22T16:29:00.000Z</published>
-    <updated>2025-01-24T02:36:40.217Z</updated>
+    <updated>2025-01-24T08:38:16.319Z</updated>
     
     
     <summary type="html">保证依赖的模块和父模块都是 pom 格式，自己是jar 格式</summary>
@@ -523,7 +523,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240821172554.html"/>
     <id>https://blog.zysicyj.top/20240821172554.html</id>
     <published>2024-08-21T17:25:00.000Z</published>
-    <updated>2025-01-24T02:36:40.217Z</updated>
+    <updated>2025-01-24T08:38:16.319Z</updated>
     
     
     <summary type="html">你所提到的 MinIO 的自愈机制正在从多个独立的模式转换为一个统一的模型。这种变化旨在提高系统的可靠性和数据一致性，同时减少对用户手动干预的需求。以下是对这些自愈机制的详细解释：
@@ -552,7 +552,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240821172425.html"/>
     <id>https://blog.zysicyj.top/20240821172425.html</id>
     <published>2024-08-21T17:24:00.000Z</published>
-    <updated>2025-01-24T02:36:40.217Z</updated>
+    <updated>2025-01-24T08:38:16.319Z</updated>
     
     
     <summary type="html">在 MinIO 中，watch 和 replication 是两个不同的功能，分别用于监控和数据复制。它们在功能和使用场景上有明显的区别。下面是对这两个命令的详细解释：
@@ -582,7 +582,7 @@ watch 命令
     <link href="https://blog.zysicyj.top/20240821172454.html"/>
     <id>https://blog.zysicyj.top/20240821172454.html</id>
     <published>2024-08-21T17:24:00.000Z</published>
-    <updated>2025-01-24T02:36:40.217Z</updated>
+    <updated>2025-01-24T08:38:16.319Z</updated>
     
     
     <summary type="html">1
@@ -606,7 +606,7 @@ Error: http://192.168.137.1:9000-&gt;http://192.168.137.224:9000 has incorrect c
     <link href="https://blog.zysicyj.top/20240821172341.html"/>
     <id>https://blog.zysicyj.top/20240821172341.html</id>
     <published>2024-08-21T17:23:00.000Z</published>
-    <updated>2025-01-24T02:36:40.218Z</updated>
+    <updated>2025-01-24T08:38:16.321Z</updated>
     
     
     <summary type="html">在测试和开发环境中，模拟磁盘损坏可以帮助你了解和验证系统在故障情况下的行为和恢复能力。以下是在 Windows 和 Linux 环境下模拟磁盘损坏的方法。
@@ -634,7 +634,7 @@ Error: http://192.168.137.1:9000-&gt;http://192.168.137.224:9000 has incorrect c
     <link href="https://blog.zysicyj.top/20240819175049.html"/>
     <id>https://blog.zysicyj.top/20240819175049.html</id>
     <published>2024-08-19T17:50:00.000Z</published>
-    <updated>2025-01-24T02:36:40.217Z</updated>
+    <updated>2025-01-24T08:38:16.319Z</updated>
     
     
     <summary type="html">MinIO Plus API 文档
