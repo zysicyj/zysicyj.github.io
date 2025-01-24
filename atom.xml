@@ -6,7 +6,7 @@
   <link href="https://blog.zysicyj.top/atom.xml" rel="self"/>
   
   <link href="https://blog.zysicyj.top/"/>
-  <updated>2025-01-22T15:03:59.000Z</updated>
+  <updated>2025-01-24T10:36:04.000Z</updated>
   <id>https://blog.zysicyj.top/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>告别重复验证：6 种高效配置 Git 免密 Pull 的工程化实践</title>
+    <link href="https://blog.zysicyj.top/post/say-goodbye-to-repeated-verification-6-kinds-of-efficient-configuration-git-free-pull-engineering-practice-1ydlgt.html"/>
+    <id>https://blog.zysicyj.top/post/say-goodbye-to-repeated-verification-6-kinds-of-efficient-configuration-git-free-pull-engineering-practice-1ydlgt.html</id>
+    <published>2025-01-24T10:32:09.000Z</published>
+    <updated>2025-01-24T10:36:04.000Z</updated>
+    
+    
+    <summary type="html">引言
+在使用Git进行协作开发时，频繁执行git pull​操作却反复要求输入账号密码，不仅降低效率，还可能中断自动化流程（如CI/CD流水线）。本文将系统讲解6种主流免密配置方案，覆盖SSH协议、凭证缓存、安全令牌等场景，助你实现无缝代码拉取，同时保障账户安全。
+
+
+
+
+一、使用SSH协议替代HTTPS（原生安全方案）
+原理：通过SSH密钥对实现身份验证，无需密码交互。
+步骤：
+
+ 1. 生成密钥对（若无现有密钥）:
+    
+    1
+    
+    
+    ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;
+    
+    
+   </summary>
+    
+    
+    
+    
+    <category term="Git免密" scheme="https://blog.zysicyj.top/tags/Git%E5%85%8D%E5%AF%86/"/>
+    
+    <category term="SSH协议" scheme="https://blog.zysicyj.top/tags/SSH%E5%8D%8F%E8%AE%AE/"/>
+    
+    <category term="凭证缓存" scheme="https://blog.zysicyj.top/tags/%E5%87%AD%E8%AF%81%E7%BC%93%E5%AD%98/"/>
+    
+    <category term="安全令牌" scheme="https://blog.zysicyj.top/tags/%E5%AE%89%E5%85%A8%E4%BB%A4%E7%89%8C/"/>
+    
+    <category term="OAuth2" scheme="https://blog.zysicyj.top/tags/OAuth2/"/>
+    
+  </entry>
   
   <entry>
     <title>Nacos 2.4 安全实践指南：开启权限认证、配置默认账号密码与 MySQL 集成</title>
@@ -118,10 +161,10 @@ http {
   
   <entry>
     <title>Nginx 超时配置</title>
-    <link href="https://blog.zysicyj.top/post/nginx-timeout-configuration-1wisuh.html"/>
-    <id>https://blog.zysicyj.top/post/nginx-timeout-configuration-1wisuh.html</id>
+    <link href="https://blog.zysicyj.top/post/nginx-timeout-configuration-zfckmq.html"/>
+    <id>https://blog.zysicyj.top/post/nginx-timeout-configuration-zfckmq.html</id>
     <published>2025-01-14T10:53:08.000Z</published>
-    <updated>2025-01-22T15:12:46.000Z</updated>
+    <updated>2025-01-22T15:18:23.000Z</updated>
     
     
     <summary type="html">Nginx超时配置
@@ -235,7 +278,7 @@ Redis 使用单线程事件驱</summary>
     <link href="https://blog.zysicyj.top/20240925152848.html"/>
     <id>https://blog.zysicyj.top/20240925152848.html</id>
     <published>2024-09-25T15:28:00.000Z</published>
-    <updated>2025-01-22T07:18:11.637Z</updated>
+    <updated>2025-01-24T02:36:40.218Z</updated>
     
     
     <summary type="html">原文地址：https://blog.csdn.net/weixin_43946446/article/details/121498068
@@ -292,7 +335,7 @@ Redis 使用单线程事件驱</summary>
     <link href="https://blog.zysicyj.top/20240913170908.html"/>
     <id>https://blog.zysicyj.top/20240913170908.html</id>
     <published>2024-09-13T17:09:00.000Z</published>
-    <updated>2025-01-22T07:18:11.634Z</updated>
+    <updated>2025-01-24T02:36:40.216Z</updated>
     
     
     <summary type="html">修改镜像地址
@@ -337,7 +380,7 @@ https://mirror.ccs.tencentyun.com
     <link href="https://blog.zysicyj.top/20240913141537.html"/>
     <id>https://blog.zysicyj.top/20240913141537.html</id>
     <published>2024-09-13T14:15:00.000Z</published>
-    <updated>2025-01-22T07:18:11.636Z</updated>
+    <updated>2025-01-24T02:36:40.218Z</updated>
     
     
     <summary type="html">离线安装 Docker Compose 可以通过以下步骤完成：
@@ -362,7 +405,7 @@ https://mirror.ccs.tencentyun.com
     <link href="https://blog.zysicyj.top/20240905093800.html"/>
     <id>https://blog.zysicyj.top/20240905093800.html</id>
     <published>2024-09-05T09:38:00.000Z</published>
-    <updated>2025-01-22T07:18:11.636Z</updated>
+    <updated>2025-01-24T02:36:40.218Z</updated>
     
     
     <summary type="html">《分布式任务调度平台XXL-JOB》
@@ -397,7 +440,7 @@ XXL-JOB是一个分布式任务调度平台，其核心设计目标是开发迅�
     <link href="https://blog.zysicyj.top/20240829090332.html"/>
     <id>https://blog.zysicyj.top/20240829090332.html</id>
     <published>2024-08-29T09:03:00.000Z</published>
-    <updated>2025-01-22T07:18:11.634Z</updated>
+    <updated>2025-01-24T02:36:40.216Z</updated>
     
     
     <summary type="html">要更新 Windows Subsystem for Linux (WSL)，可以按照以下步骤进行。WSL 是一个 Windows 10 和 Windows 11 的功能，允许用户在 Windows 上运行 Linux 二进制可执行文件。更新 WSL 可以确保你拥有最新的功能和修复。
@@ -417,7 +460,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240823163819.html"/>
     <id>https://blog.zysicyj.top/20240823163819.html</id>
     <published>2024-08-23T16:38:00.000Z</published>
-    <updated>2025-01-22T07:18:11.637Z</updated>
+    <updated>2025-01-24T02:36:40.218Z</updated>
     
     
     <summary type="html">原文地址
@@ -444,7 +487,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240823153250.html"/>
     <id>https://blog.zysicyj.top/20240823153250.html</id>
     <published>2024-08-23T15:32:00.000Z</published>
-    <updated>2025-01-22T07:18:11.634Z</updated>
+    <updated>2025-01-24T02:36:40.216Z</updated>
     
     
     <summary type="html">在 Windows 上使用 Docker 时，Docker Desktop 通常依赖于 WSL 2（Windows Subsystem for Linux 2）来提供一个轻量级的 Linux 内核环境。因此，保持 WSL 2 的更新对于确保 Docker 的最佳性能和兼容性是很重要的。以下是更新 WSL 的步骤：
@@ -465,7 +508,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240822162936.html"/>
     <id>https://blog.zysicyj.top/20240822162936.html</id>
     <published>2024-08-22T16:29:00.000Z</published>
-    <updated>2025-01-22T07:18:11.634Z</updated>
+    <updated>2025-01-24T02:36:40.217Z</updated>
     
     
     <summary type="html">保证依赖的模块和父模块都是 pom 格式，自己是jar 格式</summary>
@@ -480,7 +523,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240821172554.html"/>
     <id>https://blog.zysicyj.top/20240821172554.html</id>
     <published>2024-08-21T17:25:00.000Z</published>
-    <updated>2025-01-22T07:18:11.635Z</updated>
+    <updated>2025-01-24T02:36:40.217Z</updated>
     
     
     <summary type="html">你所提到的 MinIO 的自愈机制正在从多个独立的模式转换为一个统一的模型。这种变化旨在提高系统的可靠性和数据一致性，同时减少对用户手动干预的需求。以下是对这些自愈机制的详细解释：
@@ -509,7 +552,7 @@ WSL 是一个在 Windows 上运行 Linux 环境的兼容层。它允许用户在
     <link href="https://blog.zysicyj.top/20240821172425.html"/>
     <id>https://blog.zysicyj.top/20240821172425.html</id>
     <published>2024-08-21T17:24:00.000Z</published>
-    <updated>2025-01-22T07:18:11.635Z</updated>
+    <updated>2025-01-24T02:36:40.217Z</updated>
     
     
     <summary type="html">在 MinIO 中，watch 和 replication 是两个不同的功能，分别用于监控和数据复制。它们在功能和使用场景上有明显的区别。下面是对这两个命令的详细解释：
@@ -539,7 +582,7 @@ watch 命令
     <link href="https://blog.zysicyj.top/20240821172454.html"/>
     <id>https://blog.zysicyj.top/20240821172454.html</id>
     <published>2024-08-21T17:24:00.000Z</published>
-    <updated>2025-01-22T07:18:11.635Z</updated>
+    <updated>2025-01-24T02:36:40.217Z</updated>
     
     
     <summary type="html">1
@@ -563,7 +606,7 @@ Error: http://192.168.137.1:9000-&gt;http://192.168.137.224:9000 has incorrect c
     <link href="https://blog.zysicyj.top/20240821172341.html"/>
     <id>https://blog.zysicyj.top/20240821172341.html</id>
     <published>2024-08-21T17:23:00.000Z</published>
-    <updated>2025-01-22T07:18:11.636Z</updated>
+    <updated>2025-01-24T02:36:40.218Z</updated>
     
     
     <summary type="html">在测试和开发环境中，模拟磁盘损坏可以帮助你了解和验证系统在故障情况下的行为和恢复能力。以下是在 Windows 和 Linux 环境下模拟磁盘损坏的方法。
@@ -591,7 +634,7 @@ Error: http://192.168.137.1:9000-&gt;http://192.168.137.224:9000 has incorrect c
     <link href="https://blog.zysicyj.top/20240819175049.html"/>
     <id>https://blog.zysicyj.top/20240819175049.html</id>
     <published>2024-08-19T17:50:00.000Z</published>
-    <updated>2025-01-22T07:18:11.635Z</updated>
+    <updated>2025-01-24T02:36:40.217Z</updated>
     
     
     <summary type="html">MinIO Plus API 文档
@@ -622,62 +665,6 @@ MinIO Plus Demo 接口
 请求参数:
 
 参数名称参数说明请求类型是否必须数据类型schemafileKeyfileKeypathtruestri</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nginx.conf 和 conf.d.md</title>
-    <link href="https://blog.zysicyj.top/20240819170822.html"/>
-    <id>https://blog.zysicyj.top/20240819170822.html</id>
-    <published>2024-08-19T17:08:00.000Z</published>
-    <updated>2025-01-22T07:18:11.635Z</updated>
-    
-    
-    <summary type="html">在Nginx中，nginx.conf 和 conf.d 目录都用于配置Nginx服务器，但它们的用途和使用方式有所不同。下面是对这两者的详细说明：
-
-nginx.conf
-nginx.conf 是Nginx的主配置文件，通常位于 /etc/nginx/nginx.conf 路径下。这个文件包含了Nginx服务器的全局配置和默认的服务器块配置。以下是一个典型的 nginx.conf 文件结构：
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37</summary>
     
     
     
